@@ -1,0 +1,139 @@
+\kapitola{Testování modelu}
+Testování je téměř nutnost každé větší webové aplikace. Pomocí správně zvolených a~provedených testů je možné odhalit chyby v~kódu mnohem dříve. Značně zlepšují kód a~usnadňují vývoj. V~některých případech dokáží odhalit závažné chyby a~bezpečnostní díry, které by bez testů nebyli včas odhaleny. Mohla by tak vzniknout značná finanční ztráta, při publikování aplikace.
+
+Důvody zvolení konkrétních testů jsou objasněny v~následující podkapitole u~jednotlivých testů. Rovněž jsou popsány očekávané výsledky a~jejich vliv na ověření řešení aplikace.
+
+\sekce{Použité testy}
+\paragraph{Jednotkové automatické testy} \mbox{} \\
+Ověřování funkčnosti kódu zajišťují jednotkové testy. Používají se pro testování malých separovatelných částí. V~objektovém programování se za tyto části dají považovat třídy, nebo funkce a~metody. Průběh testu tvoří porovnávání očekávaného výsledku s~reálným výsledkem.
+
+
+Je vhodné tyto testy psát průběžně ke každé dokončené části a~vždy po přidání nové funkcionality, nebo provedení změny všechny dosavadní jednotlivé testy spustit. Na základě toho je docíleno ověření, že provedené změny neměly negativní vliv na původní kód.
+
+
+Tento typ testu byl zvolen z~důvodu kontroly správnosti kódu a~komunikace mezi jednotlivými objekty. V~běžné programátorské praxi komplexních webových aplikací patří jednotkové automatizované testy jako základ při sestavování testů. O~tomto faktu svědčí i~integrování testovací knihovny do frameworku Nette.
+
+\paragraph{Funkčnost konvertoru na různých typech šablon} \mbox{} \\
+Ověření správnosti implementace konvertoru šablon je stěžejní funkce této webové aplikace. Je proto velmi důležité ověřit funkčnost tohoto modulu u~kterého je korektní funkčnost nepostradatelná.
+
+
+Vzhledem ke skutečnosti, že HTML šablony jsou velmi různorodé, je nutné otestovat funkčnost na velkém množství typů webových stránek. Výsledkem tohoto testu bude označení, zda konvertovaní šablony umožnilo pohodlnou editaci z~prohlížeče. U~testované šablony může nastat problém v~několika případech. Lze očekávat, že rozpoznávání všechn editovatelných částí nebude fungovat spolehlivě na všech typů šablon. Další problém může způsobit špatná konstrukce původní HTML šablony, nebo nevalidní kód. Kaskádové styly často velmi ovlivňují skrývání různých elementů, protože čekají na interakci uživatele - například kliknutí na tlačítko. Tato vlastnost může způsobit komplikace při editaci. 
+
+Tento test tedy může upozornit na nestandartní případy u~šablon a~poskytne zpětnou vazbu a~data, v~případě, že by v~budoucnu byla plánována úprava nebo rozšíření konvertoru.
+\paragraph{Test rychlosti} \mbox{} \\
+V~rámci Nette Frameworku je značně usnadněn průběh vývoje i~z~hlediska testování a~hledání chyb. Běh aplikace, monitorování procesů a~detailní zaznamenávání chyb je umožněno pomocí Tracy Debuggeru. Rychlost, která je velmi důležitý faktor webové aplikace, je rovněž k~dispozici v~tomto nástroji.
+
+
+Tento test rychlosti byl vybrán a~proveden pro ověření výkonu aplikace, která přímo ovlivňuje uživatele. Rychlost načítání jednotlivých stránek je v~této webové aplikaci velmi důležitý faktor. Značně zpříjemňuje práci uživatelům, kteří tuto aplikaci používají. Při zdlouhavém načítání může nastat tendence webovou službu opustit a~najít jiné, rychlejší řešení. Pro tuto aplikaci tedy bylo využito i~tato metrika rychlosti jako stěžejní. Výsledek tohoto testu ukáže, zda je naimplementované řešení dostačující pro svižný běh aplikace a~pohodlnou interakci ve vztahu uživatele s~webem.
+
+\sekce{Provedení testů}
+\paragraph{Jednotkové automatické testy} \mbox{} \\
+V~rámci této aplikace bylo vytvořeno několik jednotkových testů, které ověřovali správnost naimplementovaných tříd pro komunikaci s~databází a~prezencí dat. Testy porovnávaly, zda dochází k~očekávaným výsledkům při procesu s~jednotlivými daty. \cite{unittests}
+
+
+Spouštění testů se provádí přes konzoli. Ve vývojovém prostředí byl vytvořen alias pro jednoduché spuštění testů. Běžně se Nette tester spouští dlouhým příkazem uvedeným níže.
+
+\begin{phpcode}
+vendor/bin/tester
+\end{phpcode}
+
+V~testovaném vývojovém prostředí ale stačí použít jen následující příkaz.
+\begin{phpcode}
+tester
+\end{phpcode}
+
+Poté by se v~případě úspěchu testů měl na výstupu zobrazit počet úspěšných testů se zkratkou \textbf{OK}.
+
+
+Struktura souborů pro testování je zobrazena na následujícím obrázku.
+
+\obrazek
+\vlozobrbox{tests-structure.png}{0.4\textwidth}{!}
+\endobrl{Struktura testovacích tříd}{teststructure}
+
+\paragraph{Funkčnost konvertoru na různých typech šablon} \mbox{} \\
+Pro nejpřesnější výsledky tohoto testu je nejvhodnější provést tento test ručně. Ruční testování umožní objevit problémy, se kterými se může setkat i~uživatel. Napodobení jeho procesu je tedy nejvhodnější metodou pro tento test.
+
+
+Uživatel instaluje šablonu následujícím procesem po sobě jdoucích kroků. Při testování se bude postupovat přesně podle tohoto procesu, který kopíruje očekávaný postup uživatele.
+\begin{enumerate}
+	\item Výběr šablony z~internetu
+
+	Uživatel si vybírá v~katalogu šablon dostupných volně na internetu z~různých webových portálů. Soustředí se na šablony zdarma, které odpovídají zvolenému účelu webové stránky.
+
+	\item Stažení vybrané šablony
+
+	Uživatel zvolenou šablonu stáhne do svého počítače.
+
+	\item Instalace šablony
+
+	Uživatel v~aplikaci uskuteční nezbytné kroky pro instalaci šablony. Je nutné zvolit web, pro který bude šablona nainstalována a~nahrát šablonu do aplikace. 
+
+	\item Přepnutí do editačního módu
+
+	\item Editace textu a~obrázků na webové stránce
+
+	Na stránce se většinou před editací vyskytuje univerzální text, který usnadňuje editaci a~naznačuje rozložení. Uživatel začne postupným přepisováním původního textu na vlastní text, který chce prezentovat na stránce. Pro účely testování se editují všechny textové a~obrázkové oblasti. 
+
+	\item Kontrola výsledku úprav
+
+	Následné je nutné ověřit, zda dané úpravy se úspěšně uložily a~změny jsou vidět na webové stránce pro veřejnost. 
+
+\end{enumerate}
+Při testování lze prohlásit daná šablona za úspěšně konvertovanou, v~případě dosáhnutí očekávaného výsledku. Při tomto typu testu je vhodné otestovat velké množství šablon z~důvodu již zmíněné různorodosti každé webové šablony.
+
+\paragraph{Test rychlosti} \mbox{} \\
+
+Nette Tracy debuggeru zobrazuje dobu načítání stránky v~milisekundách. Tyto hodnoty jsou zaznamenávány a~následně porovnány. Hodnoty se navzájem od sebe většinou velmi liší. Je nutné tedy stanovit meze, které určí maximální možnou dobu načítání stránky. Odborná literatura UX designu definuje maximální časovou jednotku načítání první stránky webu třemi vteřinami. Po tomto časovém úseku uživatel raději opouští webovou stránku, než aby déle čekal \cite{testspeed}.
+
+\sekce{Výsledky testů}
+
+\paragraph{Jednotkové automatické testy} \mbox{} \\
+Výsledek všech deseti testovacích tříd a~jejich metod proběhli úspěšně. Všechny testy byly vykonány za sto milisekund.
+
+\obrazek
+\vlozobrbox{unit-result.png}{0.9\textwidth}{!}
+\endobrl{Výsledek jednotkových testů}{unitresults}
+
+Dle zobrazeného úspěchu je možné usuzovat, že jednotlivé testované prvky fungují správně. V~případě rozšíření nebo úpravy kódu je doporučováno spustit opět tyto testy pro ověření. V~případě neúspěchů se zobrazují přehledné informace, proč testování selhalo.
+
+
+
+\paragraph{Funkčnost konvertoru na různých typech šablon} \mbox{} \\
+Celkem bylo testováno 86 webových šablon stažených zdarma z~různých portálů, nabízející tyto webové šablony. Nejvíce vypovídající způsob prezentace výsledků je slovní popis z~důvodu komplexnosti testů.
+
+
+U~všech šablon se podařilo dosáhnout úspěšné instalace, která nezpůsobila žádnou chybu. Z~toho výsledků lze usoudit, že instalace dokáže reagovat na různé chyby, které můžou nastat při instalaci.
+
+
+Nejobávanější část konvertováni bylo rozpoznání editovatelných částí. I~tuto metriku lze prohlásit za úspěšnou. U~12ti šablon se vyskytla částečná chyba. Algoritmus při konverzi u~těchto 12ti případů nerozpoznal některou z~editovatelných částí. Uživatel by tedy nemohl editovat některou část stránky. Obvykle se jednalo o~patičky webu, které měli nestandardní HTML zaznačení.
+
+
+Největší komplikace nastala u~šablon, využívajících javascript a~kaskádové styly pro skrývání některých elementů. Šablony se například snaží při namíření kurzoru na elementy zobrazovat, nebo skrývat a~přesouvat obrázky nebo text. Konvertor v~takových případech správně rozpoznal, že jde o~editovatelnou část, ale následně nebylo možno ji z~prohlížeče upravit. Úpravě brání složitá nutnost interakce uživatele a~zobrazování možnosti upravit text v~daných oblastech.
+
+
+Výsledkem tohoto testu je tedy skutečnost, že konvertor funguje dle očekávání. Současné řešení ale i~tak nabízí prostor pro zlepšení algoritmu rozpoznávání editovatelných částí. Dále bylo zjištěno, že konvertor není vhodný pro šablony s~javascriptovým kódem, který ovlivňuje vlastnosti a~rozložení HTML elementů. Při řešení tohoto problému by se mělo dbát na zachování jednoduchosti editace. Celková úspěšnost konvertoru byla více než 70 procent. V~případě testování šablon bez nevhodného javascriptu, se dosáhlo úspěšnosti 85 procent.
+
+
+\paragraph{Test rychlosti} \mbox{} \\
+
+Rychlost načtení úvodní strany se pohybovalo obvykle mezi 30ti až 90ti milivteřinami. Takto rychlé načítání je možné, protože se na backendové části nevykonávají dotazy do databáze, nebo složitější operace. Úvodní strana pouze zobrazuje statický obsah.
+
+\obrazek
+\vlozobrbox{speed1.png}{0.9\textwidth}{!}
+\endobrl{Výsledek testu rychlosi - úvodní stránka}{speed1}
+
+Následné činnosti a~operace se v~administraci pohybovali v~časech maximálně do 200 milivteřin.
+
+\obrazek
+\vlozobrbox{speed2.png}{0.9\textwidth}{!}
+\endobrl{Výsledek testu rychlosi - administrace}{speed2}
+
+Při běžných činnostech lze tvrdit, že načítání webových stránek splňuje stanovený limit tří vteřin. Jediný případ, kdy test nesplňoval limit byla akce instalace šablony. Tento proces zahrnoval spoustu událostí, včetně nahrávání souboru, analýzy všech HTML šablon, instalací tématu a~obsáhlých zápisů do databáze. Celková doba instalace trvala 3,7 vteřiny.
+
+\obrazek
+\vlozobrbox{speed3.png}{0.9\textwidth}{!}
+\endobrl{Výsledek testu rychlosi - instalace šablony}{speed3}
+
+V~tomto případě lze akceptovat takto dlouhou dobu vykonávání činnosti. Tato akce probíhá jednorázově a~nezatěžuje uživatele několikrát denně. V~běžných případech uživatel nainstaluje téma jednou a~následně jej pouze edituje.
+

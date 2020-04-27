@@ -1,0 +1,2067 @@
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  27 APR 2020 13:06
+ system commands enabled.
+ file:line:error style messages enabled.
+**/Users/js/code/master-thesis/main.tex
+(/Users/js/code/master-thesis/main.tex
+LaTeX2e <2020-02-02> patch level 5
+Lua module: luaotfload-main 2020-02-02 3.12 luaotfload entry point
+Lua module: luaotfload-init 2020-02-02 3.12 luaotfload submodule / initialization
+Lua module: lualibs 2020-02-02 2.70 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-02-02 2.70 ConTeXt Lua libraries -- extended collection.
+Lua module: luaotfload-log 2020-02-02 3.12 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-02-02 3.12 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-02-02 3.12 luaotfload submodule / config file reader
+luaotfload | conf : Root cache directory is /Users/js/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/names.
+luaotfload | init : Loading fontloader “fontloader-2020-01-26.lua” from kpse-resolved path “/usr/local/texlive/2020/texmf-dist/tex/luatex/luaotfload/fontloader-2020-01-26.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-02-02 3.12 luaotfload submodule / callback handling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-02-02 3.12 luaotfload submodule / Unicode helpers
+Lua module: luaotfload-colors 2020-02-02 3.12 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2020-02-02 3.12 luaotfload submodule / resolvers
+luaotfload | conf : Root cache directory is /Users/js/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/names.
+Lua module: luaotfload-features 2020-02-02 3.12 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-harf-define 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-script 2020-02-02 3.12 luaotfload submodule / Script helpers
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Lua module: luaotfload-harf-plug 2020-02-02 3.12 luaotfload submodule / database
+Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'.
+Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
+Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
+Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
+Lua module: luaotfload-auxiliary 2020-02-02 3.12 luaotfload submodule / auxiliary functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-fallback 2020-02-02 3.12 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-02-02 3.12 luaotfload submodule / multiscript
+Lua module: luaotfload-tounicode 2020-02-02 3.12 luaotfload submodule / tounicode
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2020-04-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /Users/js/Library/texlive/2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-names.luc)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2020/04/08 v1.49 Modern multilingual typesetting with XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count171
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count172
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-04-06 L3 programming layer (loader) 
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count173
+\l__pdf_internal_box=\box45
+))
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count174
+\g__xparse_grabber_int=\count175
+\l__xparse_m_args_int=\count176
+\l__xparse_v_nesting_int=\count177
+)
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count178
+\l__fontspec_language_int=\count179
+\l__fontspec_strnum_int=\count180
+\l__fontspec_tmp_int=\count181
+\l__fontspec_tmpa_int=\count182
+\l__fontspec_tmpb_int=\count183
+\l__fontspec_tmpc_int=\count184
+\l__fontspec_em_int=\count185
+\l__fontspec_emdef_int=\count186
+\l__fontspec_strong_int=\count187
+\l__fontspec_strongdef_int=\count188
+\l__fontspec_tmpa_dim=\dimen135
+\l__fontspec_tmpb_dim=\dimen136
+\l__fontspec_tmpc_dim=\dimen137
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2020/02/03 v0.7 Hooks for input files
+) (/usr/local/texlive/2020/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+ (/usr/local/texlive/2020/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count189
+)
+\CatcodeTableOther=\catcodetable5
+\CatcodeTableExpl=\catcodetable6
+)
+Lua module: polyglossia 2013/05/11 1.3 Polyglossia (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+)
+Package polyglossia Info: Default language is latex.
+) (/Users/js/code/master-thesis/dipp.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+
+LaTeX Warning: You have requested package `dipp',
+               but the package provides `graphicx'.
+
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen138
+\Gin@req@width=\dimen139
+)
+\leftmargini=\dimen140
+\leftmarginii=\dimen141
+\leftmarginiii=\dimen142
+\leftmarginiv=\dimen143
+\leftmarginv=\dimen144
+\leftmarginvi=\dimen145
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count190
+\FV@InFile=\read2
+\FV@TabBox=\box46
+\c@FancyVerbLine=\count191
+\FV@StepNumber=\count192
+\FV@OutFile=\write3
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count193
+\output=\toks17
+\linenoprevgraf=\count194
+\linenumbersep=\dimen146
+\linenumberwidth=\dimen147
+\c@linenumber=\count195
+\c@pagewiselinenumber=\count196
+\c@LN@truepage=\count197
+\c@internallinenumber=\count198
+\c@internallinenumbers=\count199
+\quotelinenumbersep=\dimen148
+\bframerule=\dimen149
+\bframesep=\dimen150
+\bframebox=\box47
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count266
+\c@FV@TrueTabCounter=\count267
+\FV@TabBox@Group=\box48
+\FV@TmpLength=\skip49
+\c@FV@HighlightLinesStart=\count268
+\c@FV@HighlightLinesStop=\count269
+\FV@LoopCount=\count270
+\FV@NCharsBox=\box49
+\FV@BreakIndent=\dimen151
+\FV@BreakIndentNChars=\count271
+\FV@BreakSymbolSepLeft=\dimen152
+\FV@BreakSymbolSepLeftNChars=\count272
+\FV@BreakSymbolSepRight=\dimen153
+\FV@BreakSymbolSepRightNChars=\count273
+\FV@BreakSymbolIndentLeft=\dimen154
+\FV@BreakSymbolIndentLeftNChars=\count274
+\FV@BreakSymbolIndentRight=\dimen155
+\FV@BreakSymbolIndentRightNChars=\count275
+\c@FancyVerbLineBreakLast=\count276
+\FV@LineBox=\box50
+\FV@LineIndentBox=\box51
+\FV@LineWidth=\dimen156
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count277
+\csq@gtype=\count278
+\csq@glevel=\count279
+\csq@qlevel=\count280
+\csq@maxlvl=\count281
+\csq@tshold=\count282
+\csq@ltx@everypar=\toks18
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks19
+\float@box=\box52
+\@float@everytoks=\toks20
+\@floatcapt=\box53
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks21
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count284
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count285
+\c@listtotal=\count286
+\c@listcount=\count287
+\c@liststart=\count288
+\c@liststop=\count289
+\c@citecount=\count290
+\c@citetotal=\count291
+\c@multicitecount=\count292
+\c@multicitetotal=\count293
+\c@instcount=\count294
+\c@maxnames=\count295
+\c@minnames=\count296
+\c@maxitems=\count297
+\c@minitems=\count298
+\c@citecounter=\count299
+\c@maxcitecounter=\count300
+\c@savedcitecounter=\count301
+\c@uniquelist=\count302
+\c@uniquename=\count303
+\c@refsection=\count304
+\c@refsegment=\count305
+\c@maxextratitle=\count306
+\c@maxextratitleyear=\count307
+\c@maxextraname=\count308
+\c@maxextradate=\count309
+\c@maxextraalpha=\count310
+\c@abbrvpenalty=\count311
+\c@highnamepenalty=\count312
+\c@lownamepenalty=\count313
+\c@maxparens=\count314
+\c@parenlevel=\count315
+\blx@tempcnta=\count316
+\blx@tempcntb=\count317
+\blx@tempcntc=\count318
+\blx@maxsection=\count319
+\blx@maxsegment@0=\count320
+\blx@notetype=\count321
+\blx@parenlevel@text=\count322
+\blx@parenlevel@foot=\count323
+\blx@sectionciteorder@0=\count324
+\blx@entrysetcounter=\count325
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language2
+\c@mincomprange=\count326
+\c@maxcomprange=\count327
+\c@mincompwidth=\count328
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'iso-numeric.dbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.dbx
+File: iso-numeric.dbx 2020/03/25 v0.4.0 ISO 690 biblatex data model extension
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count329
+\c@savedafterword=\count330
+\c@annotator=\count331
+\c@savedannotator=\count332
+\c@author=\count333
+\c@savedauthor=\count334
+\c@bookauthor=\count335
+\c@savedbookauthor=\count336
+\c@commentator=\count337
+\c@savedcommentator=\count338
+\c@editor=\count339
+\c@savededitor=\count340
+\c@editora=\count341
+\c@savededitora=\count342
+\c@editorb=\count343
+\c@savededitorb=\count344
+\c@editorc=\count345
+\c@savededitorc=\count346
+\c@foreword=\count347
+\c@savedforeword=\count348
+\c@holder=\count349
+\c@savedholder=\count350
+\c@introduction=\count351
+\c@savedintroduction=\count352
+\c@namea=\count353
+\c@savednamea=\count354
+\c@nameb=\count355
+\c@savednameb=\count356
+\c@namec=\count357
+\c@savednamec=\count358
+\c@translator=\count359
+\c@savedtranslator=\count360
+\c@shortauthor=\count361
+\c@savedshortauthor=\count362
+\c@shorteditor=\count363
+\c@savedshorteditor=\count364
+\c@supervisor=\count365
+\c@savedsupervisor=\count366
+\c@labelname=\count367
+\c@savedlabelname=\count368
+\c@institution=\count369
+\c@savedinstitution=\count370
+\c@lista=\count371
+\c@savedlista=\count372
+\c@listb=\count373
+\c@savedlistb=\count374
+\c@listc=\count375
+\c@savedlistc=\count376
+\c@listd=\count377
+\c@savedlistd=\count378
+\c@liste=\count379
+\c@savedliste=\count380
+\c@listf=\count381
+\c@savedlistf=\count382
+\c@location=\count383
+\c@savedlocation=\count384
+\c@organization=\count385
+\c@savedorganization=\count386
+\c@origlocation=\count387
+\c@savedoriglocation=\count388
+\c@origpublisher=\count389
+\c@savedorigpublisher=\count390
+\c@publisher=\count391
+\c@savedpublisher=\count392
+\c@language=\count393
+\c@savedlanguage=\count394
+\c@origlanguage=\count395
+\c@savedoriglanguage=\count396
+\c@pageref=\count397
+\c@savedpageref=\count398
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count399
+\c@textcitetotal=\count400
+\c@textcitemaxnames=\count401
+\c@biburlbigbreakpenalty=\count402
+\c@biburlbreakpenalty=\count403
+\c@biburlnumpenalty=\count404
+\c@biburlucpenalty=\count405
+\c@biburllcpenalty=\count406
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count407
+)
+Package biblatex Info: Trying to load bibliography style 'iso-numeric'...
+Package biblatex Info: ... file 'iso-numeric.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.bbx
+File: iso-numeric.bbx 2020/03/25 v0.4.0 ISO 690 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'iso'...
+Package biblatex Info: ... file 'iso.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso.bbx
+File: iso.bbx 2020/03/25 v0.4.0 ISO 690 biblatex bibliography style
+Package biblatex-iso690 Info: Space colon enabled: false.
+Package biblatex-iso690 Info: Total pages enabled: false.
+Package biblatex-iso690 Info: Short numeration enabled: false.
+Package biblatex-iso690 Info: Printing thesis info at the end enabled: true.
+Package biblatex-iso690 Info: URL field enabled: true.
+Package biblatex-iso690 Info: ISBN field enabled: true.
+Package biblatex-iso690 Info: DOI field enabled: true.
+Package biblatex-iso690 Info: eprint field enabled: true.
+Package biblatex-iso690 Info: Article publication info enabled: false.
+Package biblatex Info: Delimiter 'multinamedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'editortypedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'authortypedelim' in context '' already defined, overwriting.
+))
+Package biblatex Info: Trying to load citation style 'iso-numeric'...
+Package biblatex Info: ... file 'iso-numeric.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.cbx
+File: iso-numeric.cbx 2020/03/25 v0.4.0 ISO 690 biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load citation style 'iso-fullcite'...
+Package biblatex Info: ... file 'iso-fullcite.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-fullcite.cbx
+File: iso-fullcite.cbx 2020/03/25 v0.4.0 ISO 690 biblatex fullcite modifications
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\footfullcite'.
+)
+Package biblatex Info: Redefining '\parencite'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/gloss-czech.ldf
+File: gloss-czech.ldf polyglossia: module for czech
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Module polyglossia Info: Language data for czech
+(polyglossia)            loader	loadhyph-cs.tex
+(polyglossia)            synonyms	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	hyph-cs.hyp.txt
+(polyglossia)            patterns	hyph-cs.pat.txt
+(polyglossia)            righthyphenmin	3 on input line 10
+Module polyglossia Info: Language czech was not yet loaded; created with id 3 on input line 10
+ (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.sty
+Package: luavlna 2019/10/30 luavlna
+ (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.tex
+Inserting `LuaVlna' at position 2 in `pre_linebreak_filter'.
+Inserting `allow hyphen breaks' at position 1 in `hyphenate'.)) (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2019/09/30 Babel common definitions for shorthands
+ Taken verbatim from babel files (2019/09/27 v3.34)
+)
+Package polyglossia Info: Making " an active character on input line 38.
+)
+Package polyglossia Info: Default language is czech.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {english}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Package polyglossia Info: Option: English, variant=american.
+)
+Package csquotes Info: Redefining quotation style 'czech'.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count408
+\calc@Bcount=\count409
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip72
+\calc@Bskip=\skip73
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count410
+\calc@Cskip=\skip74
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+runsystem(uname -s > "main.w18")...executed
+ (/Users/js/code/master-thesis/main.w18)
+runsystem(rm -- "main.w18")...executed
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count411
+\decimalpart=\count412
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip75
+\fb@frw=\dimen159
+\fb@frh=\dimen160
+\FrameRule=\dimen161
+\FrameSep=\dimen162
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box54
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count413
+\c@minted@pygmentizecounter=\count414
+\@float@every@listing=\toks22
+\c@listing=\count415
+)
+runsystem(mkdir -p _minted-main)...executed
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-03-03 v2.29 Module abspage for zref (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-03-03 v2.29 Module base for zref (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\c@abspage=\count416
+Package zref Info: New property: abspage on input line 66.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: luatex.def on input line 147.
+)
+\mdf@templength=\skip76
+\c@mdf@globalstyle@cnt=\count417
+\mdf@skipabove@length=\skip77
+\mdf@skipbelow@length=\skip78
+\mdf@leftmargin@length=\skip79
+\mdf@rightmargin@length=\skip80
+\mdf@innerleftmargin@length=\skip81
+\mdf@innerrightmargin@length=\skip82
+\mdf@innertopmargin@length=\skip83
+\mdf@innerbottommargin@length=\skip84
+\mdf@splittopskip@length=\skip85
+\mdf@splitbottomskip@length=\skip86
+\mdf@outermargin@length=\skip87
+\mdf@innermargin@length=\skip88
+\mdf@linewidth@length=\skip89
+\mdf@innerlinewidth@length=\skip90
+\mdf@middlelinewidth@length=\skip91
+\mdf@outerlinewidth@length=\skip92
+\mdf@roundcorner@length=\skip93
+\mdf@footenotedistance@length=\skip94
+\mdf@userdefinedwidth@length=\skip95
+\mdf@needspace@length=\skip96
+\mdf@frametitleaboveskip@length=\skip97
+\mdf@frametitlebelowskip@length=\skip98
+\mdf@frametitlerulewidth@length=\skip99
+\mdf@frametitleleftmargin@length=\skip100
+\mdf@frametitlerightmargin@length=\skip101
+\mdf@shadowsize@length=\skip102
+\mdf@extratopheight@length=\skip103
+\mdf@subtitleabovelinewidth@length=\skip104
+\mdf@subtitlebelowlinewidth@length=\skip105
+\mdf@subtitleaboveskip@length=\skip106
+\mdf@subtitlebelowskip@length=\skip107
+\mdf@subtitleinneraboveskip@length=\skip108
+\mdf@subtitleinnerbelowskip@length=\skip109
+\mdf@subsubtitleabovelinewidth@length=\skip110
+\mdf@subsubtitlebelowlinewidth@length=\skip111
+\mdf@subsubtitleaboveskip@length=\skip112
+\mdf@subsubtitlebelowskip@length=\skip113
+\mdf@subsubtitleinneraboveskip@length=\skip114
+\mdf@subsubtitleinnerbelowskip@length=\skip115
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box55
+\mdf@footnotebox=\box56
+\mdf@splitbox@one=\box57
+\mdf@splitbox@two=\box58
+\mdf@splitbox@save=\box59
+\mdfsplitboxwidth=\skip116
+\mdfsplitboxtotalwidth=\skip117
+\mdfsplitboxheight=\skip118
+\mdfsplitboxdepth=\skip119
+\mdfsplitboxtotalheight=\skip120
+\mdfframetitleboxwidth=\skip121
+\mdfframetitleboxtotalwidth=\skip122
+\mdfframetitleboxheight=\skip123
+\mdfframetitleboxdepth=\skip124
+\mdfframetitleboxtotalheight=\skip125
+\mdffootnoteboxwidth=\skip126
+\mdffootnoteboxtotalwidth=\skip127
+\mdffootnoteboxheight=\skip128
+\mdffootnoteboxdepth=\skip129
+\mdffootnoteboxtotalheight=\skip130
+\mdftotallinewidth=\skip131
+\mdfboundingboxwidth=\skip132
+\mdfboundingboxtotalwidth=\skip133
+\mdfboundingboxheight=\skip134
+\mdfboundingboxdepth=\skip135
+\mdfboundingboxtotalheight=\skip136
+\mdf@freevspace@length=\skip137
+\mdf@horizontalwidthofbox@length=\skip138
+\mdf@verticalmarginwhole@length=\skip139
+\mdf@horizontalspaceofbox=\skip140
+\mdfsubtitleheight=\skip141
+\mdfsubsubtitleheight=\skip142
+\c@mdfcountframes=\count418
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count419
+\c@mdf@env@i=\count420
+\c@mdf@env@ii=\count421
+\c@mdf@zref@counter=\count422
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'czech'.
+runsystem(which pygmentize && touch main.aex)...executed
+runsystem(rm main.aex)...executed
+ (/Users/js/code/master-thesis/main.aux
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 179.
+LaTeX Info: Redefining \sffamily on input line 179.
+LaTeX Info: Redefining \ttfamily on input line 179.
+LaTeX Info: Redefining \rmfamily on input line 187.
+LaTeX Info: Redefining \sffamily on input line 187.
+LaTeX Info: Redefining \ttfamily on input line 187.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 195.
+LaTeX Info: Redefining \sffamily on input line 195.
+LaTeX Info: Redefining \ttfamily on input line 195.
+LaTeX Info: Redefining \rmfamily on input line 203.
+LaTeX Info: Redefining \sffamily on input line 203.
+LaTeX Info: Redefining \ttfamily on input line 203.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 211.
+LaTeX Info: Redefining \sffamily on input line 211.
+LaTeX Info: Redefining \ttfamily on input line 211.
+LaTeX Info: Redefining \rmfamily on input line 219.
+LaTeX Info: Redefining \sffamily on input line 219.
+LaTeX Info: Redefining \ttfamily on input line 219.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 227.
+LaTeX Info: Redefining \sffamily on input line 227.
+LaTeX Info: Redefining \ttfamily on input line 227.
+LaTeX Info: Redefining \rmfamily on input line 235.
+LaTeX Info: Redefining \sffamily on input line 235.
+LaTeX Info: Redefining \ttfamily on input line 235.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 243.
+LaTeX Info: Redefining \sffamily on input line 243.
+LaTeX Info: Redefining \ttfamily on input line 243.
+LaTeX Info: Redefining \rmfamily on input line 251.
+LaTeX Info: Redefining \sffamily on input line 251.
+LaTeX Info: Redefining \ttfamily on input line 251.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 259.
+LaTeX Info: Redefining \sffamily on input line 259.
+LaTeX Info: Redefining \ttfamily on input line 259.
+LaTeX Info: Redefining \rmfamily on input line 267.
+LaTeX Info: Redefining \sffamily on input line 267.
+LaTeX Info: Redefining \ttfamily on input line 267.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 275.
+LaTeX Info: Redefining \sffamily on input line 275.
+LaTeX Info: Redefining \ttfamily on input line 275.
+LaTeX Info: Redefining \rmfamily on input line 283.
+LaTeX Info: Redefining \sffamily on input line 283.
+LaTeX Info: Redefining \ttfamily on input line 283.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 291.
+LaTeX Info: Redefining \sffamily on input line 291.
+LaTeX Info: Redefining \ttfamily on input line 291.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 299.
+LaTeX Info: Redefining \sffamily on input line 299.
+LaTeX Info: Redefining \ttfamily on input line 299.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 307.
+LaTeX Info: Redefining \sffamily on input line 307.
+LaTeX Info: Redefining \ttfamily on input line 307.
+LaTeX Info: Redefining \rmfamily on input line 315.
+LaTeX Info: Redefining \sffamily on input line 315.
+LaTeX Info: Redefining \ttfamily on input line 315.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 323.
+LaTeX Info: Redefining \sffamily on input line 323.
+LaTeX Info: Redefining \ttfamily on input line 323.
+LaTeX Info: Redefining \rmfamily on input line 331.
+LaTeX Info: Redefining \sffamily on input line 331.
+LaTeX Info: Redefining \ttfamily on input line 331.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 339.
+LaTeX Info: Redefining \sffamily on input line 339.
+LaTeX Info: Redefining \ttfamily on input line 339.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 347.
+LaTeX Info: Redefining \sffamily on input line 347.
+LaTeX Info: Redefining \ttfamily on input line 347.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 355.
+LaTeX Info: Redefining \sffamily on input line 355.
+LaTeX Info: Redefining \ttfamily on input line 355.
+LaTeX Info: Redefining \rmfamily on input line 363.
+LaTeX Info: Redefining \sffamily on input line 363.
+LaTeX Info: Redefining \ttfamily on input line 363.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 371.
+LaTeX Info: Redefining \sffamily on input line 371.
+LaTeX Info: Redefining \ttfamily on input line 371.
+LaTeX Info: Redefining \rmfamily on input line 379.
+LaTeX Info: Redefining \sffamily on input line 379.
+LaTeX Info: Redefining \ttfamily on input line 379.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 387.
+LaTeX Info: Redefining \sffamily on input line 387.
+LaTeX Info: Redefining \ttfamily on input line 387.
+LaTeX Info: Redefining \rmfamily on input line 395.
+LaTeX Info: Redefining \sffamily on input line 395.
+LaTeX Info: Redefining \ttfamily on input line 395.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 403.
+LaTeX Info: Redefining \sffamily on input line 403.
+LaTeX Info: Redefining \ttfamily on input line 403.
+LaTeX Info: Redefining \rmfamily on input line 411.
+LaTeX Info: Redefining \sffamily on input line 411.
+LaTeX Info: Redefining \ttfamily on input line 411.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 419.
+LaTeX Info: Redefining \sffamily on input line 419.
+LaTeX Info: Redefining \ttfamily on input line 419.
+LaTeX Info: Redefining \rmfamily on input line 427.
+LaTeX Info: Redefining \sffamily on input line 427.
+LaTeX Info: Redefining \ttfamily on input line 427.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 435.
+LaTeX Info: Redefining \sffamily on input line 435.
+LaTeX Info: Redefining \ttfamily on input line 435.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 443.
+LaTeX Info: Redefining \sffamily on input line 443.
+LaTeX Info: Redefining \ttfamily on input line 443.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 451.
+LaTeX Info: Redefining \sffamily on input line 451.
+LaTeX Info: Redefining \ttfamily on input line 451.
+LaTeX Info: Redefining \rmfamily on input line 459.
+LaTeX Info: Redefining \sffamily on input line 459.
+LaTeX Info: Redefining \ttfamily on input line 459.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 467.
+LaTeX Info: Redefining \sffamily on input line 467.
+LaTeX Info: Redefining \ttfamily on input line 467.
+LaTeX Info: Redefining \rmfamily on input line 475.
+LaTeX Info: Redefining \sffamily on input line 475.
+LaTeX Info: Redefining \ttfamily on input line 475.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 483.
+LaTeX Info: Redefining \sffamily on input line 483.
+LaTeX Info: Redefining \ttfamily on input line 483.
+LaTeX Info: Redefining \rmfamily on input line 491.
+LaTeX Info: Redefining \sffamily on input line 491.
+LaTeX Info: Redefining \ttfamily on input line 491.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 499.
+LaTeX Info: Redefining \sffamily on input line 499.
+LaTeX Info: Redefining \ttfamily on input line 499.
+LaTeX Info: Redefining \rmfamily on input line 507.
+LaTeX Info: Redefining \sffamily on input line 507.
+LaTeX Info: Redefining \ttfamily on input line 507.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 515.
+LaTeX Info: Redefining \sffamily on input line 515.
+LaTeX Info: Redefining \ttfamily on input line 515.
+LaTeX Info: Redefining \rmfamily on input line 523.
+LaTeX Info: Redefining \sffamily on input line 523.
+LaTeX Info: Redefining \ttfamily on input line 523.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 531.
+LaTeX Info: Redefining \sffamily on input line 531.
+LaTeX Info: Redefining \ttfamily on input line 531.
+LaTeX Info: Redefining \rmfamily on input line 539.
+LaTeX Info: Redefining \sffamily on input line 539.
+LaTeX Info: Redefining \ttfamily on input line 539.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 547.
+LaTeX Info: Redefining \sffamily on input line 547.
+LaTeX Info: Redefining \ttfamily on input line 547.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 555.
+LaTeX Info: Redefining \sffamily on input line 555.
+LaTeX Info: Redefining \ttfamily on input line 555.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 563.
+LaTeX Info: Redefining \sffamily on input line 563.
+LaTeX Info: Redefining \ttfamily on input line 563.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 571.
+LaTeX Info: Redefining \sffamily on input line 571.
+LaTeX Info: Redefining \ttfamily on input line 571.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 579.
+LaTeX Info: Redefining \sffamily on input line 579.
+LaTeX Info: Redefining \ttfamily on input line 579.
+LaTeX Info: Redefining \rmfamily on input line 587.
+LaTeX Info: Redefining \sffamily on input line 587.
+LaTeX Info: Redefining \ttfamily on input line 587.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 595.
+LaTeX Info: Redefining \sffamily on input line 595.
+LaTeX Info: Redefining \ttfamily on input line 595.
+LaTeX Info: Redefining \rmfamily on input line 652.
+LaTeX Info: Redefining \sffamily on input line 652.
+LaTeX Info: Redefining \ttfamily on input line 652.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 660.
+LaTeX Info: Redefining \sffamily on input line 660.
+LaTeX Info: Redefining \ttfamily on input line 660.
+LaTeX Info: Redefining \rmfamily on input line 668.
+LaTeX Info: Redefining \sffamily on input line 668.
+LaTeX Info: Redefining \ttfamily on input line 668.
+set lang czech, 3
+)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 66.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 66.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 66.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 66.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 66.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 66.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 66.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 66.
+LaTeX Font Info:    Redeclaring math accent \check on input line 66.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 66.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 66.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 66.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 66.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 66.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 66.
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count423
+\scratchdimen=\dimen163
+\scratchbox=\box60
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen164
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+
+Package biblatex Warning: File 'american-iso.lbx' not found!
+(biblatex)                Ignoring mapping 'american' -> 'american-iso'.
+
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english' -> 'english-iso'...
+Package biblatex Info: ... file 'english-iso.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/english-iso.lbx
+File: english-iso.lbx 2020/03/25 v0.4.0 ISO 690 extended biblatex localization
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english' -> 'english-iso'...
+Package biblatex Info: ... file 'english-iso.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/english-iso.lbx
+File: english-iso.lbx 2020/03/25 v0.4.0 ISO 690 extended biblatex localization
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'czech' -> 'czech-iso'...
+Package biblatex Info: ... file 'czech-iso.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
+File: czech-iso.lbx 2020/03/25 v0.4.0 ISO 690 extended biblatex localization
+Package biblatex Info: Trying to load language 'czech'...
+Package biblatex Info: ... file 'czech.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
+File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'czech'...
+Package biblatex Info: ... file 'czech.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
+File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+))
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Data encoding 'UTF8' specified.
+(biblatex)             Backend will reencode on the fly.
+
+\openout4 = main.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (/Users/js/code/master-thesis/main.bbl)
+Package biblatex Info: Reference section=0 on input line 66.
+Package biblatex Info: Reference segment=0 on input line 66.
+
+set lang czech, 3
+\AtBeginShipoutBox=\box61
+LaTeX Info: Redefining \rmfamily on input line 66.
+LaTeX Info: Redefining \sffamily on input line 66.
+LaTeX Info: Redefining \ttfamily on input line 66.
+set lang czech, 3
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 72.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 72.
+(/Users/js/code/master-thesis/parts/header.tex [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [3
+
+]) [4
+
+] (/Users/js/code/master-thesis/main.toc
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+
+set lang czech, 3
+[5
+
+]
+LaTeX Info: Redefining \rmfamily on input line 149.
+LaTeX Info: Redefining \sffamily on input line 149.
+LaTeX Info: Redefining \ttfamily on input line 149.
+LaTeX Info: Redefining \rmfamily on input line 153.
+LaTeX Info: Redefining \sffamily on input line 153.
+LaTeX Info: Redefining \ttfamily on input line 153.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 157.
+LaTeX Info: Redefining \sffamily on input line 157.
+LaTeX Info: Redefining \ttfamily on input line 157.
+LaTeX Info: Redefining \rmfamily on input line 161.
+LaTeX Info: Redefining \sffamily on input line 161.
+LaTeX Info: Redefining \ttfamily on input line 161.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 165.
+LaTeX Info: Redefining \sffamily on input line 165.
+LaTeX Info: Redefining \ttfamily on input line 165.
+LaTeX Info: Redefining \rmfamily on input line 169.
+LaTeX Info: Redefining \sffamily on input line 169.
+LaTeX Info: Redefining \ttfamily on input line 169.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 173.
+LaTeX Info: Redefining \sffamily on input line 173.
+LaTeX Info: Redefining \ttfamily on input line 173.
+LaTeX Info: Redefining \rmfamily on input line 177.
+LaTeX Info: Redefining \sffamily on input line 177.
+LaTeX Info: Redefining \ttfamily on input line 177.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 181.
+LaTeX Info: Redefining \sffamily on input line 181.
+LaTeX Info: Redefining \ttfamily on input line 181.
+LaTeX Info: Redefining \rmfamily on input line 185.
+LaTeX Info: Redefining \sffamily on input line 185.
+LaTeX Info: Redefining \ttfamily on input line 185.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 189.
+LaTeX Info: Redefining \sffamily on input line 189.
+LaTeX Info: Redefining \ttfamily on input line 189.
+LaTeX Info: Redefining \rmfamily on input line 193.
+LaTeX Info: Redefining \sffamily on input line 193.
+LaTeX Info: Redefining \ttfamily on input line 193.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 197.
+LaTeX Info: Redefining \sffamily on input line 197.
+LaTeX Info: Redefining \ttfamily on input line 197.
+LaTeX Info: Redefining \rmfamily on input line 201.
+LaTeX Info: Redefining \sffamily on input line 201.
+LaTeX Info: Redefining \ttfamily on input line 201.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 205.
+LaTeX Info: Redefining \sffamily on input line 205.
+LaTeX Info: Redefining \ttfamily on input line 205.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 209.
+LaTeX Info: Redefining \sffamily on input line 209.
+LaTeX Info: Redefining \ttfamily on input line 209.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 213.
+LaTeX Info: Redefining \sffamily on input line 213.
+LaTeX Info: Redefining \ttfamily on input line 213.
+LaTeX Info: Redefining \rmfamily on input line 217.
+LaTeX Info: Redefining \sffamily on input line 217.
+LaTeX Info: Redefining \ttfamily on input line 217.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 221.
+LaTeX Info: Redefining \sffamily on input line 221.
+LaTeX Info: Redefining \ttfamily on input line 221.
+LaTeX Info: Redefining \rmfamily on input line 225.
+LaTeX Info: Redefining \sffamily on input line 225.
+LaTeX Info: Redefining \ttfamily on input line 225.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 229.
+LaTeX Info: Redefining \sffamily on input line 229.
+LaTeX Info: Redefining \ttfamily on input line 229.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 233.
+LaTeX Info: Redefining \sffamily on input line 233.
+LaTeX Info: Redefining \ttfamily on input line 233.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 237.
+LaTeX Info: Redefining \sffamily on input line 237.
+LaTeX Info: Redefining \ttfamily on input line 237.
+LaTeX Info: Redefining \rmfamily on input line 241.
+LaTeX Info: Redefining \sffamily on input line 241.
+LaTeX Info: Redefining \ttfamily on input line 241.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 245.
+LaTeX Info: Redefining \sffamily on input line 245.
+LaTeX Info: Redefining \ttfamily on input line 245.
+LaTeX Info: Redefining \rmfamily on input line 249.
+LaTeX Info: Redefining \sffamily on input line 249.
+LaTeX Info: Redefining \ttfamily on input line 249.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 253.
+LaTeX Info: Redefining \sffamily on input line 253.
+LaTeX Info: Redefining \ttfamily on input line 253.
+LaTeX Info: Redefining \rmfamily on input line 257.
+LaTeX Info: Redefining \sffamily on input line 257.
+LaTeX Info: Redefining \ttfamily on input line 257.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 261.
+LaTeX Info: Redefining \sffamily on input line 261.
+LaTeX Info: Redefining \ttfamily on input line 261.
+LaTeX Info: Redefining \rmfamily on input line 265.
+LaTeX Info: Redefining \sffamily on input line 265.
+LaTeX Info: Redefining \ttfamily on input line 265.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 269.
+LaTeX Info: Redefining \sffamily on input line 269.
+LaTeX Info: Redefining \ttfamily on input line 269.
+LaTeX Info: Redefining \rmfamily on input line 273.
+LaTeX Info: Redefining \sffamily on input line 273.
+LaTeX Info: Redefining \ttfamily on input line 273.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 277.
+LaTeX Info: Redefining \sffamily on input line 277.
+LaTeX Info: Redefining \ttfamily on input line 277.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 281.
+LaTeX Info: Redefining \sffamily on input line 281.
+LaTeX Info: Redefining \ttfamily on input line 281.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 285.
+LaTeX Info: Redefining \sffamily on input line 285.
+LaTeX Info: Redefining \ttfamily on input line 285.
+LaTeX Info: Redefining \rmfamily on input line 289.
+LaTeX Info: Redefining \sffamily on input line 289.
+LaTeX Info: Redefining \ttfamily on input line 289.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 293.
+LaTeX Info: Redefining \sffamily on input line 293.
+LaTeX Info: Redefining \ttfamily on input line 293.
+LaTeX Info: Redefining \rmfamily on input line 297.
+LaTeX Info: Redefining \sffamily on input line 297.
+LaTeX Info: Redefining \ttfamily on input line 297.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 301.
+LaTeX Info: Redefining \sffamily on input line 301.
+LaTeX Info: Redefining \ttfamily on input line 301.
+LaTeX Info: Redefining \rmfamily on input line 305.
+LaTeX Info: Redefining \sffamily on input line 305.
+LaTeX Info: Redefining \ttfamily on input line 305.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 309.
+LaTeX Info: Redefining \sffamily on input line 309.
+LaTeX Info: Redefining \ttfamily on input line 309.
+LaTeX Info: Redefining \rmfamily on input line 313.
+LaTeX Info: Redefining \sffamily on input line 313.
+LaTeX Info: Redefining \ttfamily on input line 313.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 317.
+LaTeX Info: Redefining \sffamily on input line 317.
+LaTeX Info: Redefining \ttfamily on input line 317.
+LaTeX Info: Redefining \rmfamily on input line 321.
+LaTeX Info: Redefining \sffamily on input line 321.
+LaTeX Info: Redefining \ttfamily on input line 321.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 325.
+LaTeX Info: Redefining \sffamily on input line 325.
+LaTeX Info: Redefining \ttfamily on input line 325.
+LaTeX Info: Redefining \rmfamily on input line 329.
+LaTeX Info: Redefining \sffamily on input line 329.
+LaTeX Info: Redefining \ttfamily on input line 329.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 333.
+LaTeX Info: Redefining \sffamily on input line 333.
+LaTeX Info: Redefining \ttfamily on input line 333.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 337.
+LaTeX Info: Redefining \sffamily on input line 337.
+LaTeX Info: Redefining \ttfamily on input line 337.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 341.
+LaTeX Info: Redefining \sffamily on input line 341.
+LaTeX Info: Redefining \ttfamily on input line 341.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 345.
+LaTeX Info: Redefining \sffamily on input line 345.
+LaTeX Info: Redefining \ttfamily on input line 345.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 349.
+LaTeX Info: Redefining \sffamily on input line 349.
+LaTeX Info: Redefining \ttfamily on input line 349.
+LaTeX Info: Redefining \rmfamily on input line 353.
+LaTeX Info: Redefining \sffamily on input line 353.
+LaTeX Info: Redefining \ttfamily on input line 353.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 357.
+LaTeX Info: Redefining \sffamily on input line 357.
+LaTeX Info: Redefining \ttfamily on input line 357.
+LaTeX Info: Redefining \rmfamily on input line 361.
+LaTeX Info: Redefining \sffamily on input line 361.
+LaTeX Info: Redefining \ttfamily on input line 361.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 365.
+LaTeX Info: Redefining \sffamily on input line 365.
+LaTeX Info: Redefining \ttfamily on input line 365.
+LaTeX Info: Redefining \rmfamily on input line 369.
+LaTeX Info: Redefining \sffamily on input line 369.
+LaTeX Info: Redefining \ttfamily on input line 369.
+set lang czech, 3
+)
+\tf@toc=\write6
+
+\openout6 = main.toc
+ [6] (/Users/js/code/master-thesis/parts/structure.tex (/Users/js/code/master-thesis/parts/uvod.tex) (/Users/js/code/master-thesis/parts/terminologie.tex [7
+
+
+]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/default-pyg-prefix.pygstyle) (/Users/js/code/master-thesis/_minted-main/default.pygstyle) (/Users/js/code/master-thesis/_minted-main/B6D018DD4C36841262D7F35FC2178D5E40B2850521492B45B909863A6DC081F3.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+)
+<./src/html-strom.png, id=32, 1505.625pt x 602.25pt>
+File: ./src/html-strom.png Graphic file (type png)
+<use ./src/html-strom.png>
+Package luatex.def Info: ./src/html-strom.png  used on input line 19.
+(luatex.def)             Requested size: 1505.62134pt x 602.24852pt.
+ [8
+
+<./src/html-strom.png>]
+<./src/surreal.png, id=40, 1606.0pt x 919.435pt>
+File: ./src/surreal.png Graphic file (type png)
+<use ./src/surreal.png>
+Package luatex.def Info: ./src/surreal.png  used on input line 39.
+(luatex.def)             Requested size: 1605.99611pt x 919.43275pt.
+ [9]
+<./src/cushy.png, id=44, 1606.0pt x 920.43875pt>
+File: ./src/cushy.png Graphic file (type png)
+<use ./src/cushy.png>
+Package luatex.def Info: ./src/cushy.png  used on input line 47.
+(luatex.def)             Requested size: 1605.99611pt x 920.43651pt.
+ [10<./src/surreal.png><./src/cushy.png>]
+<./src/cms-compare.png, id=48, 791.95876pt x 344.28625pt>
+File: ./src/cms-compare.png Graphic file (type png)
+<use ./src/cms-compare.png>
+Package luatex.def Info: ./src/cms-compare.png  used on input line 72.
+(luatex.def)             Requested size: 791.95683pt x 344.2854pt.
+ [11]
+<./src/my-process.png, id=53, 935.495pt x 431.6125pt>
+File: ./src/my-process.png Graphic file (type png)
+<use ./src/my-process.png>
+Package luatex.def Info: ./src/my-process.png  used on input line 81.
+(luatex.def)             Requested size: 935.4927pt x 431.61143pt.
+) (/Users/js/code/master-thesis/parts/problem.tex [12<./src/cms-compare.png><./src/my-process.png>]) (/Users/js/code/master-thesis/parts/metodika.tex [13
+
+] [14
+
+]) (/Users/js/code/master-thesis/parts/navrh.tex [15] [16
+
+] [17]
+<./src/usecase.png, id=74, 618.31pt x 935.495pt>
+File: ./src/usecase.png Graphic file (type png)
+<use ./src/usecase.png>
+Package luatex.def Info: ./src/usecase.png  used on input line 76.
+(luatex.def)             Requested size: 618.30849pt x 935.4927pt.
+ [18] [19<./src/usecase.png>]
+<./src/sequence.png, id=82, 804.85957pt x 689.98831pt>
+File: ./src/sequence.png Graphic file (type png)
+<use ./src/sequence.png>
+Package luatex.def Info: ./src/sequence.png  used on input line 90.
+(luatex.def)             Requested size: 804.8576pt x 689.98662pt.
+ [20]
+<./src/activity.png, id=86, 803.0pt x 775.89874pt>
+File: ./src/activity.png Graphic file (type png)
+<use ./src/activity.png>
+Package luatex.def Info: ./src/activity.png  used on input line 97.
+(luatex.def)             Requested size: 802.99805pt x 775.89685pt.
+ [21<./src/sequence.png>]
+<./src/state.png, id=91, 376.56474pt x 413.84084pt>
+File: ./src/state.png Graphic file (type png)
+<use ./src/state.png>
+Package luatex.def Info: ./src/state.png  used on input line 104.
+(luatex.def)             Requested size: 376.56381pt x 413.83981pt.
+ [22<./src/activity.png>] [23<./src/state.png>]
+<./src/erd.png, id=99, 667.92694pt x 474.69978pt>
+File: ./src/erd.png Graphic file (type png)
+<use ./src/erd.png>
+Package luatex.def Info: ./src/erd.png  used on input line 122.
+(luatex.def)             Requested size: 667.92531pt x 474.69862pt.
+ [24<./src/erd.png>]
+<./src/class.png, id=103, 1002.74625pt x 457.71pt>
+File: ./src/class.png Graphic file (type png)
+<use ./src/class.png>
+Package luatex.def Info: ./src/class.png  used on input line 143.
+(luatex.def)             Requested size: 1002.7438pt x 457.7089pt.
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+[26<./src/class.png>]) (/Users/js/code/master-thesis/parts/implementace.tex [27] [28
+
+]
+<./src/code-structure.png, id=117, 260.975pt x 381.425pt>
+File: ./src/code-structure.png Graphic file (type png)
+<use ./src/code-structure.png>
+Package luatex.def Info: ./src/code-structure.png  used on input line 33.
+(luatex.def)             Requested size: 260.97437pt x 381.42406pt.
+ [29<./src/code-structure.png>]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/89168D47D07BFD4616D410EA59DFDD983EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/0A4FCE658AA1D95E2BECB0C406D7BAC23EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/802C2123B964F34E33AC9084C697CDD43EE22B357C14122B8CCFC84DB8A8D4AC.pygtex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/CAF280E0079315ECA5CA8855AC4389853EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [30]
+Package mdframed Info: Not enough space on this page on input line 74.
+
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/08C1DA775B1AE112BDDB7658304BF8B53EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/A00E0607FF923965E981978CF3405B303EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [31]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/22081647B309A3F6AF4C66196F39D1163EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [32] [33]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/9BB47EB0E07A676E7493F7B35B5006B63EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/B4035B72390EEF8D73FBC388AEA172E33EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/56F11C102A41B987D2D059CBDB2A5F603EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [34]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/3EC40AD09A1C4512C855B730F1A23B753EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/74D26FB8614AE4B8FC668935D0A0EAE33EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [35]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/F6B279836F6889319D0A4C4C28AF90843EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/7D4767090DF516C7372624798B25C3133EE22B357C14122B8CCFC84DB8A8D4AC.pygtex) [36]) (/Users/js/code/master-thesis/parts/testovani.tex [37] [38
+
+]
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/29827FF2F0C5A12689FCBB37E42386073EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+\openout3 = main.pyg
+ (/Users/js/code/master-thesis/_minted-main/A7B221D165CB780E5E8FA804CE29DFC53EE22B357C14122B8CCFC84DB8A8D4AC.pygtex)
+<./src/tests-structure.png, id=152, 222.8325pt x 227.85126pt>
+File: ./src/tests-structure.png Graphic file (type png)
+<use ./src/tests-structure.png>
+Package luatex.def Info: ./src/tests-structure.png  used on input line 51.
+(luatex.def)             Requested size: 222.83195pt x 227.8507pt.
+ [39] [40<./src/tests-structure.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+<./src/unit-result.png, id=159, 738.76pt x 221.82875pt>
+File: ./src/unit-result.png Graphic file (type png)
+<use ./src/unit-result.png>
+Package luatex.def Info: ./src/unit-result.png  used on input line 95.
+(luatex.def)             Requested size: 738.75818pt x 221.82819pt.
+[41<./src/unit-result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+<./src/speed1.png, id=164, 491.8375pt x 24.09pt>
+File: ./src/speed1.png Graphic file (type png)
+<use ./src/speed1.png>
+Package luatex.def Info: ./src/speed1.png  used on input line 123.
+(luatex.def)             Requested size: 491.83629pt x 24.08992pt.
+<./src/speed2.png, id=165, 653.44125pt x 26.0975pt>
+File: ./src/speed2.png Graphic file (type png)
+<use ./src/speed2.png>
+Package luatex.def Info: ./src/speed2.png  used on input line 129.
+(luatex.def)             Requested size: 653.43965pt x 26.09743pt.
+<./src/speed3.png, id=166, 657.45625pt x 42.1575pt>
+File: ./src/speed3.png Graphic file (type png)
+<use ./src/speed3.png>
+Package luatex.def Info: ./src/speed3.png  used on input line 135.
+(luatex.def)             Requested size: 657.45465pt x 42.15738pt.
+[42<./src/speed1.png><./src/speed2.png>]) (/Users/js/code/master-thesis/parts/diskuze.tex [43<./src/speed3.png>]) (/Users/js/code/master-thesis/parts/zaver.tex [44
+
+])) [45
+
+]
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+[46
+
+]
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+set lang czech, 3
+
+Overfull \hbox (0.53792pt too wide) in paragraph at lines 80--80
+\TU/lmr/m/n/12 ited on 2018-04-25]. Avail-able from: $\TU/lmtt/m/n/12 http : / / softwaretestingfundamentals .
+ []
+
+[47]
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+LaTeX Info: Redefining \rmfamily on input line 79.
+LaTeX Info: Redefining \sffamily on input line 79.
+LaTeX Info: Redefining \ttfamily on input line 79.
+
+set lang czech, 3
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[48] (/Users/js/code/master-thesis/main.aux
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 179.
+LaTeX Info: Redefining \sffamily on input line 179.
+LaTeX Info: Redefining \ttfamily on input line 179.
+LaTeX Info: Redefining \rmfamily on input line 187.
+LaTeX Info: Redefining \sffamily on input line 187.
+LaTeX Info: Redefining \ttfamily on input line 187.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 195.
+LaTeX Info: Redefining \sffamily on input line 195.
+LaTeX Info: Redefining \ttfamily on input line 195.
+LaTeX Info: Redefining \rmfamily on input line 203.
+LaTeX Info: Redefining \sffamily on input line 203.
+LaTeX Info: Redefining \ttfamily on input line 203.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 211.
+LaTeX Info: Redefining \sffamily on input line 211.
+LaTeX Info: Redefining \ttfamily on input line 211.
+LaTeX Info: Redefining \rmfamily on input line 219.
+LaTeX Info: Redefining \sffamily on input line 219.
+LaTeX Info: Redefining \ttfamily on input line 219.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 227.
+LaTeX Info: Redefining \sffamily on input line 227.
+LaTeX Info: Redefining \ttfamily on input line 227.
+LaTeX Info: Redefining \rmfamily on input line 235.
+LaTeX Info: Redefining \sffamily on input line 235.
+LaTeX Info: Redefining \ttfamily on input line 235.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 243.
+LaTeX Info: Redefining \sffamily on input line 243.
+LaTeX Info: Redefining \ttfamily on input line 243.
+LaTeX Info: Redefining \rmfamily on input line 251.
+LaTeX Info: Redefining \sffamily on input line 251.
+LaTeX Info: Redefining \ttfamily on input line 251.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 259.
+LaTeX Info: Redefining \sffamily on input line 259.
+LaTeX Info: Redefining \ttfamily on input line 259.
+LaTeX Info: Redefining \rmfamily on input line 267.
+LaTeX Info: Redefining \sffamily on input line 267.
+LaTeX Info: Redefining \ttfamily on input line 267.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 275.
+LaTeX Info: Redefining \sffamily on input line 275.
+LaTeX Info: Redefining \ttfamily on input line 275.
+LaTeX Info: Redefining \rmfamily on input line 283.
+LaTeX Info: Redefining \sffamily on input line 283.
+LaTeX Info: Redefining \ttfamily on input line 283.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 291.
+LaTeX Info: Redefining \sffamily on input line 291.
+LaTeX Info: Redefining \ttfamily on input line 291.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 299.
+LaTeX Info: Redefining \sffamily on input line 299.
+LaTeX Info: Redefining \ttfamily on input line 299.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 307.
+LaTeX Info: Redefining \sffamily on input line 307.
+LaTeX Info: Redefining \ttfamily on input line 307.
+LaTeX Info: Redefining \rmfamily on input line 315.
+LaTeX Info: Redefining \sffamily on input line 315.
+LaTeX Info: Redefining \ttfamily on input line 315.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 323.
+LaTeX Info: Redefining \sffamily on input line 323.
+LaTeX Info: Redefining \ttfamily on input line 323.
+LaTeX Info: Redefining \rmfamily on input line 331.
+LaTeX Info: Redefining \sffamily on input line 331.
+LaTeX Info: Redefining \ttfamily on input line 331.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 339.
+LaTeX Info: Redefining \sffamily on input line 339.
+LaTeX Info: Redefining \ttfamily on input line 339.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 347.
+LaTeX Info: Redefining \sffamily on input line 347.
+LaTeX Info: Redefining \ttfamily on input line 347.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 355.
+LaTeX Info: Redefining \sffamily on input line 355.
+LaTeX Info: Redefining \ttfamily on input line 355.
+LaTeX Info: Redefining \rmfamily on input line 363.
+LaTeX Info: Redefining \sffamily on input line 363.
+LaTeX Info: Redefining \ttfamily on input line 363.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 371.
+LaTeX Info: Redefining \sffamily on input line 371.
+LaTeX Info: Redefining \ttfamily on input line 371.
+LaTeX Info: Redefining \rmfamily on input line 379.
+LaTeX Info: Redefining \sffamily on input line 379.
+LaTeX Info: Redefining \ttfamily on input line 379.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 387.
+LaTeX Info: Redefining \sffamily on input line 387.
+LaTeX Info: Redefining \ttfamily on input line 387.
+LaTeX Info: Redefining \rmfamily on input line 395.
+LaTeX Info: Redefining \sffamily on input line 395.
+LaTeX Info: Redefining \ttfamily on input line 395.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 403.
+LaTeX Info: Redefining \sffamily on input line 403.
+LaTeX Info: Redefining \ttfamily on input line 403.
+LaTeX Info: Redefining \rmfamily on input line 411.
+LaTeX Info: Redefining \sffamily on input line 411.
+LaTeX Info: Redefining \ttfamily on input line 411.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 419.
+LaTeX Info: Redefining \sffamily on input line 419.
+LaTeX Info: Redefining \ttfamily on input line 419.
+LaTeX Info: Redefining \rmfamily on input line 427.
+LaTeX Info: Redefining \sffamily on input line 427.
+LaTeX Info: Redefining \ttfamily on input line 427.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 435.
+LaTeX Info: Redefining \sffamily on input line 435.
+LaTeX Info: Redefining \ttfamily on input line 435.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 443.
+LaTeX Info: Redefining \sffamily on input line 443.
+LaTeX Info: Redefining \ttfamily on input line 443.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 451.
+LaTeX Info: Redefining \sffamily on input line 451.
+LaTeX Info: Redefining \ttfamily on input line 451.
+LaTeX Info: Redefining \rmfamily on input line 459.
+LaTeX Info: Redefining \sffamily on input line 459.
+LaTeX Info: Redefining \ttfamily on input line 459.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 467.
+LaTeX Info: Redefining \sffamily on input line 467.
+LaTeX Info: Redefining \ttfamily on input line 467.
+LaTeX Info: Redefining \rmfamily on input line 475.
+LaTeX Info: Redefining \sffamily on input line 475.
+LaTeX Info: Redefining \ttfamily on input line 475.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 483.
+LaTeX Info: Redefining \sffamily on input line 483.
+LaTeX Info: Redefining \ttfamily on input line 483.
+LaTeX Info: Redefining \rmfamily on input line 491.
+LaTeX Info: Redefining \sffamily on input line 491.
+LaTeX Info: Redefining \ttfamily on input line 491.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 499.
+LaTeX Info: Redefining \sffamily on input line 499.
+LaTeX Info: Redefining \ttfamily on input line 499.
+LaTeX Info: Redefining \rmfamily on input line 507.
+LaTeX Info: Redefining \sffamily on input line 507.
+LaTeX Info: Redefining \ttfamily on input line 507.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 515.
+LaTeX Info: Redefining \sffamily on input line 515.
+LaTeX Info: Redefining \ttfamily on input line 515.
+LaTeX Info: Redefining \rmfamily on input line 523.
+LaTeX Info: Redefining \sffamily on input line 523.
+LaTeX Info: Redefining \ttfamily on input line 523.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 531.
+LaTeX Info: Redefining \sffamily on input line 531.
+LaTeX Info: Redefining \ttfamily on input line 531.
+LaTeX Info: Redefining \rmfamily on input line 539.
+LaTeX Info: Redefining \sffamily on input line 539.
+LaTeX Info: Redefining \ttfamily on input line 539.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 547.
+LaTeX Info: Redefining \sffamily on input line 547.
+LaTeX Info: Redefining \ttfamily on input line 547.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 555.
+LaTeX Info: Redefining \sffamily on input line 555.
+LaTeX Info: Redefining \ttfamily on input line 555.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 563.
+LaTeX Info: Redefining \sffamily on input line 563.
+LaTeX Info: Redefining \ttfamily on input line 563.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 571.
+LaTeX Info: Redefining \sffamily on input line 571.
+LaTeX Info: Redefining \ttfamily on input line 571.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 579.
+LaTeX Info: Redefining \sffamily on input line 579.
+LaTeX Info: Redefining \ttfamily on input line 579.
+LaTeX Info: Redefining \rmfamily on input line 587.
+LaTeX Info: Redefining \sffamily on input line 587.
+LaTeX Info: Redefining \ttfamily on input line 587.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 595.
+LaTeX Info: Redefining \sffamily on input line 595.
+LaTeX Info: Redefining \ttfamily on input line 595.
+LaTeX Info: Redefining \rmfamily on input line 652.
+LaTeX Info: Redefining \sffamily on input line 652.
+LaTeX Info: Redefining \ttfamily on input line 652.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 660.
+LaTeX Info: Redefining \sffamily on input line 660.
+LaTeX Info: Redefining \ttfamily on input line 660.
+LaTeX Info: Redefining \rmfamily on input line 668.
+LaTeX Info: Redefining \sffamily on input line 668.
+LaTeX Info: Redefining \ttfamily on input line 668.
+set lang czech, 3
+)
+runsystem(rm main.pyg)...executed
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 18822 strings out of 480991
+ 125171,1373583 words of node,token memory allocated
+ 4805 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 323 glyph, 628 attribute, 103 glue_spec, 315 attribute_list, 1 write nodes
+   avail lists: 2:2830,3:460,4:804,5:399,6:119,7:5032,8:109,9:806,10:32,11:704
+ 34766 multiletter control sequences out of 65536+600000
+ 73 fonts using 8058331 bytes
+ 51i,10n,59p,961b,3142s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on main.pdf (48 pages, 1349608 bytes).
+
+PDF statistics: 284 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

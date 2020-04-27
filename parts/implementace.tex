@@ -1,0 +1,317 @@
+\kapitola{Implementace modelu}
+\sekce{Použité technologie}
+Pro kvalitní webové aplikace bývá ve většině případů použita kombinace mnoha technologií, jazyků a~frameworků. Vhodný výběr je nutný provést na základě požadavků, jak má výsledná aplikace fungovat a~vypadat. Je podmínkou vybrat takový jazyk, který má dobrou dokumentaci, nebo podporu komunity. Na základě toho je pak možno rychle řešit problémy. Vhodné je i~myslet na budoucí rozšiřovaní aplikace. Jazyk nebo framework, o~kterém je známo, že již nebude dále vyvíjen a~podporován není dobrou volbou pro nové aplikace. Dále je také velmi důležité myslet na bezpečnost.
+
+\paragraph{PHP 7} \mbox{} \\
+O~back-endovou část aplikace se stará jazyk PHP, v~aktuálně nejnovější verzi 7. Tento jazyk je skriptovací a~při dodržovaní daných pravidel i~velmi bezpečný. Fungování tohoto jazyka zajišťuje server pomocí Apache. Až výsledek práce PHP skriptů je přenášen k~uživateli. PHP umožňuje i~práci s~databázovými systémy, například s~MySQL. Jazyk není nutné předem kompilovat, což je jednoznačně výhodou \cite{phpmanual}. Na internetu se nachází kvalitní dokumentace a~spoustu řešení obvyklých problémů. Tento jazyk však může svádět k~používání k~tzv. špagetového kódu. Za tuto vlastnost na internetu sklízí hodně kritiky.
+
+
+\paragraph{Framework Nette} \mbox{} \\
+Výše zmíněný špagetový kód řeší právě tento framework. Rozšiřuje PHP o~mnoho funkcí, šablonovací systém, komponenty, filtry a~mnoho dalšího. Nette používá MVC architekturu, která splňuje požadavky na kvalitní aplikaci. Mezi tyto požadavky patří znovupoužitelnost, bezpečnost a~přehlednost. Nette programátora nutí psát kód správně a~bezpečně.
+
+Vývoj aplikace usnadňuje i~díky přehlednému zobrazování chyb. Tento modul frameworku označuje Laděnka. Díky ní je možné přehledně zjistit, jak aplikace probíhá, kde nastala chyba, jaké funkce se volaly, apod. \cite{nettemanual}
+
+\paragraph{ORM Doctrine 2} \mbox{} \\
+Technologie ORM používá objektově-orientovaný přistup při komunikaci s~relační databází. Je tedy možné manipulovat se záznamy z~databáze jako s~objekty, což je obrovská výhoda a~usnadnění pro programátora. Dále programátor nemusí trávit tolik času psaní SQL dotazů. Je možné používat integrované funkce pro jednoduché činnosti. V~kombinaci s~Nette frameworkem nastává výborná symbióza, protože obě technologie přistupují ke kódu stejným objektově-orientovaným přístupem. Následná výměna dat je tedy velmi snadná a~intuitivní \cite{ormmanual}. Konkrétní implementaci pro Nette framework vytvořil v~rámci své bakalářské práce Filip Procházka.
+
+\paragraph{LESS} \mbox{} \\
+LESS je nástavba na CSS, pomocí které je možné používat v~CSS proměnné, vnořený kód, dědičnost, výpočty a~funkce. Musí se kompilovat při vývoji. Kompilace převede LESS na CSS. V~tomto nástroji jsou napsány například i~zdrojové kódy oblíbeného Bootstrap 3. Alternativa na LESS je SASS. Rozdíly mezi těmito nástroji jsou minimální. \cite{lessmanual}
+
+
+\paragraph{Git} \mbox{} \\
+Verzovací nástroj Git umožňuje přehledné spravování verzí kódu. Mezi jeho hlavní výhody patří synchronizace kódu při práci v~týmu, zálohování kódu, možnost vrátit se na starší verze a~větvení kódu. Jelikož na této práci pracuji sám, tak nemohu ocenit hlavní výhodu synchronizace kódu. Ale zálohování kódu na serveru bitbucket.org, který nabízí vytvoření repozitáře zdarma velmi ocením.
+
+\sekce{Řešení specifických problémů}
+
+\paragraph{Struktura aplikace} \mbox{} \\
+Aplikace je uspořádána do dvou modulů. Dělí se na Front modul, který obsluhuje zobrazování aplikace pro nepřihlášené uživatele a~zajišťuje vykreslování webových stránek vytvořených v~této aplikaci pro návštěvníky. Druhý modul obsahuje kompletní administraci, včetně instalací nových šablon, vytváření webů a~editování webových stránek.
+
+
+Aplikace se drží doporučované struktury webových aplikací pro MVC architekturu. Následující obrázek zobrazuje adresářovou strukturu důležité složky app, která zajišťuje hlavní jádro aplikace.
+
+\obrazek
+\vlozobrbox{code-structure.png}{0.3\textwidth}{!}
+\endobrl{Adresářová struktura aplikace}{codestructure}
+
+\paragraph{Datová vrstva} \mbox{} \\
+S~využitím frameworku Doctrine 2, který implementuje ORM přistup nad relační MySQL databází byly sestaveny jednotlivé entity. Každou entitu reprezentuje jeden soubor s~názvem entity a~příponou .php. Doctrine používá velmi specifický zápis. Rozšiřuje základní použití atributů a~getterů a~setterů o~anotace. Při správném použití anotací a~atributů vygeneruje po zadání daných příkazu přes terminál v~databází příslušné záznamy.
+
+
+Mezi základní příkazy v~terminálu pro Doctrine patří příkaz pro validaci:
+\begin{phpcode}
+php index.php orm:validate-schema
+\end{phpcode}
+
+Příkaz pro vytvoření struktury databáze:
+\begin{phpcode}
+php index.php orm:schema-tool:create
+\end{phpcode}
+
+Vytváření vazeb mezi entitami je umožněn pomocí oboustranné specifikace vztahu. Je nutné na obou entitách specifikovat inverzní a~vlastní stranu.
+
+\begin{phpcode}
+/**
+   * @ORM\ManyToMany(targetEntity="Block")
+   * @ORM\JoinTable(name="pages_blocks",
+   *      joinColumns={@ORM\JoinColumn(name="page_id",  referencedColumnName="id", onDelete="cascade")},
+   *      inverseJoinColumns={@ORM\JoinColumn(name="block_id", referencedColumnName="id", onDelete="cascade")}
+   *      )
+   * @ORM\OrderBy({"rank" = "ASC"})
+   */
+   protected $blocks;
+\end{phpcode}
+
+Výše uvedený příklad zobrazuje anotaci atributu Blocks z~entity Stránka (Page). Daný vztah je dle typu ManyToMany. Každá stránka má více bloků a~blok patří na více stránek. V~anotaci se nastavují veškeré podrobnosti tohoto vztahu, jako například název atributu, pro který má nastat sloučení, nebo co se má odehrát po smazání jedné ze stran tohoto vztahu. Pro následné zjednodušeni práce byla nastavena i~anotace pro seřazení při výpisu. Instance se budou řadit dle atributu rank. Stejného výsledku lze dosáhnou i~přímo pomocí SQL dotazu, ale zaznačení přímo v~entitě v~tomto případě značně zrychlí práci.
+
+
+\paragraph{Instalace tématu} \mbox{} \\
+Za instalaci komprimovaného souboru ZIP, obsahující téma, který nahrál uživatel, je zodpovědný InstallPresenter.php. Po nahrání na server probíhá následující proces:
+
+
+\textbf{Vytvoření nové složky na serveru} - název složky je generován dle původního názvu a~přidáním aktuálního času.
+\begin{phpcode}
+$nameForZip = Strings::webalize($values->name.time());
+\end{phpcode}
+
+\textbf{Bezpečností kontrola} - potencionálně nebezpečné soubory jsou odstraněny před zahájením dalších kroků. Rozbalení archivu do nové složky a~cyklus reagující na nalezené HTML soubory.
+\begin{phpcode}
+foreach (Finder::findFiles('*.html')->in($this->pathToTemplate . $nameForZip) as $key => $fileInfo) {
+  …
+}
+\end{phpcode}
+
+Pro každý nalezený HTML soubor je provedena skupina kroků, která zpracovává tento soubor. Cesta k~souboru je použita jako parametr k~volání metody loadTemplate z~třídy Understander. Tato třída analyzuje HTML soubor, rozpoznává editovatelné části, nahrazuje HTML kód tak, aby bylo možné šablonu editovat z~prohlížeče. Do InstallPresenteru vrací pole s~daty o~proběhlé analýze. Tyto data jsou následně uloženy do databáze. Detailní implementace třídy Understander je popsán níže.
+
+
+\textbf{Vytvoření záznamů v~databázi} - z~dat vzniklých při analýze a~údaji od uživatele je nově vytvořen záznam o~tématu (Theme), šablonách (Templates) a~je také vytvořena jedna nová stránka (Page) ze souboru index.html, která je přímo označena jako hlavní.
+
+
+\textbf{Přesměrování} - pokud uživatel instaloval toto téma z~již vytvořeného webu, je přímo přesměrován na administrativní stránku, kde může editovat tento web.
+
+V~případě, že nebyl zvolen web, pro který je téma instalováno, je přesměrován na hlavní stránku administrace. Vybrat web, který bude používat toto téma může až později.
+
+
+\textbf{Získání všech informací k~webu} - aby administrátoři dostali ke svým webových stránkám kompletní informace pro snadnou editaci webu, slouží WebsitePresenter.php. Jeho činností je získat informace o~dané webové stránce a~zpracovat je. Následně tyto informace odesílá do šablony.
+
+Získání těchto informací je velmi snadné, diky správnému návrhu a~použití ORM Doctrine 2. Následující ukázka demonstruje proces práce s~daty napříč všemi vrstvami.
+
+\begin{phpcode}
+public function renderDefault($websiteId)
+{
+   $this->website = $websiteId;
+   /** @var Website $website */
+   $website = $this->entityManager->getRepository(Website::class)->findOneBy(['id =' => $websiteId]);
+   if ($website->getUser()->getId() !== $this->user->id){
+       throw new \Error('No permission to do this!', 403);
+   }
+   $this->template->website = $website;
+   if ($website->getTheme()){
+       $this->template->templates = $website->getTheme()->getTemplates();
+       foreach ($website->getTheme()->getTemplates() as $template){
+           $templatesFromThisTheme[] = $template->getId();
+       }
+       $this->template->pages = $this->entityManager->getRepository(Page::class)->findBy(
+           [
+               'website =' => $website->getId(),
+               'template' => $templatesFromThisTheme
+           ]
+       );
+   }
+   $this->template->themes = $this->entityManager->getRepository(Theme::class)->findAll();
+}
+\end{phpcode}
+
+V~ukázce vidíme metodu renderDefault(), která přijímá ID webu, ke kterému je třeba zobrazit informace. Zobrazují se kompletní data k~webu. Mezi tyto data patří základní informace o~webové stránce, její šablony a~stránky. Navíc jsou přidány i~informace o~dalších dostupných šablonách, které je možné použít pro tento web.
+
+
+Získané data jsou postupně předávány do šablony. Je také ověřováno, zda daný uživatel má právo tyto data získat.
+
+
+\textbf{Vytváření nové stránky} - uživatel při vytváření nové stránky (Page) vybírá z~předdefinových šablon (Template). Takto vybraná šablona použije svoje původní bloky a~vloží je na nově vytvořenou stránku. O~tento proces se stará metoda handleNewPage s~parametrem ID šablony.
+
+\begin{phpcode}
+public function handleNewPage($templateId)
+{
+   $website = $this->entityManager->getRepository(Website::class)->findOneBy(['id =' => $this->website]);
+   /** @var Template $template */
+   $template = $this->entityManager->getRepository(Template::class)->findOneBy(['id =' => $templateId]);
+   foreach ($website->getTheme()->getTemplates() as $themeTemplate){
+       $templatesFromThisTheme[] = $themeTemplate->getId();
+   }
+   $mainPages = $this->entityManager->getRepository(Page::class)->findBy(
+       [
+           'website =' => $website->getId(),
+           'template' => $templatesFromThisTheme,
+           'isMain' => true
+       ]
+   );
+   /** @var Page $page */
+   $page = new Page();
+   $page->setWebsite($website);
+   $page->setName($template->getName());
+   $page->setUrl($template->getPath());
+   if (count($mainPages) == 0){
+       $page->setIsMain(true);
+   }else{
+       $page->setIsMain(false);
+   }
+   $page->setTemplate($template);
+   $defaultBlocks = $template->getDefaultBlocks();
+   foreach ($defaultBlocks as $defaultBlock){
+       $block = clone $defaultBlock;
+       $this->entityManager->persist($block);
+       $page->addBlock($block);
+       $this->entityManager->flush();
+   }
+   $this->entityManager->persist($page);
+   $this->entityManager->flush();
+   $this->redirect('Website:default',[$website->getId()]);
+}
+\end{phpcode}
+
+
+Nejdříve je nutné v~tomto procesu získat data z~databáze o~všech entitách, které se týkají této operace. Problematickou část tvoří rozhodnutí algoritmu, zda nově vytvořená stránka má být nastavena jako hlavní, neboli indexní. Každý web totiž musí obsahovat jednu hlavni stranu. V~opačném případě by návštěvník nemohl web zobrazit.
+
+
+V~posledním foreach cyklu se duplikují původní data z~šablony (Template) na novou stránku. Administrátor pak při první editaci nezačíná s~prázdnou stránkou, ale rozložení základních prvků má již předdefinované a~značně mu to zjednoduší editaci.
+
+\paragraph{Algoritmus pro zpracování šablony} \mbox{} \\
+Jednotlivé HTML soubory v~tématu zpracovává třída Understander. PHP má pomocnou třídu na práci s~HTML elementy. Lze tedy procházet HTML jako objekty. Existuje spoustu pomocných metod pro identifikaci elementů, atributů a~hodnot. Také je možné tyto atributy editovat a~přidávat nové. Celý dokument lze procházet jako datový typ strom. Cyklus prochází jednotlivé prvky a~podrobuje je analýze.
+
+
+Načtení struktury HTML dokumentu probíhá hlavně pomocí těchto příkazů. Uvedeny jsou zde pouze základní příkazy. V~konečném výsledku jich je mnohem víc, aby bylo dosaženo optimálního řešení.
+
+\begin{phpcode}
+$this->doc = new DomDocument("1.0", "utf-8");
+$this->doc->loadHTML($html);
+\end{phpcode}
+Dále je nutné pro průchod všech prvků iterovat pomocí cyklu while.
+\begin{phpcode}
+$elements = $this->doc->documentElement;
+$first = $elements->firstChild;
+$this->inspectElement($first);
+while ($first->nextSibling){
+   $first = $first->nextSibling;
+   $this->inspectElement($first);
+}
+\end{phpcode}
+
+Tento cyklus prochází pouze všechny prvky na stejné úrovní (sourozence). Dále se zjišťuje, zda daný prvek nemá potomky. Rekurzivně se postupuje dokud není dosaženo posledního prvku - listu. Analyzování prvku se dále rozděluje dle informacích o~prvku a~jeho okolí. Toto rozhodování je ponecháno na metodě inspectElement, kde se před analyzováním provede jeho formální úprava zavoláním funkce editPaths.
+
+
+Dále je nutné zjistit, zda prvek patří do skupiny editovatelných elementů pomocí funkce isEditable. Ta vrací true nebo false, v~závislosti, zda daný prvek splňuje předem definovaný seznam editovatelných prvků. Do něj patří například elementy všech nadpisů, odstavce <p>, obrázky <img>, odkazy <a> a~podobně. Prvek splňuje test optimality i~v~případě, že sám editovatelný není, ale má potomky, kteří do pole editovatelných elementů patří.
+
+
+Dále se zjišťuje na základě sourozenců, zda má element podobnou strukturu jako ostatní sourozenci. V~tomto případě je zpracován jinak, než běžné prvky. Tyto typy prvků jsou vysvětleny níže.
+
+
+\begin{phpcode}
+private function inspectElement($element)
+{
+   $this->editPaths($element);
+   if ($this->isEditable($element)) {
+       if (($element->nextSibling) and ($this->compareChilds($element, $element->nextSibling))) {
+           /** is duplicator (same as his siblings) */
+           $this->processBlock($element, true);
+       } elseif (($element->previousSibling) and ($this->compareChilds($element, $element->previousSibling))) {
+           /** is last duplicator (same as his previous siblings) */
+           $this->processBlock($element, true, true);
+           $this->counter++;
+           $this->duplicatorGroup = 0;
+       } else {
+           /** is normal block, replaced with variable */
+           $this->processBlock($element, false);
+       }
+       /** if not, dive in to his childes recursively */
+   }elseif ($element->hasChildNodes()){
+       /** hey kids, i~will check you too, just for sure */
+       foreach ($element->childNodes as $child){
+           $this->inspectElement($child);
+       }
+   }
+}
+\end{phpcode}
+Editor vyžaduje vhodné zaznačení prvků, které má nabídnout k~editaci. Regiony, ve kterých jsou editovatelné prvky musí mít speciální třídu a~identifikační značku. Algoritmus tedy obsahuje velké množství kódu, který se snaží vhodně rozdělit šablonu do editovatelných regionů. V~tomto textu jsou uvedeny pouze nejdůležitější části kódu. Další z~těchto podstatných částí je nahrazení elementu PHP kódem (respektive Latte syntaxí pro Nette). Editovatelný obsah HTML elementů je uložen do databáze. Elementům obalující tento obsah je přiřazen atribut data-editable a~data-name. Unikátní hodnotu získáváme z~proměnné counter.
+
+
+\begin{phpcode}
+$element->setAttribute('data-editable',$this->counter);
+$element->setAttribute('data-name',$this->counter);
+$element->nodeValue = '{$blocks['.$this->counter.'][0]->getContent()}';
+$this->counter++;
+\end{phpcode}
+
+Data z~původních elementů se získali pomocí následujících příkazů. Vše je ukládáno do pole. Po skončení se toto pole rozdělí do záznamů databáze a~uloží.
+
+\begin{phpcode}
+$this->data[] = [
+   'tag'=> $this->counter,
+   'content' => $duplicator ? $this->doc->saveHTML($element) : $this->getInnerContent($element),
+   'duplicatorGroup' => $duplicator ? $this->duplicatorGroup : NULL,
+   'duplicatorWrapStart' => isset($tmpElement) ?  $tmpElement[0].'>' : NULL,
+   'duplicatorWrapEnd' => isset($tmpElement) ?  $tmpElement[count($tmpElement)-2].'>' : NULL,
+   'rank' => $duplicator ? $this->duplicatorGroup : null
+];
+\end{phpcode}
+
+\paragraph{Rozpoznání duplikátorů} \mbox{} \\
+Duplikátory jsou podobné skupiny HTML elementů, ale s~jiným obsahem. Na firemních webových stránkách to může být například sekce Naši zaměstnanci. Obvykle má zde každá osoba fotku, jméno a~pracovní pozici. Administrátorovi, který edituje obsah webu, by usnadnilo práci, kdyby mohl přidat další osobu, změnit pořadí těchto osob, nebo ji smazat. Pokud algoritmus vhodně rozpozná tyto části je možné nabídnout administrátorovi tyto možnosti.
+
+
+Skupiny duplikátorů rozpoznává metoda comapeChilds. Porovnává, zda uzly mají stejné potomky. Nebere se ohled na HTML atributy, nebo obsah. Rozhoduje struktura HTML uzlu.
+\begin{phpcode}
+private function compareChilds(DOMNode $a, DOMNode $b)
+{
+   $result = false;
+   if (($a->nodeName == $b->nodeName) && ($a->hasChildNodes()) && ($b->hasChildNodes())) {
+       $a~= new DOMNodeList($a);
+       $b = new DOMNodeList($b);
+       $result = true;
+       $aCount = $a->length;
+       for($pos=0; $pos<$aCount; $pos++) {
+           if ($a->item($pos)->nodeName != $b->item($pos)->nodeName){
+
+               $result = false;
+           }
+       }
+   }
+   return $result;
+}
+\end{phpcode}
+
+Duplikátory se nahrazují do šablony jiným řetězcem, než klasické editovatelné bloky. Je nutné je nahradit foreach cyklem, protože obyčejné vypsání proměnné by zde nestačilo. Musí se vypsat všechny duplikátory, které mají stejnou identifikační značku. Nahrazení se provádí pouze u~posledního duplikátoru. Všechny předchozí jsou smazány.
+
+
+
+\begin{phpcode}
+if($last == true){
+   $element->parentNode->setAttribute('id', 'duplicated');
+   $element->parentNode->nodeValue = '
+
+       {ifset $blocks[' . $this->counter . ']}{foreach $blocks[' . $this->counter . '] as $content}
+           {$content->getContent()}
+       {/foreach}{/ifset}
+   ';
+}
+
+$this->duplicatorGroup++;
+\end{phpcode}
+
+\sekce{Shrnutí implementačních kroků}
+Pro efektivní splnění požadavků na aplikaci byly provedeny tyto kroky:
+\begin{itemize}
+  \item zvolení vhodných technologiích
+  \item navrhnutí struktury projektu
+  \item vytvoření entit
+  \item vygenerováni databáze
+  \item naprogramování administrace a~autentizace
+  \item naimplementování algoritmu pro zpracování HTML šablon
+  \item sestrojení zobrazování webu pro návštěvníky
+\end{itemize}
+
+Předchozí analýza značně urychlila a~usnadnila celou implementaci a~nebylo nutné upravovat implementační části z~důvodu rozrůstajícího se aplikace.
+
+\sekce{Přístup k~aplikaci}
+Aplikace je dostupná na webové adrese \textbf{http://jankrmela.cz/}. Přihlášení je možné po rychlé registraci. Po úspěšné registraci následuje průvodce, který uživateli pomůže se základním nastavením adresy nového webu, instalací šablony a~její editací.
+
+

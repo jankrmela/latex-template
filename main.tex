@@ -1,0 +1,81 @@
+% aktuální kódování: UTF-8
+\documentclass[12pt]{article}%
+% pro tisk po obou stranách papíru doplňte do prvního řádku volbu twoside takto:
+%\documentclass[twoside, 12pt]{article}
+\usepackage{polyglossia, dipp}
+\usepackage{fvextra}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage[backend=biber, style=iso-numeric, bibencoding=UTF8]{biblatex}
+\addbibresource{references.bib}
+\setdefaultlanguage{czech}
+\setotherlanguage{english}
+\defaultfontfeatures{Mapping=tex-text}
+\graphicspath{{./src/}}
+\DeclareQuoteStyle{czech}
+  {\quotedblbase}
+  {\textquotedblleft} 
+  {\textquoteleft}
+  {\textquoteright}  
+
+
+% code highlighting
+\usepackage{minted} 
+\usepackage{mdframed}
+\usepackage{etoolbox}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\mdfdefinestyle{mdfcode}{%
+  backgroundcolor=bg,
+  linewidth=1pt,
+  topline=false,
+  bottomline=false,
+  rightline=false,
+  leftline=false}
+
+
+\surroundwithmdframed[style=mdfcode]{minted}
+
+\setminted{  
+  fontsize = \small,
+  breaklines,
+  tabsize = 2
+}
+
+
+% \usemintedstyle{trac}
+
+\newminted{php}{startinline}
+\newminted[jscode]{javascript}{}
+\newminted{html}{}
+\newminted{css}{}
+\newminted[lattejs]{js+smarty}{}
+\newminted[lattehtml]{html+smarty}{}
+\newminted[lesscode]{scss}{}
+\newminted[sql]{mysql}{}
+
+\newcommand*\justify{%
+  \fontdimen2\font=0.4em% interword space
+  \fontdimen3\font=0.2em% interword stretch
+  \fontdimen4\font=0.1em% interword shrink
+  \fontdimen7\font=0.1em% extra space
+  \hyphenchar\font=`\-% allowing hyphenation
+}
+\newcommand{\code}[1]{\texttt{\justify#1}}
+\begin{document}
+
+\def\,{\penalty10000\hskip.25em}
+\pagestyle{headings}
+\bakalarska
+\cislovat{3}
+\titul{Automatická konverze HTML šablony do redakčního systému}{Jan Krmela}{RNDr. Zuzana Priščáková, Ph.D.}{Brno 2018}
+
+\input{parts/header} 
+\obsah
+\input{parts/structure}
+
+\defbibheading{bibliography}[\refname]{\kapitola{Literatura}}
+\printbibliography
+
+\end{document}

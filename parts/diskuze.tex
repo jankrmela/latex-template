@@ -1,0 +1,17 @@
+\kapitola{Diskuze}
+\sekce{Zhodnocení řešení}
+% shrnout vlastni vysledky
+Cílem práce bylo vytvořit webovou aplikaci, která by umožnila uživateli snadnou editaci HTML šablon, bez nutnosti předchozí implementace šablony do redakčního systému pomocí programovacích jazyků. Na současném trhu takové řešení zatím neexistuje. Všechny redakční systémy podporují pouze šablony, které jsou upraveny dle specifického způsobu pro konkrétní redakční systém.
+
+Při implementaci bylo nejtěžším úkolem naprogramovat algoritmus, který by dokázal univerzálně zpracovat všechny druhy šablon. Nejlepších výsledků dosahuje konverze u~šablon, kde není přiliš javascriptového kódu, který ovlivňuje zobrazování a~funkci stránky. Redakční systém je tedy nejvhodnější pro typy stránek jako jsou osobní webové stránky, blog, firemní prezentace, nebo web pro události a~akce. 
+
+Jeho výhoda spočívá v~obrovské jednoduchosti a~rychlosti editace. Uživatel se nemusí omezovat výběrem mezi pár vzhledy, které většinou nabízí jiné redakční systémy, ale může si vybrat jakýkoliv z~tisíce vzhledů, které najde kdekoliv na internetu.  
+
+Naopak méně vhodný je na webové stránky, kde se očekává rozsáhlejší funkčnost a~interakce s~uživatelem pomocí dotazníků, anket a~přihlašování. Algoritmus totiž není schopen rozpoznat plánovanou funkčnost a~tedy nelze nabídnout uživateli editaci těchto interaktivních prvků.  
+
+
+\sekce{Budoucí rozšíření}
+Prostoru pro další rozšíření je tu nespočet. Základní prvek, na kterém stojí celá aplikace, je algoritmus pro zpracování HTML šablon. Ten by byl vhodný vylepšit na základě analýzy velkého množství různých typů HTML šablon. 
+
+Dále by bylo užitečné ještě více zpříjemnit uživateli editaci stránky, nabídnout mu více možností. V~tomto kroku je ale nutné postupovat opatrně, aby více možností nepůsobilo na uživatele zmateně. Je důležité i~nadále zachovat jednoduchost, protože cílovou skupinou této aplikace jsou méně zdatní počítačoví uživatelé.
+

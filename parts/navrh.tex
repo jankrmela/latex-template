@@ -1,0 +1,170 @@
+\kapitola{Návrh modelu}
+\sekce{Analýza problému}
+Na internetu se nachází k~dispozici spoustu redakčních systému pro editaci webových stránek. Hlavní problém těchto redakčních systémů je nutnost upravovat HTML šablonu tak, aby redakční systém byl schopen nabídnout uživateli editaci této šablony.
+
+
+Každý redakční systém vyžaduje jiné nároky na úpravu HTML šablony. V~populárním redakčním systému Wordpress je nutné HTML šablonu vhodně rozdělit do samostatných PHP souborů a~doplnit potřebný PHP kód. Nejsnadnější dosavadní řešení, které jsou k~dispozici na internetu, jsou i~redakční systémy, ve kterých stačí do šablony doplnit pouze speciální CSS třídy elementům, které mají být v~redakčním systému editovatelné. Jako příklad takového redakčního systému může být uveden CushyCMS.
+
+
+Protože každý redakční systém obnáší specifické upravování HTML šablon pro svou potřebu, a~takto upravené šablony mezi sebou nejsou kompabilitní, vývojáři těchto šablon, kteří pracují na pozicích vývojářů se zaměřením na vytváření univerzálních šablon, proto většinou nevyvíjí šablonu pro konkrétní redakční systém, ale vytvoří ji čistou, bez dalších označení, pouze v~HTML5 formě. Dále už nechají na konkrétním uživateli, aby si ji upravil pro redakční systém, který se chystá použít. Ve skutečnosti tento proces probíhá tak, že uživatel koupí, nebo zadarmo stáhne, takto univerzální HTML5 šablonu z~různých webových portálů a~vytvoří zakázku pro firmu, která mu tuto šablonu převede do vybraného redakčního systému.
+
+
+Zveřejnění webových stránek je další problém pro méně zkušené uživatele. Redakční systém je většinou nutné nainstalovat na vlastní hosting. Pro některé může být i~samotný nákup domény a~hostingu problém, se kterým se obrací na odborníky.
+
+
+Mezi další problémy patří velká náročnost editace. Současné redakční systémy mnohdy obsahují příliš mnoho funkcí, které běžní uživatelé nevyužívají. Celý systém jim pak neumožňuje dobrou orientaci a~působí na tento typ uživatelů zmateně. Ke zvládnutí správné editace webových stránek pak potřebují speciální kurzy.
+
+\podsekce{Definice požadavků}
+Pro kvalitní implementaci aplikace je nutná konkrétní definice požadavků. Definici je nutno provést v~souladu s~hlavními cíli. Tímto způsobem je možno vytvořit úspěšnou aplikaci \cite{requiblog}. Bez této analýzy by implementace mohla stát větší množství financí a~vynaloženého času na implementaci. Požadavky je nutné stanovit reálně, aby je opravdu bylo možno splnit. Navzájem by se požadavky neměly vylučovat. Konkrétnost požadavků zaručí, že požadavky budou splněny tak, jak je určila analýza.
+
+\paragraph{Jednoduchá instalace šablony} \mbox{} \\
+Základ aplikace tvoří intuitivní a~jednoduchá instalace šablony, která uživatele zbaví všech složitých činností. Za složité činnosti při instalaci šablony je považována například úprava zdrojových kódů, vytváření databáze, konfigurace routování, nebo nastavování FTP. Uživatel nahrává do aplikace svůj, nebo stažený ZIP s~webovou šablonou, ve které se nachází všechny potřebné soubory, jako jsou HTML soubory, CSS soubory, obrázky a~další. O~zbytek se stará aplikace a~poté uživateli nabízí editaci této šablony.
+
+\paragraph{Hostování aplikace na společném serveru} \mbox{} \\
+Aplikace dostupná prostřednictvím webové adresy. Pro uživatele odpadne nutnost ji kdekoliv instalovat.
+
+\paragraph{Snadná editace} \mbox{} \\
+Editace umožněna z~pohodlí prohlížeče. Mezi nejjednodušší úpravy dokumentů patří WYSIWYG editor. Na tento typ editorů je každý uživatel zvyklý i~s~minimální počítačovou zručností. Je totiž běžné, že téměř každý umí upravovat dokumenty v~programu Office Word. Tento program používá stejný princip úpravy - WYSIWYG.
+Uživateli má možnost i~snadné organizace stránek a~SEO vlastností.
+
+
+\sekce{Návrh řešení}
+\podsekce{Neformální specifikace}
+Aplikace má splňovat velmi jednoduchou, rychlou a~univerzální editaci libovolné HTML5 šablony. Od toho je také nutné odvodit specifikace.
+
+Uživatel není zdržován složitými operacemi, ale na pár kliknutí je mu dostupná registrace a~vytvoření webové stránky. Bez náročného studování návodu je možnost nahrát do aplikace balíček s~HTML5 šablonou, kterou získá například stažením na jednom ze spousty webů, kde nabízí tyto šablony zdarma.
+
+
+Takto nahraná šablona se automaticky nainstaluje, rozpozná editovatelné části stránky a~přímo nabídne uživateli editovat text, vytvářet nové stránky, měnit URL adresy stránek a~publikovat výsledný web. Cílení těchto funkcí je především na méně zdatné uživatele v~technické oblasti, nebo na jednoduché vytváření a~editaci webu pro události, osobní nebo firemní prezentace. Není cílem konkurovat s~touto aplikací na přeplněném poli komplexních systémů pro vytváření složitých a~propracovaných webových aplikací.
+
+\podsekce{Formální specifikace}
+
+\paragraph{Funkční požadavky} \mbox{} \\
+	Při vytváření funkčních požadavků je vycházeno z~definice problému. Dané požadavky mají za úkol tyto problémy vyřešit v~souladu s~vytyčenými cíly práce. Požadavky se přímo vztahují na daný problém a~cílovou skupinu, kterou v~tomto případě tvoří méně zdatní počítačoví uživatelé. Také jsou tyto požadavky vybrány v~reakcí na konkurenci. Snaží se najít chyby v~konkurenčních řešeních, a~tím zaplnit mezeru na trhu, ale také použít již funkce, na které jsou uživatelé zvyklí z~jiných řešení.   
+
+	\begin{itemize}  
+		\item \textbf{Vytvoření webové stránky}
+
+		Důležitá je rychlá možnost vytvoření nové webové stránky. Po uživateli je požadováno co nejméně kroků, aby se zachovala jednoduchost. V~případě, že uživatel nemá svou vlastní webovou adresu, bude mít možnost zvolit subdoménu, na které bude jeho web dostupný.
+
+		\item \textbf{Instalace HTML5 šablony}
+
+		Šablonu (Theme), kterou si například stáhne zdarma z~internetu, nainstaluje jednoduchým vložením ZIP balíčku do systému. Systém automaticky nainstaluje šablonu a~připraví vše pro její editaci.
+
+		\item \textbf{Editace}
+		
+		Za editaci se považují funkce editování stránky, editování textu, editace obrázků a~uložení.
+
+		\item \textbf{Publikace}
+
+		Další požadavky jsou spojeny s~publikací - to znamená uložení stránky, změna URL adresy a~smazání stránky. A~vše musí být zabezpečeno autentizací uživatelů.
+
+	\end{itemize}
+
+\paragraph{Nefunkční požadavky} \mbox{} \\
+Mezi požadavky pro fungování aplikace patří počítač s~jakýmkoliv operačním systémem, kde fungují internetové prohlížeče. Bezproblémový chod je zaručen v~prohlížeči Google Chrome. Dále je nutné internetové připojení.
+
+\podsekce{Návrh modelu}
+Návrh modelu slouží pro zobrazení požadavků a~zobrazení dat. Požadavky jsou analyzovány v~první části návrhu informačního systému. Popsány jsou i~informace uložené v~databázi. Na stukturované data byl použit entitně-relační diagram.
+
+Pomocí diagramů UML jazyka byla specifikována a~vizualizována aplikace. Tento návrh pomohl pochopení aplikace a~umožní kvalitní implementaci aplikace. \cite{chonoles2003uml}
+
+\paragraph{Diagram případů použiti (Use case diagram)} \mbox{} \\
+Aplikace rozlišuje aktory na dvě skupiny. Na Administrátory a~Návštěvníky. Rozdíl mezi těmito skupinami tvoří stav registrace. Návštěvník je koncový uživatel, který může pouze prohlížet vytvořené webové stránky. Registrace udělá z~Návštěvníka Administrátora, který už má podstatně rozsáhlejší možnosti činností v~aplikaci.
+
+\obrazek
+\vlozobrbox{usecase.png}{0.9\textwidth}{!}
+\endobrl{Use case diagram}{usecasediagram}
+
+\textbf{Registrovat se} - každý návštěvník má možnost registrace do systému. Pro registraci je nutné vyplnit údaje. Registrace je co nejvíce zjednodušena. Po volbě přihlašovacího jména, případně emailu, je vyžadováno ještě heslo. Aplikace toto heslo zašifruje pomocí bezpečného algoritmu Bcrypt, který přidává k~heslu i~sůl, která podstatně zvyšuje bezpečnost.
+
+Ihned po úspěšné registraci je uživatel automaticky přihlášen. Stává se z~něj aktor Administrátor ve stavu přihlášen.
+\mbox{} \\
+\textbf{Instalovat téma} - pro webovou stránku je nezbytné nainstalovat téma, podle kterého se web bude vykreslovat. Alternativně lze také vybrat z~již nainstalovaných témat. Při instalaci tématu je nutné nahrát ZIP s~vhodnými soubory. Dále je nutné zvolit název tohoto tématu. Volitelně lze zvolit zveřejnění šablony i~pro ostatní uživatele. V~tomto případě by si mohl téma vybrat a~používat jakýkoliv jiný administátor pro svoji webovou stránku.
+
+
+\paragraph{Sekvenční diagram - vytvoření stránky} \mbox{} \\
+Následující sekvenční diagram popisuje use case vytvoření stránky, který obsahuje posloupnost procesů v~čase při vytváření nové stránky (Page). Pro vytvoření stránky je nutné zvolit web, pro který se má stránka vytvořit. Každý web má předdefinované šablony (Templates), ze kterých lze vytvářet instance stránek. Z~jedné šablony je možné vytvořit mnoho stránek. Uživatel musí vybrat danou šablonu pro novou stránku. Šablony jsou omezeny vzhledem k~tématu (Theme). Nelze nabídnout jiné šablony, než které byly nainstalované společně s~celým balíkem tématu. Například index.html tvoří jednu šablonu, about-us.html tvoří druhou šablonu a~podobně. Při instalaci je uchován výchozí obsah těchto. Při vytvoření nové stránky se tento obsah vždy načte jako výchozí bod pro editaci.
+
+\obrazek
+\vlozobrbox{sequence.png}{0.9\textwidth}{!}
+\endobrl{Sekvenční diagram - vytvoření stránky}{sequencediagram}
+
+\paragraph{Diagram aktivit} \mbox{} \\
+Další diagram popisuje rovněž vytvoření nové stránky, ovšem z~pohledu diagramu aktivit. Tento proces začíná požadavkem uživatele Administrátora na vytvoření nové stránky. V~další části zpracuje aplikace Administrátorův požadavek a~nastávají dvě možnosti pokračování. Web potřebuje k~vytvoření nové stránky nějakou šablonu. Pokud téma u~daného webu není nastaveno nebo nainstalováno, nelze vytvořit stránku, protože nemá předlohu. Uživatel bude o~tomto problému informován v~podobě notifikace. V~opačném případě pokračuje uživatel ve výběru šablony pro stránku. V~dalším kroku musí uživatel zvolit název stránky. Tyto údaje pak aplikace uloží do databáze. Takto uložená stránka se přímo publikuje a~nabídne se uživateli její editace. Editovanou stránku aplikace uloží a~nastává konec procesu.
+
+\obrazek
+\vlozobrbox{activity.png}{0.9\textwidth}{!}
+\endobrl{Diagram aktivit}{activitydiagram}
+
+\paragraph{Stavový diagram - vytvoření stránky} \mbox{} \\
+Vytvoření stránky z~pohledu stavového diagramu zobrazuje všechny stavy, které mohou nastat. První stav po vytvoření požadavku na novou stránku je Prázdná. Tento stav znázorňuje, pokud na nově vytvořené stránce se nenacházejí žádná data. Na stránku je následně třeba nahrát šablonu. Po takové činnosti se změní stav z~Prázdná na Naplněná. V~tomto stavu se na stránce nachází výchozí hodnoty šablony, které se přenesly na tuto stránku, která byla původně prázdná. Dále je možné stránku smazat nebo editovat. Editovaná stránka lze uložit nebo nastavit jako hlavní. Po uložení je možno ji znovu editovat. Odlišnost mezi editovanou a~naplněnou stránkou tvoří změna dat - naplněná stránka má pouze výchozí data, ale editovaná stránka má tyto původní data modifikované.
+
+\obrazek
+\vlozobrbox{state.png}{0.9\textwidth}{!}
+\endobrl{Stavový diagram - vytvoření stránky}{statediagram}
+
+\paragraph{Entitně relační diagram} \mbox{} \\
+V~diagramu se nacházejí tyto entity:
+	\begin{itemize}
+		\item Uživatel - obsahuje informace o~uživatelích a~jejich údajích. K~uživatelům evidujeme jméno, přijmení, email a~heslo.
+		\item Web - web je tvořen doménou a~jménem.
+		\item Téma - tvoří každý nainstalovaný ZIP obsahující šablony. K~tématu ukládáme i~jeho jméno a~vlastnost, která určuje, zda téma mohou použít i~jiní uživatelé.
+		\item Šablona - za šablonu je považován každý HTML soubor, který se nacházel v~tématu. Má svůj název a~informaci o~tom, jestli je daná stránka vzhledem k~tématu hlavní.
+		\item Stránka - stránka má svoji URL adresu a~popis sloužící pro SEO optimalizaci. Dále ukazatel, zda je hlavní pro daný web.
+		\item Blok - zaznamenává svůj obsah, který se vykresluje na stránce. Na stránce je rozlišován dle svého tagu. HTML kód, který obaluje blok je uložen v~obalStart a~obalKonec.
+	\end{itemize}
+
+Vztahy mezi daty jsou popsány pomocí entitně relačního modelu. Uživatel může vlastnit více Webů. Následně web používá Téma. Téma má vztah s~uživatelem, aby bylo jasné, kdo Téma nainstaloval. Každé téma může mít více Šablon. Z~těchto Šablon je možné vytvořit několik stránek. Na stránkách leží bloky. Je nutné rozlišovat bloky a~původní bloky - to jsou ty, které byly na stránce při její instalaci. Dále jsou používány při vytváření nových stránek, aby stránka nebyla prázdná. Vztah mezi Blok a~Stránka je udáván pomocí Stranka\_Blok a~Puvodni\_Blok.
+
+
+\obrazek
+\vlozobrbox{erd.png}{0.9\textwidth}{!}
+\endobrl{Entitně relační diagram}{erddiagram}
+
+\paragraph{Diagram tříd} \mbox{} \\
+Aplikace byla také navrhnuta pomocí diagramu tříd. Statický pohled na systém umožňuje zobrazení souvislosti mezi třídami, obsahem tříd a~vztahy.
+
+	\begin{itemize}
+		\item Web - třída zajišťuje definici názvu webové stránky a~adresu, kde bude web dostupný. Metoda \textit{vytvor(url:string)} přijímá jako parametr URL adresu, která je nutná pro každou nově vytvořenou webovou stránku. Metoda \textit{instalujTema(themeId:Tema, webid:int)} zajišťuje instalaci a~přiřazení instalovaného tématu k~danému webu. K~přiřazení již nainstalovaného tématu je použita metoda \textit{nastavTema(themeId:Tema)} a~pro změnu URL \textit{zmenaUrl(url:string)}.
+
+		\item Uživatel - je definován pomocí identifikátoru, přihlašovácího jména, přijmení, emailu a~hesla. Při registraci je používána metoda \textit{register(login:string, password:string)}. 
+
+		\item Téma - mimo jména a~identifikátoru obsahuje také stav, zda je téma veřejné. V~případě veřejného tématu je dovoleno ostatním uživatelům použít toto téma. Instalace prorbíhá metodou \textit{instalujTema(url:string)} a~jako parametr obsahuje cestu k~tématu. Téma lze přiřadit k~danému uživateli, specifikováného v~parametru metody \textit{priradUzivatele(uzivatel:int)}. 
+
+		\item Šablona - jednoduchá třída obsahující informace o~šabloně, která patří danému tématu. Téma, ke kterému šablona patří, je možno získat zavoláním metody \textit{ziskejTema()}. Třída obsahuje také atribut, který definuje, jestli je šablona považována za hlavní. Taková šablona se načte při zobrazení webu jako první, pokud uživatel toto nastavení nezmění. Dále šablonu definují atributy jméno, URL a~unikátní identifikátor.
+
+		\item Stránka - třída obsahuje podobné atributy jako Šablona. Navíc je přidán atribut popis. Specifikovanými metodami lze vytvořit novou stránku, nebo stávající stránku duplikovat. Také lze stránku smazat a~upravit. Metodami \textit{ziskejBloky()} a~\textit{ziskejPuvodníBloky()} lze získat Bloky, které dále slouží pro editaci obsahu stránky.
+
+		\item Blok - obsahuje editovatelnou část stránky. Určuje atributy \textit{tag} a~\textit{duplicatorSkupina}, které zařazují Blok na vhodnou pozici ve stránce. Atributy popisující obalovací HTML elementy bloku se nazývají \textit{obalStart} a~\textit{obalKonec}. Obsah Bloku je uložen v~atributy \textit{obsah}. Bloky se při instalaci vytváří metodou \textit{vytvorBlok(obsah)}. Při editaci se používá metoda \textit{aktualizujBlok()} a~\textit{duplikujBlok()}. 
+	\end{itemize}
+
+\obrazek
+\vlozobrbox{class.png}{0.9\textwidth}{!}
+\endobrl{Diagram tříd}{classdiagram}
+
+
+
+\podsekce{Design aplikace}
+\paragraph{Persony} \mbox{} \\
+
+\textbf{Jakub Omáčka} - je studentem střední průmyslové školy. Je mu 17 let. Bydlí na vesnici v~blízkosti Brna. Rád se věnuje sportu a~četbě. Má výborné znalosti cizích jazyků - zejména angličtiny a~italštiny. Nejvíc času tráví tréninkem na fotbalovém hřišti. Má rád nové technologie, které ve volném čase zkoumá. Sleduje všechny velké konference, kde se ukazují nové produkty velkých technologických firem. Své počítačové znalosti považuje za dostatečné - zvládá i~pokročilé činnosti, jako je například úprava fotografií. Programovat však neumí v~žádném programovacím jazyku. Ve svém fotbalovém klubu je také pověřen správou a~aktualizací webových stránek.
+
+\textbf{Veronika Krupičná} - je matka na mateřské dovolené. Je jí 29 let. Žije v~centru města Brna se svým manželem a~svou dcerou. Před mateřskou dovolenou pracovala jako daňová poradkyně ve velmi malé firmě. Svůj volný čas tráví turistikou s~rodinou po českých a~slovenských horách. Její schopnosti práce na počítačích se omezují na základní používání. Dokáže komunikovat přes email s~kolegy a~svůj domácí počítač používá zejména k~vyhledávání destinací na turistické výlety. Její telefon patří do kategorie smartphone, ovšem nevyužívá všechen jeho potencionál. Používá ho pouze k~telefonování a~pořizování fotografií.
+
+\textbf{Adam Drobný} - 38letý programátor webových aplikací. Pracuje jako OSVČ a~klienty si převážně hledá sám, ale má i~klientelu, která už zná Adamovu spolehlivost a~často se k~němu obrací znovu. Žije sám v~Praze, kde vlastní i~malý byt. Pokud zrovna nepracuje, tak tráví svůj čas také na počítači, ovšem jinými činnostmi. Zkoumá nové technologie, čte technicky zaměřené články, nebo sleduje filmy. Vzhledem k~tomu, že ho oslovují hlavně klienti, kteří požadují jen osobní web, či webovou prezentaci pro svou firmu, stává se jeho práce velmi monotónní. Pořád opakuje stejné činnosti k~vytváření takových webů, pouze obměňuje vzhled.
+
+\textbf{Radek Nováček} - má 62 let. Pracuje jako učitel zeměpisu na gymnáziu v~malém městě u~Olomouce. Jeho rodina s~ním žije v~rodinném domě v~blízkosti školy. Ve volném čase se věnuje křížovkám a~houbaření. S~počítačem se naučil pracovat až v~posledních letech při kurzu, který nabízela škola pro své pracovníky. Rád by vytvořil webové stránky pro své studenty, kde by mohl zveřejňovat informace a~materiály pro své studenty. Ale s~tvorbou webů nemá vůbec žádnou zkušenost.
+
+
+\paragraph{UX aplikace} \mbox{} \\
+Při tvorbě jakékoliv webové aplikace je nutnost přizpůsobit náročnost ovládání aplikace očekávaných počítačových schopností cílové skupině \cite{buley2013the}. V~případě tohoto systému, má cílová skupina převážně základní počítačové znalosti. Proto interface tohoto systému byl navržen velmi jednoduše. V~rámci zachování přehlednosti layout neobsahuje příliš mnoho tlačítek, odkazů a~informací. Je nutné spíše předvídat a~nabídnout uživateli takové informace, které právě hledá a~potřebuje. V~některých případech je dokonce i~vhodné zvýšit uživatelský prožitek na úkor funkčnosti \cite{brown2013designing}. Příliš mnoho funkcí, tlačítek a~informací může uživatele zmást na tolik, že nebude schopen aplikaci použít.
+
+
+Abychom usnadnili orientaci je nutnost, aby uživatel pořád věděl, kde se nachází. K~tomuto účelu slouží drobečková navigace nad obsahovou částí každé stránky \cite{young2015practical}. Jako primární navigace slouží panel umístěný v~pravé části stránky. Tento panel se nebude se skrývat pod hamburger-menu. Bude vždy viditelný.
+
+
+Ke zrychlení orientace poslouží časté používání tematických ikonek. Ty mají za následek, že uživatel získá představu o~dané informaci, tlačítku nebo akci během velmi krátkého času, aniž by musel text číst.
+
+
+Zároveň je dodrženo pravidlo o~konzistenci. Názvy tlačítek, akcí i~objektů jsou v~aplikaci pojmenovány vždy stejným názvem. Nepůsobí tedy na uživatele zmateně a~nenutí ho přemýšlet.

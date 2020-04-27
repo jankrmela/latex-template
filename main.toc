@@ -1,0 +1,369 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Úvod here}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Úvod do problematiky}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Cíl práce}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Použitá terminologie}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Definice principů HTML jazyka}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Konverze HTML jazyka}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Porovnání konvertorů}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Surreal CMS}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{CushyCMS}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Běžné redakční systémy}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Návrh řešení webové aplikace}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Redakční systém}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Definice problému}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}HTML šablona}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Publikování}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Současné možnosti}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Metodika práce}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Návrh modelu}{16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Analýza problému}{16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}Definice požadavků}{16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Jednoduchá instalace šablony}{16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Hostování aplikace na společném serveru}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Snadná editace}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Návrh řešení}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Neformální specifikace}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Formální specifikace}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Funkční požadavky}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Nefunkční požadavky}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.3}Návrh modelu}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diagram případů použiti (Use case diagram)}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Sekvenční diagram - vytvoření stránky}{20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diagram aktivit}{21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Stavový diagram - vytvoření stránky}{22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Entitně relační diagram}{23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diagram tříd}{24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.4}Design aplikace}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Persony}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{UX aplikace}{27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Implementace modelu}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Použité technologie}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{PHP 7}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Framework Nette}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{ORM Doctrine 2}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{LESS}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Git}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Řešení specifických problémů}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Struktura aplikace}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Datová vrstva}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Instalace tématu}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Algoritmus pro zpracování šablony}{33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rozpoznání duplikátorů}{36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Shrnutí implementačních kroků}{37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Přístup k~aplikaci}{37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Testování modelu}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Použité testy}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Jednotkové automatické testy}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Test rychlosti}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Provedení testů}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Jednotkové automatické testy}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Test rychlosti}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Výsledky testů}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Jednotkové automatické testy}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Test rychlosti}{42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Diskuze}{44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Zhodnocení řešení}{44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Budoucí rozšíření}{44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Závěr}{45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Literatura}{46}%
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
+\defcounter {refsection}{0}\relax 
+\bgroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{english}
+\defcounter {refsection}{0}\relax 
+\egroup 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{czech}
