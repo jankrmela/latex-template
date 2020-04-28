@@ -1,4 +1,13 @@
 {
+  "pasteImage.insertPattern": "\\obrazek\\vlozobrbox{${imageFileName}}{0.9\\textwidth}{!}\\endobrl{popisek}{id}",
+  "pasteImage.path": "${projectRoot}/src",
+  "pasteImage.basePath": "${projectRoot}/src",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.prefix": "/",
+
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "on",
+  
   "search.exclude": {
     "**/*.aux": true,
     "**/*.bbl": true,
@@ -17,6 +26,7 @@
     "**/*.fls": true,
     "**/*.toc": true
   },
+  
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.recipes": [
     {

@@ -2,323 +2,245 @@
 \defcounter {refsection}{0}\relax 
 \selectlanguage *{czech}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Úvod here}{7}%
+\contentsline {section}{\numberline {1}Úvod do problematiky}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Úvod do problematiky}{7}%
+\contentsline {section}{\numberline {2}Cíl práce}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Cíl práce}{7}%
+\contentsline {section}{\numberline {3}Struktura práce}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Použitá terminologie}{8}%
+\contentsline {section}{\numberline {4}Architektura}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Definice principů HTML jazyka}{8}%
+\contentsline {subsection}{\numberline {4.1}Globální architektura webové aplikace}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Konverze HTML jazyka}{9}%
+\contentsline {subsection}{\numberline {4.2}Typy architektury webových aplikací}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Porovnání konvertorů}{9}%
+\contentsline {paragraph}{SPA - Single page applications}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Surreal CMS}{9}%
+\contentsline {paragraph}{Microservices}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{CushyCMS}{10}%
+\contentsline {paragraph}{Serverless architecture}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Běžné redakční systémy}{10}%
+\contentsline {subsection}{\numberline {4.3}Specifika frontendové architektury}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Návrh řešení webové aplikace}{11}%
+\contentsline {subsection}{\numberline {4.4}Srovnání MVC a FLUX architektury}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Redakční systém}{11}%
+\contentsline {paragraph}{Store}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Definice problému}{13}%
+\contentsline {paragraph}{Akce}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}HTML šablona}{13}%
+\contentsline {paragraph}{Dispatcher}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Publikování}{13}%
+\contentsline {section}{\numberline {5}Metodika práce}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Současné možnosti}{13}%
+\contentsline {section}{\numberline {6}Návrh a implementace řešení}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Metodika práce}{14}%
+\contentsline {subsection}{\numberline {6.1}Vize firmy}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Návrh modelu}{16}%
+\contentsline {subsubsection}{\numberline {6.1.1}Diagram BSC}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Analýza problému}{16}%
+\contentsline {paragraph}{Finanční perspektiva}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Definice požadavků}{16}%
+\contentsline {paragraph}{Zákaznická perspektiva}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednoduchá instalace šablony}{16}%
+\contentsline {paragraph}{Perspektiva vývoje a růstu}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Hostování aplikace na společném serveru}{17}%
+\contentsline {paragraph}{Procesní perspektiva}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Snadná editace}{17}%
+\contentsline {subsubsection}{\numberline {6.1.2}Strategická mapa k BSC}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Návrh řešení}{17}%
+\contentsline {subsection}{\numberline {6.2}Definice problému}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Neformální specifikace}{17}%
+\contentsline {paragraph}{Nejednotné měřítko při poskytování náhrad zákazníkům}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Formální specifikace}{17}%
+\contentsline {paragraph}{Nízká informativní hodnota balíčků pro uživatele}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkční požadavky}{17}%
+\contentsline {paragraph}{Nízký prodej balíčků}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Nefunkční požadavky}{18}%
+\contentsline {paragraph}{Manuální řešení problémů zákazníků}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.3}Návrh modelu}{18}%
+\contentsline {subsection}{\numberline {6.3}Analýza současného řešení}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Diagram případů použiti (Use case diagram)}{18}%
+\contentsline {subsubsection}{\numberline {6.3.1}Vstupní podmínky}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Sekvenční diagram - vytvoření stránky}{20}%
+\contentsline {paragraph}{Zvolený itinerář k rezervaci}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Diagram aktivit}{21}%
+\contentsline {paragraph}{Dostupnost letenky}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Stavový diagram - vytvoření stránky}{22}%
+\contentsline {paragraph}{Dostatečný počet míst}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Entitně relační diagram}{23}%
+\contentsline {paragraph}{Vyplnění povinných údajů}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Diagram tříd}{24}%
+\contentsline {paragraph}{Zvolení úrovně služeb}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.4}Design aplikace}{26}%
+\contentsline {paragraph}{Souhlasení s podmínkami}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Persony}{26}%
+\contentsline {paragraph}{Provedení platby}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{UX aplikace}{27}%
+\contentsline {subsubsection}{\numberline {6.3.2}Výstupní podmínky}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Implementace modelu}{28}%
+\contentsline {paragraph}{Uložení provedené rezervace}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Použité technologie}{28}%
+\contentsline {paragraph}{Potvrzení rezervace}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{PHP 7}{28}%
+\contentsline {paragraph}{Zaslání letenek}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Framework Nette}{28}%
+\contentsline {paragraph}{Umožnění změny ve správě objednávek}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ORM Doctrine 2}{28}%
+\contentsline {paragraph}{Zaslání informací před odletem}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{LESS}{29}%
+\contentsline {subsubsection}{\numberline {6.3.3}Vnitřní události procesu}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Git}{29}%
+\contentsline {paragraph}{Změna ceny letenek při objednávce}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Řešení specifických problémů}{29}%
+\contentsline {paragraph}{Neaktivita při objednávání}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Struktura aplikace}{29}%
+\contentsline {paragraph}{Opuštění formuláře v procesu vyplňování}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Datová vrstva}{30}%
+\contentsline {paragraph}{Vykoupení letu v průběhu rezervace}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Instalace tématu}{30}%
+\contentsline {subsubsection}{\numberline {6.3.4}Vnější události procesu}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Algoritmus pro zpracování šablony}{33}%
+\contentsline {paragraph}{Krach letecké společnosti}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rozpoznání duplikátorů}{36}%
+\contentsline {paragraph}{Zrušení letu}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Shrnutí implementačních kroků}{37}%
+\contentsline {subsubsection}{\numberline {6.3.5}Podniková pravidla}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Přístup k~aplikaci}{37}%
+\contentsline {paragraph}{Časové limity rezervace před odletem}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Testování modelu}{38}%
+\contentsline {paragraph}{Dostupnost letenek dlouhou dobu před odletem}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Použité testy}{38}%
+\contentsline {paragraph}{Omezení výběru míst}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{38}%
+\contentsline {paragraph}{Omezení dostupnosti zavazadel}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{38}%
+\contentsline {paragraph}{Úrovně nadstandardních služeb}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{39}%
+\contentsline {subsubsection}{\numberline {6.3.6}Činnost procesu definovaná BPNM diagramem}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Provedení testů}{39}%
+\contentsline {subsubsection}{\numberline {6.3.7}Shrnutí}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{39}%
+\contentsline {subsection}{\numberline {6.4}Analýza současného řešení}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{40}%
+\contentsline {subsubsection}{\numberline {6.4.1}Konkurenční společnosti pro společnost Kiwi.com}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{41}%
+\contentsline {paragraph}{Definice konkurentů z pohledu Kiwi.com}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Výsledky testů}{41}%
+\contentsline {subsubsection}{\numberline {6.4.2}Základní přehled konkurentů}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{41}%
+\contentsline {subsubsection}{\numberline {6.4.3}Rozdělení dle možností dokoupení doplňkových služeb}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{41}%
+\contentsline {paragraph}{Ukázka nabídky pojištění společností GoToGate}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{42}%
+\contentsline {paragraph}{Ukázka nabídky flexibilní letenky společností GoToGate}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Diskuze}{44}%
+\contentsline {paragraph}{Ukázka nabídky doplňkových balíčků společností GoToGate}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Zhodnocení řešení}{44}%
+\contentsline {paragraph}{Ukázka nabídky pojištění společností Expedia}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Budoucí rozšíření}{44}%
+\contentsline {subsubsection}{\numberline {6.4.4}Shrnutí analýzy konkurence}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Závěr}{45}%
+\contentsline {paragraph}{Google flights}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Literatura}{46}%
+\contentsline {paragraph}{Skyscanner}{47}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {paragraph}{Expedia}{47}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {paragraph}{GoToGate}{47}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsubsection}{\numberline {6.4.5}Zhodnocení předpokladů pro řešení Kiwi.com}{48}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {subsection}{\numberline {6.5}Detailní návrh řešení požadavků}{48}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {subsubsection}{\numberline {6.5.1}Návrh modelu}{48}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {subsubsection}{\numberline {6.5.2}Nestrukturovaná analýza požadavků}{48}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsubsection}{\numberline {6.5.3}Strukturovaná analýza požadavků -- případy užití}{49}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Aktor Zákazník}{49}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {paragraph}{Aktor Podpora}{49}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {subsubsection}{\numberline {6.5.4}Tvorba objednávky}{50}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsubsection}{\numberline {6.5.5}Proces volby tarifů a balíčků}{53}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {subsubsection}{\numberline {6.5.6}Doménový model}{54}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {subsubsection}{\numberline {6.5.7}Diagram nasazení}{55}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {subsubsection}{\numberline {6.5.8}Drátěný model}{56}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsubsection}{\numberline {6.5.9}Designové řešení}{58}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {subsubsection}{\numberline {6.5.10}Shrnutí}{61}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {section}{\numberline {7}Implementace modelu}{63}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {subsection}{\numberline {7.1}Použité technologie}{63}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{PHP 7}{63}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Framework Nette}{63}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {paragraph}{ORM Doctrine 2}{63}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {paragraph}{LESS}{64}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{Git}{64}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {subsection}{\numberline {7.2}Řešení specifických problémů}{64}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {paragraph}{Struktura aplikace}{64}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {paragraph}{Datová vrstva}{65}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{Instalace tématu}{65}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Algoritmus pro zpracování šablony}{68}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {paragraph}{Rozpoznání duplikátorů}{71}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {subsection}{\numberline {7.3}Shrnutí implementačních kroků}{72}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsection}{\numberline {7.4}Přístup k~aplikaci}{72}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {section}{\numberline {8}Testování modelu}{73}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {subsection}{\numberline {8.1}Použité testy}{73}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {paragraph}{Jednotkové automatické testy}{73}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{73}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Test rychlosti}{74}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {subsection}{\numberline {8.2}Provedení testů}{74}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {paragraph}{Jednotkové automatické testy}{74}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{75}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Test rychlosti}{76}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {subsection}{\numberline {8.3}Výsledky testů}{76}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Jednotkové automatické testy}{76}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{76}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {paragraph}{Test rychlosti}{77}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
+\contentsline {section}{\numberline {9}Diskuze}{79}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
+\contentsline {subsection}{\numberline {9.1}Zhodnocení řešení}{79}%
 \defcounter {refsection}{0}\relax 
-\egroup 
+\contentsline {subsection}{\numberline {9.2}Budoucí rozšíření}{79}%
 \defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {section}{\numberline {10}Závěr}{80}%
 \defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {section}{\numberline {11}Literatura}{81}%
 \defcounter {refsection}{0}\relax 
 \bgroup 
 \defcounter {refsection}{0}\relax 

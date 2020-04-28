@@ -2189,35 +2189,12 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">krug</bcf:citekey>
-    <bcf:citekey order="2">cameron</bcf:citekey>
-    <bcf:citekey order="3">duckett</bcf:citekey>
-    <bcf:citekey order="4">boehm</bcf:citekey>
-    <bcf:citekey order="5">gauchat</bcf:citekey>
-    <bcf:citekey order="6">treew3</bcf:citekey>
-    <bcf:citekey order="7">lorentz1994recursive</bcf:citekey>
-    <bcf:citekey order="8">hylmar2009</bcf:citekey>
-    <bcf:citekey order="9">surrealcmscite</bcf:citekey>
-    <bcf:citekey order="10">larman2005applying</bcf:citekey>
-    <bcf:citekey order="11">buchczuml</bcf:citekey>
-    <bcf:citekey order="12">podeswa2010uml</bcf:citekey>
-    <bcf:citekey order="13">verens2010cms</bcf:citekey>
-    <bcf:citekey order="14">cmsfordeveloper</bcf:citekey>
-    <bcf:citekey order="15">wordpresstat</bcf:citekey>
-    <bcf:citekey order="16">cameron</bcf:citekey>
-    <bcf:citekey order="17">zandstra2010php</bcf:citekey>
-    <bcf:citekey order="18">arlow</bcf:citekey>
-    <bcf:citekey order="19">requiblog</bcf:citekey>
-    <bcf:citekey order="20">chonoles2003uml</bcf:citekey>
-    <bcf:citekey order="21">buley2013the</bcf:citekey>
-    <bcf:citekey order="22">brown2013designing</bcf:citekey>
-    <bcf:citekey order="23">young2015practical</bcf:citekey>
-    <bcf:citekey order="24">phpmanual</bcf:citekey>
-    <bcf:citekey order="25">nettemanual</bcf:citekey>
-    <bcf:citekey order="26">ormmanual</bcf:citekey>
-    <bcf:citekey order="27">lessmanual</bcf:citekey>
-    <bcf:citekey order="28">unittests</bcf:citekey>
-    <bcf:citekey order="29">testspeed</bcf:citekey>
+    <bcf:citekey order="1">phpmanual</bcf:citekey>
+    <bcf:citekey order="2">nettemanual</bcf:citekey>
+    <bcf:citekey order="3">ormmanual</bcf:citekey>
+    <bcf:citekey order="4">lessmanual</bcf:citekey>
+    <bcf:citekey order="5">unittests</bcf:citekey>
+    <bcf:citekey order="6">testspeed</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
