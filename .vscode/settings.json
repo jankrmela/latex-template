@@ -32,7 +32,9 @@
     {
       "name": "biber -> lualatexmk",
       "tools": [
+          "lualatexmk",
           "biber",
+          "makeglossaries",
           "lualatexmk",
       ]
     }
@@ -70,6 +72,16 @@
     {
       "name": "biber",
       "command": "biber",
+      "args": [
+          "%DOCFILE%"
+      ],
+      "env": {
+          "PATH": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin"
+      }
+    },
+    {
+      "name": "makeglossaries",
+      "command": "makeglossaries",
       "args": [
           "%DOCFILE%"
       ],

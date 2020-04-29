@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// @flow}
+\PYG{k+kr}{import} \PYG{n+nx}{React} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}react\PYGZdq{}}
+\PYG{k+kr}{import} \PYG{o}{*} \PYG{n+nx}{as} \PYG{n+nx}{R} \PYG{n+nx}{from} \PYG{l+s+s2}{\PYGZdq{}ramda\PYGZdq{}}
+
+\PYG{c+c1}{// ... zkráceno}
+
+\PYG{n+nx}{type} \PYG{n+nx}{Props} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{rules}\PYG{o}{:} \PYG{n+nx}{FareTypeRules}\PYG{p}{,}
+    \PYG{n+nx}{fareTypeCategoryName}\PYG{o}{:} \PYG{n+nx}{FareTypeCategoryName}\PYG{p}{,}
+    \PYG{n+nx}{loyaltyTier}\PYG{o}{:} \PYG{o}{?}\PYG{n+nx}{number}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kr}{const} \PYG{n+nx}{FareTypeCells} \PYG{o}{=} \PYG{p}{(\PYGZob{}} \PYG{n+nx}{rules}\PYG{p}{,} \PYG{n+nx}{fareTypeCategoryName}\PYG{p}{,} \PYG{n+nx}{loyaltyTier} \PYG{p}{\PYGZcb{}}\PYG{o}{:} \PYG{n+nx}{Props}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{k+kr}{const} \PYG{n+nx}{shouldRenderLoyaltyRuleItem} \PYG{o}{=}
+    \PYG{n+nx}{loyaltyTier} \PYG{o}{\PYGZam{}\PYGZam{}}
+    \PYG{o}{!}\PYG{n+nx}{R}\PYG{p}{.}\PYG{n+nx}{isNil}\PYG{p}{(}\PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{originalServicePackage}\PYG{p}{)} \PYG{o}{\PYGZam{}\PYGZam{}}
+    \PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{servicePackage} \PYG{o}{!==} \PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{originalServicePackage}
+
+    \PYG{k}{return} \PYG{p}{(}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{List} \PYG{n+na}{type}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}separated\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZob{}}\PYG{o}{!}\PYG{n+nx}{R}\PYG{p}{.}\PYG{n+nx}{isNil}\PYG{p}{(}\PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{servicePackage}\PYG{p}{)} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n+nx}{shouldRenderLoyaltyRuleItem} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{p}{(}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{LoyaltyServiceRuleItem}
+                \PYG{n+na}{servicePackage}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{servicePackage}\PYG{p}{\PYGZcb{}}
+                \PYG{n+na}{originalServicePackage}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{originalServicePackage}\PYG{p}{\PYGZcb{}}
+                \PYG{n+na}{loyaltyTier}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{loyaltyTier}\PYG{p}{\PYGZcb{}}
+                \PYG{n+na}{isIncluded}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{rules}\PYG{p}{.}\PYG{n+nx}{servicePackage} \PYG{o}{!==} \PYG{l+s+s2}{\PYGZdq{}basic\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+            \PYG{p}{/\PYGZgt{}}
+        \PYG{p}{)\PYGZcb{}}
+    \PYG{c+c1}{// ... zkráceno}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

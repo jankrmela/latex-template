@@ -7,6 +7,16 @@
 \usepackage{csquotes}
 \usepackage{float}
 
+% START seznam zkratek
+\usepackage[symbols,sort=none,nogroupskip]{glossaries-extra}
+
+\glsxtrnewsymbol[description={position}]{x}{\ensuremath{x}}
+\glsxtrnewsymbol[description={velocity}]{v}{\ensuremath{v}}
+\glsxtrnewsymbol[description={acceleration}]{a}{\ensuremath{a}}
+\glsxtrnewsymbol[description={time}]{t}{\ensuremath{t}}
+\glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
+% END seznam zkratek
+
 \usepackage[backend=biber, style=iso-numeric, bibencoding=UTF8]{biblatex}
 \addbibresource{references.bib}
 \setdefaultlanguage{czech}
@@ -57,6 +67,7 @@
   \hyphenchar\font=`\-% allowing hyphenation
 }
 \newcommand{\code}[1]{\texttt{\justify#1}}
+
 \begin{document}
 
 \def\,{\penalty10000\hskip.25em}

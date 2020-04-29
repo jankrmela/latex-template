@@ -1,0 +1,33 @@
+describe("<ServicePackageCells /> with csAvability", () => {
+    it("is mounted when csAvability is present", () => {
+        const wrapper = mount(
+        <ServicePackageCell
+            rules={{ csAvailability: "extended" }}
+            servicePackageCategory="basic"
+        />,
+        )
+        expect(wrapper.find("ul").children()).toHaveLength(1)
+        expect(wrapper.find(AdditionalServicePackageRule).exists()).toBe(true)
+    })
+    it("is marked as included for basic service package category", () => {
+        const wrapper = mount(
+        <ServicePackageCell rules={{ csAvailability: "limited" }} servicePackageCategory="basic" />,
+        )
+        expect(wrapper.find(AdditionalServicePackageRule).prop("isIncluded")).toEqual(false)
+    })
+    it("is not marked as included for plus service package category", () => {
+        const wrapper = mount(
+        <ServicePackageCell rules={{ csAvailability: "extended" }} servicePackageCategory="plus" />,
+        )
+        expect(wrapper.find(AdditionalServicePackageRule).prop("isIncluded")).toEqual(true)
+    })
+    it("is not marked as included for premium service package category", () => {
+        const wrapper = mount(
+        <ServicePackageCell
+            rules={{ csAvailability: "extended" }}
+            servicePackageCategory="premium"
+        />,
+        )
+        expect(wrapper.find(AdditionalServicePackageRule).prop("isIncluded")).toEqual(true)
+    })
+})

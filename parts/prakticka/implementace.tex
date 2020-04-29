@@ -21,6 +21,8 @@ Jelikož backendová část vypočítá ceny tarifů podle itineráře, podle po
 
 \obrazek\vlozobrbox{2020-04-28-08-08-10.png}{0.9\textwidth}{!}\endobrl{Ukázka odpovědi z API ancillaries/offers/check}{apiresponse}
 
+
+
 Odpověď (zobrazena na obrázku č. \ref{apiresponse}) obsahuje informace ve formátu dvou objektů. Prvním objektem je objekt fare\_type. Obsahuje informace o tarifech. Z hlediska struktury jsou jednotlivé tarify zabaleny do pole offers. Každý tarif je prezentován objektem s následujícími vlasnostmi:
 \begin{itemize}
     \item price -- objekt obsahující cenu s podrobnostmi, které je nutné vykreslit v košíku
@@ -477,7 +479,7 @@ it("Complete booking with selected FT and SP", () => {
 
 Testy jsou spouštěny mnohokrát v procesu vývoje. První spuštění testů nastává většinou manuálně po úpravě testu. Spuštění se provádí přes terminál příkazem yarn test pro unit testy a příkazem yarn cypress run pro end-to-end testy. Následně je v terminálu po dokončení testů zobrazen jejich výsledek. Je přehledně zobrazeno kolik testů proběhlo úspěšně, kolik neúspěšně a jejich konkrétní příčina neúspěchu. Na základě historii je snadné opravit případné chyby. 
 
-Platforma frontendu je také ošetřena proti odeslání chybného kódu do vzdáleného repozitáře v Gitlabu. Před provedením příkazu git push, kterým se odesílají změny, je provedena kontrola. Spustí se automaticky všechny testy souborů, které mohly být změnami ovlivněny. Bez úspěšněho dokončení testů není možné změny odeslat. 
+Platforma frontendu je také ošetřena proti odeslání chybného kódu do vzdáleného repozitáře v Gitlabu. Před provedením příkazu git push, kterým se odesílají změny, je provedena kontrola. Spustí se automaticky všechny testy souborů, které mohly být změnami ovlivněny. Bez úspěšněho dokončení testů není možné změny odeslat. \cite{arlow}
 
 \obrazek\vlozobrbox{2020-04-28-16-57-28.png}{0.9\textwidth}{!}\endobrl{Výsledek spuštěných testů v repozitáři}{tests}
 

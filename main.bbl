@@ -16,5 +16,39 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{arlow}{book}{}
+      \name{author}{1}{}{%
+        {{hash=eaa53179c62c555eb3e5ee50eefd707e}{%
+           family={Arlow},
+           familyi={A\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brno}%
+      }
+      \list{publisher}{1}{%
+        {Computer Press}%
+      }
+      \strng{namehash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{fullhash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{bibnamehash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{authorbibnamehash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{authornamehash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{authorfullhash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-80-251-1503-9}
+      \field{langid}{czech}
+      \field{title}{UML 2 a unifikovaný proces vývoje aplikací : objektově orientovaná analýza a návrh prakticky}
+      \field{year}{2007}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
