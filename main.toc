@@ -176,116 +176,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.5.10}Shrnutí}{61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Implementace modelu}{63}%
+\contentsline {subsection}{\numberline {6.6}Implementace požadavků}{63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Použité technologie}{63}%
+\contentsline {subsubsection}{\numberline {6.6.1}Specifikace rozhraní}{63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{PHP 7}{63}%
+\contentsline {paragraph}{Rozhraní /ancillaries/offers/check}{63}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Framework Nette}{63}%
+\contentsline {paragraph}{Rozhraní save\_booking}{65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ORM Doctrine 2}{63}%
+\contentsline {subsubsection}{\numberline {6.6.2}Implementace modulu}{66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{LESS}{64}%
+\contentsline {paragraph}{Podmíněné volání API pro získání dat}{66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Git}{64}%
+\contentsline {paragraph}{Zpracování odpovědi}{68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Řešení specifických problémů}{64}%
+\contentsline {paragraph}{Zobrazení komponent }{69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Struktura aplikace}{64}%
+\contentsline {paragraph}{Uložení nového stavu po zvolení tarifu}{71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Datová vrstva}{65}%
+\contentsline {paragraph}{Odeslání strukturovaných dat na ukládací endpoint}{72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Instalace tématu}{65}%
+\contentsline {paragraph}{Shrnutí}{73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Algoritmus pro zpracování šablony}{68}%
+\contentsline {subsubsection}{\numberline {6.6.3}Implementované knihovny}{73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rozpoznání duplikátorů}{71}%
+\contentsline {paragraph}{Knihovna Orbit}{73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Shrnutí implementačních kroků}{72}%
+\contentsline {paragraph}{Knihovna date-fns}{75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Přístup k~aplikaci}{72}%
+\contentsline {paragraph}{Knihovna Flow}{76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Testování modelu}{73}%
+\contentsline {paragraph}{Knihovna Ramda}{77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Použité testy}{73}%
+\contentsline {paragraph}{Shrnutí}{77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{73}%
+\contentsline {subsection}{\numberline {6.7}Testování}{77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{73}%
+\contentsline {subsubsection}{\numberline {6.7.1}Unit testy}{78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{74}%
+\contentsline {subsubsection}{\numberline {6.7.2}Cypress testy}{79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Provedení testů}{74}%
+\contentsline {subsubsection}{\numberline {6.7.3}Vyhodnocování}{80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{74}%
+\contentsline {subsubsection}{\numberline {6.7.4}Shrnutí}{82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{75}%
+\contentsline {section}{\numberline {7}Ekonomické přínosy}{83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{76}%
+\contentsline {section}{\numberline {8}Diskuze}{86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Výsledky testů}{76}%
+\contentsline {subsection}{\numberline {8.1}Shrnutí výsledků}{86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Jednotkové automatické testy}{76}%
+\contentsline {subsection}{\numberline {8.2}Možné vylepšení}{86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Funkčnost konvertoru na různých typech šablon}{76}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Test rychlosti}{77}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Diskuze}{79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Zhodnocení řešení}{79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Budoucí rozšíření}{79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Závěr}{80}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Literatura}{81}%
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
-\defcounter {refsection}{0}\relax 
-\bgroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{english}
-\defcounter {refsection}{0}\relax 
-\egroup 
-\defcounter {refsection}{0}\relax 
-\selectlanguage *{czech}
+\contentsline {section}{\numberline {9}Závěr}{88}%

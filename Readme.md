@@ -80,7 +80,15 @@ For generating bibiliography is used `biber`.
     $ xelatext main --shell-escape
     ```
 
-6. Change something and save the file. PDF should be generated. If not, run CMD + SHIFT + P and select command `Build with recipe`.
+6. This repository uses package `minted`, which requires to be installed at least `python 3.7` and packages `pygments` and `jsx-lexer` (for ES6 syntax). 
+    ```sh
+    $ brew install python
+    $ easy_install pip
+    $ pip install Pygments
+    $ pip install jsx-lexer
+    ```
+
+7. Change something and save the file. A PDF should be generated. If not, run CMD + SHIFT + P and select command `Build with recipe` > `biber lulatexmk`.
 
 
 ### Troubleshooting

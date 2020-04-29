@@ -1,17 +1,21 @@
 \kapitola{Diskuze}
-\sekce{Zhodnocení řešení}
-% shrnout vlastni vysledky
-Cílem práce bylo vytvořit webovou aplikaci, která by umožnila uživateli snadnou editaci HTML šablon, bez nutnosti předchozí implementace šablony do redakčního systému pomocí programovacích jazyků. Na současném trhu takové řešení zatím neexistuje. Všechny redakční systémy podporují pouze šablony, které jsou upraveny dle specifického způsobu pro konkrétní redakční systém.
+\sekce{Shrnutí výsledků}
+Po dvou měsících používání nové implementace nabídky tarifů a balíčků z dostupných dat vyplynulo, že nová nabídka tarifů zvýšila celkové tržby z objednávek. Téměř každý desátý uživatel si pro svou objednávku zvolí placený tarif. Firma si nepřeje uvádět finanční výsledky v této práci, takže pouze na základě odhadů je vypočten zisk v hodnotě několik milionů korun měsíčně. Detailní výpočty jsou uvedeny v kapitole Ekonomické přínosy.
 
-Při implementaci bylo nejtěžším úkolem naprogramovat algoritmus, který by dokázal univerzálně zpracovat všechny druhy šablon. Nejlepších výsledků dosahuje konverze u~šablon, kde není přiliš javascriptového kódu, který ovlivňuje zobrazování a~funkci stránky. Redakční systém je tedy nejvhodnější pro typy stránek jako jsou osobní webové stránky, blog, firemní prezentace, nebo web pro události a~akce. 
+ Nabídku balíčků se ale povedlo vylepšit a tím vzrostl i celkový prodej těchto balíčků z 1 \% na 4 \%. U balíčků takto velký nárůst nebyl očekáván, protože uživatelé si vybírají balíčky až po volbě tarifu. Existovaly předpoklady, že balíčky již nebudou tak úspěšné, protože uživatel již zakoupil navíc vyšší verzi tarifu a za balíček již nebude ochoten utrácet. Tato domněnka se nepotvrdila a prodej balíčků také vzrostl. 
 
-Jeho výhoda spočívá v~obrovské jednoduchosti a~rychlosti editace. Uživatel se nemusí omezovat výběrem mezi pár vzhledy, které většinou nabízí jiné redakční systémy, ale může si vybrat jakýkoliv z~tisíce vzhledů, které najde kdekoliv na internetu.  
+Dalším měřitelným výsledek spojený se zavedením nabídky tarifů bylo snížení kontaktování zákaznické podpory o 12 procent. Firma tedy zároveň ušetří provozní náklady na poskytování zákaznícké podpory. 
 
-Naopak méně vhodný je na webové stránky, kde se očekává rozsáhlejší funkčnost a~interakce s~uživatelem pomocí dotazníků, anket a~přihlašování. Algoritmus totiž není schopen rozpoznat plánovanou funkčnost a~tedy nelze nabídnout uživateli editaci těchto interaktivních prvků.  
+Celková konverze nákupů placených tarifů ale dosahuje podstatně menších hodnot na mobilních zařízení. Na mobilních telefonech si vybere placený tarif 4 \% zákazníků. To je způsobeno malým rozlišením na kterém uživatel nemůže jednoduše porovnat výhody plynoucí z vyšších tarifů oproti tarifu zdarma. 
 
+\sekce{Možné vylepšení}
+Není reálné určit, zda dosažené výsledky jsou nejlepší možné. Je tedy nutné zkoušet pomocí metod AB testingu, zda různé další změny nepřinesou ještě vyšší zisk. Je ale nutné monitorovat i další atributy, jako je počet dokončených objednávek, celková částka objednávek, počet kontaktování zákaznické podpory. 
 
-\sekce{Budoucí rozšíření}
-Prostoru pro další rozšíření je tu nespočet. Základní prvek, na kterém stojí celá aplikace, je algoritmus pro zpracování HTML šablon. Ten by byl vhodný vylepšit na základě analýzy velkého množství různých typů HTML šablon. 
+Prvním návrhem na vylepšení je jednoznačně zaměřit se na analýzu prodeje tarifů a balíčků na mobilních zařízení. Na základě analýzy, která by objasnila, proč na mobilních telefonech je o 6 procent menší konverze výběru placených tarifů by bylo vhodné navrhnout optimálnější řešení, které by maximalizovalo nákup placených balíčků alespoň na úroveň desktopových rozlišení. Prvním důvodem, který vysvětluje tento nízký prodej tarifů na mobilech, může být způsoben rozložením elementů. Uživatel totiž nevidí všechny vlastnosti jednotlivých tarifů na jedné obrazovce bez nutnosti klikat a nemůže tedy porovnat tarify mezi sebou. Úprava rozvržení na malých rozlišení by tedy měl být první krok k vylepšení.
 
-Dále by bylo užitečné ještě více zpříjemnit uživateli editaci stránky, nabídnout mu více možností. V~tomto kroku je ale nutné postupovat opatrně, aby více možností nepůsobilo na uživatele zmateně. Je důležité i~nadále zachovat jednoduchost, protože cílovou skupinou této aplikace jsou méně zdatní počítačoví uživatelé.
+Dalším návrhem je vylepšit rozmístění prvků v procesu objednávky. Například je možné, že více zákazníků, by dokončilo objednávku, pokud by již na prvním kroku byli nuceni zvolit jeden z tarifů. Při takové změně bude nutné postupovat velmi opatrně, protože může mít nečekaný a velmi silný negativní vliv. Proto by bylo vhodné takové změny zobrazovat jen 5 až 10 procentům návštěvníkům. Také je možné zkusit umístit volbu balíčků až těsně před krok platby, kde by se mohl naopak zvýšit hodnota zvoleného tarifu, protože uživatel bude přikládat větší důležitost objednávce, poté co vyplnil celou objednávků.
+
+Snadně lze také implementovat variantu pro zvýšení prodeje placených tarifů, která by obsahovala důraznější varování při volbě neplaceného tarifu agresivní červenou barvou, kterou mají uživatelé spojenou s chybovou hláškou v procesu objednávky. 
+
+Při návrhu řešení bylo také uvažováno, zda uživateli automaticky předvyplnit volbu standartního tarifu a tím tedy i navýšit cenu objednávky. Toto chování ale nebylo implementováno z důvodu velmi negativního působení na uživatele. Někteří uživatelé by mohli toto chování chápat jako podvod a snahu je okrást. Nicméně tyto argumenty nebyly dokázány a bylo by tedy vhodné novou funkcionalitu vyzkoušet na malém vzorku uživatelů.
 
