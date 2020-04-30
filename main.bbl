@@ -19,6 +19,38 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{topalovich_salesforce_2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=21b5170c7aeb49cbbf874c8ff9a2587d}{%
+           family={TOPALOVICH},
+           familyi={T\bibinitperiod},
+           given={MIKE},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {Place of publication not identified}%
+      }
+      \list{publisher}{1}{%
+        {PACKT Publishing Limited}%
+      }
+      \strng{namehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \strng{fullhash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \strng{bibnamehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \strng{authorbibnamehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \strng{authornamehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \strng{authorfullhash}{21b5170c7aeb49cbbf874c8ff9a2587d}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781787124677}
+      \field{note}{OCLC: 960836307}
+      \field{title}{Salesforce lightning application development essentials.}
+      \field{year}{2017}
+    \endentry
     \entry{arlow}{book}{}
       \name{author}{1}{}{%
         {{hash=eaa53179c62c555eb3e5ee50eefd707e}{%
@@ -39,8 +71,8 @@
       \strng{authorbibnamehash}{eaa53179c62c555eb3e5ee50eefd707e}
       \strng{authornamehash}{eaa53179c62c555eb3e5ee50eefd707e}
       \strng{authorfullhash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-80-251-1503-9}

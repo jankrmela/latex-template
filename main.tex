@@ -8,13 +8,39 @@
 \usepackage{float}
 
 % START seznam zkratek
-\usepackage[symbols,sort=none,nogroupskip]{glossaries-extra}
+\usepackage[abbreviations,symbols,style=index]{glossaries-extra}
 
-\glsxtrnewsymbol[description={position}]{x}{\ensuremath{x}}
-\glsxtrnewsymbol[description={velocity}]{v}{\ensuremath{v}}
-\glsxtrnewsymbol[description={acceleration}]{a}{\ensuremath{a}}
-\glsxtrnewsymbol[description={time}]{t}{\ensuremath{t}}
-\glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
+\newabbreviation{spa}{SPA}{Typ webové aplikace, ve které jsou data vykreslovány pouze Javascriptem}
+\newabbreviation{ajax}{AJAX}{Asynchronní odesílaní a získávání dat}
+\newabbreviation{json}{JSON}{Styl zápisu Javascriptového objektu}
+\newabbreviation{ui}{UI}{Uživatelské rozhraní}
+\newabbreviation{ux}{UX}{Sada pravidel pro interakci mezi uživatelem a produktem}
+\newabbreviation{mvvm}{MVVM}{Typ softwarové architektury, kde je aplikace rozdělena na 4 části, dle specifických pravidel}
+\newabbreviation{mvc}{MVC}{Typ softwarové architektury, kde je aplikace rozdělena na 3 části, dle specifických pravidel }
+\newabbreviation{bsc}{BSC}{Balanced scorecard -- systém podnikových ukazatelů}
+\newabbreviation{nomad}{Nomád}{Funkcionalita vyhledávače Kiwi.com, ve které nezáleží na pořadí letů k hledaným městům}
+\newabbreviation{gdpr}{GDPR}{Obecné nařízení o ochraně osobních údajů}
+\newabbreviation{metasearch}{Metasearch}{Vyhledávací nástroj, který vyhledává výsledky na jiných vyhledávačích}
+\newabbreviation{appstrore}{App store}{Platforma pro distribuci aplikací v systému iOS}
+\newabbreviation{play}{Google Play}{Platforma pro distribuci aplikací v systému Android}
+\newabbreviation{hw}{HW}{Hardware}
+\newabbreviation{bpnm}{BPNM}{Business Process Model and Notation -- grafická notace modelování podnikových procesů}
+\newabbreviation{lastminute}{LastMinute}{Dle Kiwi.com definic se jedná o let, který odléta do 48 hodin}
+\newabbreviation{postgre}{PosgreSQL}{Relační databázový server}
+\newabbreviation{qa}{QA}{V kontextu práce se jedná o zaměstance zajišťující kvalitu výsledného produktu}
+\newabbreviation{wireframe}{Wireframe}{Drátěný model -- schéma webové stránky}
+\newabbreviation{figma}{Figma}{Nástroj pro tvorbu designových návrhů}
+\newabbreviation{api}{API}{Sbírka procedur, funkcí a protokolů}
+\newabbreviation{endpoint}{Endpoint}{V souvislosti s API se jedná o koncový bod serveru určený pro komunikaci se službou}
+\newabbreviation{hook}{React Hook}{Funkce dostupné v React funkcionální komponentě, která je v interakci se stavem komponenty a jejím životním cyklem}
+\newabbreviation{mapper}{Mapper}{Proces zpracování vstupních dat do vhodné struktury}
+\newabbreviation{merge}{Merge request}{V Gitlab terminologii označuje žádost o přetažení větve}
+\newabbreviation{end2end}{End-to-end test}{Testování kompletní funkcionality aplikace}
+
+
+
+
+
 % END seznam zkratek
 
 \usepackage[backend=biber, style=iso-numeric, bibencoding=UTF8]{biblatex}

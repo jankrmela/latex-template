@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  29 APR 2020 22:26
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  30 APR 2020 20:01
  system commands enabled.
  file:line:error style messages enabled.
 **/Users/js/code/master-thesis/main.tex
@@ -739,12 +739,12 @@ braces):
 >  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for czech
-(polyglossia)            righthyphenmin	3
 (polyglossia)            loader	loadhyph-cs.tex
+(polyglossia)            synonyms	
+(polyglossia)            righthyphenmin	3
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	hyph-cs.hyp.txt
-(polyglossia)            patterns	hyph-cs.pat.txt
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            patterns	hyph-cs.pat.txt on input line 10
 Module polyglossia Info: Language czech was not yet loaded; created with id 3 on input line 10
  (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.sty
 Package: luavlna 2019/10/30 luavlna
@@ -982,90 +982,98 @@ Package csquotes Info: Redefining alias 'default' -> 'czech'.
 runsystem(which pygmentize && touch main.aex)...executed
 runsystem(rm main.aex)...executed
  (/Users/js/code/master-thesis/main.aux
-LaTeX Info: Redefining \rmfamily on input line 12.
-LaTeX Info: Redefining \sffamily on input line 12.
-LaTeX Info: Redefining \ttfamily on input line 12.
+LaTeX Info: Redefining \rmfamily on input line 13.
+LaTeX Info: Redefining \sffamily on input line 13.
+LaTeX Info: Redefining \ttfamily on input line 13.
 
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 236.
+LaTeX Info: Redefining \sffamily on input line 236.
+LaTeX Info: Redefining \ttfamily on input line 236.
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 244.
+LaTeX Info: Redefining \sffamily on input line 244.
+LaTeX Info: Redefining \ttfamily on input line 244.
 set lang czech, 3
 )
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 97.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 71.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 71.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 71.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 71.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 71.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 71.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 71.
-LaTeX Font Info:    Redeclaring math accent \check on input line 71.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 71.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 71.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 71.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 71.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 71.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 97.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 97.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 97.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 97.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 97.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 97.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 97.
+LaTeX Font Info:    Redeclaring math accent \check on input line 97.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 97.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 97.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 97.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 97.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 71.
+(Font)              `operators' in the math version `normal' on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 71.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 97.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 71.
+(Font)              `operators' in the math version `bold' on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 71.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 71.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 71.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 71.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 71.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 71.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 71.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 71.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 71.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 71.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 97.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count464
@@ -1108,14 +1116,14 @@ Package biblatex Info: Data encoding 'UTF8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (/Users/js/code/master-thesis/main.bbl)
-Package biblatex Info: Reference section=0 on input line 71.
-Package biblatex Info: Reference segment=0 on input line 71.
+Package biblatex Info: Reference section=0 on input line 97.
+Package biblatex Info: Reference segment=0 on input line 97.
 
 set lang czech, 3
 \AtBeginShipoutBox=\box68
-LaTeX Info: Redefining \rmfamily on input line 71.
-LaTeX Info: Redefining \sffamily on input line 71.
-LaTeX Info: Redefining \ttfamily on input line 71.
+LaTeX Info: Redefining \rmfamily on input line 97.
+LaTeX Info: Redefining \sffamily on input line 97.
+LaTeX Info: Redefining \ttfamily on input line 97.
 set lang czech, 3
 (/Users/js/code/master-thesis/parts/header.tex [1
 
@@ -1133,128 +1141,134 @@ LaTeX Info: Redefining \ttfamily on input line 3.
 set lang czech, 3
 [5
 
-])
+]
+LaTeX Info: Redefining \rmfamily on input line 239.
+LaTeX Info: Redefining \sffamily on input line 239.
+LaTeX Info: Redefining \ttfamily on input line 239.
+
+set lang czech, 3
+LaTeX Info: Redefining \rmfamily on input line 243.
+LaTeX Info: Redefining \sffamily on input line 243.
+LaTeX Info: Redefining \ttfamily on input line 243.
+set lang czech, 3
+)
 \tf@toc=\write6
 
 \openout6 = main.toc
- [6] (/Users/js/code/master-thesis/parts/structure.tex (/Users/js/code/master-thesis/parts/formality.tex
+ [6] (/Users/js/code/master-thesis/parts/structure.tex (/Users/js/code/master-thesis/parts/formality.tex) (/Users/js/code/master-thesis/parts/uvod.tex [7
 
-Package glossaries-extra Warning: No entries defined in glossary `main' on input line 1.
+] [8] [9
 
-) (/Users/js/code/master-thesis/parts/uvod.tex [7
+]) (/Users/js/code/master-thesis/parts/strukturaPrace.tex [10
 
-] [8
-
-]) (/Users/js/code/master-thesis/parts/strukturaPrace.tex [9
-
-]) (/Users/js/code/master-thesis/parts/architektura.tex [10
+]) (/Users/js/code/master-thesis/parts/architektura.tex [11
 
 ]
-<./src/2020-04-27-15-58-08.png, id=41, 581.17125pt x 472.76625pt>
+<./src/2020-04-27-15-58-08.png, id=45, 581.17125pt x 472.76625pt>
 File: ./src/2020-04-27-15-58-08.png Graphic file (type png)
 <use ./src/2020-04-27-15-58-08.png>
 Package luatex.def Info: ./src/2020-04-27-15-58-08.png  used on input line 17.
 (luatex.def)             Requested size: 581.16983pt x 472.76509pt.
- [11
+ [12
 
 ]
-<./src/2020-04-27-16-18-29.png, id=46, 595.22375pt x 397.485pt>
+<./src/2020-04-27-16-18-29.png, id=49, 595.22375pt x 397.485pt>
 File: ./src/2020-04-27-16-18-29.png Graphic file (type png)
 <use ./src/2020-04-27-16-18-29.png>
 Package luatex.def Info: ./src/2020-04-27-16-18-29.png  used on input line 25.
 (luatex.def)             Requested size: 595.2223pt x 397.48402pt.
- [12<./src/2020-04-27-15-58-08.png>]
-<./src/2020-04-27-16-29-00.png, id=52, 597.23125pt x 249.93375pt>
+ [13<./src/2020-04-27-15-58-08.png>]
+<./src/2020-04-27-16-29-00.png, id=55, 597.23125pt x 249.93375pt>
 File: ./src/2020-04-27-16-29-00.png Graphic file (type png)
 <use ./src/2020-04-27-16-29-00.png>
 Package luatex.def Info: ./src/2020-04-27-16-29-00.png  used on input line 37.
 (luatex.def)             Requested size: 597.22978pt x 249.93314pt.
- [13<./src/2020-04-27-16-18-29.png>] [14<./src/2020-04-27-16-29-00.png>]
-<./src/2020-04-27-16-31-09.png, id=61, 604.2575pt x 713.66624pt>
+ [14<./src/2020-04-27-16-18-29.png>] [15<./src/2020-04-27-16-29-00.png>]
+<./src/2020-04-27-16-31-09.png, id=64, 604.2575pt x 713.66624pt>
 File: ./src/2020-04-27-16-31-09.png Graphic file (type png)
 <use ./src/2020-04-27-16-31-09.png>
 Package luatex.def Info: ./src/2020-04-27-16-31-09.png  used on input line 57.
 (luatex.def)             Requested size: 604.25603pt x 713.66449pt.
- [15] [16<./src/2020-04-27-16-31-09.png>]
-<./src/2020-04-27-16-36-40.png, id=69, 912.40875pt x 696.6025pt>
+ [16] [17<./src/2020-04-27-16-31-09.png>]
+<./src/2020-04-27-16-36-40.png, id=72, 912.40875pt x 696.6025pt>
 File: ./src/2020-04-27-16-36-40.png Graphic file (type png)
 <use ./src/2020-04-27-16-36-40.png>
 Package luatex.def Info: ./src/2020-04-27-16-36-40.png  used on input line 61.
 (luatex.def)             Requested size: 912.40652pt x 696.6008pt.
-<./src/2020-04-27-16-40-17.png, id=70, 747.79375pt x 679.53876pt>
+<./src/2020-04-27-16-40-17.png, id=73, 747.79375pt x 679.53876pt>
 File: ./src/2020-04-27-16-40-17.png Graphic file (type png)
 <use ./src/2020-04-27-16-40-17.png>
 Package luatex.def Info: ./src/2020-04-27-16-40-17.png  used on input line 67.
 (luatex.def)             Requested size: 747.79192pt x 679.53711pt.
- [17<./src/2020-04-27-16-36-40.png>]
+ [18<./src/2020-04-27-16-36-40.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 73.
 
-[18<./src/2020-04-27-16-40-17.png>] [19]
-<./src/2020-04-27-17-18-39.png, id=82, 586.19pt x 430.60875pt>
+[19<./src/2020-04-27-16-40-17.png>] [20]
+<./src/2020-04-27-17-18-39.png, id=85, 586.19pt x 430.60875pt>
 File: ./src/2020-04-27-17-18-39.png Graphic file (type png)
 <use ./src/2020-04-27-17-18-39.png>
 Package luatex.def Info: ./src/2020-04-27-17-18-39.png  used on input line 116.
 (luatex.def)             Requested size: 586.18857pt x 430.60768pt.
-<./src/2020-04-27-17-19-29.png, id=83, 745.78625pt x 416.55624pt>
+<./src/2020-04-27-17-19-29.png, id=86, 745.78625pt x 416.55624pt>
 File: ./src/2020-04-27-17-19-29.png Graphic file (type png)
 <use ./src/2020-04-27-17-19-29.png>
 Package luatex.def Info: ./src/2020-04-27-17-19-29.png  used on input line 120.
 (luatex.def)             Requested size: 745.78444pt x 416.55522pt.
- [20<./src/2020-04-27-17-18-39.png>]
-<./src/2020-04-27-17-47-02.png, id=88, 749.80125pt x 416.55624pt>
+ [21<./src/2020-04-27-17-18-39.png>]
+<./src/2020-04-27-17-47-02.png, id=92, 749.80125pt x 416.55624pt>
 File: ./src/2020-04-27-17-47-02.png Graphic file (type png)
 <use ./src/2020-04-27-17-47-02.png>
 Package luatex.def Info: ./src/2020-04-27-17-47-02.png  used on input line 141.
 (luatex.def)             Requested size: 749.79942pt x 416.55522pt.
- [21<./src/2020-04-27-17-19-29.png>]
-<./src/2020-04-27-17-48-17.png, id=94, 686.565pt x 349.305pt>
+ [22<./src/2020-04-27-17-19-29.png>]
+<./src/2020-04-27-17-48-17.png, id=97, 686.565pt x 349.305pt>
 File: ./src/2020-04-27-17-48-17.png Graphic file (type png)
 <use ./src/2020-04-27-17-48-17.png>
 Package luatex.def Info: ./src/2020-04-27-17-48-17.png  used on input line 149.
 (luatex.def)             Requested size: 686.56332pt x 349.30414pt.
-) (/Users/js/code/master-thesis/parts/metodika.tex [22<./src/2020-04-27-17-47-02.png>] [23<./src/2020-04-27-17-48-17.png>]) (/Users/js/code/master-thesis/parts/navrh.tex [24
+) (/Users/js/code/master-thesis/parts/metodika.tex [23<./src/2020-04-27-17-47-02.png>] [24<./src/2020-04-27-17-48-17.png>]) (/Users/js/code/master-thesis/parts/navrh.tex [25
 
 ] (/Users/js/code/master-thesis/parts/prakticka/vize.tex
-<./src/2020-04-27-18-10-22.png, id=106, 975.645pt x 728.7225pt>
+<./src/2020-04-27-18-10-22.png, id=109, 975.645pt x 728.7225pt>
 File: ./src/2020-04-27-18-10-22.png Graphic file (type png)
 <use ./src/2020-04-27-18-10-22.png>
 Package luatex.def Info: ./src/2020-04-27-18-10-22.png  used on input line 14.
 (luatex.def)             Requested size: 975.64262pt x 728.72072pt.
- [25
+ [26
 
-] [26<./src/2020-04-27-18-10-22.png>] [27]
-<./src/2020-04-27-19-01-37.png, id=117, 770.88pt x 742.775pt>
+] [27<./src/2020-04-27-18-10-22.png>] [28]
+<./src/2020-04-27-19-01-37.png, id=120, 770.88pt x 742.775pt>
 File: ./src/2020-04-27-19-01-37.png Graphic file (type png)
 <use ./src/2020-04-27-19-01-37.png>
 Package luatex.def Info: ./src/2020-04-27-19-01-37.png  used on input line 86.
 (luatex.def)             Requested size: 770.87813pt x 742.77318pt.
-) (/Users/js/code/master-thesis/parts/prakticka/problem.tex [28] [29<./src/2020-04-27-19-01-37.png>]) (/Users/js/code/master-thesis/parts/prakticka/soucasneReseni.tex [30] [31]
-<./src/2020-04-27-19-20-09.png, id=132, 987.69pt x 452.69125pt>
+) (/Users/js/code/master-thesis/parts/prakticka/problem.tex [29] [30<./src/2020-04-27-19-01-37.png>]) (/Users/js/code/master-thesis/parts/prakticka/soucasneReseni.tex [31] [32]
+<./src/2020-04-27-19-20-09.png, id=135, 987.69pt x 452.69125pt>
 File: ./src/2020-04-27-19-20-09.png Graphic file (type png)
 <use ./src/2020-04-27-19-20-09.png>
 Package luatex.def Info: ./src/2020-04-27-19-20-09.png  used on input line 31.
 (luatex.def)             Requested size: 987.68759pt x 452.69014pt.
- [32<./src/2020-04-27-19-20-09.png>] [33]
-<./src/2020-04-27-19-24-34.png, id=140, 902.37125pt x 816.04875pt>
+ [33<./src/2020-04-27-19-20-09.png>] [34]
+<./src/2020-04-27-19-24-34.png, id=143, 902.37125pt x 816.04875pt>
 File: ./src/2020-04-27-19-24-34.png Graphic file (type png)
 <use ./src/2020-04-27-19-24-34.png>
 Package luatex.def Info: ./src/2020-04-27-19-24-34.png  used on input line 73.
 (luatex.def)             Requested size: 902.36905pt x 816.04677pt.
- [34<./src/2020-04-27-19-24-34.png>]
-<./src/2020-04-27-19-27-10.png, id=145, 875.27pt x 473.77pt>
+ [35<./src/2020-04-27-19-24-34.png>]
+<./src/2020-04-27-19-27-10.png, id=148, 875.27pt x 473.77pt>
 File: ./src/2020-04-27-19-27-10.png Graphic file (type png)
 <use ./src/2020-04-27-19-27-10.png>
 Package luatex.def Info: ./src/2020-04-27-19-27-10.png  used on input line 104.
 (luatex.def)             Requested size: 875.26787pt x 473.76884pt.
- [35]
-<./src/2020-04-27-19-29-35.png, id=149, 901.3675pt x 531.9875pt>
+ [36]
+<./src/2020-04-27-19-29-35.png, id=152, 901.3675pt x 531.9875pt>
 File: ./src/2020-04-27-19-29-35.png Graphic file (type png)
 <use ./src/2020-04-27-19-29-35.png>
 Package luatex.def Info: ./src/2020-04-27-19-29-35.png  used on input line 119.
 (luatex.def)             Requested size: 901.36528pt x 531.9862pt.
- [36<./src/2020-04-27-19-27-10.png>]
+ [37<./src/2020-04-27-19-27-10.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []\TU/lmr/bx/n/12 Úro-veň 1
  []
@@ -1274,200 +1288,109 @@ Overfull \hbox (6.60527pt too wide) in paragraph at lines 131--139
 [][] 
  []
 
-[37<./src/2020-04-27-19-29-35.png>] [38]
-<./src/2020-04-27-19-57-48.png, id=161, 765.86125pt x 987.69pt>
+[38<./src/2020-04-27-19-29-35.png>] [39]
+<./src/2020-04-27-19-57-48.png, id=164, 765.86125pt x 987.69pt>
 File: ./src/2020-04-27-19-57-48.png Graphic file (type png)
 <use ./src/2020-04-27-19-57-48.png>
 Package luatex.def Info: ./src/2020-04-27-19-57-48.png  used on input line 149.
 (luatex.def)             Requested size: 765.85938pt x 987.68759pt.
- [39
+ [40
 
-<./src/2020-04-27-19-57-48.png>]) (/Users/js/code/master-thesis/parts/prakticka/konkurence.tex [40]
-<./src/2020-04-27-20-18-58.png, id=169, 825.0825pt x 691.58376pt>
+<./src/2020-04-27-19-57-48.png>]) (/Users/js/code/master-thesis/parts/prakticka/konkurence.tex [41]
+<./src/2020-04-27-20-18-58.png, id=173, 825.0825pt x 691.58376pt>
 File: ./src/2020-04-27-20-18-58.png Graphic file (type png)
 <use ./src/2020-04-27-20-18-58.png>
 Package luatex.def Info: ./src/2020-04-27-20-18-58.png  used on input line 24.
 (luatex.def)             Requested size: 426.79134pt x 357.73668pt.
- [41] [42<./src/2020-04-27-20-18-58.png>]
-<./src/2020-04-27-20-43-12.png, id=178, 826.08624pt x 251.94125pt>
+ [42] [43<./src/2020-04-27-20-18-58.png>]
+<./src/2020-04-27-20-43-12.png, id=181, 826.08624pt x 251.94125pt>
 File: ./src/2020-04-27-20-43-12.png Graphic file (type png)
 <use ./src/2020-04-27-20-43-12.png>
 Package luatex.def Info: ./src/2020-04-27-20-43-12.png  used on input line 36.
 (luatex.def)             Requested size: 426.79134pt x 130.16444pt.
-<./src/2020-04-27-21-00-49.png, id=179, 771.88374pt x 450.68375pt>
+<./src/2020-04-27-21-00-49.png, id=182, 771.88374pt x 450.68375pt>
 File: ./src/2020-04-27-21-00-49.png Graphic file (type png)
 <use ./src/2020-04-27-21-00-49.png>
 Package luatex.def Info: ./src/2020-04-27-21-00-49.png  used on input line 45.
 (luatex.def)             Requested size: 771.88185pt x 450.68263pt.
- [43<./src/2020-04-27-20-43-12.png><./src/2020-04-27-21-00-49.png>]
-<./src/2020-04-27-21-01-27.png, id=185, 746.79pt x 232.87pt>
+ [44<./src/2020-04-27-20-43-12.png><./src/2020-04-27-21-00-49.png>]
+<./src/2020-04-27-21-01-27.png, id=188, 746.79pt x 232.87pt>
 File: ./src/2020-04-27-21-01-27.png Graphic file (type png)
 <use ./src/2020-04-27-21-01-27.png>
 Package luatex.def Info: ./src/2020-04-27-21-01-27.png  used on input line 49.
 (luatex.def)             Requested size: 746.78816pt x 232.86942pt.
-<./src/2020-04-27-21-02-36.png, id=186, 757.83125pt x 298.11375pt>
+<./src/2020-04-27-21-02-36.png, id=189, 757.83125pt x 298.11375pt>
 File: ./src/2020-04-27-21-02-36.png Graphic file (type png)
 <use ./src/2020-04-27-21-02-36.png>
 Package luatex.def Info: ./src/2020-04-27-21-02-36.png  used on input line 55.
 (luatex.def)             Requested size: 757.8294pt x 298.11302pt.
- [44<./src/2020-04-27-21-01-27.png><./src/2020-04-27-21-02-36.png>]
-<./src/2020-04-27-21-03-48.png, id=192, 780.9175pt x 582.175pt>
+ [45<./src/2020-04-27-21-01-27.png><./src/2020-04-27-21-02-36.png>]
+<./src/2020-04-27-21-03-48.png, id=195, 780.9175pt x 582.175pt>
 File: ./src/2020-04-27-21-03-48.png Graphic file (type png)
 <use ./src/2020-04-27-21-03-48.png>
 Package luatex.def Info: ./src/2020-04-27-21-03-48.png  used on input line 63.
 (luatex.def)             Requested size: 780.91559pt x 582.17358pt.
-<./src/2020-04-27-21-05-05.png, id=193, 778.91pt x 544.0325pt>
+<./src/2020-04-27-21-05-05.png, id=196, 778.91pt x 544.0325pt>
 File: ./src/2020-04-27-21-05-05.png Graphic file (type png)
 <use ./src/2020-04-27-21-05-05.png>
 Package luatex.def Info: ./src/2020-04-27-21-05-05.png  used on input line 72.
 (luatex.def)             Requested size: 778.90811pt x 544.03117pt.
- [45<./src/2020-04-27-21-03-48.png>]
-<./src/2020-04-27-21-05-50.png, id=198, 774.895pt x 467.7475pt>
+ [46<./src/2020-04-27-21-03-48.png>]
+<./src/2020-04-27-21-05-50.png, id=201, 774.895pt x 467.7475pt>
 File: ./src/2020-04-27-21-05-50.png Graphic file (type png)
 <use ./src/2020-04-27-21-05-50.png>
 Package luatex.def Info: ./src/2020-04-27-21-05-50.png  used on input line 76.
 (luatex.def)             Requested size: 774.89311pt x 467.74634pt.
- [46<./src/2020-04-27-21-05-05.png>] [47<./src/2020-04-27-21-05-50.png>]
-<./src/2020-04-27-21-14-33.png, id=207, 771.88374pt x 349.305pt>
+ [47<./src/2020-04-27-21-05-05.png>] [48<./src/2020-04-27-21-05-50.png>]
+<./src/2020-04-27-21-14-33.png, id=210, 771.88374pt x 349.305pt>
 File: ./src/2020-04-27-21-14-33.png Graphic file (type png)
 <use ./src/2020-04-27-21-14-33.png>
 Package luatex.def Info: ./src/2020-04-27-21-14-33.png  used on input line 104.
 (luatex.def)             Requested size: 426.79134pt x 193.13635pt.
-) (/Users/js/code/master-thesis/parts/prakticka/navrh.tex [48] [49<./src/2020-04-27-21-14-33.png>] [50]
-<./src/2020-04-27-21-25-01.png, id=218, 929.4725pt x 808.01875pt>
+) (/Users/js/code/master-thesis/parts/prakticka/navrh.tex [49] [50<./src/2020-04-27-21-14-33.png>] [51]
+<./src/2020-04-27-21-25-01.png, id=223, 929.4725pt x 808.01875pt>
 File: ./src/2020-04-27-21-25-01.png Graphic file (type png)
 <use ./src/2020-04-27-21-25-01.png>
 Package luatex.def Info: ./src/2020-04-27-21-25-01.png  used on input line 48.
 (luatex.def)             Requested size: 929.47025pt x 808.01678pt.
- [51<./src/2020-04-27-21-25-01.png>] [52]
-<./src/2020-04-27-21-28-06.png, id=228, 587.19376pt x 893.3375pt>
+ [52<./src/2020-04-27-21-25-01.png>] [53]
+<./src/2020-04-27-21-28-06.png, id=231, 587.19376pt x 893.3375pt>
 File: ./src/2020-04-27-21-28-06.png Graphic file (type png)
 <use ./src/2020-04-27-21-28-06.png>
 Package luatex.def Info: ./src/2020-04-27-21-28-06.png  used on input line 58.
 (luatex.def)             Requested size: 587.19232pt x 893.33531pt.
- [53
+ [54
 
-<./src/2020-04-27-21-28-06.png>] [54]
-<./src/2020-04-27-21-33-22.png, id=236, 853.1875pt x 1121.18875pt>
+<./src/2020-04-27-21-28-06.png>] [55]
+<./src/2020-04-27-21-33-22.png, id=239, 853.1875pt x 1121.18875pt>
 File: ./src/2020-04-27-21-33-22.png Graphic file (type png)
 <use ./src/2020-04-27-21-33-22.png>
 Package luatex.def Info: ./src/2020-04-27-21-33-22.png  used on input line 71.
 (luatex.def)             Requested size: 853.18542pt x 1121.18602pt.
- [55
+ [56
 
 <./src/2020-04-27-21-33-22.png>]
-<./src/2020-04-27-21-43-22.png, id=241, 966.61125pt x 416.55624pt>
+<./src/2020-04-27-21-43-22.png, id=244, 966.61125pt x 416.55624pt>
 File: ./src/2020-04-27-21-43-22.png Graphic file (type png)
 <use ./src/2020-04-27-21-43-22.png>
 Package luatex.def Info: ./src/2020-04-27-21-43-22.png  used on input line 81.
 (luatex.def)             Requested size: 966.6089pt x 416.55522pt.
- [56<./src/2020-04-27-21-43-22.png>]
-<./src/2020-04-27-21-43-55.png, id=246, 975.645pt x 513.92pt>
+ [57<./src/2020-04-27-21-43-22.png>]
+<./src/2020-04-27-21-43-55.png, id=249, 975.645pt x 513.92pt>
 File: ./src/2020-04-27-21-43-55.png Graphic file (type png)
 <use ./src/2020-04-27-21-43-55.png>
 Package luatex.def Info: ./src/2020-04-27-21-43-55.png  used on input line 92.
 (luatex.def)             Requested size: 975.64262pt x 513.91873pt.
- [57<./src/2020-04-27-21-43-55.png>]
-<./src/2020-04-27-21-45-11.png, id=251, 934.49126pt x 862.22125pt>
+ [58<./src/2020-04-27-21-43-55.png>]
+<./src/2020-04-27-21-45-11.png, id=254, 934.49126pt x 862.22125pt>
 File: ./src/2020-04-27-21-45-11.png Graphic file (type png)
 <use ./src/2020-04-27-21-45-11.png>
 Package luatex.def Info: ./src/2020-04-27-21-45-11.png  used on input line 104.
 (luatex.def)             Requested size: 934.48898pt x 862.21915pt.
-<./src/2020-04-27-21-45-23.png, id=252, 931.48pt x 765.86125pt>
+<./src/2020-04-27-21-45-23.png, id=255, 931.48pt x 765.86125pt>
 File: ./src/2020-04-27-21-45-23.png Graphic file (type png)
 <use ./src/2020-04-27-21-45-23.png>
 Package luatex.def Info: ./src/2020-04-27-21-45-23.png  used on input line 106.
 (luatex.def)             Requested size: 931.47772pt x 765.85938pt.
- [58<./src/2020-04-27-21-45-11.png>]
-<./src/2020-04-27-21-49-13.png, id=257, 926.46124pt x 623.32875pt>
-File: ./src/2020-04-27-21-49-13.png Graphic file (type png)
-<use ./src/2020-04-27-21-49-13.png>
-Package luatex.def Info: ./src/2020-04-27-21-49-13.png  used on input line 112.
-(luatex.def)             Requested size: 926.45897pt x 623.32722pt.
- [59<./src/2020-04-27-21-45-23.png>]
-<./src/2020-04-27-21-50-23.png, id=262, 931.48pt x 697.60625pt>
-File: ./src/2020-04-27-21-50-23.png Graphic file (type png)
-<use ./src/2020-04-27-21-50-23.png>
-Package luatex.def Info: ./src/2020-04-27-21-50-23.png  used on input line 116.
-(luatex.def)             Requested size: 931.47772pt x 697.60454pt.
- [60<./src/2020-04-27-21-49-13.png>]
-<./src/2020-04-27-21-51-10.png, id=267, 917.4275pt x 748.7975pt>
-File: ./src/2020-04-27-21-51-10.png Graphic file (type png)
-<use ./src/2020-04-27-21-51-10.png>
-Package luatex.def Info: ./src/2020-04-27-21-51-10.png  used on input line 120.
-(luatex.def)             Requested size: 917.42528pt x 748.79567pt.
- [61<./src/2020-04-27-21-50-23.png>]) (/Users/js/code/master-thesis/parts/prakticka/implementace.tex [62<./src/2020-04-27-21-51-10.png>] [63]
-<./src/2020-04-28-08-08-10.png, id=280, 620.3175pt x 597.23125pt>
-File: ./src/2020-04-28-08-08-10.png Graphic file (type png)
-<use ./src/2020-04-28-08-08-10.png>
-Package luatex.def Info: ./src/2020-04-28-08-08-10.png  used on input line 22.
-(luatex.def)             Requested size: 620.316pt x 597.22978pt.
- [64
-
-] [65<./src/2020-04-28-08-08-10.png>]
-<./src/2020-04-28-08-11-35.png, id=288, 924.45375pt x 373.395pt>
-File: ./src/2020-04-28-08-11-35.png Graphic file (type png)
-<use ./src/2020-04-28-08-11-35.png>
-Package luatex.def Info: ./src/2020-04-28-08-11-35.png  used on input line 38.
-(luatex.def)             Requested size: 924.45149pt x 373.39409pt.
-<./src/2020-04-28-08-14-04.png, id=289, 923.45pt x 600.2425pt>
-File: ./src/2020-04-28-08-14-04.png Graphic file (type png)
-<use ./src/2020-04-28-08-14-04.png>
-Package luatex.def Info: ./src/2020-04-28-08-14-04.png  used on input line 48.
-(luatex.def)             Requested size: 923.44774pt x 600.24103pt.
- [66<./src/2020-04-28-08-11-35.png>] [67<./src/2020-04-28-08-14-04.png>]
-\openout3 = main.pyg
-
-runsystem(pygmentize -S default -f latex -P commandprefix=PYG > main.out.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg)
-runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > main.out.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg)
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-)
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg)
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg) [68]
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg)
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg) [69]
-<./src/2020-04-28-16-06-29.png, id=309, 937.5025pt x 508.90125pt>
-File: ./src/2020-04-28-16-06-29.png Graphic file (type png)
-<use ./src/2020-04-28-16-06-29.png>
-Package luatex.def Info: ./src/2020-04-28-16-06-29.png  used on input line 165.
-(luatex.def)             Requested size: 937.50021pt x 508.90001pt.
- [70]
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg) [71<./src/2020-04-28-16-06-29.png>]
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg) [72]
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg
-Overfull \hbox (70.35481pt too wide) in paragraph at lines 12--12
-\remove@tlig ticketFareState.data.fareType.offers[getSelectedTicketFare(state).fareType]|  
- []
-
-) [73] [74]
-\openout3 = main.pyg
-
-runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
- (/Users/js/code/master-thesis/main.out.pyg)
-<./src/2020-04-28-16-16-54
+ [59<./src/2020-04-27-21-45-11.png>]
+<./src/2020-04-27-21-49-13.png, id=260, 926.46124pt x 
