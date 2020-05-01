@@ -19,6 +19,218 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{stratilik_trzby_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aedc915e149aaa7358a1bb98ee5651a3}{%
+           family={Stratilik},
+           familyi={S\bibinitperiod},
+           given={Ondrej},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {cs}%
+      }
+      \strng{namehash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \strng{fullhash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \strng{bibnamehash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \strng{authorbibnamehash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \strng{authornamehash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \strng{authorfullhash}{aedc915e149aaa7358a1bb98ee5651a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Zatímco v roce 2017 utržil brněnský startup zaměřený na prodej letenek 18,2}
+      \field{journaltitle}{Euro.cz}
+      \field{title}{Tržby {Kiwi} loni opět výrazně vzrostly. {Překonaly} hranici třiceti miliard korun}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.euro.cz/byznys/trzby-kiwi-loni-opet-vyrazne-vzrostly-prekonaly-hranici-triceti-miliard-korun-1441757
+      \endverb
+      \verb{url}
+      \verb https://www.euro.cz/byznys/trzby-kiwi-loni-opet-vyrazne-vzrostly-prekonaly-hranici-triceti-miliard-korun-1441757
+      \endverb
+    \endentry
+    \entry{dlouhy_kiwi.com_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=48e553a42aa63918bc5a54509b120996}{%
+           family={Dlouhý},
+           familyi={D\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{48e553a42aa63918bc5a54509b120996}
+      \strng{fullhash}{48e553a42aa63918bc5a54509b120996}
+      \strng{bibnamehash}{48e553a42aa63918bc5a54509b120996}
+      \strng{authorbibnamehash}{48e553a42aa63918bc5a54509b120996}
+      \strng{authornamehash}{48e553a42aa63918bc5a54509b120996}
+      \strng{authorfullhash}{48e553a42aa63918bc5a54509b120996}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.}
+      \field{shorttitle}{"{Prodáme} 35 tisíc sedadel denně"}
+      \field{title}{Kiwi.com - {Launch} - {The} {Phocuswright} {Conference}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://youtu.be/xDi49xg6P6g
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/xDi49xg6P6g
+      \endverb
+    \endentry
+    \entry{mares_startup_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aee00fefe15b5282b74db717c1b5622c}{%
+           family={Mareš},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {cs-CZ}%
+      }
+      \strng{namehash}{aee00fefe15b5282b74db717c1b5622c}
+      \strng{fullhash}{aee00fefe15b5282b74db717c1b5622c}
+      \strng{bibnamehash}{aee00fefe15b5282b74db717c1b5622c}
+      \strng{authorbibnamehash}{aee00fefe15b5282b74db717c1b5622c}
+      \strng{authornamehash}{aee00fefe15b5282b74db717c1b5622c}
+      \strng{authorfullhash}{aee00fefe15b5282b74db717c1b5622c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Forbes}
+      \field{month}{6}
+      \field{shorttitle}{Startup roku 2018}
+      \field{title}{Startup roku 2018: {Prvenství} obhájilo {Kiwi}, na druhém místě je překvapení}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.forbes.cz/startup-roku-2018-prvenstvi-obhajilo-kiwi-na-druhem-miste-je-prekvapeni/
+      \endverb
+      \verb{url}
+      \verb https://www.forbes.cz/startup-roku-2018-prvenstvi-obhajilo-kiwi-na-druhem-miste-je-prekvapeni/
+      \endverb
+    \endentry
+    \entry{fowler_patterns_2003}{book}{}
+      \name{author}{1}{}{%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{bibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorbibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authornamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorfullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780321127426}
+      \field{series}{The {Addison}-{Wesley} signature series}
+      \field{title}{Patterns of enterprise application architecture}
+      \field{year}{2003}
+      \keyw{System design,Computer architecture,Application software,Development,Business,Data processing}
+    \endentry
+    \entry{overson_developing_2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=64f3266c5a1b86b53b71a462462d3b7a}{%
+           family={Overson},
+           familyi={O\bibinitperiod},
+           given={Jarrod},
+           giveni={J\bibinitperiod}}}%
+        {{hash=deb9c610dc710f6aa92d2a8ab743937e}{%
+           family={Strimpel},
+           familyi={S\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{d37e6286004204adb0dfaa50fe39977d}
+      \strng{fullhash}{d37e6286004204adb0dfaa50fe39977d}
+      \strng{bibnamehash}{d37e6286004204adb0dfaa50fe39977d}
+      \strng{authorbibnamehash}{d37e6286004204adb0dfaa50fe39977d}
+      \strng{authornamehash}{d37e6286004204adb0dfaa50fe39977d}
+      \strng{authorfullhash}{d37e6286004204adb0dfaa50fe39977d}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{First edition}
+      \field{isbn}{9781491949023}
+      \field{note}{OCLC: ocn894277331}
+      \field{shorttitle}{Developing web components}
+      \field{title}{Developing web components: {UI} from {Jquery} to {Polymer}}
+      \field{year}{2015}
+      \keyw{Internet programming,Web applications,JavaScript (Computer program language)}
+    \endentry
+    \entry{rady_serverless_2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=449e8a7554d4b6bbc3e6dc35e56bf24b}{%
+           family={Rady},
+           familyi={R\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {Raleigh, North Carolina}%
+      }
+      \list{publisher}{1}{%
+        {The Pragmatic Bookshelf}%
+      }
+      \strng{namehash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \strng{fullhash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \strng{bibnamehash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \strng{authorbibnamehash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \strng{authornamehash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \strng{authorfullhash}{449e8a7554d4b6bbc3e6dc35e56bf24b}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{OCLC: 1078361203}
+      \field{title}{Serverless single page apps fast, scalable, and available}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://proxy2.hec.ca/login?url=http://proquestcombo.safaribooksonline.com/?uiCode=hecmontreal&xmlId=9781680502084
+      \endverb
+      \verb{url}
+      \verb http://proxy2.hec.ca/login?url=http://proquestcombo.safaribooksonline.com/?uiCode=hecmontreal&xmlId=9781680502084
+      \endverb
+    \endentry
     \entry{topalovich_salesforce_2017}{book}{}
       \name{author}{1}{}{%
         {{hash=21b5170c7aeb49cbbf874c8ff9a2587d}{%
@@ -30,9 +242,6 @@
       \list{language}{1}{%
         {English}%
       }
-      \list{location}{1}{%
-        {Place of publication not identified}%
-      }
       \list{publisher}{1}{%
         {PACKT Publishing Limited}%
       }
@@ -42,8 +251,8 @@
       \strng{authorbibnamehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
       \strng{authornamehash}{21b5170c7aeb49cbbf874c8ff9a2587d}
       \strng{authorfullhash}{21b5170c7aeb49cbbf874c8ff9a2587d}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781787124677}
@@ -51,36 +260,876 @@
       \field{title}{Salesforce lightning application development essentials.}
       \field{year}{2017}
     \endentry
-    \entry{arlow}{book}{}
+    \entry{newman_building_2015}{book}{}
       \name{author}{1}{}{%
-        {{hash=eaa53179c62c555eb3e5ee50eefd707e}{%
-           family={Arlow},
-           familyi={A\bibinitperiod},
-           given={Jim},
-           giveni={J\bibinitperiod}}}%
+        {{hash=b6be43602c2787d279f8522a7d9713db}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Brno}%
+        {Beijing Sebastopol, CA}%
       }
       \list{publisher}{1}{%
-        {Computer Press}%
+        {O'Reilly Media}%
       }
-      \strng{namehash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \strng{fullhash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \strng{bibnamehash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \strng{authorbibnamehash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \strng{authornamehash}{eaa53179c62c555eb3e5ee50eefd707e}
-      \strng{authorfullhash}{eaa53179c62c555eb3e5ee50eefd707e}
+      \strng{namehash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{fullhash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{bibnamehash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{authorbibnamehash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{authornamehash}{b6be43602c2787d279f8522a7d9713db}
+      \strng{authorfullhash}{b6be43602c2787d279f8522a7d9713db}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{First Edition}
+      \field{isbn}{9781491950357}
+      \field{note}{OCLC: ocn881657228}
+      \field{shorttitle}{Building microservices}
+      \field{title}{Building microservices: designing fine-grained systems}
+      \field{year}{2015}
+      \keyw{Computer architecture,Distributed operating systems (Computers),Computer software,Development,COMPUTERS / Computer Architecture,Mikroservice,Verteiltes System,Serviceorientierte Architektur}
+    \endentry
+    \entry{algorithmia_serverless_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4ec342a21a3eee18f9145d3901fc67fd}{%
+           family={{Algorithmia}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \strng{namehash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \strng{fullhash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \strng{bibnamehash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \strng{authorbibnamehash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \strng{authornamehash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \strng{authorfullhash}{4ec342a21a3eee18f9145d3901fc67fd}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{What are serverless microservices? Why are they a better solution for machine learning? Learn everything you need to know about serverless microservices.}
+      \field{month}{1}
+      \field{shorttitle}{Serverless and {Microservices}}
+      \field{title}{Serverless and {Microservices}: {Introduction} to {Serverless} {Microservices}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://algorithmia.com/blog/introduction-to-serverless-microservices
+      \endverb
+      \verb{url}
+      \verb https://algorithmia.com/blog/introduction-to-serverless-microservices
+      \endverb
+    \endentry
+    \entry{adzic_running_2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=445be166e859fa770c15b27aa58ba6bc}{%
+           family={ADZIC},
+           familyi={A\bibinitperiod},
+           given={GOJKO},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {S.l.}%
+      }
+      \list{publisher}{1}{%
+        {NEURI CONSULTING LLP}%
+      }
+      \strng{namehash}{445be166e859fa770c15b27aa58ba6bc}
+      \strng{fullhash}{445be166e859fa770c15b27aa58ba6bc}
+      \strng{bibnamehash}{445be166e859fa770c15b27aa58ba6bc}
+      \strng{authorbibnamehash}{445be166e859fa770c15b27aa58ba6bc}
+      \strng{authornamehash}{445be166e859fa770c15b27aa58ba6bc}
+      \strng{authorfullhash}{445be166e859fa770c15b27aa58ba6bc}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{9780993088155}
+      \field{note}{OCLC: 1108508253}
+      \field{shorttitle}{{RUNNING} {SERVERLESS}}
+      \field{title}{{RUNNING} {SERVERLESS}: introduction to aws lambda and the serverless application model.}
+      \field{year}{2019}
+    \endentry
+    \entry{botto_front-end_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=aeb2bdde2cf11003abb86e4113d9f7af}{%
+           family={Botto},
+           familyi={B\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \strng{fullhash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \strng{bibnamehash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \strng{authorbibnamehash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \strng{authornamehash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \strng{authorfullhash}{aeb2bdde2cf11003abb86e4113d9f7af}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The front-end development community is a very active one, every single day people come up with new libraries, frameworks and tools to solve…}
+      \field{title}{Front-end {JavaScript} single page application architecture}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://marcobotto.netlify.com/blog/frontend-javascript-single-page-application-architecture
+      \endverb
+      \verb{url}
+      \verb https://marcobotto.netlify.com/blog/frontend-javascript-single-page-application-architecture
+      \endverb
+    \endentry
+    \entry{graziotin_what_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=617f66c580f07892bd94dcb102882ca5}{%
+           family={Graziotin},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5a1fa2a46da59556c5ad0057e3bd3d62}{%
+           family={Fagerholm},
+           familyi={F\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=93a575777f636107b8f65a815802b18f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f000e44112e23fdafed23380b5583b19}{%
+           family={Abrahamsson},
+           familyi={A\bibinitperiod},
+           given={Pekka},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c43c0fb271248bdd645b116e84866633}
+      \strng{fullhash}{c43c0fb271248bdd645b116e84866633}
+      \strng{bibnamehash}{c43c0fb271248bdd645b116e84866633}
+      \strng{authorbibnamehash}{c43c0fb271248bdd645b116e84866633}
+      \strng{authornamehash}{c43c0fb271248bdd645b116e84866633}
+      \strng{authorfullhash}{c43c0fb271248bdd645b116e84866633}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The growing literature on affect among software developers mostly reports on the linkage between happiness, software quality, and developer productivity. Understanding happiness and unhappiness in all its components – positive and negative emotions and moods – is an attractive and important endeavor. Scholars in industrial and organizational psychology have suggested that understanding happiness and unhappiness could lead to cost-effective ways of enhancing working conditions, job performance, and to limiting the occurrence of psychological disorders. Our comprehension of the consequences of (un)happiness among developers is still too shallow, being mainly expressed in terms of development productivity and software quality. In this paper, we study what happens when developers are happy and unhappy while developing software. Qualitative data analysis of responses given by 317 questionnaire participants identified 42 consequences of unhappiness and 32 of happiness. We found consequences of happiness and unhappiness that are beneficial and detrimental for developers’ mental well-being, the software development process, and the produced artifacts. Our classification scheme, available as open data enables new happiness research opportunities of cause-effect type, and it can act as a guideline for practitioners for identifying damaging effects of unhappiness and for fostering happiness on the job.}
+      \field{issn}{0164-1212}
+      \field{journaltitle}{Journal of Systems and Software}
+      \field{month}{6}
+      \field{title}{What happens when software developers are (un)happy}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{volume}{140}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{32\bibrangedash 47}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jss.2018.02.041
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0164121218300323
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0164121218300323
+      \endverb
+      \keyw{Behavioral software engineering,Developer experience,Human aspects,Happiness,Affect,Emotion}
+    \endentry
+    \entry{w3schools_browser_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bd21525362368ddbd79358cdcf66005d}{%
+           family={{W3Schools}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{fullhash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{bibnamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authorbibnamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authornamehash}{bd21525362368ddbd79358cdcf66005d}
+      \strng{authorfullhash}{bd21525362368ddbd79358cdcf66005d}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Browser {Statistics}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.w3schools.com/browsers/
+      \endverb
+      \verb{url}
+      \verb https://www.w3schools.com/browsers/
+      \endverb
+    \endentry
+    \entry{sciamanna_code_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=613b6b3fad2f7ff21ffc6bc13e88781f}{%
+           family={Sciamanna},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \strng{fullhash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \strng{bibnamehash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \strng{authorbibnamehash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \strng{authornamehash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \strng{authorfullhash}{613b6b3fad2f7ff21ffc6bc13e88781f}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For a number of reasons it is not uncommon for organizations with code quality problems to avoid attempts at improvement. From the perspective of someon...}
+      \field{title}{The {Code} {Quality} vs. {Speed} {Fallacy}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://anthonysciamanna.com/2016/11/27/the-code-quality-versus-speed-fallacy.html
+      \endverb
+      \verb{url}
+      \verb https://anthonysciamanna.com/2016/11/27/the-code-quality-versus-speed-fallacy.html
+      \endverb
+    \endentry
+    \entry{stack_overflow_stack_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=84d7dc19766c446f5e4084e8fce87f82}{%
+           family={{Stack Overflow}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nearly 90,000 took this comprehensive, annual survey of people who code. Demographics. Most loved, dreaded and wanted technologies. Salary and careers.}
+      \field{title}{Stack {Overflow} {Developer} {Survey} 2019}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://insights.stackoverflow.com/survey/2019/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2019
+      \endverb
+      \verb{url}
+      \verb https://insights.stackoverflow.com/survey/2019/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2019
+      \endverb
+    \endentry
+    \entry{github_repository_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e1adbcbb92c622d0b3e619f9d0730abf}{%
+           family={{Github}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \strng{fullhash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \strng{bibnamehash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \strng{authorbibnamehash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \strng{authornamehash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \strng{authorfullhash}{e1adbcbb92c622d0b3e619f9d0730abf}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{TypeScript is a superset of JavaScript that compiles to clean JavaScript output. - microsoft/TypeScript}
+      \field{title}{Repository {Microsoft}/{TypeScript}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/microsoft/TypeScript
+      \endverb
+      \verb{url}
+      \verb https://github.com/microsoft/TypeScript
+      \endverb
+    \endentry
+    \entry{npmjs_npm_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c79edb3331b1a66d4d71917a142490f4}{%
+           family={{NpmJS}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{fullhash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{bibnamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authorbibnamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authornamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authorfullhash}{c79edb3331b1a66d4d71917a142490f4}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Which NPM package should you use? Compare NPM package download stats over time. Spot trends, pick the winner!}
+      \field{shorttitle}{{NPM} {Trends}}
+      \field{title}{{NPM} {Trends}: {Compare} {NPM} package downloads}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.npmtrends.com/angular-vs-react-vs-vue
+      \endverb
+      \verb{url}
+      \verb https://www.npmtrends.com/angular-vs-react-vs-vue
+      \endverb
+    \endentry
+    \entry{mardan_react_2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=15e1045706ba0f923763122f975d4964}{%
+           family={Mardan},
+           familyi={M\bibinitperiod},
+           given={Azat},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Shelter Island, NY}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications Co}%
+      }
+      \strng{namehash}{15e1045706ba0f923763122f975d4964}
+      \strng{fullhash}{15e1045706ba0f923763122f975d4964}
+      \strng{bibnamehash}{15e1045706ba0f923763122f975d4964}
+      \strng{authorbibnamehash}{15e1045706ba0f923763122f975d4964}
+      \strng{authornamehash}{15e1045706ba0f923763122f975d4964}
+      \strng{authorfullhash}{15e1045706ba0f923763122f975d4964}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Successful user interfaces need to be visually interesting, fast, and flowing. The React.js JavaScript library supercharges view-heavy web applications by improving data flow between UI components. React sites update visual elements efficiently and smoothly, minimizing page reloads. React is developer friendly, with a strong ecosystem to support the dev process along the full application stack. And becuse it's all JavaScript. React is instantly familiar. React Quickly is the tutorial for web developers who want to get started fast with React.js. Following carefully chosen and clearly explained examples, you'll learn React development using your existing JavaScript and web dev skills. You'll explore a host of different projects as you learn about web components, forms and data."--Back cover}
+      \field{isbn}{9781617293344}
+      \field{note}{OCLC: ocn943594806}
+      \field{shorttitle}{React quickly}
+      \field{title}{React quickly: painless web apps with {React}, {JSX}, {REDUX}, and {GraphQL}}
+      \field{year}{2017}
+      \keyw{JavaScript (Computer program language),User interfaces (Computer systems),Web applications,Development,Web site development,Functional programming (Computer science)}
+    \endentry
+    \entry{banks_learning_2017}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6611f68d993477a1078ecf350add0286}{%
+           family={Banks},
+           familyi={B\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a931131208802fa3000a53dd3e87bbca}{%
+           family={Porcello},
+           familyi={P\bibinitperiod},
+           given={Eve},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \strng{fullhash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \strng{bibnamehash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \strng{authorbibnamehash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \strng{authornamehash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \strng{authorfullhash}{7646e1ed14965980c5bfbf5d108be9b1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{If you want to learn how to build efficient user interfaces with React, this is your book. Authors Alex Banks and Eve Porcello show you how to create UIs with this small JavaScript library that can deftly display data changes on large-scale, data-driven websites without page reloads. Along the way, you'll learn how to work with functional programming and the latest ECMAScript features. Developed by Facebook, and used by companies including Netflix, Walmart, and The New York Times for large parts of their web interfaces, React is quickly growing in use. By learning how to build React components with this hands-on guide, you'll fully understand how useful React can be in your organization. Learn key functional programming concepts with JavaScriptPeek under the hood to understand how React runs in the browser; Create application presentation layers by mounting and composing React components; Use component trees to manage data and reduce the time you spend debugging applications; Explore React's component lifecycle and use it to load data and improve UI performance; Use a routing solution for browser history, bookmarks, and other features of single-page applications; Learn how to structure React applications with servers in mind}
+      \field{edition}{First edition}
+      \field{isbn}{9781491954621 9781491954591}
+      \field{note}{OCLC: ocn943595095}
+      \field{shorttitle}{Learning {React}}
+      \field{title}{Learning {React}: functional web development with {React} and {Redux}}
+      \field{year}{2017}
+      \keyw{React (JavaScript library),User interfaces (Computer systems),Web site development,Web applications,Computer programs}
+    \endentry
+    \entry{nelson_getting_2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c9519c845f77165dfd97538a8e794e9e}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Brett},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science+Business Media}%
+      }
+      \strng{namehash}{c9519c845f77165dfd97538a8e794e9e}
+      \strng{fullhash}{c9519c845f77165dfd97538a8e794e9e}
+      \strng{bibnamehash}{c9519c845f77165dfd97538a8e794e9e}
+      \strng{authorbibnamehash}{c9519c845f77165dfd97538a8e794e9e}
+      \strng{authornamehash}{c9519c845f77165dfd97538a8e794e9e}
+      \strng{authorfullhash}{c9519c845f77165dfd97538a8e794e9e}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{9781484237809}
+      \field{shorttitle}{Getting to know {Vue}.{Js}}
+      \field{title}{Getting to know {Vue}.{Js}: learn to build single page applications in {Vue} from scratch}
+      \field{year}{2018}
+    \endentry
+    \entry{seshadri_angularjs_2014}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d7836711bcc65d0a1a4441c283243d69}{%
+           family={Seshadri},
+           familyi={S\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4a0d4428aef84bd5d3f7fd9755173f28}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, California}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{7730304b6f18b164bc9ed4edeb45c0b4}
+      \strng{fullhash}{7730304b6f18b164bc9ed4edeb45c0b4}
+      \strng{bibnamehash}{7730304b6f18b164bc9ed4edeb45c0b4}
+      \strng{authorbibnamehash}{7730304b6f18b164bc9ed4edeb45c0b4}
+      \strng{authornamehash}{7730304b6f18b164bc9ed4edeb45c0b4}
+      \strng{authorfullhash}{7730304b6f18b164bc9ed4edeb45c0b4}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{978-80-251-1503-9}
-      \field{langid}{czech}
-      \field{title}{UML 2 a unifikovaný proces vývoje aplikací : objektově orientovaná analýza a návrh prakticky}
-      \field{year}{2007}
+      \field{isbn}{9781491901946}
+      \field{note}{OCLC: ocn894520813}
+      \field{title}{{AngularJS} up and running}
+      \field{year}{2014}
+      \keyw{Application software,Development,Application software,Development}
+    \endentry
+    \entry{facebook_inc._react_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f0f5e5941d7cac2a6eb75cb8b2e56406}{%
+           family={{Facebook Inc.}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \strng{fullhash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \strng{bibnamehash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \strng{authorbibnamehash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \strng{authornamehash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \strng{authorfullhash}{f0f5e5941d7cac2a6eb75cb8b2e56406}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A declarative, efficient, and flexible JavaScript library for building user interfaces.}
+      \field{month}{5}
+      \field{note}{original-date: 2013-05-24T16:15:54Z}
+      \field{title}{React repository}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/facebook/react
+      \endverb
+      \verb{url}
+      \verb https://github.com/facebook/react
+      \endverb
+      \keyw{javascript,react,frontend,declarative,ui,library}
+    \endentry
+    \entry{github_angular_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d3b7c913cd04ebfec0e9ec32cb6fd58c}{%
+           family={{GitHub}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{fullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{bibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorbibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authornamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorfullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Angular has 197 repositories available. Follow their code on GitHub.}
+      \field{title}{Angular repository}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/angular
+      \endverb
+      \verb{url}
+      \verb https://github.com/angular
+      \endverb
+    \endentry
+    \entry{github_repository_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d3b7c913cd04ebfec0e9ec32cb6fd58c}{%
+           family={{GitHub}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {vuejs}%
+      }
+      \strng{namehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{fullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{bibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorbibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authornamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorfullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.}
+      \field{month}{5}
+      \field{note}{original-date: 2013-07-29T03:24:51Z}
+      \field{title}{Repository {Vuejs}/{Vue}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/vuejs/vue
+      \endverb
+      \verb{url}
+      \verb https://github.com/vuejs/vue
+      \endverb
+      \keyw{vue,javascript,frontend,framework}
+    \endentry
+    \entry{npmjs_node_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c79edb3331b1a66d4d71917a142490f4}{%
+           family={{NpmJS}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{fullhash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{bibnamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authorbibnamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authornamehash}{c79edb3331b1a66d4d71917a142490f4}
+      \strng{authorfullhash}{c79edb3331b1a66d4d71917a142490f4}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Node package manager}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.npmjs.com/
+      \endverb
+      \verb{url}
+      \verb https://www.npmjs.com/
+      \endverb
+    \endentry
+    \entry{akther_angular_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=824b54cefea18dffbe2ded69fba218a8}{%
+           family={Akther},
+           familyi={A\bibinitperiod},
+           given={Parvez},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-GB}%
+      }
+      \strng{namehash}{824b54cefea18dffbe2ded69fba218a8}
+      \strng{fullhash}{824b54cefea18dffbe2ded69fba218a8}
+      \strng{bibnamehash}{824b54cefea18dffbe2ded69fba218a8}
+      \strng{authorbibnamehash}{824b54cefea18dffbe2ded69fba218a8}
+      \strng{authornamehash}{824b54cefea18dffbe2ded69fba218a8}
+      \strng{authorfullhash}{824b54cefea18dffbe2ded69fba218a8}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays, JavaScripts framework is one of the hottest topics among the developers. Though the developer community is still confused about which one is...}
+      \field{title}{Angular vs. {React} vs. {Vue} {Detailed} {Comparison} {Guide}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.themexpert.com/blog/angular-vs-react-vs-vue
+      \endverb
+      \verb{url}
+      \verb https://www.themexpert.com/blog/angular-vs-react-vs-vue
+      \endverb
+    \endentry
+    \entry{google_opensource__hosting_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5eaeb5e90df4beae0da62157521c8c76}{%
+           family={{Google OpenSource }},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5eaeb5e90df4beae0da62157521c8c76}
+      \strng{fullhash}{5eaeb5e90df4beae0da62157521c8c76}
+      \strng{bibnamehash}{5eaeb5e90df4beae0da62157521c8c76}
+      \strng{authorbibnamehash}{5eaeb5e90df4beae0da62157521c8c76}
+      \strng{authornamehash}{5eaeb5e90df4beae0da62157521c8c76}
+      \strng{authorfullhash}{5eaeb5e90df4beae0da62157521c8c76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{opensource.google}
+      \field{title}{Hosting {Options}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opensource.google/docs/releasing/hosting/
+      \endverb
+      \verb{url}
+      \verb https://opensource.google/docs/releasing/hosting/
+      \endverb
+    \endentry
+    \entry{margam_model-view-controller_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=52f617598d7779186a193f46c5ccfaee}{%
+           family={Margam},
+           familyi={M\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{52f617598d7779186a193f46c5ccfaee}
+      \strng{fullhash}{52f617598d7779186a193f46c5ccfaee}
+      \strng{bibnamehash}{52f617598d7779186a193f46c5ccfaee}
+      \strng{authorbibnamehash}{52f617598d7779186a193f46c5ccfaee}
+      \strng{authornamehash}{52f617598d7779186a193f46c5ccfaee}
+      \strng{authorfullhash}{52f617598d7779186a193f46c5ccfaee}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hello Guys today I will tell you guys about MVC, what is it and how would it help programmers in smooth programming. It is the architectural pattern which is used in all the latest programming…}
+      \field{month}{7}
+      \field{title}{Model-{View}-{Controller} ({MVC})}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/datadriveninvestor/model-view-controller-mvc-75bcb0103d66
+      \endverb
+      \verb{url}
+      \verb https://medium.com/datadriveninvestor/model-view-controller-mvc-75bcb0103d66
+      \endverb
+    \endentry
+    \entry{flux_hacker_2014}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e098247bc6652dd88c76644b275260ed}{%
+           family={{FLUX}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{fullhash}{e098247bc6652dd88c76644b275260ed}
+      \strng{bibnamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authorbibnamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authornamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authorfullhash}{e098247bc6652dd88c76644b275260ed}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Application architecture for building user interfaces}
+      \field{note}{publisher: Facebook, Inc}
+      \field{title}{Hacker {Way}: {Rethinking} {Web} {App} {Development} at {Facebook}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://facebook.github.io/flux/
+      \endverb
+      \verb{url}
+      \verb https://facebook.github.io/flux/
+      \endverb
+    \endentry
+    \entry{flux_depth_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e098247bc6652dd88c76644b275260ed}{%
+           family={{FLUX}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{fullhash}{e098247bc6652dd88c76644b275260ed}
+      \strng{bibnamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authorbibnamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authornamehash}{e098247bc6652dd88c76644b275260ed}
+      \strng{authorfullhash}{e098247bc6652dd88c76644b275260ed}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Flux is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.}
+      \field{title}{In depth overview}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://facebook.github.io/flux/docs/in-depth-overview
+      \endverb
+      \verb{url}
+      \verb https://facebook.github.io/flux/docs/in-depth-overview
+      \endverb
+    \endentry
+    \entry{bugl_learning_2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=101b8e47361981e22b3224aeaf03740f}{%
+           family={Bugl},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \strng{namehash}{101b8e47361981e22b3224aeaf03740f}
+      \strng{fullhash}{101b8e47361981e22b3224aeaf03740f}
+      \strng{bibnamehash}{101b8e47361981e22b3224aeaf03740f}
+      \strng{authorbibnamehash}{101b8e47361981e22b3224aeaf03740f}
+      \strng{authornamehash}{101b8e47361981e22b3224aeaf03740f}
+      \strng{authorfullhash}{101b8e47361981e22b3224aeaf03740f}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{9781786469533}
+      \field{note}{OCLC: 1004746826}
+      \field{shorttitle}{Learning {Redux}}
+      \field{title}{Learning {Redux}: write maintainable, consistent, and easy to-test web applications}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://proquest.safaribooksonline.com/?fpi=9781786462398
+      \endverb
+      \verb{url}
+      \verb http://proquest.safaribooksonline.com/?fpi=9781786462398
+      \endverb
+    \endentry
+    \entry{rigau_introduction_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4fb4d947b4166c0992e32cbd7025f33b}{%
+           family={Rigau},
+           familyi={R\bibinitperiod},
+           given={Xavi},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \strng{fullhash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \strng{bibnamehash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \strng{authorbibnamehash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \strng{authornamehash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \strng{authorfullhash}{4fb4d947b4166c0992e32cbd7025f33b}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Redux is a unidirectional data flow architecture that makes it easy to develop, maintain and test applications. In this post I'll explain how you can start writing mobile apps with Flutter using the Redux architecture.}
+      \field{journaltitle}{Novoda Insights}
+      \field{month}{4}
+      \field{title}{Introduction to {Redux} in {Flutter}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.novoda.com/introduction-to-redux-in-flutter/
+      \endverb
+      \verb{url}
+      \verb https://blog.novoda.com/introduction-to-redux-in-flutter/
+      \endverb
     \endentry
   \enddatalist
+  \missing{arlow}
 \endrefsection
 \endinput
 

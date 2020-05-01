@@ -2133,4 +2133,122 @@
       <bcf:entrytype>inproceedings</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>author</bcf:field>
-        <bcf:field>title
+        <bcf:field>title</bcf:field>
+        <bcf:field>booktitle</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>report</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>type</bcf:field>
+        <bcf:field>institution</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>thesis</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+        <bcf:field>type</bcf:field>
+        <bcf:field>institution</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>unpublished</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
+      <bcf:constraint type="data" datatype="isbn">
+        <bcf:field>isbn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="issn">
+        <bcf:field>issn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="ismn">
+        <bcf:field>ismn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="date">
+        <bcf:field>date</bcf:field>
+        <bcf:field>eventdate</bcf:field>
+        <bcf:field>origdate</bcf:field>
+        <bcf:field>urldate</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="pattern" pattern="(?:sf|sm|sn|pf|pm|pn|pp)">
+        <bcf:field>gender</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+  </bcf:datamodel>
+  <!-- CITATION DATA -->
+  <!-- SECTION 0 -->
+  <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+    <bcf:citekey order="1">stratilik_trzby_nodate</bcf:citekey>
+    <bcf:citekey order="2">dlouhy_kiwi.com_nodate</bcf:citekey>
+    <bcf:citekey order="3">mares_startup_2018</bcf:citekey>
+    <bcf:citekey order="4">fowler_patterns_2003</bcf:citekey>
+    <bcf:citekey order="5">overson_developing_2015</bcf:citekey>
+    <bcf:citekey order="6">rady_serverless_2016</bcf:citekey>
+    <bcf:citekey order="7">topalovich_salesforce_2017</bcf:citekey>
+    <bcf:citekey order="8">newman_building_2015</bcf:citekey>
+    <bcf:citekey order="9">algorithmia_serverless_2018</bcf:citekey>
+    <bcf:citekey order="10">adzic_running_2019</bcf:citekey>
+    <bcf:citekey order="11">botto_front-end_2020</bcf:citekey>
+    <bcf:citekey order="12">graziotin_what_2018</bcf:citekey>
+    <bcf:citekey order="13">w3schools_browser_2020</bcf:citekey>
+    <bcf:citekey order="14">sciamanna_code_2020</bcf:citekey>
+    <bcf:citekey order="15">stack_overflow_stack_2020</bcf:citekey>
+    <bcf:citekey order="16">github_repository_nodate</bcf:citekey>
+    <bcf:citekey order="17">github_repository_nodate</bcf:citekey>
+    <bcf:citekey order="18">stack_overflow_stack_2020</bcf:citekey>
+    <bcf:citekey order="19">stack_overflow_stack_2020</bcf:citekey>
+    <bcf:citekey order="20">npmjs_npm_2020</bcf:citekey>
+    <bcf:citekey order="21">mardan_react_2017</bcf:citekey>
+    <bcf:citekey order="22">stack_overflow_stack_2020</bcf:citekey>
+    <bcf:citekey order="23">stack_overflow_stack_2020</bcf:citekey>
+    <bcf:citekey order="24">banks_learning_2017</bcf:citekey>
+    <bcf:citekey order="25">npmjs_npm_2020</bcf:citekey>
+    <bcf:citekey order="26">nelson_getting_2018</bcf:citekey>
+    <bcf:citekey order="27">seshadri_angularjs_2014</bcf:citekey>
+    <bcf:citekey order="28">facebook_inc._react_2020</bcf:citekey>
+    <bcf:citekey order="29">github_angular_2020</bcf:citekey>
+    <bcf:citekey order="30">github_repository_2020</bcf:citekey>
+    <bcf:citekey order="31">npmjs_node_2020</bcf:citekey>
+    <bcf:citekey order="32">akther_angular_2020</bcf:citekey>
+    <bcf:citekey order="33">google_opensource__hosting_2020</bcf:citekey>
+    <bcf:citekey order="34">mardan_react_2017</bcf:citekey>
+    <bcf:citekey order="35">margam_model-view-controller_2018</bcf:citekey>
+    <bcf:citekey order="36">flux_hacker_2014</bcf:citekey>
+    <bcf:citekey order="37">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="38">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="39">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="40">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="41">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="42">flux_depth_2020</bcf:citekey>
+    <bcf:citekey order="43">bugl_learning_2017</bcf:citekey>
+    <bcf:citekey order="44">rigau_introduction_2018</bcf:citekey>
+    <bcf:citekey order="45">arlow</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
