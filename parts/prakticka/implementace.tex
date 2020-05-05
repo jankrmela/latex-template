@@ -19,9 +19,12 @@ Jelikož backendová část vypočítá ceny tarifů podle itineráře, podle po
     \item  booking -- objekt s objektem, ve kterém je uchována aktuální celková cena objednávky
 \end{itemize}
 
-\obrazek\vlozobrbox{2020-04-28-08-08-10.png}{0.9\textwidth}{!}\endobrl{Ukázka odpovědi z API ancillaries/offers/check}{apiresponse}
-
-
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-08-08-10.png}{0.9\textwidth}{!}
+    \caption{Ukázka odpovědi z API ancillaries/offers/check}
+    \label{apiresponse}
+\end{figure}
 
 Odpověď (zobrazena na obrázku č. \ref{apiresponse}) obsahuje informace ve formátu dvou objektů. Prvním objektem je objekt fare\_type. Obsahuje informace o tarifech. Z hlediska struktury jsou jednotlivé tarify zabaleny do pole offers. Každý tarif je prezentován objektem s následujícími vlasnostmi:
 \begin{itemize}
@@ -35,7 +38,12 @@ Druhým objektem jsou data o doplňkových balíčcích. V odpovědi je tento ob
 
 Nejlépe lze tento vztah pochopit na základě diagramu (obrázek č. \ref{diagramupgrade}), kde jsou znázorněny jednotlivé možnosti povýšení balíčků. Modře jsou znázorněný tarify a žlutě balíčky. Zelené čáry vedoucí od tarifů k balíčkům znázorňují balíčky, které jsou zahrnuty v ceně daného tarifu. Červené čáry zobrazují možnosti povýšení tarifu pomocí balíčků Plus a Premium s cenou, kterou je uživatel povinen doplatit. Žlutá čára znázorňuje možnost povýšení Standard tarifu o balíček Premium za zobrazenou cenu.
 
-\obrazek\vlozobrbox{2020-04-28-08-11-35.png}{0.9\textwidth}{!}\endobrl{Nabízené balíčky na základě vybraného tarifu}{diagramupgrade}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-08-11-35.png}{0.9\textwidth}{!}
+    \caption{Nabízené balíčky na základě vybraného tarifu}
+    \label{diagramupgrade}
+\end{figure}
 
 Tuto metodu zobrazuje odpověď z rozhraní pomocí objektu. Každý objekt balíčku ještě obsahuje objekt pojmenovaný upgrade\_prices, ve kterém se nachází identifikátory balíčků a jejich ceny. Je nutné tedy použít objekt vybraného tarifu, najít u něj identifikátor obsaženého balíčku a ten najít v objektu upgrade\_prices. V případě, že si uživatel zvolí některý jiný balíček, je nutné uvažovat zvolený balíček a od něj vypočítat cenu. 
 
@@ -45,7 +53,12 @@ Zpracování odpovědi a její uložení v rámci stavu aplikace bude popsáno n
 
 \noindent Rozhraní save\_booking je již v současnosti implementované využívané rozhraní. Jeho hlavním cílem je uložit objednávku. Probíhá rovněž POST metodou. Po odeslání backend uloží data, provede validaci a pokud je vše v pořádku, tak v odpovědi vrátí potvrzení o správnosti operace. Součástí implementace nabídky tarifů a balíčků je nutné tedy přidat tyto data do požadavku k tomuto rozhraní. Backend navrhl strukturu odesílaného formátu, kterou je nutné při odesílání požadavku dodržet. Do objektu additional\_services (obrázek č. \ref{apisavebooking}) je přidán objekt fare\_type, kam je nutné vložit pole s objektem tarifu. Objekt obsahuje informace o ceně, identifikátor, který nám backend poslal ve fázi, kdy jsme obdrželi data a název tarifu. Velmi obdobně je nutné specifikovat i doplňkové baličky.
 
-\obrazek\vlozobrbox{2020-04-28-08-14-04.png}{0.9\textwidth}{!}\endobrl{Požadovaná struktura dat při odesílání}{apisavebooking}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-08-14-04.png}{0.9\textwidth}{!}
+    \caption{Požadovaná struktura dat při odesílání}
+    \label{apisavebooking}
+\end{figure}
 
 \podsekce{Implementace modulu}
 
@@ -162,7 +175,12 @@ Následuje uložení těchto dat do Redux Store. To je učiněno pomocí funkce 
 
 Hierarchii komponent lze nejlépe znázornit pomocí diagramu. V diagramu (obrázek č. \ref{hierarchie}) jsou velmi jednoduše znázorněny hlavní komponenty, obsahující větší množství logiky. Celkem přibylo 40 nových komponent, byly použity vizuální elementy z knihovny veřejně dostupného repozitáře Orbit a mnoho stávajících komponent bylo upraveno. Diagram tedy zobrazuje jen stručně obecnou strukturu pro přehlednější zobrazení.
 
-\obrazek\vlozobrbox{2020-04-28-16-06-29.png}{0.9\textwidth}{!}\endobrl{Hierarchie komponent (zjednodušeno)}{hierarchie}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-16-06-29.png}{0.9\textwidth}{!}
+    \caption{Hierarchie komponent (zjednodušeno)}
+    \label{hierarchie}
+\end{figure}
 
 Data z hlavní komponenty TicketFareStep.js jsou tedy získaná z Redux Store. Je nutné ověřit, že data vůbec existují, rozdělit na vhodnější datové struktury, aby bylo předání do dalších komponent již bez dalších nutných iterací. Předání do dalších komponent je znázorněno níže.
 
@@ -309,7 +327,12 @@ const FareTypeRefundAlert = () => (
 export default FareTypeRefundAlert
 \end{minted}
 
-\obrazek\vlozobrbox{2020-04-28-16-16-54.png}{0.9\textwidth}{!}\endobrl{Výsledný vzhled banneru pouze z Orbit komponent}{orbit}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-16-16-54.png}{0.9\textwidth}{!}
+    \caption{Výsledný vzhled banneru pouze z Orbit komponent}
+    \label{orbit}
+\end{figure}
 
 V uvedeném příkladu (obrázek č. \ref{orbit}) s použitím Orbit komponent, lze krásně demonstrovat ukázku jednoduchých UI elementů. Tato komponenta zobrazuje varování, že na daný let se nevztahuje možnost náhrad, protože se jedná o let na poslední chvíli (48 hodin před odletem). Od komponenty je oddělena logika a proto je dobrým příkladem použití, protože lze jednoduše porozumět daným elementům. Varovná ikona i tučný text jsou Orbit komponenty, stejně jako použitý token ve styled-component. Není tedy napevno definované odsazení celé komponenty, ale je použitý token z design systému Orbitu. Token obsahuje velikost spaceLarge, která je definovaná na jediném místě. Případná změna již tedy bude jednoduchá a dotkne se všech komponent, využívající tento token.
 
@@ -389,7 +412,12 @@ Současně proces testování probíhá v několika fázích. Součástí práce
 
 Po splnění těchto testů je automaticky vytvořeno testovací prostředí. Pracovníci z týmu QA testers následně simulují vyhledání a zarezervování letenky, tak jako by to dělal uživatel. V rámci tohoto procesu může být odhaleno množství chyb, které programátoři často přehlédnou. Na obrázku č. \ref{qa} je zobrazen proces, kdy QA tester nalezl v nově implementované funkcionalitě nabídky tarifů chybu. 
 
-\obrazek\vlozobrbox{2020-04-28-16-50-54.png}{0.9\textwidth}{!}\endobrl{Proces manuálního testování QA testery}{qa}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-16-50-54.png}{0.9\textwidth}{!}
+    \caption{Proces manuálního testování QA testery}
+    \label{qa}
+\end{figure}
 
 \podsekce{Unit testy}
 
@@ -481,11 +509,21 @@ Testy jsou spouštěny mnohokrát v procesu vývoje. První spuštění testů n
 
 Platforma frontendu je také ošetřena proti odeslání chybného kódu do vzdáleného repozitáře v Gitlabu. Před provedením příkazu git push, kterým se odesílají změny, je provedena kontrola. Spustí se automaticky všechny testy souborů, které mohly být změnami ovlivněny. Bez úspěšněho dokončení testů není možné změny odeslat. \cite{arlow}
 
-\obrazek\vlozobrbox{2020-04-28-16-57-28.png}{0.9\textwidth}{!}\endobrl{Výsledek spuštěných testů v repozitáři}{tests}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-16-57-28.png}{0.9\textwidth}{!}
+    \caption{Výsledek spuštěných testů v repozitáři}
+    \label{tests}
+\end{figure}
 
 Dalším kontrolním bodem v procesu vývoje je provedení testů v integračním prostředí v Gitlabu. Zde je průběh testů viditelný pomocí několika ukazatelů. Jednotlivé testy jsou označeny ikonou symbolizující výsledek testu. Na obrázku je zobrazen stav, kde všechny testy proběhly v pořádku.
 
-\obrazek\vlozobrbox{2020-04-28-16-58-23.png}{0.5\textwidth}{!}\endobrl{Průběh testování v integračním prostředí Gitlab}{gitlab}
+\begin{figure}[H]
+    \centering
+    \vlozobrbox{2020-04-28-16-58-23.png}{0.5\textwidth}{!}
+    \caption{Průběh testování v integračním prostředí Gitlab}
+    \label{gitlab}
+\end{figure}
 
 \podsekce{Shrnutí}
 Součásti testování bylo naprogramování automatických testů, které se již používají ve firemní architektuře. Byly využity jednotkové a end-to-end testy, které se nyní spouští automaticky s každou další změnou tohoto modulu. Pozdější změny v tomto modulu budou vždy kvalitně prověřeny, aby celková funkcionalita tohoto implementovaného řešení byla zachována v maximální funkčnosti. Součástí testování bylo i provedení manuálních testů firemními specialisty, kteří se zabývají testováním nových funkcionalit. 

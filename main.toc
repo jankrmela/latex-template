@@ -2,232 +2,232 @@
 \defcounter {refsection}{0}\relax 
 \selectlanguage *{czech}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam použitých termínů a zkratek}{6}%
+\contentsline {section}{\numberline {1}Úvod do problematiky}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Úvod do problematiky}{8}%
+\contentsline {section}{\numberline {2}Cíl práce}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Cíl práce}{9}%
+\contentsline {section}{\numberline {3}Struktura práce}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Struktura práce}{10}%
+\contentsline {section}{\numberline {4}Architektura}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Architektura}{11}%
+\contentsline {subsection}{\numberline {4.1}Globální architektura webové aplikace}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Globální architektura webové aplikace}{11}%
+\contentsline {subsection}{\numberline {4.2}Typy architektury webových aplikací}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Typy architektury webových aplikací}{11}%
+\contentsline {paragraph}{SPA - Single page applications}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{SPA - Single page applications}{11}%
+\contentsline {paragraph}{Microservices}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Microservices}{12}%
+\contentsline {paragraph}{Serverless architecture}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Serverless architecture}{13}%
+\contentsline {subsection}{\numberline {4.3}Specifika frontendové architektury}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Specifika frontendové architektury}{13}%
+\contentsline {subsection}{\numberline {4.4}Srovnání MVC a FLUX architektury}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Srovnání MVC a FLUX architektury}{19}%
+\contentsline {paragraph}{Store}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Store}{21}%
+\contentsline {paragraph}{Akce}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Akce}{21}%
+\contentsline {paragraph}{Dispatcher}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dispatcher}{21}%
+\contentsline {section}{\numberline {5}Metodika práce}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Metodika práce}{24}%
+\contentsline {section}{\numberline {6}Návrh a implementace řešení}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Návrh a implementace řešení}{25}%
+\contentsline {subsection}{\numberline {6.1}Vize firmy}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Vize firmy}{25}%
+\contentsline {subsubsection}{\numberline {6.1.1}Diagram BSC}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Diagram BSC}{25}%
+\contentsline {paragraph}{Finanční perspektiva}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Finanční perspektiva}{26}%
+\contentsline {paragraph}{Zákaznická perspektiva}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zákaznická perspektiva}{27}%
+\contentsline {paragraph}{Perspektiva vývoje a růstu}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Perspektiva vývoje a růstu}{27}%
+\contentsline {paragraph}{Procesní perspektiva}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Procesní perspektiva}{27}%
+\contentsline {subsubsection}{\numberline {6.1.2}Strategická mapa k BSC}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Strategická mapa k BSC}{28}%
+\contentsline {subsection}{\numberline {6.2}Definice problému}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Definice problému}{29}%
+\contentsline {paragraph}{Nejednotné měřítko při poskytování náhrad zákazníkům}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Nejednotné měřítko při poskytování náhrad zákazníkům}{29}%
+\contentsline {paragraph}{Nízká informativní hodnota balíčků pro uživatele}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Nízká informativní hodnota balíčků pro uživatele}{30}%
+\contentsline {paragraph}{Nízký prodej balíčků}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Nízký prodej balíčků}{30}%
+\contentsline {paragraph}{Manuální řešení problémů zákazníků}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Manuální řešení problémů zákazníků}{30}%
+\contentsline {subsection}{\numberline {6.3}Analýza současného řešení}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Analýza současného řešení}{30}%
+\contentsline {subsubsection}{\numberline {6.3.1}Vstupní podmínky}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Vstupní podmínky}{31}%
+\contentsline {paragraph}{Zvolený itinerář k rezervaci}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zvolený itinerář k rezervaci}{31}%
+\contentsline {paragraph}{Dostupnost letenky}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dostupnost letenky}{31}%
+\contentsline {paragraph}{Dostatečný počet míst}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dostatečný počet míst}{31}%
+\contentsline {paragraph}{Vyplnění povinných údajů}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vyplnění povinných údajů}{31}%
+\contentsline {paragraph}{Zvolení úrovně služeb}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zvolení úrovně služeb}{32}%
+\contentsline {paragraph}{Souhlasení s podmínkami}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Souhlasení s podmínkami}{33}%
+\contentsline {paragraph}{Provedení platby}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Provedení platby}{33}%
+\contentsline {subsubsection}{\numberline {6.3.2}Výstupní podmínky}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}Výstupní podmínky}{33}%
+\contentsline {paragraph}{Uložení provedené rezervace}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Uložení provedené rezervace}{33}%
+\contentsline {paragraph}{Potvrzení rezervace}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Potvrzení rezervace}{33}%
+\contentsline {paragraph}{Zaslání letenek}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zaslání letenek}{33}%
+\contentsline {paragraph}{Umožnění změny ve správě objednávek}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Umožnění změny ve správě objednávek}{33}%
+\contentsline {paragraph}{Zaslání informací před odletem}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zaslání informací před odletem}{33}%
+\contentsline {subsubsection}{\numberline {6.3.3}Vnitřní události procesu}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3}Vnitřní události procesu}{34}%
+\contentsline {paragraph}{Změna ceny letenek při objednávce}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Změna ceny letenek při objednávce}{34}%
+\contentsline {paragraph}{Neaktivita při objednávání}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Neaktivita při objednávání}{34}%
+\contentsline {paragraph}{Opuštění formuláře v procesu vyplňování}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Opuštění formuláře v procesu vyplňování}{34}%
+\contentsline {paragraph}{Vykoupení letu v průběhu rezervace}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vykoupení letu v průběhu rezervace}{35}%
+\contentsline {subsubsection}{\numberline {6.3.4}Vnější události procesu}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.4}Vnější události procesu}{35}%
+\contentsline {paragraph}{Krach letecké společnosti}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Krach letecké společnosti}{35}%
+\contentsline {paragraph}{Zrušení letu}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zrušení letu}{35}%
+\contentsline {subsubsection}{\numberline {6.3.5}Podniková pravidla}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.5}Podniková pravidla}{35}%
+\contentsline {paragraph}{Časové limity rezervace před odletem}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Časové limity rezervace před odletem}{35}%
+\contentsline {paragraph}{Dostupnost letenek dlouhou dobu před odletem}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dostupnost letenek dlouhou dobu před odletem}{36}%
+\contentsline {paragraph}{Omezení výběru míst}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Omezení výběru míst}{36}%
+\contentsline {paragraph}{Omezení dostupnosti zavazadel}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Omezení dostupnosti zavazadel}{37}%
+\contentsline {paragraph}{Úrovně nadstandardních služeb}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Úrovně nadstandardních služeb}{37}%
+\contentsline {subsubsection}{\numberline {6.3.6}Činnost procesu definovaná BPMN diagramem}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.6}Činnost procesu definovaná BPNM diagramem}{39}%
+\contentsline {subsubsection}{\numberline {6.3.7}Shrnutí}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.7}Shrnutí}{40}%
+\contentsline {subsection}{\numberline {6.4}Analýza současného řešení}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Analýza současného řešení}{40}%
+\contentsline {subsubsection}{\numberline {6.4.1}Konkurenční společnosti pro společnost Kiwi.com}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.1}Konkurenční společnosti pro společnost Kiwi.com}{40}%
+\contentsline {paragraph}{Definice konkurentů z pohledu Kiwi.com}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definice konkurentů z pohledu Kiwi.com}{40}%
+\contentsline {subsubsection}{\numberline {6.4.2}Základní přehled konkurentů}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.2}Základní přehled konkurentů}{41}%
+\contentsline {subsubsection}{\numberline {6.4.3}Rozdělení dle možností dokoupení doplňkových služeb}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.3}Rozdělení dle možností dokoupení doplňkových služeb}{42}%
+\contentsline {paragraph}{Ukázka nabídky pojištění společností GoToGate}{45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ukázka nabídky pojištění společností GoToGate}{43}%
+\contentsline {paragraph}{Ukázka nabídky flexibilní letenky společností GoToGate}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ukázka nabídky flexibilní letenky společností GoToGate}{44}%
+\contentsline {paragraph}{Ukázka nabídky doplňkových balíčků společností GoToGate}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ukázka nabídky doplňkových balíčků společností GoToGate}{44}%
+\contentsline {paragraph}{Ukázka nabídky pojištění společností Expedia}{47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Ukázka nabídky pojištění společností Expedia}{45}%
+\contentsline {subsubsection}{\numberline {6.4.4}Shrnutí analýzy konkurence}{49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.4}Shrnutí analýzy konkurence}{47}%
+\contentsline {paragraph}{Google flights}{49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Google flights}{47}%
+\contentsline {paragraph}{Skyscanner}{50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Skyscanner}{48}%
+\contentsline {paragraph}{Expedia}{50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Expedia}{48}%
+\contentsline {paragraph}{GoToGate}{50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{GoToGate}{48}%
+\contentsline {subsubsection}{\numberline {6.4.5}Zhodnocení předpokladů pro řešení Kiwi.com}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.4.5}Zhodnocení předpokladů pro řešení Kiwi.com}{49}%
+\contentsline {subsection}{\numberline {6.5}Detailní návrh řešení požadavků}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5}Detailní návrh řešení požadavků}{49}%
+\contentsline {subsubsection}{\numberline {6.5.1}Návrh modelu}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.1}Návrh modelu}{49}%
+\contentsline {subsubsection}{\numberline {6.5.2}Nestrukturovaná analýza požadavků}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.2}Nestrukturovaná analýza požadavků}{49}%
+\contentsline {subsubsection}{\numberline {6.5.3}Strukturovaná analýza požadavků -- případy užití}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.3}Strukturovaná analýza požadavků -- případy užití}{50}%
+\contentsline {paragraph}{Aktor Zákazník}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Aktor Zákazník}{50}%
+\contentsline {paragraph}{Aktor Podpora}{52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Aktor Podpora}{50}%
+\contentsline {subsubsection}{\numberline {6.5.4}Tvorba objednávky}{53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.4}Tvorba objednávky}{51}%
+\contentsline {subsubsection}{\numberline {6.5.5}Proces volby tarifů a balíčků}{56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.5}Proces volby tarifů a balíčků}{54}%
+\contentsline {subsubsection}{\numberline {6.5.6}Doménový model}{57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.6}Doménový model}{55}%
+\contentsline {subsubsection}{\numberline {6.5.7}Diagram nasazení}{58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.7}Diagram nasazení}{56}%
+\contentsline {subsubsection}{\numberline {6.5.8}Drátěný model}{59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.8}Drátěný model}{57}%
+\contentsline {subsubsection}{\numberline {6.5.9}Designové řešení}{61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.9}Designové řešení}{59}%
+\contentsline {subsubsection}{\numberline {6.5.10}Shrnutí}{64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.10}Shrnutí}{62}%
+\contentsline {subsection}{\numberline {6.6}Implementace požadavků}{66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6}Implementace požadavků}{64}%
+\contentsline {subsubsection}{\numberline {6.6.1}Specifikace rozhraní}{66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.1}Specifikace rozhraní}{64}%
+\contentsline {paragraph}{Rozhraní /ancillaries/offers/check}{66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rozhraní /ancillaries/offers/check}{64}%
+\contentsline {paragraph}{Rozhraní save\_booking}{68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rozhraní save\_booking}{66}%
+\contentsline {subsubsection}{\numberline {6.6.2}Implementace modulu}{69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.2}Implementace modulu}{67}%
+\contentsline {paragraph}{Podmíněné volání API pro získání dat}{69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Podmíněné volání API pro získání dat}{67}%
+\contentsline {paragraph}{Zpracování odpovědi}{71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zpracování odpovědi}{69}%
+\contentsline {paragraph}{Zobrazení komponent }{72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zobrazení komponent }{70}%
+\contentsline {paragraph}{Uložení nového stavu po zvolení tarifu}{74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Uložení nového stavu po zvolení tarifu}{72}%
+\contentsline {paragraph}{Odeslání strukturovaných dat na ukládací endpoint}{75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Odeslání strukturovaných dat na ukládací endpoint}{73}%
+\contentsline {paragraph}{Shrnutí}{76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Shrnutí}{74}%
+\contentsline {subsubsection}{\numberline {6.6.3}Implementované knihovny}{76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.6.3}Implementované knihovny}{74}%
+\contentsline {paragraph}{Knihovna Orbit}{76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Knihovna Orbit}{74}%
+\contentsline {paragraph}{Knihovna date-fns}{78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Knihovna date-fns}{76}%
+\contentsline {paragraph}{Knihovna Flow}{79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Knihovna Flow}{77}%
+\contentsline {paragraph}{Knihovna Ramda}{80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Knihovna Ramda}{78}%
+\contentsline {paragraph}{Shrnutí}{80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Shrnutí}{78}%
+\contentsline {subsection}{\numberline {6.7}Testování}{80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.7}Testování}{78}%
+\contentsline {subsubsection}{\numberline {6.7.1}Unit testy}{81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.7.1}Unit testy}{79}%
+\contentsline {subsubsection}{\numberline {6.7.2}Cypress testy}{82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.7.2}Cypress testy}{80}%
+\contentsline {subsubsection}{\numberline {6.7.3}Vyhodnocování}{83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.7.3}Vyhodnocování}{81}%
+\contentsline {subsubsection}{\numberline {6.7.4}Shrnutí}{85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.7.4}Shrnutí}{83}%
+\contentsline {section}{\numberline {7}Ekonomické přínosy}{86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Ekonomické přínosy}{84}%
+\contentsline {section}{\numberline {8}Diskuze}{89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Diskuze}{87}%
+\contentsline {subsection}{\numberline {8.1}Shrnutí výsledků}{89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Shrnutí výsledků}{87}%
+\contentsline {subsection}{\numberline {8.2}Možné vylepšení}{89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Možné vylepšení}{87}%
+\contentsline {section}{\numberline {9}Závěr}{91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Závěr}{89}%
+\contentsline {section}{\numberline {10}Literatura}{93}%

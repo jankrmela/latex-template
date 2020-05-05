@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  1 MAY 2020 20:02
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  5 MAY 2020 16:50
  system commands enabled.
  file:line:error style messages enabled.
 **/Users/js/code/master-thesis/main.tex
@@ -259,108 +259,1235 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box52
 \@float@everytoks=\toks20
 \@floatcapt=\box53
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
-Package: glossaries-extra 2020/04/01 v1.45 (NLCT)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2020/03/19 v4.46 (NLCT)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
-Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks21
-\@glsmrest=\toks22
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/xfor/xfor.sty
-Package: xfor 2009/02/05 v1.05 (NLCT)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2019/09/27 v2.32 (NLCT)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip50
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
-\ex@=\dimen157
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen158
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-\inf@bad=\count284
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count285
-\leftroot@=\count286
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count287
-\DOTSCASE@=\count288
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
-\big@size=\dimen159
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count289
-\c@MaxMatrixCols=\count290
-\dotsspace@=\muskip16
-\c@parentequation=\count291
-\dspbrk@lvl=\count292
-\tag@help=\toks24
-\row@=\count293
-\column@=\count294
-\maxfields@=\count295
-\andhelp@=\toks25
-\eqnshift@=\dimen160
-\alignsep@=\dimen161
-\tagshift@=\dimen162
-\tagwidth@=\dimen163
-\totwidth@=\dimen164
-\lineht@=\dimen165
-\@envbody=\toks26
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/substr/substr.sty
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count296
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/datatool/datatool-fp.sty
-Package: datatool-fp 2019/09/27 v2.32 (NLCT)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp.sty
-Package: fp 1995/04/02
- `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/defpattern.sty
-Package: defpattern 1994/10/12
-\actioncount=\count297
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-basic.sty
-Package: fp-basic 1996/05/13
-\FP@xs=\count298
-\FP@xia=\count299
-\FP@xib=\count300
-\FP@xfa=\count301
-\FP@xfb=\count302
-\FP@rega=\count303
-\FP@regb=\count304
-\FP@regs=\count305
-\FP@times=\count306
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-addons.sty
-Package: fp-addons 1995/03/15
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-snap.sty
-Package: fp-snap 1995/04/05
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-exp.sty
-Package: fp-exp 1995/04/03
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-trigo.sty
-Package: fp-trigo 1995/04/14
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-pas.sty
-Package: fp-pas 1994/08/29
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-random.sty
-Package: fp-random 1995/02/23
-\FPseed=\count307
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-eqn.sty
-Package: fp-eqn 1995/04/03
-) (/us
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks21
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count284
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count285
+\c@listtotal=\count286
+\c@listcount=\count287
+\c@liststart=\count288
+\c@liststop=\count289
+\c@citecount=\count290
+\c@citetotal=\count291
+\c@multicitecount=\count292
+\c@multicitetotal=\count293
+\c@instcount=\count294
+\c@maxnames=\count295
+\c@minnames=\count296
+\c@maxitems=\count297
+\c@minitems=\count298
+\c@citecounter=\count299
+\c@maxcitecounter=\count300
+\c@savedcitecounter=\count301
+\c@uniquelist=\count302
+\c@uniquename=\count303
+\c@refsection=\count304
+\c@refsegment=\count305
+\c@maxextratitle=\count306
+\c@maxextratitleyear=\count307
+\c@maxextraname=\count308
+\c@maxextradate=\count309
+\c@maxextraalpha=\count310
+\c@abbrvpenalty=\count311
+\c@highnamepenalty=\count312
+\c@lownamepenalty=\count313
+\c@maxparens=\count314
+\c@parenlevel=\count315
+\blx@tempcnta=\count316
+\blx@tempcntb=\count317
+\blx@tempcntc=\count318
+\blx@maxsection=\count319
+\blx@maxsegment@0=\count320
+\blx@notetype=\count321
+\blx@parenlevel@text=\count322
+\blx@parenlevel@foot=\count323
+\blx@sectionciteorder@0=\count324
+\blx@entrysetcounter=\count325
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language2
+\c@mincomprange=\count326
+\c@maxcomprange=\count327
+\c@mincompwidth=\count328
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'iso-numeric.dbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.dbx
+File: iso-numeric.dbx 2020/03/25 v0.4.0 ISO 690 biblatex data model extension
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count329
+\c@savedafterword=\count330
+\c@annotator=\count331
+\c@savedannotator=\count332
+\c@author=\count333
+\c@savedauthor=\count334
+\c@bookauthor=\count335
+\c@savedbookauthor=\count336
+\c@commentator=\count337
+\c@savedcommentator=\count338
+\c@editor=\count339
+\c@savededitor=\count340
+\c@editora=\count341
+\c@savededitora=\count342
+\c@editorb=\count343
+\c@savededitorb=\count344
+\c@editorc=\count345
+\c@savededitorc=\count346
+\c@foreword=\count347
+\c@savedforeword=\count348
+\c@holder=\count349
+\c@savedholder=\count350
+\c@introduction=\count351
+\c@savedintroduction=\count352
+\c@namea=\count353
+\c@savednamea=\count354
+\c@nameb=\count355
+\c@savednameb=\count356
+\c@namec=\count357
+\c@savednamec=\count358
+\c@translator=\count359
+\c@savedtranslator=\count360
+\c@shortauthor=\count361
+\c@savedshortauthor=\count362
+\c@shorteditor=\count363
+\c@savedshorteditor=\count364
+\c@supervisor=\count365
+\c@savedsupervisor=\count366
+\c@labelname=\count367
+\c@savedlabelname=\count368
+\c@institution=\count369
+\c@savedinstitution=\count370
+\c@lista=\count371
+\c@savedlista=\count372
+\c@listb=\count373
+\c@savedlistb=\count374
+\c@listc=\count375
+\c@savedlistc=\count376
+\c@listd=\count377
+\c@savedlistd=\count378
+\c@liste=\count379
+\c@savedliste=\count380
+\c@listf=\count381
+\c@savedlistf=\count382
+\c@location=\count383
+\c@savedlocation=\count384
+\c@organization=\count385
+\c@savedorganization=\count386
+\c@origlocation=\count387
+\c@savedoriglocation=\count388
+\c@origpublisher=\count389
+\c@savedorigpublisher=\count390
+\c@publisher=\count391
+\c@savedpublisher=\count392
+\c@language=\count393
+\c@savedlanguage=\count394
+\c@origlanguage=\count395
+\c@savedoriglanguage=\count396
+\c@pageref=\count397
+\c@savedpageref=\count398
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count399
+\c@textcitetotal=\count400
+\c@textcitemaxnames=\count401
+\c@biburlbigbreakpenalty=\count402
+\c@biburlbreakpenalty=\count403
+\c@biburlnumpenalty=\count404
+\c@biburlucpenalty=\count405
+\c@biburllcpenalty=\count406
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count407
+)
+Package biblatex Info: Trying to load bibliography style 'iso-numeric'...
+Package biblatex Info: ... file 'iso-numeric.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.bbx
+File: iso-numeric.bbx 2020/03/25 v0.4.0 ISO 690 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'iso'...
+Package biblatex Info: ... file 'iso.bbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso.bbx
+File: iso.bbx 2020/03/25 v0.4.0 ISO 690 biblatex bibliography style
+Package biblatex-iso690 Info: Space colon enabled: false.
+Package biblatex-iso690 Info: Total pages enabled: false.
+Package biblatex-iso690 Info: Short numeration enabled: false.
+Package biblatex-iso690 Info: Printing thesis info at the end enabled: true.
+Package biblatex-iso690 Info: URL field enabled: true.
+Package biblatex-iso690 Info: ISBN field enabled: true.
+Package biblatex-iso690 Info: DOI field enabled: true.
+Package biblatex-iso690 Info: eprint field enabled: true.
+Package biblatex-iso690 Info: Article publication info enabled: false.
+Package biblatex Info: Delimiter 'multinamedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'editortypedelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'authortypedelim' in context '' already defined, overwriting.
+))
+Package biblatex Info: Trying to load citation style 'iso-numeric'...
+Package biblatex Info: ... file 'iso-numeric.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.cbx
+File: iso-numeric.cbx 2020/03/25 v0.4.0 ISO 690 biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load citation style 'iso-fullcite'...
+Package biblatex Info: ... file 'iso-fullcite.cbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/iso-fullcite.cbx
+File: iso-fullcite.cbx 2020/03/25 v0.4.0 ISO 690 biblatex fullcite modifications
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\footfullcite'.
+)
+Package biblatex Info: Redefining '\parencite'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/gloss-czech.ldf
+File: gloss-czech.ldf polyglossia: module for czech
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Module polyglossia Info: Language data for czech
+(polyglossia)            hyphenation	hyph-cs.hyp.txt
+(polyglossia)            loader	loadhyph-cs.tex
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-cs.pat.txt
+(polyglossia)            righthyphenmin	3
+(polyglossia)            synonyms	 on input line 10
+Module polyglossia Info: Language czech was not yet loaded; created with id 3 on input line 10
+ (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.sty
+Package: luavlna 2019/10/30 luavlna
+ (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.tex
+Inserting `LuaVlna' at position 2 in `pre_linebreak_filter'.
+Inserting `allow hyphen breaks' at position 1 in `hyphenate'.)) (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2019/09/30 Babel common definitions for shorthands
+ Taken verbatim from babel files (2019/09/27 v3.34)
+)
+Package polyglossia Info: Making " an active character on input line 38.
+)
+Package polyglossia Info: Default language is czech.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {english}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Package polyglossia Info: Option: English, variant=american.
+)
+Package csquotes Info: Redefining quotation style 'czech'.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count408
+\calc@Bcount=\count409
+\calc@Adimen=\dimen157
+\calc@Bdimen=\dimen158
+\calc@Askip=\skip72
+\calc@Bskip=\skip73
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count410
+\calc@Cskip=\skip74
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+runsystem(uname -s > "main.w18")...executed
+ (/Users/js/code/master-thesis/main.w18)
+runsystem(rm -- "main.w18")...executed
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count411
+\decimalpart=\count412
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip75
+\fb@frw=\dimen159
+\fb@frh=\dimen160
+\FrameRule=\dimen161
+\FrameSep=\dimen162
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box54
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count413
+\c@minted@pygmentizecounter=\count414
+\@float@every@listing=\toks22
+\c@listing=\count415
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-03-03 v2.29 Module abspage for zref (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-03-03 v2.29 Module base for zref (HO)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\c@abspage=\count416
+Package zref Info: New property: abspage on input line 66.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: luatex.def on input line 147.
+)
+\mdf@templength=\skip76
+\c@mdf@globalstyle@cnt=\count417
+\mdf@skipabove@length=\skip77
+\mdf@skipbelow@length=\skip78
+\mdf@leftmargin@length=\skip79
+\mdf@rightmargin@length=\skip80
+\mdf@innerleftmargin@length=\skip81
+\mdf@innerrightmargin@length=\skip82
+\mdf@innertopmargin@length=\skip83
+\mdf@innerbottommargin@length=\skip84
+\mdf@splittopskip@length=\skip85
+\mdf@splitbottomskip@length=\skip86
+\mdf@outermargin@length=\skip87
+\mdf@innermargin@length=\skip88
+\mdf@linewidth@length=\skip89
+\mdf@innerlinewidth@length=\skip90
+\mdf@middlelinewidth@length=\skip91
+\mdf@outerlinewidth@length=\skip92
+\mdf@roundcorner@length=\skip93
+\mdf@footenotedistance@length=\skip94
+\mdf@userdefinedwidth@length=\skip95
+\mdf@needspace@length=\skip96
+\mdf@frametitleaboveskip@length=\skip97
+\mdf@frametitlebelowskip@length=\skip98
+\mdf@frametitlerulewidth@length=\skip99
+\mdf@frametitleleftmargin@length=\skip100
+\mdf@frametitlerightmargin@length=\skip101
+\mdf@shadowsize@length=\skip102
+\mdf@extratopheight@length=\skip103
+\mdf@subtitleabovelinewidth@length=\skip104
+\mdf@subtitlebelowlinewidth@length=\skip105
+\mdf@subtitleaboveskip@length=\skip106
+\mdf@subtitlebelowskip@length=\skip107
+\mdf@subtitleinneraboveskip@length=\skip108
+\mdf@subtitleinnerbelowskip@length=\skip109
+\mdf@subsubtitleabovelinewidth@length=\skip110
+\mdf@subsubtitlebelowlinewidth@length=\skip111
+\mdf@subsubtitleaboveskip@length=\skip112
+\mdf@subsubtitlebelowskip@length=\skip113
+\mdf@subsubtitleinneraboveskip@length=\skip114
+\mdf@subsubtitleinnerbelowskip@length=\skip115
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box55
+\mdf@footnotebox=\box56
+\mdf@splitbox@one=\box57
+\mdf@splitbox@two=\box58
+\mdf@splitbox@save=\box59
+\mdfsplitboxwidth=\skip116
+\mdfsplitboxtotalwidth=\skip117
+\mdfsplitboxheight=\skip118
+\mdfsplitboxdepth=\skip119
+\mdfsplitboxtotalheight=\skip120
+\mdfframetitleboxwidth=\skip121
+\mdfframetitleboxtotalwidth=\skip122
+\mdfframetitleboxheight=\skip123
+\mdfframetitleboxdepth=\skip124
+\mdfframetitleboxtotalheight=\skip125
+\mdffootnoteboxwidth=\skip126
+\mdffootnoteboxtotalwidth=\skip127
+\mdffootnoteboxheight=\skip128
+\mdffootnoteboxdepth=\skip129
+\mdffootnoteboxtotalheight=\skip130
+\mdftotallinewidth=\skip131
+\mdfboundingboxwidth=\skip132
+\mdfboundingboxtotalwidth=\skip133
+\mdfboundingboxheight=\skip134
+\mdfboundingboxdepth=\skip135
+\mdfboundingboxtotalheight=\skip136
+\mdf@freevspace@length=\skip137
+\mdf@horizontalwidthofbox@length=\skip138
+\mdf@verticalmarginwhole@length=\skip139
+\mdf@horizontalspaceofbox=\skip140
+\mdfsubtitleheight=\skip141
+\mdfsubsubtitleheight=\skip142
+\c@mdfcountframes=\count418
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count419
+\c@mdf@env@i=\count420
+\c@mdf@env@ii=\count421
+\c@mdf@zref@counter=\count422
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'czech'.
+runsystem(which pygmentize && touch main.aex)...executed
+runsystem(rm main.aex)...executed
+ (/Users/js/code/master-thesis/main.aux
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+
+set lang czech, 3
+)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 61.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 61.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 61.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 61.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 61.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 61.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 61.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 61.
+LaTeX Font Info:    Redeclaring math accent \check on input line 61.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 61.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 61.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 61.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 61.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 61.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 61.
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count423
+\scratchdimen=\dimen163
+\scratchbox=\box60
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen164
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package biblatex Info: Trying to load language 'czech' -> 'czech-iso'...
+Package biblatex Info: ... file 'czech-iso.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
+File: czech-iso.lbx 2020/03/25 v0.4.0 ISO 690 extended biblatex localization
+Package biblatex Info: Trying to load language 'czech'...
+Package biblatex Info: ... file 'czech.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
+File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'czech'...
+Package biblatex Info: ... file 'czech.lbx' found.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
+File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+))
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Data encoding 'UTF8' specified.
+(biblatex)             Backend will reencode on the fly.
+
+\openout4 = main.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (/Users/js/code/master-thesis/main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                arlow
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
+
+set lang czech, 3
+\AtBeginShipoutBox=\box61
+LaTeX Info: Redefining \rmfamily on input line 61.
+LaTeX Info: Redefining \sffamily on input line 61.
+LaTeX Info: Redefining \ttfamily on input line 61.
+set lang czech, 3
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 66.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 66.
+(/Users/js/code/master-thesis/parts/header.tex [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+ [3
+
+]) [4
+
+] (/Users/js/code/master-thesis/main.toc
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+
+set lang czech, 3
+[5
+
+])
+\tf@toc=\write6
+
+\openout6 = main.toc
+ [6] (/Users/js/code/master-thesis/parts/structure.tex (/Users/js/code/master-thesis/parts/formality.tex [7
+
+] (/Users/js/code/master-thesis/main.lof
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+
+set lang czech, 3
+[8
+
+])
+\tf@lof=\write7
+
+\openout7 = main.lof
+ (/Users/js/code/master-thesis/main.lot
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+
+set lang czech, 3
+)
+\tf@lot=\write8
+
+\openout8 = main.lot
+) (/Users/js/code/master-thesis/parts/uvod.tex [9] [10
+
+]) (/Users/js/code/master-thesis/parts/strukturaPrace.tex [11
+
+]) (/Users/js/code/master-thesis/parts/architektura.tex [12
+
+]
+<./src/2020-04-27-15-58-08.png, id=48, 581.17125pt x 472.76625pt>
+File: ./src/2020-04-27-15-58-08.png Graphic file (type png)
+<use ./src/2020-04-27-15-58-08.png>
+Package luatex.def Info: ./src/2020-04-27-15-58-08.png  used on input line 19.
+(luatex.def)             Requested size: 581.16983pt x 472.76509pt.
+ [13
+
+]
+<./src/2020-04-27-16-18-29.png, id=52, 595.22375pt x 397.485pt>
+File: ./src/2020-04-27-16-18-29.png Graphic file (type png)
+<use ./src/2020-04-27-16-18-29.png>
+Package luatex.def Info: ./src/2020-04-27-16-18-29.png  used on input line 32.
+(luatex.def)             Requested size: 595.2223pt x 397.48402pt.
+ [14<./src/2020-04-27-15-58-08.png>] [15<./src/2020-04-27-16-18-29.png>]
+<./src/2020-04-27-16-29-00.png, id=61, 597.23125pt x 249.93375pt>
+File: ./src/2020-04-27-16-29-00.png Graphic file (type png)
+<use ./src/2020-04-27-16-29-00.png>
+Package luatex.def Info: ./src/2020-04-27-16-29-00.png  used on input line 49.
+(luatex.def)             Requested size: 597.22978pt x 249.93314pt.
+ [16<./src/2020-04-27-16-29-00.png>]
+<./src/2020-04-27-16-31-09.png, id=66, 604.2575pt x 713.66624pt>
+File: ./src/2020-04-27-16-31-09.png Graphic file (type png)
+<use ./src/2020-04-27-16-31-09.png>
+Package luatex.def Info: ./src/2020-04-27-16-31-09.png  used on input line 78.
+(luatex.def)             Requested size: 604.25603pt x 713.66449pt.
+ [17] [18<./src/2020-04-27-16-31-09.png>]
+<./src/2020-04-27-16-36-40.png, id=74, 912.40875pt x 696.6025pt>
+File: ./src/2020-04-27-16-36-40.png Graphic file (type png)
+<use ./src/2020-04-27-16-36-40.png>
+Package luatex.def Info: ./src/2020-04-27-16-36-40.png  used on input line 90.
+(luatex.def)             Requested size: 912.40652pt x 696.6008pt.
+<./src/2020-04-27-16-40-17.png, id=75, 747.79375pt x 679.53876pt>
+File: ./src/2020-04-27-16-40-17.png Graphic file (type png)
+<use ./src/2020-04-27-16-40-17.png>
+Package luatex.def Info: ./src/2020-04-27-16-40-17.png  used on input line 101.
+(luatex.def)             Requested size: 747.79192pt x 679.53711pt.
+ [19<./src/2020-04-27-16-36-40.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 110.
+
+
+Overfull \hbox (8.22076pt too wide) in paragraph at lines 111--121
+[][] 
+ []
+
+[20<./src/2020-04-27-16-40-17.png>] [21]
+<./src/2020-04-27-17-18-39.png, id=88, 586.19pt x 430.60875pt>
+File: ./src/2020-04-27-17-18-39.png Graphic file (type png)
+<use ./src/2020-04-27-17-18-39.png>
+Package luatex.def Info: ./src/2020-04-27-17-18-39.png  used on input line 155.
+(luatex.def)             Requested size: 586.18857pt x 430.60768pt.
+<./src/2020-04-27-17-19-29.png, id=89, 745.78625pt x 416.55624pt>
+File: ./src/2020-04-27-17-19-29.png Graphic file (type png)
+<use ./src/2020-04-27-17-19-29.png>
+Package luatex.def Info: ./src/2020-04-27-17-19-29.png  used on input line 164.
+(luatex.def)             Requested size: 745.78444pt x 416.55522pt.
+ [22<./src/2020-04-27-17-18-39.png>]
+<./src/2020-04-27-17-47-02.png, id=94, 749.80125pt x 416.55624pt>
+File: ./src/2020-04-27-17-47-02.png Graphic file (type png)
+<use ./src/2020-04-27-17-47-02.png>
+Package luatex.def Info: ./src/2020-04-27-17-47-02.png  used on input line 190.
+(luatex.def)             Requested size: 749.79942pt x 416.55522pt.
+ [23<./src/2020-04-27-17-19-29.png>]
+<./src/2020-04-27-17-48-17.png, id=99, 686.565pt x 349.305pt>
+File: ./src/2020-04-27-17-48-17.png Graphic file (type png)
+<use ./src/2020-04-27-17-48-17.png>
+Package luatex.def Info: ./src/2020-04-27-17-48-17.png  used on input line 203.
+(luatex.def)             Requested size: 686.56332pt x 349.30414pt.
+) (/Users/js/code/master-thesis/parts/metodika.tex [24<./src/2020-04-27-17-47-02.png>] [25<./src/2020-04-27-17-48-17.png>]) (/Users/js/code/master-thesis/parts/navrh.tex [26
+
+] (/Users/js/code/master-thesis/parts/prakticka/vize.tex
+<./src/2020-04-27-18-10-22.png, id=111, 975.645pt x 728.7225pt>
+File: ./src/2020-04-27-18-10-22.png Graphic file (type png)
+<use ./src/2020-04-27-18-10-22.png>
+Package luatex.def Info: ./src/2020-04-27-18-10-22.png  used on input line 16.
+(luatex.def)             Requested size: 975.64262pt x 728.72072pt.
+ [27
+
+] [28<./src/2020-04-27-18-10-22.png>] [29]
+<./src/2020-04-27-19-01-37.png, id=122, 770.88pt x 742.775pt>
+File: ./src/2020-04-27-19-01-37.png Graphic file (type png)
+<use ./src/2020-04-27-19-01-37.png>
+Package luatex.def Info: ./src/2020-04-27-19-01-37.png  used on input line 94.
+(luatex.def)             Requested size: 770.87813pt x 742.77318pt.
+) (/Users/js/code/master-thesis/parts/prakticka/problem.tex [30] [31<./src/2020-04-27-19-01-37.png>]) (/Users/js/code/master-thesis/parts/prakticka/soucasneReseni.tex [32] [33]
+<./src/2020-04-27-19-20-09.png, id=137, 987.69pt x 452.69125pt>
+File: ./src/2020-04-27-19-20-09.png Graphic file (type png)
+<use ./src/2020-04-27-19-20-09.png>
+Package luatex.def Info: ./src/2020-04-27-19-20-09.png  used on input line 33.
+(luatex.def)             Requested size: 987.68759pt x 452.69014pt.
+ [34<./src/2020-04-27-19-20-09.png>] [35]
+<./src/2020-04-27-19-24-34.png, id=145, 902.37125pt x 816.04875pt>
+File: ./src/2020-04-27-19-24-34.png Graphic file (type png)
+<use ./src/2020-04-27-19-24-34.png>
+Package luatex.def Info: ./src/2020-04-27-19-24-34.png  used on input line 80.
+(luatex.def)             Requested size: 902.36905pt x 816.04677pt.
+ [36<./src/2020-04-27-19-24-34.png>]
+<./src/2020-04-27-19-27-10.png, id=150, 875.27pt x 473.77pt>
+File: ./src/2020-04-27-19-27-10.png Graphic file (type png)
+<use ./src/2020-04-27-19-27-10.png>
+Package luatex.def Info: ./src/2020-04-27-19-27-10.png  used on input line 116.
+(luatex.def)             Requested size: 875.26787pt x 473.76884pt.
+ [37]
+<./src/2020-04-27-19-29-35.png, id=154, 901.3675pt x 531.9875pt>
+File: ./src/2020-04-27-19-29-35.png Graphic file (type png)
+<use ./src/2020-04-27-19-29-35.png>
+Package luatex.def Info: ./src/2020-04-27-19-29-35.png  used on input line 136.
+(luatex.def)             Requested size: 901.36528pt x 531.9862pt.
+ [38<./src/2020-04-27-19-27-10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\TU/lmr/bx/n/12 Úro-veň 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]\TU/lmr/bx/n/12 Zá-kaz-nic-ká
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]\TU/lmr/bx/n/12 Po-pla-tek za
+ []
+
+
+Overfull \hbox (6.60527pt too wide) in paragraph at lines 152--160
+[][] 
+ []
+
+[39<./src/2020-04-27-19-29-35.png>] [40]
+<./src/2020-04-27-19-57-48.png, id=166, 765.86125pt x 987.69pt>
+File: ./src/2020-04-27-19-57-48.png Graphic file (type png)
+<use ./src/2020-04-27-19-57-48.png>
+Package luatex.def Info: ./src/2020-04-27-19-57-48.png  used on input line 172.
+(luatex.def)             Requested size: 765.85938pt x 987.68759pt.
+ [41
+
+<./src/2020-04-27-19-57-48.png>]) (/Users/js/code/master-thesis/parts/prakticka/konkurence.tex [42]
+<./src/2020-04-27-20-18-58.png, id=175, 825.0825pt x 691.58376pt>
+File: ./src/2020-04-27-20-18-58.png Graphic file (type png)
+<use ./src/2020-04-27-20-18-58.png>
+Package luatex.def Info: ./src/2020-04-27-20-18-58.png  used on input line 24.
+(luatex.def)             Requested size: 426.79134pt x 357.73668pt.
+ [43] [44<./src/2020-04-27-20-18-58.png>]
+<./src/2020-04-27-20-43-12.png, id=183, 826.08624pt x 251.94125pt>
+File: ./src/2020-04-27-20-43-12.png Graphic file (type png)
+<use ./src/2020-04-27-20-43-12.png>
+Package luatex.def Info: ./src/2020-04-27-20-43-12.png  used on input line 36.
+(luatex.def)             Requested size: 426.79134pt x 130.16444pt.
+<./src/2020-04-27-21-00-49.png, id=184, 771.88374pt x 450.68375pt>
+File: ./src/2020-04-27-21-00-49.png Graphic file (type png)
+<use ./src/2020-04-27-21-00-49.png>
+Package luatex.def Info: ./src/2020-04-27-21-00-49.png  used on input line 47.
+(luatex.def)             Requested size: 771.88185pt x 450.68263pt.
+ [45<./src/2020-04-27-20-43-12.png><./src/2020-04-27-21-00-49.png>]
+<./src/2020-04-27-21-01-27.png, id=190, 746.79pt x 232.87pt>
+File: ./src/2020-04-27-21-01-27.png Graphic file (type png)
+<use ./src/2020-04-27-21-01-27.png>
+Package luatex.def Info: ./src/2020-04-27-21-01-27.png  used on input line 56.
+(luatex.def)             Requested size: 746.78816pt x 232.86942pt.
+<./src/2020-04-27-21-02-36.png, id=191, 757.83125pt x 298.11375pt>
+File: ./src/2020-04-27-21-02-36.png Graphic file (type png)
+<use ./src/2020-04-27-21-02-36.png>
+Package luatex.def Info: ./src/2020-04-27-21-02-36.png  used on input line 67.
+(luatex.def)             Requested size: 757.8294pt x 298.11302pt.
+ [46<./src/2020-04-27-21-01-27.png><./src/2020-04-27-21-02-36.png>]
+<./src/2020-04-27-21-03-48.png, id=197, 780.9175pt x 582.175pt>
+File: ./src/2020-04-27-21-03-48.png Graphic file (type png)
+<use ./src/2020-04-27-21-03-48.png>
+Package luatex.def Info: ./src/2020-04-27-21-03-48.png  used on input line 80.
+(luatex.def)             Requested size: 780.91559pt x 582.17358pt.
+<./src/2020-04-27-21-05-05.png, id=198, 778.91pt x 544.0325pt>
+File: ./src/2020-04-27-21-05-05.png Graphic file (type png)
+<use ./src/2020-04-27-21-05-05.png>
+Package luatex.def Info: ./src/2020-04-27-21-05-05.png  used on input line 94.
+(luatex.def)             Requested size: 778.90811pt x 544.03117pt.
+ [47<./src/2020-04-27-21-03-48.png>]
+<./src/2020-04-27-21-05-50.png, id=203, 774.895pt x 467.7475pt>
+File: ./src/2020-04-27-21-05-50.png Graphic file (type png)
+<use ./src/2020-04-27-21-05-50.png>
+Package luatex.def Info: ./src/2020-04-27-21-05-50.png  used on input line 103.
+(luatex.def)             Requested size: 774.89311pt x 467.74634pt.
+ [48<./src/2020-04-27-21-05-05.png>] [49<./src/2020-04-27-21-05-50.png>]
+<./src/2020-04-27-21-14-33.png, id=212, 771.88374pt x 349.305pt>
+File: ./src/2020-04-27-21-14-33.png Graphic file (type png)
+<use ./src/2020-04-27-21-14-33.png>
+Package luatex.def Info: ./src/2020-04-27-21-14-33.png  used on input line 134.
+(luatex.def)             Requested size: 426.79134pt x 193.13635pt.
+) (/Users/js/code/master-thesis/parts/prakticka/navrh.tex [50] [51<./src/2020-04-27-21-14-33.png>] [52]
+<./src/2020-04-27-21-25-01.png, id=225, 929.4725pt x 808.01875pt>
+File: ./src/2020-04-27-21-25-01.png Graphic file (type png)
+<use ./src/2020-04-27-21-25-01.png>
+Package luatex.def Info: ./src/2020-04-27-21-25-01.png  used on input line 50.
+(luatex.def)             Requested size: 929.47025pt x 808.01678pt.
+ [53<./src/2020-04-27-21-25-01.png>] [54]
+<./src/2020-04-27-21-28-06.png, id=233, 587.19376pt x 893.3375pt>
+File: ./src/2020-04-27-21-28-06.png Graphic file (type png)
+<use ./src/2020-04-27-21-28-06.png>
+Package luatex.def Info: ./src/2020-04-27-21-28-06.png  used on input line 65.
+(luatex.def)             Requested size: 587.19232pt x 893.33531pt.
+ [55
+
+<./src/2020-04-27-21-28-06.png>] [56]
+<./src/2020-04-27-21-33-22.png, id=241, 853.1875pt x 1121.18875pt>
+File: ./src/2020-04-27-21-33-22.png Graphic file (type png)
+<use ./src/2020-04-27-21-33-22.png>
+Package luatex.def Info: ./src/2020-04-27-21-33-22.png  used on input line 83.
+(luatex.def)             Requested size: 853.18542pt x 1121.18602pt.
+ [57
+
+<./src/2020-04-27-21-33-22.png>]
+<./src/2020-04-27-21-43-22.png, id=246, 966.61125pt x 416.55624pt>
+File: ./src/2020-04-27-21-43-22.png Graphic file (type png)
+<use ./src/2020-04-27-21-43-22.png>
+Package luatex.def Info: ./src/2020-04-27-21-43-22.png  used on input line 98.
+(luatex.def)             Requested size: 966.6089pt x 416.55522pt.
+ [58<./src/2020-04-27-21-43-22.png>]
+<./src/2020-04-27-21-43-55.png, id=251, 975.645pt x 513.92pt>
+File: ./src/2020-04-27-21-43-55.png Graphic file (type png)
+<use ./src/2020-04-27-21-43-55.png>
+Package luatex.def Info: ./src/2020-04-27-21-43-55.png  used on input line 114.
+(luatex.def)             Requested size: 975.64262pt x 513.91873pt.
+ [59<./src/2020-04-27-21-43-55.png>]
+<./src/2020-04-27-21-45-11.png, id=256, 934.49126pt x 862.22125pt>
+File: ./src/2020-04-27-21-45-11.png Graphic file (type png)
+<use ./src/2020-04-27-21-45-11.png>
+Package luatex.def Info: ./src/2020-04-27-21-45-11.png  used on input line 131.
+(luatex.def)             Requested size: 934.48898pt x 862.21915pt.
+<./src/2020-04-27-21-45-23.png, id=257, 931.48pt x 765.86125pt>
+File: ./src/2020-04-27-21-45-23.png Graphic file (type png)
+<use ./src/2020-04-27-21-45-23.png>
+Package luatex.def Info: ./src/2020-04-27-21-45-23.png  used on input line 138.
+(luatex.def)             Requested size: 931.47772pt x 765.85938pt.
+ [60<./src/2020-04-27-21-45-11.png>]
+<./src/2020-04-27-21-49-13.png, id=262, 926.46124pt x 623.32875pt>
+File: ./src/2020-04-27-21-49-13.png Graphic file (type png)
+<use ./src/2020-04-27-21-49-13.png>
+Package luatex.def Info: ./src/2020-04-27-21-49-13.png  used on input line 149.
+(luatex.def)             Requested size: 926.45897pt x 623.32722pt.
+ [61<./src/2020-04-27-21-45-23.png>]
+<./src/2020-04-27-21-50-23.png, id=268, 931.48pt x 697.60625pt>
+File: ./src/2020-04-27-21-50-23.png Graphic file (type png)
+<use ./src/2020-04-27-21-50-23.png>
+Package luatex.def Info: ./src/2020-04-27-21-50-23.png  used on input line 158.
+(luatex.def)             Requested size: 931.47772pt x 697.60454pt.
+ [62<./src/2020-04-27-21-49-13.png>]
+<./src/2020-04-27-21-51-10.png, id=273, 917.4275pt x 748.7975pt>
+File: ./src/2020-04-27-21-51-10.png Graphic file (type png)
+<use ./src/2020-04-27-21-51-10.png>
+Package luatex.def Info: ./src/2020-04-27-21-51-10.png  used on input line 167.
+(luatex.def)             Requested size: 917.42528pt x 748.79567pt.
+ [63<./src/2020-04-27-21-50-23.png>]) (/Users/js/code/master-thesis/parts/prakticka/implementace.tex [64<./src/2020-04-27-21-51-10.png>] [65]
+<./src/2020-04-28-08-08-10.png, id=285, 620.3175pt x 597.23125pt>
+File: ./src/2020-04-28-08-08-10.png Graphic file (type png)
+<use ./src/2020-04-28-08-08-10.png>
+Package luatex.def Info: ./src/2020-04-28-08-08-10.png  used on input line 24.
+(luatex.def)             Requested size: 620.316pt x 597.22978pt.
+ [66
+
+] [67<./src/2020-04-28-08-08-10.png>]
+<./src/2020-04-28-08-11-35.png, id=293, 924.45375pt x 373.395pt>
+File: ./src/2020-04-28-08-11-35.png Graphic file (type png)
+<use ./src/2020-04-28-08-11-35.png>
+Package luatex.def Info: ./src/2020-04-28-08-11-35.png  used on input line 43.
+(luatex.def)             Requested size: 924.45149pt x 373.39409pt.
+<./src/2020-04-28-08-14-04.png, id=294, 923.45pt x 600.2425pt>
+File: ./src/2020-04-28-08-14-04.png Graphic file (type png)
+<use ./src/2020-04-28-08-14-04.png>
+Package luatex.def Info: ./src/2020-04-28-08-14-04.png  used on input line 58.
+(luatex.def)             Requested size: 923.44774pt x 600.24103pt.
+ [68<./src/2020-04-28-08-11-35.png>] [69<./src/2020-04-28-08-14-04.png>]
+\openout3 = main.pyg
+
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > main.out.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg)
+runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > main.out.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg)
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+)
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [70]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg)
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [71]
+<./src/2020-04-28-16-06-29.png, id=315, 937.5025pt x 508.90125pt>
+File: ./src/2020-04-28-16-06-29.png Graphic file (type png)
+<use ./src/2020-04-28-16-06-29.png>
+Package luatex.def Info: ./src/2020-04-28-16-06-29.png  used on input line 180.
+(luatex.def)             Requested size: 937.50021pt x 508.90001pt.
+ [72]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [73<./src/2020-04-28-16-06-29.png>]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [74]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg
+Overfull \hbox (70.35481pt too wide) in paragraph at lines 12--12
+\remove@tlig ticketFareState.data.fareType.offers[getSelectedTicketFare(state).fareType]|  
+ []
+
+) [75] [76]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg)
+<./src/2020-04-28-16-16-54.png, id=332, 918.43124pt x 188.705pt>
+File: ./src/2020-04-28-16-16-54.png Graphic file (type png)
+<use ./src/2020-04-28-16-16-54.png>
+Package luatex.def Info: ./src/2020-04-28-16-16-54.png  used on input line 332.
+(luatex.def)             Requested size: 918.429pt x 188.70453pt.
+ [77]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [78<./src/2020-04-28-16-16-54.png>]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [79] [80]
+<./src/2020-04-28-16-50-54.png, id=346, 916.42375pt x 206.7725pt>
+File: ./src/2020-04-28-16-50-54.png Graphic file (type png)
+<use ./src/2020-04-28-16-50-54.png>
+Package luatex.def Info: ./src/2020-04-28-16-50-54.png  used on input line 417.
+(luatex.def)             Requested size: 916.42152pt x 206.77199pt.
+
+\openout3 = main.pyg
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg
+Overfull \hbox (64.60606pt too wide) in paragraph at lines 11--11
+\remove@tlig expect(wrapper.find(AdditionalServicePackageRule).exists()).toBe([]\TU/lmtt/b/n/10.95 true[]\remove@tlig )|  
+ []
+
+
+Overfull \hbox (145.08855pt too wide) in paragraph at lines 17--17
+\remove@tlig expect(wrapper.find(AdditionalServicePackageRule).prop([]"isIncluded"[])).toEqual([]\TU/lmtt/b/n/10.95 false[]\remove@tlig )|  
+ []
+
+
+Overfull \hbox (139.3398pt too wide) in paragraph at lines 23--23
+\remove@tlig expect(wrapper.find(AdditionalServicePackageRule).prop([]"isIncluded"[])).toEqual([]\TU/lmtt/b/n/10.95 true[]\remove@tlig )|  
+ []
+
+
+Overfull \hbox (139.3398pt too wide) in paragraph at lines 32--32
+\remove@tlig expect(wrapper.find(AdditionalServicePackageRule).prop([]"isIncluded"[])).toEqual([]\TU/lmtt/b/n/10.95 true[]\remove@tlig )|  
+ []
+
+) [81<./src/2020-04-28-16-50-54.png>] [82]
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg)
+\openout3 = main.pyg
+
+runsystem(pygmentize -l jsx -f latex -P commandprefix=PYG -F tokenmerge -o main.out.pyg main.pyg)...executed
+ (/Users/js/code/master-thesis/main.out.pyg) [83]
+<./src/2020-04-28-16-57-28.png, id=358, 932.48375pt x 629.35126pt>
+File: ./src/2020-04-28-16-57-28.png Graphic file (type png)
+<use ./src/2020-04-28-16-57-28.png>
+Package luatex.def Info: ./src/2020-04-28-16-57-28.png  used on input line 514.
+(luatex.def)             Requested size: 932.48148pt x 629.34972pt.
+<./src/2020-04-28-16-58-23.png, id=359, 1022.82124pt x 870.25125pt>
+File: ./src/2020-04-28-16-58-23.png Graphic file (type png)
+<use ./src/2020-04-28-16-58-23.png>
+Package luatex.def Info: ./src/2020-04-28-16-58-23.png  used on input line 523.
+(luatex.def)             Requested size: 1022.81874pt x 870.24913pt.
+ [84<./src/2020-04-28-16-57-28.png>])) (/Users/js/code/master-thesis/parts/ekonomickePrinosy.tex [85<./src/2020-04-28-16-58-23.png>] [86
+
+]) (/Users/js/code/master-thesis/parts/diskuze.tex [87] [88] [89
+
+]) (/Users/js/code/master-thesis/parts/zaver.tex [90] [91
+
+])) [92]
+Underfull \hbox (badness 1642) in paragraph at lines 74--74
+[]\TU/lmr/m/n/12 AL-GO-RI-THMIA. \TU/lmr/m/it/12 Ser-ver-less and Micro-ser-vi-ces: In-tro-ducti-on to Ser-ver-
+ []
+
+[93
+
+] [94]
+Overfull \hbox (11.46294pt too wide) in paragraph at lines 74--74
+[]\TU/lmr/m/n/12 MAR-GAM, Gi-rish. \TU/lmr/m/it/12 Mo-del--View--Con-t-roller (MVC) \TU/lmr/m/n/12 [on-li-ne]. 2018 [cit. 2020-04-30].
+ []
+
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/script}  =>  {latin}
+>  {czech/lcscript}  =>  {latin}
+>  {czech/scripttag}  =>  {}
+>  {czech/language}  =>  {Czech}
+>  {czech/langtag}  =>  {CSY}
+>  {czech/bcp47}  =>  {cz}
+>  {czech/hyphennames}  =>  {czech}
+>  {czech/direction}  =>  {LR}
+>  {czech/hyphenmins}  =>  {2,2}
+>  {czech/frenchspacing}  =>  {true}
+>  {czech/indentfirst}  =>  {false}
+>  {czech/fontsetup}  =>  {true}
+>  {czech/envname}  =>  {czech}
+>  {czech/babelname}  =>  {czech}
+>  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[95] (/Users/js/code/master-thesis/main.aux
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+
+set lang czech, 3
+)
+runsystem(rm main.pyg)...executed
+runsystem(rm main.out.pyg)...executed
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 18808 strings out of 480991
+ 125171,1373583 words of node,token memory allocated
+ 1957 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 4 glue, 3 kern, 103 glyph, 184 attribute, 105 glue_spec, 93 attribute_list, 1 write nodes
+   avail lists: 2:1874,3:296,4:267,5:390,6:130,7:5686,8:118,9:820,10:34,11:687
+ 34910 multiletter control sequences out of 65536+600000
+ 73 fonts using 8036571 bytes
+ 55i,10n,59p,1517b,2775s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on main.pdf (95 pages, 11602898 bytes).
+
+PDF statistics: 489 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
