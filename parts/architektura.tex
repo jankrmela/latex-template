@@ -1,18 +1,18 @@
 \kapitola{Architektura}
 \sekce{Globální architektura webové aplikace}
-Architektura webové aplikace je framework, který je obsažen ve vztazích a interakcích mezi jednotlivými komponentami aplikace, jako jsou middleware systémy, databáze a uživatelské rozhraní. \cite{fowler_patterns_2003}
+Architektura webové aplikace je framework, který je obsažen ve vztazích a~interakcích mezi jednotlivými komponentami aplikace, jako jsou middleware systémy, databáze a~uživatelské rozhraní. \cite{fowler_patterns_2003}
 
-S celkovým vývojem v IT se vyvíjí i architektura moderních webových aplikací. Aplikace se vylepšují na obou koncích vztahu frontendu s backendem. Na backendové staně existuje mnoho způsobu jak sestavit achitektonický návrh. Tyto návrhy se snaží podchytit několik typů potřeb v rámci vývoje webové aplikace. 
+S~celkovým vývojem v~IT se vyvíjí i~architektura moderních webových aplikací. Aplikace se vylepšují na obou koncích vztahu frontendu s~backendem. Na backendové staně existuje mnoho způsobu jak sestavit achitektonický návrh. Tyto návrhy se snaží podchytit několik typů potřeb v~rámci vývoje webové aplikace. 
 
-Architektura se skládá z několika komponent, které lze rozdělit do dvou kategorií. Komponenty uživatelského rozdělení a strukturální komponenty. 
+Architektura se skládá z~několika komponent, které lze rozdělit do dvou kategorií. Komponenty uživatelského rozdělení a~strukturální komponenty. 
 
-Komponenty uživatelského rozhraní jsou vizuálním prvkem webové aplikace se specifickou funkcionalitou, která intereaguje  s uživatelem. Mezi strukturální komponenty patří webový prohlížeč, nebo webový klient, aplikační server a databázový server. Webový klient je rozhraní, přes které se zobrazuje funkcionalita pro interakci. Obsah doručen v rámci webového klienta je ve formátu HTML, CSS a Javascriptu. Webový aplikační server spravuje podnikové pravidla, ukládání dat a mnoho dalšího. Tento server může být sestaven pomocí jazyků jako PHP, Python, Java, nebo také Javascriptu pomocí Node.js. Javascript tedy může být použit na frontendové části i na backendové části. Tohle řešení je velmi populární v posledních letech, hlavně z důvodu možnosti částečného znovupoužití kódu. Databázový server ukládá a předává data relevantní pro konkrétní aplikaci. \cite{overson_developing_2015}
+Komponenty uživatelského rozhraní jsou vizuálním prvkem webové aplikace se specifickou funkcionalitou, která intereaguje  s~uživatelem. Mezi strukturální komponenty patří webový prohlížeč, nebo webový klient, aplikační server a~databázový server. Webový klient je rozhraní, přes které se zobrazuje funkcionalita pro interakci. Obsah doručen v~rámci webového klienta je ve formátu HTML, CSS a~Javascriptu. Webový aplikační server spravuje podnikové pravidla, ukládání dat a~mnoho dalšího. Tento server může být sestaven pomocí jazyků jako PHP, Python, Java, nebo také Javascriptu pomocí Node.js. Javascript tedy může být použit na frontendové části i~na backendové části. Tohle řešení je velmi populární v~posledních letech, hlavně z~důvodu možnosti částečného znovupoužití kódu. Databázový server ukládá a~předává data relevantní pro konkrétní aplikaci. \cite{overson_developing_2015}
 
 \sekce{Typy architektury webových aplikací}
 
 \paragraph{SPA - Single page applications} \mbox{}
  
-\noindent Hlavním principem SPA aplikace je stahovat pouze nejnutnější elementy obsahu a zobrazovat informace intuitivním způsobem, kde je interakce s uživatelem a uživatelský požitek je první prioritou. Nestahuje se celá stránka po každé interakci, ale stahují se pouze minimální data asynchronně, takže uživatel není vyrušen dlouhým načítáním celé stránky. Překreslují se pouze části, které je nutné aktualizovat. \cite{rady_serverless_2016}
+\noindent Hlavním principem SPA aplikace je stahovat pouze nejnutnější elementy obsahu a~zobrazovat informace intuitivním způsobem, kde je interakce s~uživatelem a~uživatelský požitek je první prioritou. Nestahuje se celá stránka po každé interakci, ale stahují se pouze minimální data asynchronně, takže uživatel není vyrušen dlouhým načítáním celé stránky. Překreslují se pouze části, které je nutné aktualizovat. \cite{rady_serverless_2016}
 
 \begin{figure}[H]
     \centering
@@ -21,91 +21,91 @@ Komponenty uživatelského rozhraní jsou vizuálním prvkem webové aplikace se
     \label{spavstradi}
 \end{figure}
 
-Na obrázku \ref{spavstradi} je znázorněno porovnání životního cyklu tradiční aplikace a životní cyklus SPA aplikace. Z technického hlediska můžeme vidět, že HTML dokument je přenesen pouze jednou, jako odpověď na úvodní požadavek. Následně už probíhají AJAX požadavky na server, který odpovídá pouze daty strukturovanými ve formátu JSON. 
+Na obrázku \ref{spavstradi} je znázorněno porovnání životního cyklu tradiční aplikace a~životní cyklus SPA aplikace. Z~technického hlediska můžeme vidět, že HTML dokument je přenesen pouze jednou, jako odpověď na úvodní požadavek. Následně už probíhají AJAX požadavky na server, který odpovídá pouze daty strukturovanými ve formátu JSON. 
 
 \paragraph{Microservices} \mbox{}
 
-\noindent Malé a odlehčené komponenty nazývané v anglické terminologii jako Services. Každá tato komponenta má na starost pouze jednu specifickou funkcionalitu. Poskládáním více těchto mikroservis dohromady vzniká komplexní produkt, který může být snadno a rychle rozšířen. Další hlavní výhodou je znovupoužitelnost. Mikroservisy na sobě nejsou závislé a tedy mohou být naprogramovány pomocí různých jazyků. \cite{newman_building_2015}% || Newman
+\noindent Malé a~odlehčené komponenty nazývané v~anglické terminologii jako Services. Každá tato komponenta má na starost pouze jednu specifickou funkcionalitu. Poskládáním více těchto mikroservis dohromady vzniká komplexní produkt, který může být snadno a~rychle rozšířen. Další hlavní výhodou je znovupoužitelnost. Mikroservisy na sobě nejsou závislé a~tedy mohou být naprogramovány pomocí různých jazyků. \cite{newman_building_2015}% || Newman
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-16-18-29.png}{0.9\textwidth}{!}
-    \caption{Porovnání monolitické architektury s microservices architekturou. Zdroj: \cite{algorithmia_serverless_2018}}
+    \caption{Porovnání monolitické architektury s~microservices architekturou. Zdroj: \cite{algorithmia_serverless_2018}}
     \label{comparemicroservices}
 \end{figure}
 
-Obrázek \ref{comparemicroservices} zobrazuje porovnání běžné monolitické architektury s architekturou microservices, kde je zcela zřetelně zobrazeno rozdělení logiky aplikace do malých částí, kde každá část je zodpovědná za malou, zcela zřetelnou, doménu. Jednotlivé části spolu komunikují tak, aby tvořily funkční celek zobrazitelný uživatelským rozhraní.
+Obrázek \ref{comparemicroservices} zobrazuje porovnání běžné monolitické architektury s~architekturou microservices, kde je zcela zřetelně zobrazeno rozdělení logiky aplikace do malých částí, kde každá část je zodpovědná za malou, zcela zřetelnou, doménu. Jednotlivé části spolu komunikují tak, aby tvořily funkční celek zobrazitelný uživatelským rozhraní.
 
 \paragraph{Serverless architecture} \mbox{}
 
-\noindent V této architektuře jsou využívány hlavně služby třetích stran a cloudové řešení, které jsou již v základu nakonfigurovány pro obecné použití. Není tedy nutné řešit infrastrukturu, optimalizaci na straně serveru a dostupnost. Pro firmu nebo službu je tedy snazší využít řešení třetích stran, než si vše vyvíjet na vlastním řešení. Nevýhodou může být složitější implementace služeb k hlavnímu modulu, problémy spojené se vzájemnou kompabilitou mezi službami třetích stran a vyšší cena. \cite{adzic_running_2019}% || ADZIC, GOJKO
+\noindent V~této architektuře jsou využívány hlavně služby třetích stran a~cloudové řešení, které jsou již v~základu nakonfigurovány pro obecné použití. Není tedy nutné řešit infrastrukturu, optimalizaci na straně serveru a~dostupnost. Pro firmu nebo službu je tedy snazší využít řešení třetích stran, než si vše vyvíjet na vlastním řešení. Nevýhodou může být složitější implementace služeb k~hlavnímu modulu, problémy spojené se vzájemnou kompabilitou mezi službami třetích stran a~vyšší cena. \cite{adzic_running_2019}% || ADZIC, GOJKO
 
 \sekce{Specifika frontendové architektury}
 
-Frontend je část webové aplikace, která zprostředkovává zobrazení dat a interakci s uživatelem. Úlohou frontendu je převádět data získané z backendu, nebo od uživatele do grafické podoby pomocí HTML, CSS a Javascriptu. Frontend se také označuje jako prezenční vrstva. Často obsahuje i mnoho podnikových pravidel, řídí ukládání stavu aplikace a směruje uživatelské požadavky v prohlížeči. Jednotlivé relace prvků webové aplikace jsou znázorněny v obrázku, kde je zobrazen backend komunikující pomocí HTTP požadavků s frontendem, který je označen zeleně. Frontend na diagramu komunikuje s uživatelem pomocí UI vrstvy.
+Frontend je část webové aplikace, která zprostředkovává zobrazení dat a~interakci s~uživatelem. Úlohou frontendu je převádět data získané z~backendu, nebo od uživatele do grafické podoby pomocí HTML, CSS a~Javascriptu. Frontend se také označuje jako prezenční vrstva. Často obsahuje i~mnoho podnikových pravidel, řídí ukládání stavu aplikace a~směruje uživatelské požadavky v~prohlížeči. Jednotlivé relace prvků webové aplikace jsou znázorněny v~obrázku, kde je zobrazen backend komunikující pomocí HTTP požadavků s~frontendem, který je označen zeleně. Frontend na diagramu komunikuje s~uživatelem pomocí UI vrstvy.
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-16-29-00.png}{0.9\textwidth}{!}
-    \caption{Architektura SPA aplikace z globálního pohledu. Zdroj: \cite{botto_front-end_2020}}
+    \caption{Architektura SPA aplikace z~globálního pohledu. Zdroj: \cite{botto_front-end_2020}}
     \label{spaarchitekture}
 \end{figure}
 
-Na frontendovou architekturu se v posledních letech začíná nahlížet jako na samostatný obor. Frontendová část se stala velmi komplexním a specifickým odvětvím, pro které přestává stačit obecné označení spadající do softwarové architektury. 
+Na frontendovou architekturu se v~posledních letech začíná nahlížet jako na samostatný obor. Frontendová část se stala velmi komplexním a~specifickým odvětvím, pro které přestává stačit obecné označení spadající do softwarové architektury. 
 
-Frontendový vývoj zažívá velmi rychlý rozvoj. Platformy, nástroje a frameworky se mění častěji, než si je řada programátorů je schopna osvojit. Komunita programátorů se přesouvá mezi jednotlivými nástroji a frameworky velmi často. S tím souvisí rozvoj a podpora jednotlivých nástrojů. Setrvání v používání starých technologií může vést k mnoha problémům. Z podnikového hlediska je problém pro staré a nepopulární technologie najít vhodnou pracovní sílu. Programátoři mnohem raději prohlubují znalosti v akutálně populárních nástrojích a o staré technologie nemají příliš zájem. \cite{graziotin_what_2018}% || Graziotin, Daniel
+Frontendový vývoj zažívá velmi rychlý rozvoj. Platformy, nástroje a~frameworky se mění častěji, než si je řada programátorů je schopna osvojit. Komunita programátorů se přesouvá mezi jednotlivými nástroji a~frameworky velmi často. S~tím souvisí rozvoj a~podpora jednotlivých nástrojů. Setrvání v~používání starých technologií může vést k~mnoha problémům. Z~podnikového hlediska je problém pro staré a~nepopulární technologie najít vhodnou pracovní sílu. Programátoři~mnohem raději prohlubují znalosti v~akutálně populárních nástrojích a~o~staré technologie nemají příliš zájem. \cite{graziotin_what_2018}% || Graziotin, Daniel
 
-Z hlediska technického není vhodné používat staré technologie z bezpečnostních a výkonnostních důvodů. Všechny nástroje pro webový vývoj jsou z většiny spravovány komunitou pod open source licencí. U starých nástrojů tato komunita ubývá, vylepšování nástroje je pomalejší a méně kvalitní. Na základě toho nastává mnoho problému. Jedním z nich může být horší integrace s ostatními nástroji, které se vyvíjí rychleji. Mezi další problémy spadá podpora zastaralých standardů, bezpečnostní hrozby. Ve srovnání s novými nástroji jsou ty starší pomalejší, méně výkonné a zpravidla se v nich i hůře vyvíjí. 
+Z~hlediska technického není vhodné používat staré technologie z~bezpečnostních a~výkonnostních důvodů. Všechny nástroje pro webový vývoj jsou z~většiny spravovány komunitou pod open source licencí. U~starých nástrojů tato komunita ubývá, vylepšování nástroje je pomalejší a~méně kvalitní. Na základě toho nastává mnoho problému. Jedním z~nich může být horší integrace s~ostatními nástroji, které se vyvíjí rychleji. Mezi další problémy spadá podpora zastaralých standardů, bezpečnostní hrozby. Ve srovnání s~novými nástroji jsou ty starší pomalejší, méně výkonné a~zpravidla se v~nich i~hůře vyvíjí. 
 
-Také náročnost na kvalitu výstupu se každým dnem zvyšuje. Na trh přichází nové zařízení, které podporují nové technologie a uživatelé by je touží využívat v plném rozsahu. Přichází také nové prohlížeče a ty současné jsou velmi často aktualizovány s velkými změnami. Na tuto změnu musí okamžitě reagovat i frontendová implementace webové stránky. Velmi často se mění trendy, UX pravidla, marketingové doporučení i funkcionalita. Zařízení přichází s novými senzory a s novým rozhraním pro programátory každým okamžikem. \cite{w3schools_browser_2020}% || Browser Statistics
+Také náročnost na kvalitu výstupu se každým dnem zvyšuje. Na trh přichází nové zařízení, které podporují nové technologie a~uživatelé by je touží využívat v~plném rozsahu. Přichází také nové prohlížeče a~ty současné jsou velmi často aktualizovány s~velkými změnami. Na tuto změnu musí okamžitě reagovat i~frontendová implementace webové stránky. Velmi často se mění trendy, UX pravidla, marketingové doporučení i~funkcionalita. Zařízení přichází s~novými senzory a~s~novým rozhraním pro programátory každým okamžikem. \cite{w3schools_browser_2020}% || Browser Statistics
 
-Frontendový kód je nutné neustále měnit, aby udržel krok s vývojem všech ostatních oblastí. Tyto změny mají nejvyšší prioritu zejména z obchodního hlediska. Frontend je hlavní část, kde se zákazník potkává s produktem. Podnik se právě přes frontend snaží navázat kontakt s uživatelem a udržet si s ním vztah. Konkurence je na internetu velmi silná. Každá firma přichází na trh s novými funkcionalitami, které mají jediný cíl - ještě více uživatele přitáhnout ke své službě. Uživatel je pak zvykne na vysokou úroveň služeb a nemá důvod zůstávat u řešení, které neuspokojí jeho požadavky alespoň stejně, jako konkurence. 
+Frontendový kód je nutné neustále měnit, aby udržel krok s~vývojem všech ostatních oblastí. Tyto změny mají nejvyšší prioritu zejména z~obchodního hlediska. Frontend je hlavní část, kde se zákazník~potkává s~produktem. Podnik se právě přes frontend snaží navázat kontakt s~uživatelem a~udržet si s~ním vztah. Konkurence je na internetu velmi silná. Každá firma přichází na trh s~novými funkcionalitami, které mají jediný cíl - ještě více uživatele přitáhnout ke své službě. Uživatel je pak zvykne na vysokou úroveň služeb a~nemá důvod zůstávat u~řešení, které neuspokojí jeho požadavky alespoň stejně, jako konkurence. 
 
-Na programátory se naléhá, aby nové změny integrovali do systému co nejrychleji. Bohužel mnohdy je tato rychlost na úkor kvality zpracování a správných rozhodnutí s ohledem na budoucí rozšiřitelnost. Agilní vývoj způsobuje, že je velmi těžké navrhnout systém tak, aby integrace nové funkcionality, která se objevuje v každém dalším sprintu, byla snadno začleněna. Zdrojový kód je pak velmi těžko udržitelný v dobrém stavu a implementace nových funkcí trvá mnohem déle. Dalším problém je obtížné odchycení chyb ve velké funkcionalitě. \cite{sciamanna_code_2020}% || Anthony Sciamanna
+Na programátory se naléhá, aby nové změny integrovali do systému co nejrychleji. Bohužel mnohdy je tato rychlost na úkor kvality zpracování a~správných rozhodnutí s~ohledem na budoucí rozšiřitelnost. Agilní vývoj způsobuje, že je velmi těžké navrhnout systém tak, aby integrace nové funkcionality, která se objevuje v~každém dalším sprintu, byla snadno začleněna. Zdrojový kód je pak velmi těžko udržitelný v~dobrém stavu a~implementace nových funkcí trvá mnohem déle. Dalším problém je obtížné odchycení chyb ve velké funkcionalitě. \cite{sciamanna_code_2020}% || Anthony Sciamanna
 
-Je tedy velmi důležité odhadnout správné nástroje, frameworky, knihovny s ohledem na několik faktorů, které dokáží zjednodušit všechny výše zmíněné situace. Je vhodné vybrat takový nástroj, který splňuje všechny požadavky z technického hlediska a je kolem něj velká komunita. 
+Je tedy velmi důležité odhadnout správné nástroje, frameworky, knihovny s~ohledem na několik faktorů, které dokáží zjednodušit všechny výše zmíněné situace. Je vhodné vybrat takový nástroj, který splňuje všechny požadavky z~technického hlediska a~je kolem něj velká komunita. 
 
-Technické požadavky jsou velmi specifické vzhledem k požadovanému řešení a nejde je obecně určit. Popularita je ale faktor, který lze průzkumem snadno zjistit. Mezi nejvíce vypovídající průzkumy patří každoroční výzkum služby StackOverflow. Vypovídající je především z důvodu velmi rozsáhlého spektra vývojářů. V průzkumu, z roku 2019, na které budou vést další odkazy v této práci odpovědělo téměř 90 000 vývojářů. \cite{stack_overflow_stack_2020} % || Stack Overflow Developer Survey 2019 .
+Technické požadavky jsou velmi specifické vzhledem k~požadovanému řešení a~nejde je obecně určit. Popularita je ale faktor, který lze průzkumem snadno zjistit. Mezi nejvíce vypovídající průzkumy patří každoroční výzkum služby StackOverflow. Vypovídající je především z~důvodu velmi rozsáhlého spektra vývojářů. V~průzkumu, z~roku 2019, na které budou vést další odkazy v~této práci odpovědělo téměř 90 000 vývojářů. \cite{stack_overflow_stack_2020} % || Stack Overflow Developer Survey 2019 .
 Celkové výsledky průzkumu jsou zobrazeny na obrázku \ref{stakoverflowTopLangs}. 
 
-Mezi nejpoužívanější jazyky v roce 2019 patří Javascript, který použilo bezmála 70 procent vývojářů. Je nutno upozornit, že tyto výsledky nejsou pouze pro frontend. Je tedy nutné v úvaze nezohledňovat backendové jazyky, jako je Java, C\#, nebo i PHP. Dále není relevantní uvažovat HTML / CSS, protože ty jsou základem v každé webové stránce a frontendová implementace bez nich není možná. Jako druhý jazyk z frontendových jazyků se umístil Typescript, který je rozšíření Javascriptu o statické typování. 
+Mezi nejpoužívanější jazyky v~roce 2019 patří Javascript, který použilo bezmála 70 procent vývojářů. Je nutno upozornit, že tyto výsledky nejsou pouze pro frontend. Je tedy nutné v~úvaze nezohledňovat backendové jazyky, jako je Java, C\#, nebo i~PHP. Dále není relevantní uvažovat HTML / CSS, protože ty jsou základem v~každé webové stránce a~frontendová implementace bez nich není možná. Jako druhý jazyk z~frontendových jazyků se umístil Typescript, který je rozšíření Javascriptu o~statické typování. 
 
-Typescript patří do skupiny nových jazyků. První stabilní release se objevil až v roce 2020. \cite{github_repository_nodate} % || Microsoft/TypeScript .
-I přesto je ale již velmi hojně využíván, zejména z důvodu usnadnění vývoje a to i za cenu nutnosti obsáhlejšího psaní zdrojového kódu, který je nutné narozdíl od Javascriptu rozšířit o definice typů. Ty ale následně zamezují chybám z nepozornosti a ve výsledku mohou urychlit vývoj. Nicméně jazyk je stále považován jako méně stabilní a objevuje se mnoho problémů, které je nutné řešit provizorními úpravami, což dokazuje přes 4 000 otevřených issues na oficiálním github repozitáři tohoto jazyka. \cite{github_repository_nodate}% || Microsoft/TypeScript .
+Typescript patří do skupiny nových jazyků. První stabilní release se objevil až v~roce 2020. \cite{github_repository_nodate} % || Microsoft/TypeScript .
+I~přesto je ale již velmi hojně využíván, zejména z~důvodu usnadnění vývoje a~to i~za cenu nutnosti obsáhlejšího psaní zdrojového kódu, který je nutné narozdíl od Javascriptu rozšířit o~definice typů. Ty ale následně zamezují chybám z~nepozornosti a~ve výsledku mohou urychlit vývoj. Nicméně jazyk je stále považován jako méně stabilní a~objevuje se mnoho problémů, které je nutné řešit provizorními úpravami, což dokazuje přes 4 000 otevřených issues na oficiálním github repozitáři~tohoto jazyka. \cite{github_repository_nodate}% || Microsoft/TypeScript .
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-16-31-09.png}{0.9\textwidth}{!}
-    \caption{Nejpoužívanější programovací jazyky dle průzkumu StackOverflow z roku 2019. Zdroj: \cite{stack_overflow_stack_2020}}
+    \caption{Nejpoužívanější programovací jazyky dle průzkumu StackOverflow z~roku 2019. Zdroj: \cite{stack_overflow_stack_2020}}
     \label{stakoverflowTopLangs}
 \end{figure}
 
-Ve většině případů volba mezi frontendovými jazyky spadá mezi Javascript nebo Typescript. A s tím dále souvisí i volba vhodného frameworku. Ty nejpoužívanější jsou uzpůsobeny pro oba tyto jazyky. Průzkum společnosti StackOverflow (obrázek \ref{stackOverflowLoved}) se také soustředil na nejpoužívanější frameworky. Na prvním místě se umístila knihovna jQuery, zejména z historických důvodů. Tuto knihovnu stále ještě používá velké množství webových stránek, které nemají prostředky nebo zájem používat modernější a výkonnější knihovny. Toto tvrzení potvrzuje statistika nejpopulárnějších frameworků, kde se jQuery umístila až na 4. místě mezi frontendovými frameworky. \cite{stack_overflow_stack_2020} % || Stack Overflow Developer Survey 2019 .
+Ve většině případů volba mezi frontendovými jazyky spadá mezi Javascript nebo Typescript. A~s~tím dále souvisí i~volba vhodného frameworku. Ty nejpoužívanější jsou uzpůsobeny pro oba tyto jazyky. Průzkum společnosti StackOverflow (obrázek \ref{stackOverflowLoved}) se také soustředil na nejpoužívanější frameworky. Na prvním místě se umístila knihovna jQuery, zejména z~historických důvodů. Tuto knihovnu stále ještě používá velké množství webových stránek, které nemají prostředky nebo zájem používat modernější a~výkonnější knihovny. Toto tvrzení potvrzuje statistika nejpopulárnějších frameworků, kde se jQuery umístila až na 4. místě mezi frontendovými frameworky. \cite{stack_overflow_stack_2020} % || Stack Overflow Developer Survey 2019 .
 
 Nejpopulárnější knihovna současnosti je React.js. \cite{npmjs_npm_2020} % || NPM Trend
-Kolem této knihovny existuje obrovská komunita, která ji podporuje, píše dokumentaci a tvoří návody a příklady, pomáhající vývojářům dosáhnout velké efektivity, přehledného kódu a správné struktury. Za touto knihovnou stojí jedna z nejhodnotnějších firem světa - Facebook. to může naznačovat, že jde o kvalitní a použitelnou knihovnu pro profesionální projekty. \cite{mardan_react_2017} % || React 
+Kolem této knihovny existuje obrovská komunita, která ji podporuje, píše dokumentaci a~tvoří návody a~příklady, pomáhající vývojářům dosáhnout velké efektivity, přehledného kódu a~správné struktury. Za touto knihovnou stojí jedna z~nejhodnotnějších firem světa - Facebook. to může naznačovat, že jde o~kvalitní a~použitelnou knihovnu pro profesionální projekty. \cite{mardan_react_2017} % || React 
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-16-36-40.png}{0.9\textwidth}{!}
-    \caption{Porovnání používanosti s populárností webových nástrojů. Zdroj: \cite{stack_overflow_stack_2020}}
+    \caption{Porovnání používanosti s~populárností webových nástrojů. Zdroj: \cite{stack_overflow_stack_2020}}
     \label{stackOverflowLoved}
 \end{figure}
 
 Dle měřítka popularity ze statistik vyplývá, že React postavený na Javascriptu, případně Typescriptu, je ideální prvek ve frontendové architektuře. \cite{stack_overflow_stack_2020} % || Stack Overflow Developer Survey 2019
 
-Tři aktuálně hlavní zástupci frontendových frameworků jsou React, Vue a AngularJS. React je deklarativní a flexibilní Javascriptový framework s prioritou stálosti pro budování interaktivního uživatelského rozhraní. Princip architektury spočívá ve skládání výsledné stránky z malých elementů, které se nazývají komponenty. Komponenty jsou navzájem nezávislé prvky. Tato struktura má vytyčený jako hlavní cíl znovupoužitelnost. Součástí psaní aplikace pomocí Reactu je vytváření a sestavování komponent do jednoho celku u kterého je nutné řešit ukládání stavu, směrování v rámci aplikace a požadavků a stahování a odesílání dat. \cite{banks_learning_2017} % || Banks, Alex
+Tři~aktuálně hlavní zástupci frontendových frameworků jsou React, Vue a~AngularJS. React je deklarativní a~flexibilní Javascriptový framework s~prioritou stálosti pro budování interaktivního uživatelského rozhraní. Princip architektury spočívá ve skládání výsledné stránky z~malých elementů, které se nazývají komponenty. Komponenty jsou navzájem nezávislé prvky. Tato struktura má vytyčený jako hlavní cíl znovupoužitelnost. Součástí psaní aplikace pomocí Reactu je vytváření a~sestavování komponent do jednoho celku u~kterého je nutné řešit ukládání stavu, směrování v~rámci aplikace a~požadavků a~stahování a~odesílání dat. \cite{banks_learning_2017} % || Banks, Alex
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-16-40-17.png}{0.9\textwidth}{!}
-    \caption{Aktuální trend v používání hlavních webových knihoven. Zdroj: \cite{npmjs_npm_2020}}
+    \caption{Aktuální trend v~používání hlavních webových knihoven. Zdroj: \cite{npmjs_npm_2020}}
     \label{npmtrends}
 \end{figure}
 
 Vue patří do skupiny MVVM (Model view view model) frameworků pro vytváření jednostránkových aplikací. Vue komponenty jsou rozšířené HTML elementy, které lze rovněž používat opakovaně. Vue používá syntaxi, kde HTML elementy jsou obohaceny upravnými atributy, které mají přiřazenou určitou funkčnost, kterou následně kompilátor převádí na oddělený funkční javascriptový kód operující nad původními HTML elementy. \cite{nelson_getting_2018} || Getting to Know Vue.Js
 
-AngularJS je komplexní javascriptový framework používající MVC nebo MVVC architekturu.  Framework upřednostňuje deklarativní programování nad imperativním, které označuje vhodnější pro budování podnikové logiky. Hlavním rozdílem Angularu je vlastnost, že používá Two Way Data-binding, což je označení pro dvoucestnou synchronizaci dat. Tím je vyřešena synchronizace stavů mezi modelem a view. HTML elementům se přidávají specifikované atributy využitelné jen v rámci frameworku. Obvykle začínají symboly “ng-”, po kterých následuje název atributu. \cite{seshadri_angularjs_2014}% || Seshadri, Shyam
+AngularJS je komplexní javascriptový framework používající MVC nebo MVVC architekturu.  Framework upřednostňuje deklarativní programování nad imperativním, které označuje vhodnější pro budování podnikové logiky. Hlavním rozdílem Angularu je vlastnost, že používá Two Way Data-binding, což je označení pro dvoucestnou synchronizaci dat. Tím je vyřešena synchronizace stavů mezi modelem a~view. HTML elementům se přidávají specifikované atributy využitelné jen v~rámci frameworku. Obvykle začínají symboly “ng-”, po kterých následuje název atributu. \cite{seshadri_angularjs_2014}% || Seshadri, Shyam
 
 \begin{table}[]
     \begin{tabular}{|l|l|l|l|}
@@ -118,19 +118,19 @@ AngularJS je komplexní javascriptový framework používající MVC nebo MVVC a
     \textbf{Počet stažení za 6 měsíců} & 7 mil.         & 0,5 mil.           & 1,5 mil.     \\ \hline
     \textbf{Github oblíbenost}                    & 150k hvězd     & 60k hvězd          & 157k hvězd   \\ \hline
     \end{tabular}
-    \caption{Základní porovnání knihoven React, AngularJS a Vue}
+    \caption{Základní porovnání knihoven React, AngularJS a~Vue}
     \label{table:comparereactvueangular}
 \end{table}
 
-V uvedené tabulce \ref{table:comparereactvueangular} se nachází porovnání knihoven na základě statistik z NPM trends a Githubu. NPM je balíčkový manažer, pomocí kterého se spravují, stahují a zveřejňují javascriptové balíčky. Při integraci do počítačového terminálu, nebo konzole, se zároveň tyto balíčky i instalují a aktualizují. Na základě používání těchto balíčků služba zároveň eviduje statistiky, které nabízí veřejně k dispozici k získání informací o jednotlivých knihovnách. Data jsou velmi věrohodná a zdarma dostupná. \cite{npmjs_node_2020} % || Npm Build Amazing Things.
+V~uvedené tabulce \ref{table:comparereactvueangular} se nachází porovnání knihoven na základě statistik z~NPM trends a~Githubu. NPM je balíčkový manažer, pomocí kterého se spravují, stahují a~zveřejňují javascriptové balíčky. Při~integraci do počítačového terminálu, nebo konzole, se zároveň tyto balíčky i~instalují a~aktualizují. Na základě používání těchto balíčků služba zároveň eviduje statistiky, které nabízí veřejně k~dispozici k~získání informací o~jednotlivých knihovnách. Data jsou velmi věrohodná a~zdarma dostupná. \cite{npmjs_node_2020} % || Npm Build Amazing Things.
 
-V tabulce je uvedena průměrná velikost aplikace, která lze vytvořit pomocí jednotlivých knihoven. Porovnání bylo uskutečněno na účelově stejných aplikací. Aplikace byly vytvořeny specificky pro jednotlivé knihovny při dodržování konvencí pro dané knihovny. Nejmenší výsledná velikost aplikace byla vytvořena pomocí Vue. Data ale nemusí být naprosto vypovídající ve speciálních případech a požadavcích. Každá knihovna má svoje specifika a pro různý typ aplikací může být vhodná jiná knihovna. \cite{akther_angular_2020} % || Angular vs. React vs. Vue
+V~tabulce je uvedena průměrná velikost aplikace, která lze vytvořit pomocí jednotlivých knihoven. Porovnání bylo uskutečněno na účelově stejných aplikací. Aplikace byly vytvořeny specificky pro jednotlivé knihovny při~dodržování konvencí pro dané knihovny. Nejmenší výsledná velikost aplikace byla vytvořena pomocí Vue. Data ale nemusí být naprosto vypovídající ve speciálních případech a~požadavcích. Každá knihovna má svoje specifika a~pro různý typ aplikací může být vhodná jiná knihovna. \cite{akther_angular_2020} % || Angular vs. React vs. Vue
 
-Napříč tomu, že React a Angular byl původně vyvinut velkými společnostmi zejména pro jejich užití, tak jsou knihovny open-source. Je možné je tedy upravovat a vylepšovat kýmkoliv z veřejnosti. Zdrojový kód je uchován službou Github, kde je také možnost přispívat do zdrojového kódu, hlásit problémy, nebo vznášet dotazy. Služba Github také poskytuje měřítko oblíbenosti. Každý registrovaný uživatel má možnost vyjádřit oblíbenost daného repozitáře pomocí hvězdičky. I tento faktor byl začleněn do tabulky. Je to dalším projevem oblíbenosti napříč komunitou a lze tvrdit, že populárnější technologie jsou lepší volbou pro tvorbu firemních aplikací z několika důvodů, které již byly uvedeny výše. \cite{google_opensource__hosting_2020} % || “Hosting Options.” 
+Napříč tomu, že React a~Angular byl původně vyvinut velkými společnostmi zejména pro jejich užití, tak jsou knihovny open-source. Je možné je tedy upravovat a~vylepšovat kýmkoliv z~veřejnosti. Zdrojový kód je uchován službou Github, kde je také možnost přispívat do zdrojového kódu, hlásit problémy, nebo vznášet dotazy. Služba Github také poskytuje měřítko oblíbenosti. Každý registrovaný uživatel má možnost vyjádřit oblíbenost daného repozitáře pomocí hvězdičky. I~tento faktor byl začleněn do tabulky. Je to dalším projevem oblíbenosti napříč komunitou a~lze tvrdit, že populárnější technologie jsou lepší volbou pro tvorbu firemních aplikací z~několika důvodů, které již byly uvedeny výše. \cite{google_opensource__hosting_2020} % || “Hosting Options.” 
 
-\sekce{Srovnání MVC a FLUX architektury}
+\sekce{Srovnání MVC a~FLUX architektury}
 
-Vývojem webových aplikací je vytvářeno řešení, které cílí na potřeby uživatelů a zároveň usiluje o vyřešení podnikových problémů. K dosažení nejlepšího a nejefektivnějšího výsledku je zapotřebí znát a používat různé návrhové vzory spolu s konkrétními technologiemi. Již několik let se velmi často používá návrhový vzor MVC, jehož zkratka pochází ze spojení Model-View-Controller. Zvýšenou komplexnost webových aplikací se snaží řešit návrhový vzor Flux. Tento návrhový vzor velmi úspěšně využívá knihovna Redux. V kombinaci s React.js knihovnou tvoří udržitelné řešení pro náročné a rychle měnící se požadavky na webové aplikace. \cite{mardan_react_2017} % || Mardan, Azat. React Quickly
+Vývojem webových aplikací je vytvářeno řešení, které cílí na potřeby uživatelů a~zároveň usiluje o~vyřešení podnikových problémů. K~dosažení nejlepšího a~nejefektivnějšího výsledku je zapotřebí znát a~používat různé návrhové vzory spolu s~konkrétními technologiemi. Již několik let se velmi často používá návrhový vzor MVC, jehož zkratka pochází ze spojení Model-View-Controller. Zvýšenou komplexnost webových aplikací se snaží řešit návrhový vzor Flux. Tento návrhový vzor velmi úspěšně využívá knihovna Redux. V~kombinaci s~React.js knihovnou tvoří udržitelné řešení pro náročné a~rychle měnící se požadavky na webové aplikace. \cite{mardan_react_2017} % || Mardan, Azat. React Quickly
 
 MVC architektura je třívrstvý vývojový návrhový vzor. Rozděluje aplikaci do tří komponent.
 
@@ -146,7 +146,7 @@ MVC architektura je třívrstvý vývojový návrhový vzor. Rozděluje aplikaci
     
     \item \textbf{Controller}
 
-    Obsahuje logiku, která aktualizuje model a view, pokud dostane interakci s uživatelem. Slouží jako prostředník mezi view a model. 
+    Obsahuje logiku, která aktualizuje model a~view, pokud dostane interakci s~uživatelem. Slouží jako prostředník~mezi view a~model. 
 
 \end{itemize}
 
@@ -157,7 +157,7 @@ MVC architektura je třívrstvý vývojový návrhový vzor. Rozděluje aplikaci
     \label{mvcagain}
 \end{figure}
 
-V komplexních aplikací ale může nastat problém zobrazen na obrázku \ref{mvcpast}. Přidáváním funkcionality se přidávají i modely a zobrazení, které jsou na sobě závislé. Změna v jednom modelu musí interagovat s více modely i pohledy. Zdrojový kód se pak stává velmi nepřehledný a mohou nastávat neočekávané chyby. Vývoj trvá déle a v případě přiřazení nových programátorů do týmu je orientace v repozitáři velmi obtížná. 
+V~komplexních aplikací ale může nastat problém zobrazen na obrázku \ref{mvcpast}. Přidáváním funkcionality se přidávají i~modely a~zobrazení, které jsou na sobě závislé. Změna v~jednom modelu musí interagovat s~více modely i~pohledy. Zdrojový kód se pak stává velmi nepřehledný a~mohou nastávat neočekávané chyby. Vývoj trvá déle a~v~případě přiřazení nových programátorů do týmu je orientace v~repozitáři~velmi obtížná. 
 
 \begin{figure}[H]
     \centering
@@ -166,13 +166,13 @@ V komplexních aplikací ale může nastat problém zobrazen na obrázku \ref{mv
     \label{mvcpast}
 \end{figure}
 
-Jako alternativu k MVC navrhl vývojový tým Facebooku návrhový vzor Flux. Jeho hlavní cíl je řídit tok dat v rámci aplikace. Nejdůležitější faktor je, že tento tok může být pouze jednosměrný. Je tedy velmi snadné porozumět jednotlivým funkcím aplikace, protože následováním toku dat se dostaneme ke všem podstatným částem a nestane se nic neočekávaného. \cite{flux_depth_2020}
+Jako alternativu k~MVC navrhl vývojový tým Facebooku návrhový vzor Flux. Jeho hlavní cíl je řídit tok dat v~rámci aplikace. Nejdůležitější faktor je, že tento tok může být pouze jednosměrný. Je tedy velmi snadné porozumět jednotlivým funkcím aplikace, protože následováním toku dat se dostaneme ke všem podstatným částem a~nestane se nic neočekávaného. \cite{flux_depth_2020}
 
 \noindent Flux architektura je tvořena následujícími čtyřmi komponentami.
 
 \paragraph{Store} \mbox{}
 
-\noindent Slouží jako úložiště, nebo kontejner pro stav aplikace a logiku. Store se registruje jako posluchač na jednotlivé akce dispatcher, který aktualizuje správné zobrazení dat. \cite{flux_depth_2020}
+\noindent Slouží jako úložiště, nebo kontejner pro stav aplikace a~logiku. Store se registruje jako posluchač na jednotlivé akce dispatcher, který aktualizuje správné zobrazení dat. \cite{flux_depth_2020}
 
 \paragraph{Akce} \mbox{}
 
@@ -180,10 +180,10 @@ Jako alternativu k MVC navrhl vývojový tým Facebooku návrhový vzor Flux. Je
 
 \paragraph{Dispatcher} \mbox{}
 
-\noindent Akce předá data do dispatcher komponenty, které koordinuje a aktualizuje příslušnou část store. \cite{flux_depth_2020}
+\noindent Akce předá data do dispatcher komponenty, které koordinuje a~aktualizuje příslušnou část store. \cite{flux_depth_2020}
 
 \vspace{5mm}
-\noindent Scénář Flux architektury funguje principem, kde uživatel kliknutím na interaktivní prvek stránky vytvoří akci ve View. Action vytvoří nové data, které jsou zaslány do Dispatcher. Dispatcher pak přenese výsledek akce k patřičnému Store. Store aktualizuje stav aplikace a o tomto faktu upozorní View, který se překreslí. \cite{flux_depth_2020}
+\noindent Scénář Flux architektury funguje principem, kde uživatel kliknutím na interaktivní prvek stránky vytvoří akci ve View. Action vytvoří nové data, které jsou zaslány do Dispatcher. Dispatcher pak přenese výsledek akce k~patřičnému Store. Store aktualizuje stav aplikace a~o~tomto faktu upozorní View, který se překreslí. \cite{flux_depth_2020}
 
 \begin{figure}[H]
     \centering
@@ -192,11 +192,11 @@ Jako alternativu k MVC navrhl vývojový tým Facebooku návrhový vzor Flux. Je
     \label{fluxarchitektura}
 \end{figure}
 
-Flux architekturu, znázorněnou na obrázku \ref{fluxarchitektura}, implementuje knihovna Redux, která je volně k dispozici. Lze ji integrovat i do React.js frameworku. Konkrétní terminologie v Redux knihovně je pak pozměněna.
+Flux architekturu, znázorněnou na obrázku \ref{fluxarchitektura}, implementuje knihovna Redux, která je volně k~dispozici. Lze ji integrovat i~do React.js frameworku. Konkrétní terminologie v~Redux knihovně je pak pozměněna.
 
-Redux definuje Reducer objekt. Ten je tvořen logikou, která se rozhoduje jak jsou patřičné data změněny. Dále existuje centralizovaný Store, který reprezentuje stav celé aplikace. Principy návrhu jsou v rámci Reduxu implementovány na základě Flux architektury velmi věrohodně. 
+Redux definuje Reducer objekt. Ten je tvořen logikou, která se rozhoduje jak jsou patřičné data změněny. Dále existuje centralizovaný Store, který reprezentuje stav celé aplikace. Principy návrhu jsou v~rámci Reduxu implementovány na základě Flux architektury velmi věrohodně. 
 
-Diagram cyklu v Reduxu (obrázek \ref{reduxcycle}) funguje po upravení terminologie následovně. Interakcí v aplikaci se započne Action, která odešle do Reducer funkci. Reducer aktualizuje centralizovaný Store s novými daty na základě akce kterou obdržel. Store vytvoří nový stav aplikace a upozorní View, že se změnil stav. View reflektuje změny překreslením podle obsahu nového stavu. \cite{bugl_learning_2017} % || Bugl, Daniel. Learning Redux
+Diagram cyklu v~Reduxu (obrázek \ref{reduxcycle}) funguje po upravení terminologie následovně. Interakcí v~aplikaci se započne Action, která odešle do Reducer funkci. Reducer aktualizuje centralizovaný Store s~novými daty na základě akce kterou obdržel. Store vytvoří nový stav aplikace a~upozorní View, že se změnil stav. View reflektuje změny překreslením podle obsahu nového stavu. \cite{bugl_learning_2017} % || Bugl, Daniel. Learning Redux
 
 \begin{figure}[H]
     \centering

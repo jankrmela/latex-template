@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[97] biber-darwin:322> INFO - === Tue May  5, 2020, 16:50:27
-[113] Biber.pm:415> INFO - Reading 'main.bcf'
-[213] Biber.pm:943> INFO - Found 33 citekeys in bib section 0
-[229] Biber.pm:4256> INFO - Processing section 0
-[230] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[230] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[241] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[244] bibtex.pm:1653> INFO - LaTeX decoding ...
-[320] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[477] Utils.pm:304> WARN - ISBN '9781491954621 9781491954591' in entry 'banks_learning_2017' is invalid - run biber with '--validate_datamodel' for details.
-[568] Utils.pm:304> WARN - I didn't find a database entry for 'arlow' (section 0)
-[602] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[602] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[602] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'cs-CZ'
-[627] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[643] bbl.pm:755> INFO - Output to main.bbl
-[643] Biber.pm:128> INFO - WARNINGS: 2
+[95] biber-darwin:322> INFO - === Tue May  5, 2020, 17:19:37
+[111] Biber.pm:415> INFO - Reading 'main.bcf'
+[230] Biber.pm:943> INFO - Found 33 citekeys in bib section 0
+[245] Biber.pm:4256> INFO - Processing section 0
+[245] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[246] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[256] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[259] bibtex.pm:1653> INFO - LaTeX decoding ...
+[315] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[415] Utils.pm:304> WARN - ISBN '9781491954621 9781491954591' in entry 'banks_learning_2017' is invalid - run biber with '--validate_datamodel' for details.
+[464] Utils.pm:304> WARN - I didn't find a database entry for 'arlow' (section 0)
+[494] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[494] UCollate.pm:68> INFO - Overriding locale 'cs-CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[494] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'cs-CZ'
+[518] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[534] bbl.pm:755> INFO - Output to main.bbl
+[534] Biber.pm:128> INFO - WARNINGS: 2

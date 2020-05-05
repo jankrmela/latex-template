@@ -2,41 +2,41 @@
 \sekce{Implementace požadavků}
 \podsekce{Specifikace rozhraní}
 
-Součástí práce je frontendová implementace navrženého řešení. Spolupráce s backendovou částí funguje na principu zveřejnění dokumentace pro API rozhraní. Požadavky takto zveřejněného rozhraní musí frontendová implementace respektovat. K nové funkcionalitě jsou potřeba dvě rozhraní. První rozhraní je pro získání dat o aktuálních nabídce pro daný itinerář a pro vyplněné pasažéry. Druhé rozhraní slouží pro ukládání vybraných balíčků a tarifů.
+Součástí práce je frontendová implementace navrženého řešení. Spolupráce s~backendovou částí funguje na principu zveřejnění dokumentace pro API rozhraní. Požadavky takto zveřejněného rozhraní musí frontendová implementace respektovat. K~nové funkcionalitě jsou potřeba dvě rozhraní. První rozhraní je pro získání dat o~aktuálních nabídce pro daný itinerář a~pro vyplněné pasažéry. Druhé rozhraní slouží pro ukládání vybraných balíčků a~tarifů.
 
 \paragraph{Rozhraní /ancillaries/offers/check} \mbox{}
 
-\noindent Rozhraní slouží pro získání informací o tarifech a balíčcích pro aktuální itinerář. Toto rozhraní bylo vytvořeno nově a slouží zatím pouze pro tento účel. V budoucnu se ale plánuje využití tohoto rozhraní pro všechny doplňkové služby. Je tedy nutné dbát na univerzální implementaci, aby bylo možné volání tohoto rozhraní snadno rozšířit pro získávání dat i pro jiné části stránky. 
+\noindent Rozhraní slouží pro získání informací o~tarifech a~balíčcích pro aktuální itinerář. Toto rozhraní bylo vytvořeno nově a~slouží zatím pouze pro tento účel. V~budoucnu se ale plánuje využití tohoto rozhraní pro všechny doplňkové služby. Je tedy nutné dbát na univerzální implementaci, aby bylo možné volání tohoto rozhraní snadno rozšířit pro získávání dat i~pro jiné části stránky. 
 
-Jelikož backendová část vypočítá ceny tarifů podle itineráře, podle počtu pasažérů a jejich věku, je nutné jim tyto informace poslat. Komunikace je provedena přes POST metodu. Povinné tělo žádosti musí nutně obsahovat několik parametrů.
+Jelikož backendová část vypočítá ceny tarifů podle itineráře, podle počtu pasažérů a~jejich věku, je nutné jim tyto informace poslat. Komunikace je provedena přes POST metodu. Povinné tělo žádosti musí nutně obsahovat několik parametrů.
 
 \begin{itemize}
-    \item booking\_token -- zašifrované informace o objednávce, slouží pouze pro backendové účely
-    \item segments -- pole jednotlivých částí itineráře, přestupy, města a časy
-    \item passangers -- pole obsahující objekty s informacemi o pasažérech, například věk
-    \item ancillaries -- zde je nutné specifikovat, jaké data od endpointu žádáme. V tomto případě je nutné uvést do pole hodnoty fare\_type a service\_package.
+    \item booking\_token -- zašifrované informace o~objednávce, slouží pouze pro backendové účely
+    \item segments -- pole jednotlivých částí itineráře, přestupy, města a~časy
+    \item passangers -- pole obsahující objekty s~informacemi o~pasažérech, například věk
+    \item ancillaries -- zde je nutné specifikovat, jaké data od endpointu žádáme. V~tomto případě je nutné uvést do pole hodnoty fare\_type a~service\_package.
     \item currency -- měnu, ve které žádáme odpověď
-    \item  booking -- objekt s objektem, ve kterém je uchována aktuální celková cena objednávky
+    \item  booking -- objekt s~objektem, ve kterém je uchována aktuální celková cena objednávky
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-28-08-08-10.png}{0.9\textwidth}{!}
-    \caption{Ukázka odpovědi z API ancillaries/offers/check}
+    \caption{Ukázka odpovědi z~API ancillaries/offers/check}
     \label{apiresponse}
 \end{figure}
 
-Odpověď (zobrazena na obrázku č. \ref{apiresponse}) obsahuje informace ve formátu dvou objektů. Prvním objektem je objekt fare\_type. Obsahuje informace o tarifech. Z hlediska struktury jsou jednotlivé tarify zabaleny do pole offers. Každý tarif je prezentován objektem s následujícími vlasnostmi:
+Odpověď (zobrazena na obrázku č. \ref{apiresponse}) obsahuje informace ve formátu dvou objektů. Prvním objektem je objekt fare\_type. Obsahuje informace o~tarifech. Z~hlediska struktury jsou jednotlivé tarify zabaleny do pole offers. Každý tarif je prezentován objektem s~následujícími vlasnostmi:
 \begin{itemize}
-    \item price -- objekt obsahující cenu s podrobnostmi, které je nutné vykreslit v košíku
-    \item rules -- v tomto objektu, jsou definované výhody tarifu, které je nutné zobrazit v každé kartě tarifu
+    \item price -- objekt obsahující cenu s~podrobnostmi, které je nutné vykreslit v~košíku
+    \item rules -- v~tomto objektu, jsou definované výhody tarifu, které je nutné zobrazit v~každé kartě tarifu
     \item ticket -- obsahuje označení názvu tarifu
-    \item ruleset\_id -- slouží pouze pro backendové účely, jako je generování a ukládání tarifu
+    \item ruleset\_id -- slouží pouze pro backendové účely, jako je generování a~ukládání tarifu
 \end{itemize}
 
-Druhým objektem jsou data o doplňkových balíčcích. V odpovědi je tento objekt definován pod názvem service\_package. U doplňkových balíčků je struktura složitější, než struktura tarifů. To zejména z důvodu nutnosti vyjádřit vztah mezi těmito dvěma entitami. Je nutné namapovat jednotlivé možnosti povýšení balíčků napříč tarify. 
+Druhým objektem jsou data o~doplňkových balíčcích. V~odpovědi je tento objekt definován pod názvem service\_package. U~doplňkových balíčků je struktura složitější, než struktura tarifů. To zejména z~důvodu nutnosti vyjádřit vztah mezi těmito dvěma entitami. Je nutné namapovat jednotlivé možnosti povýšení balíčků napříč tarify. 
 
-Nejlépe lze tento vztah pochopit na základě diagramu (obrázek č. \ref{diagramupgrade}), kde jsou znázorněny jednotlivé možnosti povýšení balíčků. Modře jsou znázorněný tarify a žlutě balíčky. Zelené čáry vedoucí od tarifů k balíčkům znázorňují balíčky, které jsou zahrnuty v ceně daného tarifu. Červené čáry zobrazují možnosti povýšení tarifu pomocí balíčků Plus a Premium s cenou, kterou je uživatel povinen doplatit. Žlutá čára znázorňuje možnost povýšení Standard tarifu o balíček Premium za zobrazenou cenu.
+Nejlépe lze tento vztah pochopit na základě diagramu (obrázek č. \ref{diagramupgrade}), kde jsou znázorněny jednotlivé možnosti povýšení balíčků. Modře jsou znázorněný tarify a~žlutě balíčky. Zelené čáry vedoucí od tarifů k~balíčkům znázorňují balíčky, které jsou zahrnuty v~ceně daného tarifu. Červené čáry zobrazují možnosti povýšení tarifu pomocí balíčků Plus a~Premium s~cenou, kterou je uživatel povinen doplatit. Žlutá čára znázorňuje možnost povýšení Standard tarifu o~balíček Premium za zobrazenou cenu.
 
 \begin{figure}[H]
     \centering
@@ -45,33 +45,33 @@ Nejlépe lze tento vztah pochopit na základě diagramu (obrázek č. \ref{diagr
     \label{diagramupgrade}
 \end{figure}
 
-Tuto metodu zobrazuje odpověď z rozhraní pomocí objektu. Každý objekt balíčku ještě obsahuje objekt pojmenovaný upgrade\_prices, ve kterém se nachází identifikátory balíčků a jejich ceny. Je nutné tedy použít objekt vybraného tarifu, najít u něj identifikátor obsaženého balíčku a ten najít v objektu upgrade\_prices. V případě, že si uživatel zvolí některý jiný balíček, je nutné uvažovat zvolený balíček a od něj vypočítat cenu. 
+Tuto metodu zobrazuje odpověď z~rozhraní pomocí objektu. Každý objekt balíčku ještě obsahuje objekt pojmenovaný upgrade\_prices, ve kterém se nachází identifikátory balíčků a~jejich ceny. Je nutné tedy použít objekt vybraného tarifu, najít u~něj identifikátor obsaženého balíčku a~ten najít v~objektu upgrade\_prices. V~případě, že si uživatel zvolí některý jiný balíček, je nutné uvažovat zvolený balíček a~od něj vypočítat cenu. 
 
-Zpracování odpovědi a její uložení v rámci stavu aplikace bude popsáno níže.
+Zpracování odpovědi a~její uložení v~rámci stavu aplikace bude popsáno níže.
 
 \paragraph{Rozhraní save\_booking} \mbox{}
 
-\noindent Rozhraní save\_booking je již v současnosti implementované využívané rozhraní. Jeho hlavním cílem je uložit objednávku. Probíhá rovněž POST metodou. Po odeslání backend uloží data, provede validaci a pokud je vše v pořádku, tak v odpovědi vrátí potvrzení o správnosti operace. Součástí implementace nabídky tarifů a balíčků je nutné tedy přidat tyto data do požadavku k tomuto rozhraní. Backend navrhl strukturu odesílaného formátu, kterou je nutné při odesílání požadavku dodržet. Do objektu additional\_services (obrázek č. \ref{apisavebooking}) je přidán objekt fare\_type, kam je nutné vložit pole s objektem tarifu. Objekt obsahuje informace o ceně, identifikátor, který nám backend poslal ve fázi, kdy jsme obdrželi data a název tarifu. Velmi obdobně je nutné specifikovat i doplňkové baličky.
+\noindent Rozhraní save\_booking je již v~současnosti implementované využívané rozhraní. Jeho hlavním cílem je uložit objednávku. Probíhá rovněž POST metodou. Po odeslání backend uloží data, provede validaci a~pokud je vše v~pořádku, tak v~odpovědi vrátí potvrzení o~správnosti operace. Součástí implementace nabídky tarifů a~balíčků je nutné tedy přidat tyto data do požadavku k~tomuto rozhraní. Backend navrhl strukturu odesílaného formátu, kterou je nutné při~odesílání požadavku dodržet. Do objektu additional\_services (obrázek č. \ref{apisavebooking}) je přidán objekt fare\_type, kam je nutné vložit pole s~objektem tarifu. Objekt obsahuje informace o~ceně, identifikátor, který nám backend poslal ve fázi, kdy jsme obdrželi data a~název tarifu. Velmi obdobně je nutné specifikovat i~doplňkové baličky.
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-28-08-14-04.png}{0.9\textwidth}{!}
-    \caption{Požadovaná struktura dat při odesílání}
+    \caption{Požadovaná struktura dat při~odesílání}
     \label{apisavebooking}
 \end{figure}
 
 \podsekce{Implementace modulu}
 
-Proces z pohledu posloupnosti činností v rámci provádění jednotlivých částí zdrojového kódu lze rozdělit na několik fází. Za pomocí definování těchto fází lze i vhodně popsat jak jednotlivé části nově implementovaného kódu fungují mezi sebou a jak jsou zasazeny do již naprogramovaného původního řešení. 
+Proces z~pohledu posloupnosti činností v~rámci provádění jednotlivých částí zdrojového kódu lze rozdělit na několik fází. Za pomocí definování těchto fází lze i~vhodně popsat jak jednotlivé části nově implementovaného kódu fungují mezi sebou a~jak jsou zasazeny do již naprogramovaného původního řešení. 
 
-Při implementaci bylo dbáno na několik faktorů. Důležité bylo správné zařazení nového modulu do stávajícího kódu. Byla tedy dodržena struktura, která respektovala podobné moduly. Také byly využity knihovny používající se v jiných částech aplikace. Pro ukládání stavu vybraných balíčků byl rozšířen Redux Store o prostor oddělitelný od ostatních funkcionalit. Pro získávání dat byl použit již naimplementovaný modul, který se používá pro získávání dat z jiných endpointů.
+Při~implementaci bylo dbáno na několik faktorů. Důležité bylo správné zařazení nového modulu do stávajícího kódu. Byla tedy dodržena struktura, která respektovala podobné moduly. Také byly využity knihovny používající se v~jiných částech aplikace. Pro ukládání stavu vybraných balíčků byl rozšířen Redux Store o~prostor oddělitelný od ostatních funkcionalit. Pro získávání dat byl použit již naimplementovaný modul, který se používá pro získávání dat z~jiných endpointů.
 
 \paragraph{Podmíněné volání API pro získání dat} \mbox{}
 
-\noindent Zažádat backend o data k balíčkům je možné z frontendové části až poté, co uživatel vyplní pasažéry. Tyto informace backendová část povinně vyžaduje, jelikož na základě těchto dat provádí výpočty cen. Obvyklým návrhem na řešení by tedy bylo zahájit volání metody pro získání dat v rámci komponenty vykreslující druhý krok objednávky - výběr tarifu. Problém by však nastal, pokud by uživatel prohlížečovým tlačítkem obnovil stránku na některém z dalších kroků. Vlastnost Redux Store je totiž taková, že při obnovení stránky se vymažou i data z tohoto úložiště. Aplikace ale potřebuje mít data o tarifech a balíčcích pořád k dispozici, například pro zobrazení košíku a celkové ceny objednávky. Je tedy nutné umístit volání žádosti o data ještě do takové části kódu, která se vykonává v rámci každého načtení stránky.
+\noindent Zažádat backend o~data k~balíčkům je možné z~frontendové části až poté, co uživatel vyplní pasažéry. Tyto informace backendová část povinně vyžaduje, jelikož na základě těchto dat provádí výpočty cen. Obvyklým návrhem na řešení by tedy bylo zahájit volání metody pro získání dat v~rámci komponenty vykreslující druhý krok objednávky - výběr tarifu. Problém by však nastal, pokud by uživatel prohlížečovým tlačítkem obnovil stránku na některém z~dalších kroků. Vlastnost Redux Store je totiž taková, že při~obnovení stránky se vymažou i~data z~tohoto úložiště. Aplikace ale potřebuje mít data o~tarifech a~balíčcích pořád k~dispozici, například pro zobrazení košíku a~celkové ceny objednávky. Je tedy nutné umístit volání žádosti o~data ještě do takové části kódu, která se vykonává v~rámci každého načtení stránky.
 
-Pro minimální opakování kódu byla vytvořena funkce zajišťující volání API požadavku s validními parametry. Zároveň byla použita interní knihovna jsonFetch. Za zmínku stojí i použití optimalizační funkce batch. Funkce pochází z knihovny Redux a zabraňuje iterativnímu aktualizování stavu aplikace. Stav se tedy aktualizuje jen jednou pro všechny dispatch funkce.
-\textbf{Zjednodušená} funkce pro doplnění představy o celkové implementaci:
+Pro minimální opakování kódu byla vytvořena funkce zajišťující volání API požadavku s~validními parametry. Zároveň byla použita interní knihovna jsonFetch. Za zmínku stojí i~použití optimalizační funkce batch. Funkce pochází z~knihovny Redux a~zabraňuje iterativnímu aktualizování stavu aplikace. Stav se tedy aktualizuje jen jednou pro všechny dispatch funkce.
+\textbf{Zjednodušená} funkce pro doplnění představy o~celkové implementaci:
 
 \begin{minted}{jsx}
 const body = getFormattedPayload()
@@ -88,7 +88,7 @@ batch(() => {
 })
 \end{minted}
   
-Následně tuto funkci můžeme volat na dvou zmíněných místech. Prvním místem je komponenta vykreslující celý krok pro výběr tarifů a balíčků. Volání je obaleno do tzv useEffect hooku. To je nativní funkcionalita React knihovny, která optimalizuje vykonávání kódu uvedeného v rámci této funkce. Metoda je tedy spuštěna pouze jednou, nehledě na překreslování komponenty. Jedná se tedy čistě o optimalizační výhodu.  
+Následně tuto funkci můžeme volat na dvou zmíněných místech. Prvním místem je komponenta vykreslující celý krok pro výběr tarifů a~balíčků. Volání je obaleno do tzv useEffect hooku. To je nativní funkcionalita React knihovny, která optimalizuje vykonávání kódu uvedeného v~rámci této funkce. Metoda je tedy spuštěna pouze jednou, nehledě na překreslování komponenty. Jedná se tedy čistě o~optimalizační výhodu.  
 
 \begin{minted}{jsx}
 useEffect(() => {
@@ -96,8 +96,8 @@ useEffect(() => {
 }, [])
 \end{minted}
 
-Dalším místem volání je při načítání celé stránky -- tou je soubor ReservationForm.js.
-Použití metody pro získání dat je ale podmíněno omezeními. Pro zavolání je nutné mít vyplněné pasažéry, zvolený tarif a data nesmí být uloženy v Redux Store. Jinak by bylo volání zbytečné.
+Dalším místem volání je při~načítání celé stránky -- tou je soubor ReservationForm.js.
+Použití metody pro získání dat je ale podmíněno omezeními. Pro zavolání je nutné mít vyplněné pasažéry, zvolený tarif a~data nesmí být uloženy v~Redux Store. Jinak by bylo volání zbytečné.
 
 \begin{minted}{jsx}
 if (passengers && passengers.length > 0) {
@@ -115,7 +115,7 @@ if (passengers && passengers.length > 0) {
 
 \paragraph{Zpracování odpovědi} \mbox{}
 
-\noindent Ihned po obdržení odpovědi z endpointu se začnou data, která přišla v rámci odpovědi, zpracovávat. Funkce, která převádí data do optimálnější struktury se obvykle nazývá mapper. Je tedy definovaná nová funkce fareTypeMapper, pomocí které se převedou obdržená data do vhodnější struktury.
+\noindent Ihned po obdržení odpovědi z~endpointu se začnou data, která přišla v~rámci odpovědi, zpracovávat. Funkce, která převádí data do optimálnější struktury se obvykle nazývá mapper. Je tedy definovaná nová funkce fareTypeMapper, pomocí které se převedou obdržená data do vhodnější struktury.
 
 \begin{minted}{jsx}
 import mapFareTypeOffers from "./fareTypeMapper"
@@ -167,13 +167,13 @@ const mapFareTypeOffers = tickets => {
 export default mapFareTypeOffers
 \end{minted}
 
-Následuje uložení těchto dat do Redux Store. To je učiněno pomocí funkce dispatch. Dispatch je nativní funkce knihovny Redux, která vyvolává spuštění akce. Jediným cílem nově vytvořené akce je uložit strukturované data pomocí reduceru do globálního úložiště aplikace. Data jsou tedy po těchto úkonech zpracované a dostupné v rámci celé aplikace.
+Následuje uložení těchto dat do Redux Store. To je učiněno pomocí funkce dispatch. Dispatch je nativní funkce knihovny Redux, která vyvolává spuštění akce. Jediným cílem nově vytvořené akce je uložit strukturované data pomocí reduceru do globálního úložiště aplikace. Data jsou tedy po těchto úkonech zpracované a~dostupné v~rámci celé aplikace.
 
 \paragraph{Zobrazení komponent } \mbox{}
 
-\noindent V architektuře Reactu platí, že data mají pouze jednosměrný provoz směrem dolů. Každá komponenta může svůj stav využívat pouze v rámci své komponenty. Ke stavu jiných komponent nelze přistoupit. Je nutné tedy data zasílat potomkům v rámci parametrů, které se v React terminologii nazývají props. Potomek si může data perzistovat v rámci svého stavu a zároveň vykreslovat další komponenty, kterým tyto data dále posílá. Tento princip se v odborné terminologii nazývá props drilling. Tímto způsobem jsou vykresleny i komponenty v rámci nabídky balíčků. Hlavní komponenta, která zajišťuje veškerou důležitou funkcionalitu se nazývá TicketFareStep.js. Je vykreslena v rámci Mutlistep.js komponenty, která seskupuje všechny hlavní elementy rezervačního formuláře. 
+\noindent V~architektuře Reactu platí, že data mají pouze jednosměrný provoz směrem dolů. Každá komponenta může svůj stav využívat pouze v~rámci své komponenty. Ke stavu jiných komponent nelze přistoupit. Je nutné tedy data zasílat potomkům v~rámci parametrů, které se v~React terminologii nazývají props. Potomek si může data perzistovat v~rámci svého stavu a~zároveň vykreslovat další komponenty, kterým tyto data dále posílá. Tento princip se v~odborné terminologii nazývá props drilling. Tímto způsobem jsou vykresleny i~komponenty v~rámci nabídky balíčků. Hlavní komponenta, která zajišťuje veškerou důležitou funkcionalitu se nazývá TicketFareStep.js. Je vykreslena v~rámci Mutlistep.js komponenty, která seskupuje všechny hlavní elementy rezervačního formuláře. 
 
-Hierarchii komponent lze nejlépe znázornit pomocí diagramu. V diagramu (obrázek č. \ref{hierarchie}) jsou velmi jednoduše znázorněny hlavní komponenty, obsahující větší množství logiky. Celkem přibylo 40 nových komponent, byly použity vizuální elementy z knihovny veřejně dostupného repozitáře Orbit a mnoho stávajících komponent bylo upraveno. Diagram tedy zobrazuje jen stručně obecnou strukturu pro přehlednější zobrazení.
+Hierarchii komponent lze nejlépe znázornit pomocí diagramu. V~diagramu (obrázek č. \ref{hierarchie}) jsou velmi jednoduše znázorněny hlavní komponenty, obsahující větší množství logiky. Celkem přibylo 40 nových komponent, byly použity vizuální elementy z~knihovny veřejně dostupného repozitáře Orbit a~mnoho stávajících komponent bylo upraveno. Diagram tedy zobrazuje jen stručně obecnou strukturu pro přehlednější zobrazení.
 
 \begin{figure}[H]
     \centering
@@ -182,7 +182,7 @@ Hierarchii komponent lze nejlépe znázornit pomocí diagramu. V diagramu (obrá
     \label{hierarchie}
 \end{figure}
 
-Data z hlavní komponenty TicketFareStep.js jsou tedy získaná z Redux Store. Je nutné ověřit, že data vůbec existují, rozdělit na vhodnější datové struktury, aby bylo předání do dalších komponent již bez dalších nutných iterací. Předání do dalších komponent je znázorněno níže.
+Data z~hlavní komponenty TicketFareStep.js jsou tedy získaná z~Redux Store. Je nutné ověřit, že data vůbec existují, rozdělit na vhodnější datové struktury, aby bylo předání do dalších komponent již bez dalších nutných iterací. Předání do dalších komponent je znázorněno níže.
 
 \begin{minted}{jsx}
 <div className="AdditionalServicesStep" data-test="fare-types-step">
@@ -220,14 +220,14 @@ Data z hlavní komponenty TicketFareStep.js jsou tedy získaná z Redux Store. J
 </div>
 \end{minted}
 
-Do komponent jsou také odeslány funkce. Tyto funkce jsou definovány v rámci hlavní komponenty TicketFareStep.js. V případě, že funkci komponenta v potomku zavolá, jsou vykonávány v hlavní komponentně nad stavem hlavní komponentě. Principy tohoto chování jsou doporučovány oficiální dokumentací React. Výhoda spočívá v tom, že logika je zapouzdřená na jednom místě a může rozhodovat, které komponenty ze svého stromu potomků je nutné aktualizovat.
+Do komponent jsou také odeslány funkce. Tyto funkce jsou definovány v~rámci hlavní komponenty TicketFareStep.js. V~případě, že funkci komponenta v~potomku zavolá, jsou vykonávány v~hlavní komponentně nad stavem hlavní komponentě. Principy tohoto chování jsou doporučovány oficiální dokumentací React. Výhoda spočívá v~tom, že logika je zapouzdřená na jednom místě a~může rozhodovat, které komponenty ze svého stromu potomků je nutné aktualizovat.
 
 \paragraph{Uložení nového stavu po zvolení tarifu} \mbox{}
 
-\noindent Poté, co uživatel provede volbu tarifu stisknutím tlačítka, je název zvoleného balíčku uložen do stavu aplikace v Reduxu. Před uložením, je ale nutné vykonat poměrně velké množství podnikové logiky. 
+\noindent Poté, co uživatel provede volbu tarifu stisknutím tlačítka, je název zvoleného balíčku uložen do stavu aplikace v~Reduxu. Před uložením, je ale nutné vykonat poměrně velké množství podnikové logiky. 
 
-Tarif se nesmí uložit okamžitě, pokud byl vybrán nejlevnější tarif, ale uživatel svou volbu musí ještě potvrdit ve vyskakovacím okně. Až poté může být tarif uložen. Další implementovaná logika musí podchytit princip pozdější nabídky balíčků. Pokud si zákazník vybral nejvyšší tarif, již nebude vybírat balíčky a musí být přesměrován dále. V opačném případě musí systém zobrazit nabídku balíčků. Nabídka balíčků je ovšem opět závislá, který tarif byl zvolen. Pokud byl zvolen střední tarif, tak jsou k dispozici pouze 2 balíčky. 
-Po ošetření těchto podmínek a jednoznačnosti, že tarif opravdu systém může uložit, je vykonána funkce pro uložení. 
+Tarif se nesmí uložit okamžitě, pokud byl vybrán nejlevnější tarif, ale uživatel svou volbu musí ještě potvrdit ve vyskakovacím okně. Až poté může být tarif uložen. Další implementovaná logika musí podchytit princip pozdější nabídky balíčků. Pokud si zákazník~vybral nejvyšší tarif, již nebude vybírat balíčky a~musí být přesměrován dále. V~opačném případě musí systém zobrazit nabídku balíčků. Nabídka balíčků je ovšem opět závislá, který tarif byl zvolen. Pokud byl zvolen střední tarif, tak jsou k~dispozici pouze 2 balíčky. 
+Po ošetření těchto podmínek a~jednoznačnosti, že tarif opravdu systém může uložit, je vykonána funkce pro uložení. 
 
 \begin{minted}{jsx}
 const handleSetFareType = useCallback(
@@ -247,17 +247,17 @@ const handleSetFareType = useCallback(
 )
 \end{minted}
 
-Funkce vykonává několik úkonů. Po uložení vybraného balíčku, pomocí již zmiňovaného dispatch do Redux úložiště, se zároveň i vymaže zvolený balíček, aby byla ošetřena případná neshoda v datech. 
+Funkce vykonává několik úkonů. Po uložení vybraného balíčku, pomocí již zmiňovaného dispatch do Redux úložiště, se zároveň i~vymaže zvolený balíček, aby byla ošetřena případná neshoda v~datech. 
 
-Dalším úkonem je uložení vybraného balíčku do session úložiště. Session úložiště je vyhrazený prostor v rámci prohlížeče, který je perzistovaný vzhledem k záložce prohlížeče. Jeho cílem je zachování stavu zvoleného balíčku i po obnovení stránky, kdy by se bez tohoto úkonu balíček smazal z Redux úložiště. 
+Dalším úkonem je uložení vybraného balíčku do session úložiště. Session úložiště je vyhrazený prostor v~rámci prohlížeče, který je perzistovaný vzhledem k~záložce prohlížeče. Jeho cílem je zachování stavu zvoleného balíčku i~po obnovení stránky, kdy by se bez tohoto úkonu balíček smazal z~Redux úložiště. 
 
-Předposlední činností je uložení zvoleného balíčku pro analytické účely. Interně vyvinutá knihovna cuckoo slouží právě pro ukládání analytických údajů. Zaznamenává se název události a její parametry, což je v tomto případě zvolený tarif.
+Předposlední činností je uložení zvoleného balíčku pro analytické účely. Interně vyvinutá knihovna cuckoo slouží právě pro ukládání analytických údajů. Zaznamenává se název události a~její parametry, což je v~tomto případě zvolený tarif.
 
-Pokud to implementová podniková pravidla umožní, je uživatel přesměrován na další krok rezervačního formuláře. V opačném případě je na uživatele připravena volba balíčků. Pro ukládání balíčků vypadá funkce velmi obdobně.
+Pokud to implementová podniková pravidla umožní, je uživatel přesměrován na další krok rezervačního formuláře. V~opačném případě je na uživatele připravena volba balíčků. Pro ukládání balíčků vypadá funkce velmi obdobně.
 
 \paragraph{Odeslání strukturovaných dat na ukládací endpoint} \mbox{}
 
-\noindent Ve chvílí, kdy uživatel stiskne potvrovací tlačítko Zaplatit se začne vykonávat zpracování dat, které mají být odeslány na ukládací endpoint save\_booking. Tarify a balíčky musejí mít přesnou strukturu. Musí obsahovat cenu, název tarifu, nebo balíčku a ruleset\_id. V úložišti aplikace se nachází pouze název balíčku a tarifu, které si uživatel zvolil. Tyto data je tedy třeba spojit s daty, které byly obdrženy od backendu v předchozí části Získávání dat. Tato logika, se odehrává v metodách nazývaných dle konvencí Reduxu selector. Selector je funkce, která zasahuje přímo do stavu Redux Storu a tyto data dokáže vrátit ve specifikovaném formátu.
+\noindent Ve chvílí, kdy uživatel stiskne potvrovací tlačítko Zaplatit se začne vykonávat zpracování dat, které mají být odeslány na ukládací endpoint save\_booking. Tarify a~balíčky musejí mít přesnou strukturu. Musí obsahovat cenu, název tarifu, nebo balíčku a~ruleset\_id. V~úložišti aplikace se nachází pouze název balíčku a~tarifu, které si uživatel zvolil. Tyto data je tedy třeba spojit s~daty, které byly obdrženy od backendu v~předchozí části Získávání dat. Tato logika, se odehrává v~metodách nazývaných dle konvencí Reduxu selector. Selector je funkce, která zasahuje přímo do stavu Redux Storu a~tyto data dokáže vrátit ve specifikovaném formátu.
 
 \begin{minted}{jsx}
 export const getSelectedFareTypeWithDetails = (state: BookingStateType) => {
@@ -282,23 +282,23 @@ export const getSelectedFareTypeWithDetails = (state: BookingStateType) => {
 }
 \end{minted}
 
-Výsledné zpracování dat do požadovaného formátu tedy probíhá v rámci dvou hlavních funkcí. Nebudou zde uvedeny menší pomocné funkce, které neobsahují hlavní logiku. Základní myšlenkou je použití objektu, který obsahuje všechny získané informace o všech tarifech. Následně je název zvoleného tarifu vyhledán v tomto objektu a příslušné atributy objektu jsou vráceny jako nový objekt, který je již ve správném formátu.
+Výsledné zpracování dat do požadovaného formátu tedy probíhá v~rámci dvou hlavních funkcí. Nebudou zde uvedeny menší pomocné funkce, které neobsahují hlavní logiku. Základní myšlenkou je použití objektu, který obsahuje všechny získané informace o~všech tarifech. Následně je název zvoleného tarifu vyhledán v~tomto objektu a~příslušné atributy objektu jsou vráceny jako nový objekt, který je již ve správném formátu.
 
-Tento selektor je následně využíván při odesílání všech dat. Ostatní data jsou podobnými selektory upraveny a spojeny v jeden objekt, který tvoří tělo požadavku na save\_booking endpoint.
+Tento selektor je následně využíván při~odesílání všech dat. Ostatní data jsou podobnými selektory upraveny a~spojeny v~jeden objekt, který tvoří tělo požadavku na save\_booking endpoint.
 
 \paragraph{Shrnutí} \mbox{}
 
-\noindent Do současného řešení byla implementovaná nová funkcionalita za využití již používaných technologií. Byla dodržena již navrhnutá a funkční architektura aplikace, která byla rozšířena o nový modul, splňující stanovené požadavky z návrhu řešení. Nově implementovaný modul bylo nutné propojit s celkovou funkcionalitou, kde bylo také nutné upravit mnoho částí původního řešení. Součástí procesu implementace byla i komunikace s backendovým týmem o návrhu nového endpointu pro získávání dat. Poslední částí bylo upraveno odesílání uložené objednávky backendu.
+\noindent Do současného řešení byla implementovaná nová funkcionalita za využití již používaných technologií. Byla dodržena již navrhnutá a~funkční architektura aplikace, která byla rozšířena o~nový modul, splňující stanovené požadavky z~návrhu řešení. Nově implementovaný modul bylo nutné propojit s~celkovou funkcionalitou, kde bylo také nutné upravit mnoho částí původního řešení. Součástí procesu implementace byla i~komunikace s~backendovým týmem o~návrhu nového endpointu pro získávání dat. Poslední částí bylo upraveno odesílání uložené objednávky backendu.
 
 \podsekce{Implementované knihovny}
 
-V repozitáři použitého pro rezervační formulář bylo použito mnoho knihoven třetích stran. Používání těchto knihoven velmi zrychluje vývoj produktu, protože není nutné programovat funkcionalitu, kterou využívá mnoho ostatních projektů a byly tedy již tyto problémy jednou vyřešeny. V nové implementaci tarifů a balíčků bylo nutné v maximální míře využít ty knihovny, které již jsou využívány v implementačním řešení rezervačního formuláře. To zejména z důvodu úspory velikosti celkově zkompilované aplikace. Použitím dalších knihoven by celkový svazek aplikace zvýšilo. V případě této implementace nebylo nutné importovat nové knihovny, ale na všechny úkony stačily již importované knihovny.
+V~repozitáři~použitého pro rezervační formulář bylo použito mnoho knihoven třetích stran. Používání těchto knihoven velmi zrychluje vývoj produktu, protože není nutné programovat funkcionalitu, kterou využívá mnoho ostatních projektů a~byly tedy již tyto problémy jednou vyřešeny. V~nové implementaci tarifů a~balíčků bylo nutné v~maximální míře využít ty knihovny, které již jsou využívány v~implementačním řešení rezervačního formuláře. To zejména z~důvodu úspory velikosti celkově zkompilované aplikace. Použitím dalších knihoven by celkový svazek aplikace zvýšilo. V~případě této implementace nebylo nutné importovat nové knihovny, ale na všechny úkony stačily již importované knihovny.
 
 \paragraph{Knihovna Orbit} \mbox{}
 
-\noindent Orbit je open source designový systém obsahující vizuální prvky, jako jsou tlačítka, ikony, nadpisy a podobně. Všechny prvky jsou v jednotném stylu, využívající designové tokeny pro snadnou možnost úpravy. Prvky jsou implementované jako React komponenty. Jejich použití v projektu je velmi snadné. Další výhodou použití je ošetření funkcionality pro snadnou přístupnost. Orbit totiž řeší jazyky psané zprava doleva, kontrasty barev pro zrakové vady a mnoho dalšího. Tento designový systém je vyvíjen přímo firmou Kiwi.com, která jej dává k dispozici veřejnému užití zdarma. 
+\noindent Orbit je open source designový systém obsahující vizuální prvky, jako jsou tlačítka, ikony, nadpisy a~podobně. Všechny prvky jsou v~jednotném stylu, využívající designové tokeny pro snadnou možnost úpravy. Prvky jsou implementované jako React komponenty. Jejich použití v~projektu je velmi snadné. Další výhodou použití je ošetření funkcionality pro snadnou přístupnost. Orbit totiž řeší jazyky psané zprava doleva, kontrasty barev pro zrakové vady a~mnoho dalšího. Tento designový systém je vyvíjen přímo firmou Kiwi.com, která jej dává k~dispozici veřejnému užití zdarma. 
 
-V implementaci tarifů a balíčků bylo použito mnoho komponent z této knihovny. Některé komponenty, které chyběly pro implementaci, byly na žádost vytvořeny a zveřejněny. Filozofií nejlepších frontendových postupů je stav, když každý vizuální prvek na stránce je vytvořen z Orbit komponent. Toto doporučení bylo dodrženo i při této implementaci. Tato filozofie se může zdát přísná, nicméně velmi usnadňuje několik procesů. V případě nutnosti změny, stačí změnit danou definici komponenty a změna se promítne na všech místech. To se může týkat barev, velikostí, rozmístění prvků a odsazení. Vývoj je také rychlejší díky jednotnému stylu psaní a čtení zdrojového kódu programátorem.
+V~implementaci tarifů a~balíčků bylo použito mnoho komponent z~této knihovny. Některé komponenty, které chyběly pro implementaci, byly na žádost vytvořeny a~zveřejněny. Filozofií nejlepších frontendových postupů je stav, když každý vizuální prvek na stránce je vytvořen z~Orbit komponent. Toto doporučení bylo dodrženo i~při~této implementaci. Tato filozofie se může zdát přísná, nicméně velmi usnadňuje několik procesů. V~případě nutnosti změny, stačí změnit danou definici komponenty a~změna se promítne na všech místech. To se může týkat barev, velikostí, rozmístění prvků a~odsazení. Vývoj je také rychlejší díky jednotnému stylu psaní a~čtení zdrojového kódu programátorem.
 
 \begin{minted}{jsx}
 // @flow
@@ -330,15 +330,15 @@ export default FareTypeRefundAlert
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-28-16-16-54.png}{0.9\textwidth}{!}
-    \caption{Výsledný vzhled banneru pouze z Orbit komponent}
+    \caption{Výsledný vzhled banneru pouze z~Orbit komponent}
     \label{orbit}
 \end{figure}
 
-V uvedeném příkladu (obrázek č. \ref{orbit}) s použitím Orbit komponent, lze krásně demonstrovat ukázku jednoduchých UI elementů. Tato komponenta zobrazuje varování, že na daný let se nevztahuje možnost náhrad, protože se jedná o let na poslední chvíli (48 hodin před odletem). Od komponenty je oddělena logika a proto je dobrým příkladem použití, protože lze jednoduše porozumět daným elementům. Varovná ikona i tučný text jsou Orbit komponenty, stejně jako použitý token ve styled-component. Není tedy napevno definované odsazení celé komponenty, ale je použitý token z design systému Orbitu. Token obsahuje velikost spaceLarge, která je definovaná na jediném místě. Případná změna již tedy bude jednoduchá a dotkne se všech komponent, využívající tento token.
+V~uvedeném příkladu (obrázek č. \ref{orbit}) s~použitím Orbit komponent, lze krásně demonstrovat ukázku jednoduchých UI elementů. Tato komponenta zobrazuje varování, že na daný let se nevztahuje možnost náhrad, protože se jedná o~let na poslední chvíli (48 hodin před odletem). Od komponenty je oddělena logika a~proto je dobrým příkladem použití, protože lze jednoduše porozumět daným elementům. Varovná ikona i~tučný text jsou Orbit komponenty, stejně jako použitý token ve styled-component. Není tedy napevno definované odsazení celé komponenty, ale je použitý token z~design systému Orbitu. Token obsahuje velikost spaceLarge, která je definovaná na jediném místě. Případná změna již tedy bude jednoduchá a~dotkne se všech komponent, využívající tento token.
 
 \paragraph{Knihovna date-fns} \mbox{}
 
-\noindent Pro upravení dat do požadovaného formátu byla použita knihovna date-fns. Cílem knihovny je usnadnit manipulaci s časovými formáty dat. V případě implementaci tarifů a balíčků bylo zapotřebí poslat jako tělo požadavku aktuálních dat pasažéry a jejich datum narození ve specifickém formátu. 
+\noindent Pro upravení dat do požadovaného formátu byla použita knihovna date-fns. Cílem knihovny je usnadnit manipulaci s~časovými formáty dat. V~případě implementaci tarifů a~balíčků bylo zapotřebí poslat jako tělo požadavku aktuálních dat pasažéry a~jejich datum narození ve specifickém formátu. 
 
 \begin{minted}{jsx}
 const formattedPassengers = passengers
@@ -354,11 +354,11 @@ const formattedPassengers = passengers
     }))
 \end{minted}
 
-K úpravě na požadovaný formát byly použity metody isValid() a format(). Metodou isValid bylo v kombinaci s javascriptovou funkcí filter() ošetřeno, aby pole pasažérů neobsahovalo nesprávný formát dat. Následně bylo toto pole upraveno pomocí javascriptové funkce map() a metody format. Tou je možné specifikovat výsledný formát data na základě definování formátu datovým typem string a typickými značkami pro jednotky času. Detailní specifikace je uvedena v dokumentaci knihovny date-fns.org.
+K~úpravě na požadovaný formát byly použity metody isValid() a~format(). Metodou isValid bylo v~kombinaci s~javascriptovou funkcí filter() ošetřeno, aby pole pasažérů neobsahovalo nesprávný formát dat. Následně bylo toto pole upraveno pomocí javascriptové funkce map() a~metody format. Tou je možné specifikovat výsledný formát data na základě definování formátu datovým typem string a~typickými značkami pro jednotky času. Detailní specifikace je uvedena v~dokumentaci knihovny date-fns.org.
 
 \paragraph{Knihovna Flow} \mbox{}
 
-\noindent Javascript ve své podstatě neumožňuje ve výchozím nastavení kontrolu datových typů a manipulací s nimi. Je nutné tedy při programování Javascriptu myslet na jednotlivou kompatibilitu funkcí, proměnných a ostatních datových typů. Díky tomy dochází k celé řadě chyb a celkově tím roste čas strávený vývojem. Pevné definování a automatická kontrola datových typů na úrovni jazyka umožňuje rychlejší vývoj s menším počtem chyb. Pro tento účel slouží knihovna Flow. Je to statická kontrola datových typů. Například je nutné při psaní zdrojového kódu definovat jaké jsou vstupní a výstupní parametry jednotlivých funkcí, ale odměnou pro programátora je pak kontrola na straně Flow, když je funkce používaná s nesprávným datovým typem. Programátor je následně upozorněn pomocí terminálu nebo vývojového prostředí o chybě a je tedy možné chybu odhalit už v době psaní. 
+\noindent Javascript ve své podstatě neumožňuje ve výchozím nastavení kontrolu datových typů a~manipulací s~nimi. Je nutné tedy při~programování Javascriptu myslet na jednotlivou kompatibilitu funkcí, proměnných a~ostatních datových typů. Díky tomy dochází k~celé řadě chyb a~celkově tím roste čas strávený vývojem. Pevné definování a~automatická kontrola datových typů na úrovni jazyka umožňuje rychlejší vývoj s~menším počtem chyb. Pro tento účel slouží knihovna Flow. Je to statická kontrola datových typů. Například je nutné při~psaní zdrojového kódu definovat jaké jsou vstupní a~výstupní parametry jednotlivých funkcí, ale odměnou pro programátora je pak kontrola na straně Flow, když je funkce používaná s~nesprávným datovým typem. Programátor je následně upozorněn pomocí terminálu nebo vývojového prostředí o~chybě a~je tedy možné chybu odhalit už v~době psaní. 
 
 \begin{minted}{jsx}
 // @flow
@@ -392,25 +392,25 @@ const FareTypeCells = ({ rules, fareTypeCategoryName, loyaltyTier }: Props) => {
 }
 \end{minted}
 
-U každé nově implementované React komponenty jsou definované i její vstupní parametry. Pro zapnutí podpory kontroly je ale nutné mimo integrace knihovny ještě specifikování, že daná knihovna obsahuje Flow definice. To se provádí pomocí přidáním komentáře na první řádek souboru ve tvaru // @flow. 
+U~každé nově implementované React komponenty jsou definované i~její vstupní parametry. Pro zapnutí podpory kontroly je ale nutné mimo integrace knihovny ještě specifikování, že daná knihovna obsahuje Flow definice. To se provádí pomocí přidáním komentáře na první řádek souboru ve tvaru // @flow. 
 
 \paragraph{Knihovna Ramda} \mbox{}
 
-\noindent V ukázce použití knihovny Flow je také vidět použití knihovny Ramda. Knihovna slouží jako pomocník programátorovi s běžnými algoritmickými funkcemi. Ramda se s funkcionálním přístupem snaží pomoci programátorovi v běžných algoritmech. Použití Ramda funkcí velmi šetří čas. Jednotlivé funkce jsou také velmi optimalizované. Používání Ramda funkcí pomáhá při psaní kódu se soustředit na celkovou funkcionalitu, než na řešení běžných algoritmických úkonů, jako je iterace pole, filtrace atributů objektu nebo mutace specifických datových typů. V ukázce je konkrétně použita Ramda funkce isNil(), která zjednodušuje, zda daný objekt není prázdný. Alternativně bez použití Ramda funkce by byl podstatně delší zápis kódu.
+\noindent V~ukázce použití knihovny Flow je také vidět použití knihovny Ramda. Knihovna slouží jako pomocník~programátorovi s~běžnými algoritmickými funkcemi. Ramda se s~funkcionálním přístupem snaží pomoci programátorovi v~běžných algoritmech. Použití Ramda funkcí velmi šetří čas. Jednotlivé funkce jsou také velmi optimalizované. Používání Ramda funkcí pomáhá při~psaní kódu se soustředit na celkovou funkcionalitu, než na řešení běžných algoritmických úkonů, jako je iterace pole, filtrace atributů objektu nebo mutace specifických datových typů. V~ukázce je konkrétně použita Ramda funkce isNil(), která zjednodušuje, zda daný objekt není prázdný. Alternativně bez použití Ramda funkce by byl podstatně delší zápis kódu.
 
 \paragraph{Shrnutí} \mbox{}
 
-\noindent V maximálním množství bylo pro novou implementaci využito pomocných knihoven třetích stran, které již v repozitáři byly používány a tudíž nezvýšily celkovou velikost balíčku aplikace. Zejména byly přímo v řešení využity knihovny React, Redux, Flow, Orbit, Ramda a date-fns. Všechny knihovny a jejich použití splňuje konvence stanovené pro programátory firmy. Použité knihovny značně urychlily vývoj, jelikož nebylo nutné některé funkce implementovat znovu. Používáním těchto knihoven byly sníženy náklady na vývoj produktu.
+\noindent V~maximálním množství bylo pro novou implementaci využito pomocných knihoven třetích stran, které již v~repozitáři~byly používány a~tudíž nezvýšily celkovou velikost balíčku aplikace. Zejména byly přímo v~řešení využity knihovny React, Redux, Flow, Orbit, Ramda a~date-fns. Všechny knihovny a~jejich použití splňuje konvence stanovené pro programátory firmy. Použité knihovny značně urychlily vývoj, jelikož nebylo nutné některé funkce implementovat znovu. Používáním těchto knihoven byly sníženy náklady na vývoj produktu.
 
 \sekce{Testování}
 
-Testováním webových aplikací je možné najít možné chyby ještě před zveřejněním webové aplikace, nebo její aktualizace. Testovat se může aplikace jako celek, její malé části, bezpečnost, dostupnost pro uživatele s různými tělesnými problémy, nebo celkové výkonnosti softwarového řešení. 
+Testováním webových aplikací je možné najít možné chyby ještě před zveřejněním webové aplikace, nebo její aktualizace. Testovat se může aplikace jako celek, její malé části, bezpečnost, dostupnost pro uživatele s~různými tělesnými problémy, nebo celkové výkonnosti softwarového řešení. 
 
-Stejně jako v předchozích částech této práce bylo nutné se přizpůsobovat již používaným technikám, nástrojům. metodám a procesů ve společnosti i v případě testování je nutné využívat již používané procesy a nástroje. Změna těchto procesů nebyla považována za nutnou z důvodu implementace pouze nových tarifů a balíčků.
+Stejně jako v~předchozích částech této práce bylo nutné se přizpůsobovat již používaným technikám, nástrojům. metodám a~procesů ve společnosti i~v~případě testování je nutné využívat již používané procesy a~nástroje. Změna těchto procesů nebyla považována za nutnou z~důvodu implementace pouze nových tarifů a~balíčků.
 
-Současně proces testování probíhá v několika fázích. Součástí práce vývojáře při implementaci, nebo změně funkcionality je i vytváření nových testů a upravení starých testů. Ve frontendovém repozitáři se v součásné době používají Unit testy a end-to-end testy. Tyto testy lze spustit lokálně ve vývojovém prostředí. Následně vytvoření merge requestu s novou funkcionalitou jsou v prostředí gitlabu spuštěny tyto testy ještě v rámci průběžné integrace. Provedená změna funkcionality se tedy nemůže promítnout do produkčního prostředí, pokud všechny testy nebudou splněny. 
+Současně proces testování probíhá v~několika fázích. Součástí práce vývojáře při~implementaci, nebo změně funkcionality je i~vytváření nových testů a~upravení starých testů. Ve frontendovém repozitáři~se v~součásné době používají Unit testy a~end-to-end testy. Tyto testy lze spustit lokálně ve vývojovém prostředí. Následně vytvoření merge requestu s~novou funkcionalitou jsou v~prostředí gitlabu spuštěny tyto testy ještě v~rámci průběžné integrace. Provedená změna funkcionality se tedy nemůže promítnout do produkčního prostředí, pokud všechny testy nebudou splněny. 
 
-Po splnění těchto testů je automaticky vytvořeno testovací prostředí. Pracovníci z týmu QA testers následně simulují vyhledání a zarezervování letenky, tak jako by to dělal uživatel. V rámci tohoto procesu může být odhaleno množství chyb, které programátoři často přehlédnou. Na obrázku č. \ref{qa} je zobrazen proces, kdy QA tester nalezl v nově implementované funkcionalitě nabídky tarifů chybu. 
+Po splnění těchto testů je automaticky vytvořeno testovací prostředí. Pracovníci z~týmu QA testers následně simulují vyhledání a~zarezervování letenky, tak jako by to dělal uživatel. V~rámci tohoto procesu může být odhaleno množství chyb, které programátoři~často přehlédnou. Na obrázku č. \ref{qa} je zobrazen proces, kdy QA tester nalezl v~nově implementované funkcionalitě nabídky tarifů chybu. 
 
 \begin{figure}[H]
     \centering
@@ -422,9 +422,9 @@ Po splnění těchto testů je automaticky vytvořeno testovací prostředí. Pr
 \podsekce{Unit testy}
 
 Testování pomocí jednotkových testů je proces, kde je testovaným předmětem implementovaný kód na úrovni malých modulů. Cílem je zajistit, že izolované moduly fungují správně pro specifikované účely. Optimálně by měly testy být napsány pro každý aplikační modul. 
-V současném řešení se pro tyto účely používá knihovna Jest. Jest je jedna z nejpopulárnějších knihoven pro Javascriptové aplikace. Pomocí Jest knihovny je možné porovnávat vzor komponenty s jejím aktuálním stavem. Jedná se o proces určité simulace komponenty v izolovaném stavu. Pro snadnější interakci s komponentami je použita navíc knihovna Enzyme. 
+V~současném řešení se pro tyto účely používá knihovna Jest. Jest je jedna z~nejpopulárnějších knihoven pro Javascriptové aplikace. Pomocí Jest knihovny je možné porovnávat vzor komponenty s~jejím aktuálním stavem. Jedná se o~proces určité simulace komponenty v~izolovaném stavu. Pro snadnější interakci s~komponentami je použita navíc knihovna Enzyme. 
 
-Následující ukázka testu doplňkových balíčků ověřuje, zda komponenta po vykreslení a obdržení určitých parametrů obsahuje správné prvky. Jsou provedeny také testy, kdy do komponenty jsou cíleně poslány špatné atributy. Následně je definován optimální stav, který je ověřován pomocí přítomnosti prvků a chování komponenty. 
+Následující ukázka testu doplňkových balíčků ověřuje, zda komponenta po vykreslení a~obdržení určitých parametrů obsahuje správné prvky. Jsou provedeny také testy, kdy do komponenty jsou cíleně poslány špatné atributy. Následně je definován optimální stav, který je ověřován pomocí přítomnosti prvků a~chování komponenty. 
 
 \begin{minted}{jsx}
 describe("<ServicePackageCells /> with csAvability", () => {
@@ -462,13 +462,13 @@ describe("<ServicePackageCells /> with csAvability", () => {
 })
 \end{minted}
 
-Předmětem testování jsou jednotlivé prvky u každého balíčku a jejich závislost na obdržení atributů komponentou ServicePackageCell. Obdobně bylo naprogramováno mnoho dalších testů pro ostatní části nové funkcionality.
+Předmětem testování jsou jednotlivé prvky u~každého balíčku a~jejich závislost na obdržení atributů komponentou ServicePackageCell. Obdobně bylo naprogramováno mnoho dalších testů pro ostatní části nové funkcionality.
 
 \podsekce{Cypress testy}
 
-Knihovna Cypress slouží k provádění end-to-end testů. Automaticky se simuluje celý proces procházení rezervací. Knihovna simuluje klikání myší, skrolování, čekání na načtení stránky. Je porovnáván správný scénář průběhů a viditelné elementy s aktuálním průchodem. Pokud napsaný skript očekává, že na stránce se vyskytují určité elementy, ale při iteraci testu tyto elementy nejsou dostupné, je test vyhodnocen jako neúspěšný. 
+Knihovna Cypress slouží k~provádění end-to-end testů. Automaticky se simuluje celý proces procházení rezervací. Knihovna simuluje klikání myší, skrolování, čekání na načtení stránky. Je porovnáván správný scénář průběhů a~viditelné elementy s~aktuálním průchodem. Pokud napsaný skript očekává, že na stránce se vyskytují určité elementy, ale při~iteraci testu tyto elementy nejsou dostupné, je test vyhodnocen jako neúspěšný. 
 
-Cypress knihovnou je možné simulovat i různé velikosti zařízení. To pomáhá zejména testovat responzivní verzi, stejně tak jako desktopovou. Cypress testy byly připraveny pro několik typů zařízení. V ukázce je možné vidět test pro zařízený typy iPhone 5.
+Cypress knihovnou je možné simulovat i~různé velikosti zařízení. To pomáhá zejména testovat responzivní verzi, stejně tak jako desktopovou. Cypress testy byly připraveny pro několik typů zařízení. V~ukázce je možné vidět test pro zařízený typy iPhone 5.
 
 \begin{minted}{jsx}
 it("Fare types mobile selection", () => {
@@ -488,7 +488,7 @@ it("Fare types mobile selection", () => {
 })
 \end{minted}
 
-Celková simulace rezervace je simulována v několika scénářích na uměle vytvořených datech.
+Celková simulace rezervace je simulována v~několika scénářích na uměle vytvořených datech.
 
 \begin{minted}{jsx}
 it("Complete booking with selected FT and SP", () => {
@@ -505,25 +505,25 @@ it("Complete booking with selected FT and SP", () => {
 
 \podsekce{Vyhodnocování}
 
-Testy jsou spouštěny mnohokrát v procesu vývoje. První spuštění testů nastává většinou manuálně po úpravě testu. Spuštění se provádí přes terminál příkazem yarn test pro unit testy a příkazem yarn cypress run pro end-to-end testy. Následně je v terminálu po dokončení testů zobrazen jejich výsledek. Je přehledně zobrazeno kolik testů proběhlo úspěšně, kolik neúspěšně a jejich konkrétní příčina neúspěchu. Na základě historii je snadné opravit případné chyby. 
+Testy jsou spouštěny mnohokrát v~procesu vývoje. První spuštění testů nastává většinou manuálně po úpravě testu. Spuštění se provádí přes terminál příkazem yarn test pro unit testy a~příkazem yarn cypress run pro end-to-end testy. Následně je v~terminálu po dokončení testů zobrazen jejich výsledek. Je přehledně zobrazeno kolik testů proběhlo úspěšně, kolik neúspěšně a~jejich konkrétní příčina neúspěchu. Na základě historii je snadné opravit případné chyby. 
 
-Platforma frontendu je také ošetřena proti odeslání chybného kódu do vzdáleného repozitáře v Gitlabu. Před provedením příkazu git push, kterým se odesílají změny, je provedena kontrola. Spustí se automaticky všechny testy souborů, které mohly být změnami ovlivněny. Bez úspěšněho dokončení testů není možné změny odeslat. \cite{arlow}
+Platforma frontendu je také ošetřena proti odeslání chybného kódu do vzdáleného repozitáře v~Gitlabu. Před provedením příkazu git push, kterým se odesílají změny, je provedena kontrola. Spustí se automaticky všechny testy souborů, které mohly být změnami ovlivněny. Bez úspěšněho dokončení testů není možné změny odeslat. \cite{arlow}
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-28-16-57-28.png}{0.9\textwidth}{!}
-    \caption{Výsledek spuštěných testů v repozitáři}
+    \caption{Výsledek spuštěných testů v~repozitáři}
     \label{tests}
 \end{figure}
 
-Dalším kontrolním bodem v procesu vývoje je provedení testů v integračním prostředí v Gitlabu. Zde je průběh testů viditelný pomocí několika ukazatelů. Jednotlivé testy jsou označeny ikonou symbolizující výsledek testu. Na obrázku je zobrazen stav, kde všechny testy proběhly v pořádku.
+Dalším kontrolním bodem v~procesu vývoje je provedení testů v~integračním prostředí v~Gitlabu. Zde je průběh testů viditelný pomocí několika ukazatelů. Jednotlivé testy jsou označeny ikonou symbolizující výsledek testu. Na obrázku je zobrazen stav, kde všechny testy proběhly v~pořádku.
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-28-16-58-23.png}{0.5\textwidth}{!}
-    \caption{Průběh testování v integračním prostředí Gitlab}
+    \caption{Průběh testování v~integračním prostředí Gitlab}
     \label{gitlab}
 \end{figure}
 
 \podsekce{Shrnutí}
-Součásti testování bylo naprogramování automatických testů, které se již používají ve firemní architektuře. Byly využity jednotkové a end-to-end testy, které se nyní spouští automaticky s každou další změnou tohoto modulu. Pozdější změny v tomto modulu budou vždy kvalitně prověřeny, aby celková funkcionalita tohoto implementovaného řešení byla zachována v maximální funkčnosti. Součástí testování bylo i provedení manuálních testů firemními specialisty, kteří se zabývají testováním nových funkcionalit. 
+Součásti testování bylo naprogramování automatických testů, které se již používají ve firemní architektuře. Byly využity jednotkové a~end-to-end testy, které se nyní spouští automaticky s~každou další změnou tohoto modulu. Pozdější změny v~tomto modulu budou vždy kvalitně prověřeny, aby celková funkcionalita tohoto implementovaného řešení byla zachována v~maximální funkčnosti. Součástí testování bylo i~provedení manuálních testů firemními specialisty, kteří se zabývají testováním nových funkcionalit. 

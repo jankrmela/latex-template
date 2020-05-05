@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Specifika frontendové architektury}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Srovnání MVC a FLUX architektury}{21}%
+\contentsline {subsection}{\numberline {4.4}Srovnání MVC a~FLUX architektury}{21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Store}{23}%
 \defcounter {refsection}{0}\relax 
@@ -32,7 +32,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Metodika práce}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Návrh a implementace řešení}{27}%
+\contentsline {section}{\numberline {6}Návrh a~implementace řešení}{27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Vize firmy}{27}%
 \defcounter {refsection}{0}\relax 
@@ -42,11 +42,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Zákaznická perspektiva}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Perspektiva vývoje a růstu}{29}%
+\contentsline {paragraph}{Perspektiva vývoje a~růstu}{29}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Procesní perspektiva}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Strategická mapa k BSC}{30}%
+\contentsline {subsubsection}{\numberline {6.1.2}Strategická mapa k~BSC}{30}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}Definice problému}{31}%
 \defcounter {refsection}{0}\relax 
@@ -62,7 +62,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.1}Vstupní podmínky}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Zvolený itinerář k rezervaci}{33}%
+\contentsline {paragraph}{Zvolený itinerář k~rezervaci}{33}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Dostupnost letenky}{33}%
 \defcounter {refsection}{0}\relax 
@@ -72,7 +72,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Zvolení úrovně služeb}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Souhlasení s podmínkami}{35}%
+\contentsline {paragraph}{Souhlasení s~podmínkami}{35}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Provedení platby}{35}%
 \defcounter {refsection}{0}\relax 
@@ -90,13 +90,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.3}Vnitřní události procesu}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Změna ceny letenek při objednávce}{36}%
+\contentsline {paragraph}{Změna ceny letenek při~objednávce}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Neaktivita při objednávání}{37}%
+\contentsline {paragraph}{Neaktivita při~objednávání}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Opuštění formuláře v procesu vyplňování}{37}%
+\contentsline {paragraph}{Opuštění formuláře v~procesu vyplňování}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Vykoupení letu v průběhu rezervace}{37}%
+\contentsline {paragraph}{Vykoupení letu v~průběhu rezervace}{37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.4}Vnější události procesu}{37}%
 \defcounter {refsection}{0}\relax 
@@ -124,7 +124,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.4.1}Konkurenční společnosti pro společnost Kiwi.com}{42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definice konkurentů z pohledu Kiwi.com}{42}%
+\contentsline {paragraph}{Definice konkurentů z~pohledu Kiwi.com}{42}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.4.2}Základní přehled konkurentů}{43}%
 \defcounter {refsection}{0}\relax 
@@ -164,7 +164,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.5.4}Tvorba objednávky}{53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.5.5}Proces volby tarifů a balíčků}{56}%
+\contentsline {subsubsection}{\numberline {6.5.5}Proces volby tarifů a~balíčků}{56}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.5.6}Doménový model}{57}%
 \defcounter {refsection}{0}\relax 

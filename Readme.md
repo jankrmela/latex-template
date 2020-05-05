@@ -1,3 +1,10 @@
+## How to auto replace spaces by non-breaking spaces
+- In VScode open `View` > `Replace`
+- Fill the fields like this:
+    - **Search**: `\b([aiouksvz])_` ❗❗REPLACE `"_"` by SPACE ❗❗
+    - **Replace**: `$1~`
+    - **Files to include**: `*.tex`
+
 ## Latex setup on 
 
 Repository is using `lualatexmk` library **instead of** `latex` / `xetex` / `xelatex`. 
@@ -6,7 +13,6 @@ For generating bibiliography is used `biber`.
 ```latex
 \usepackage[backend=biber]{biblatex}
 ```
-
 
 ### Steps to install awesome workflow with autocomplete & autogeneration with live preview:
 1. Install `mactex-no-gui`

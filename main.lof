@@ -4,15 +4,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Porovnání životních cyklů aplikace. Zdroj: \cite {topalovich_salesforce_2017}}}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Porovnání monolitické architektury s microservices architekturou. Zdroj: \cite {algorithmia_serverless_2018}}}{15}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Porovnání monolitické architektury s~microservices architekturou. Zdroj: \cite {algorithmia_serverless_2018}}}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Architektura SPA aplikace z globálního pohledu. Zdroj: \cite {botto_front-end_2020}}}{16}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Architektura SPA aplikace z~globálního pohledu. Zdroj: \cite {botto_front-end_2020}}}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Nejpoužívanější programovací jazyky dle průzkumu StackOverflow z roku 2019. Zdroj: \cite {stack_overflow_stack_2020}}}{18}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Nejpoužívanější programovací jazyky dle průzkumu StackOverflow z~roku 2019. Zdroj: \cite {stack_overflow_stack_2020}}}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Porovnání používanosti s populárností webových nástrojů. Zdroj: \cite {stack_overflow_stack_2020}}}{19}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Porovnání používanosti s~populárností webových nástrojů. Zdroj: \cite {stack_overflow_stack_2020}}}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Aktuální trend v používání hlavních webových knihoven. Zdroj: \cite {npmjs_npm_2020}}}{20}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Aktuální trend v~používání hlavních webových knihoven. Zdroj: \cite {npmjs_npm_2020}}}{20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces Diagram architektury MVC. Zdroj: \cite {margam_model-view-controller_2018}}}{22}%
 \defcounter {refsection}{0}\relax 
@@ -24,11 +24,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11}{\ignorespaces Diagram BSC}}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagram strategické mapy k BSC}}{31}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagram strategické mapy k~BSC}}{31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {13}{\ignorespaces Současná forma nabídky balíčků}}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Signalizace změny ceny letenek při objednávce}}{36}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Signalizace změny ceny letenek při~objednávce}}{36}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {15}{\ignorespaces Upozornění na časový limit objednávky}}{38}%
 \defcounter {refsection}{0}\relax 
@@ -50,17 +50,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {24}{\ignorespaces Use case diagram procesu objednávky}}{53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagram aktivit -- vyplnění údajů o letu}}{55}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagram aktivit -- vyplnění údajů o~letu}}{55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces BPMN diagram procesu volby tarifů a balíčků}}{57}%
+\contentsline {figure}{\numberline {26}{\ignorespaces BPMN diagram procesu volby tarifů a~balíčků}}{57}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {27}{\ignorespaces Doménový model}}{58}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {28}{\ignorespaces Diagram nasazení}}{59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Drátěný model -- znázornění přechodu mezi vybraným tarifem a nabídkou balíčků}}{60}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Drátěný model -- znázornění přechodu mezi vybraným tarifem a~nabídkou balíčků}}{60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Drátěný model -- let s odletem do 48 hodin}}{61}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Drátěný model -- let s~odletem do 48 hodin}}{61}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {31}{\ignorespaces Designový návrh -- nabídka tarifů}}{62}%
 \defcounter {refsection}{0}\relax 
@@ -68,18 +68,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {33}{\ignorespaces Designový návrh -- mobilní rozložení}}{64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Ukázka odpovědi z API ancillaries/offers/check}}{67}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Ukázka odpovědi z~API ancillaries/offers/check}}{67}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {35}{\ignorespaces Nabízené balíčky na základě vybraného tarifu}}{68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Požadovaná struktura dat při odesílání}}{69}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Požadovaná struktura dat při~odesílání}}{69}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {37}{\ignorespaces Hierarchie komponent (zjednodušeno)}}{73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Výsledný vzhled banneru pouze z Orbit komponent}}{78}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Výsledný vzhled banneru pouze z~Orbit komponent}}{78}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {39}{\ignorespaces Proces manuálního testování QA testery}}{81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Výsledek spuštěných testů v repozitáři}}{84}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Výsledek spuštěných testů v~repozitáři}}{84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces Průběh testování v integračním prostředí Gitlab}}{85}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Průběh testování v~integračním prostředí Gitlab}}{85}%

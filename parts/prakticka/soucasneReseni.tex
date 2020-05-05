@@ -1,32 +1,32 @@
 \sekce{Analýza současného řešení}
 
-V rámci současného řešení procesu rezervace letenky na portálu Kiwi.com bude hlavním cílem popis procesu od vybrání konkrétního letu po zaplacení objednávky. Proces hledání letenky není předmětem zmiňovaného vylepšení. Zákazník může letenku najít přes modul nazývající se Vyhledávání. Uživatel má několik možností, jak vybrat konkrétní letenku. Na hlavní stránce portálu je k dispozici volba oblíbených destinací, nejbližších termínů v podobě konkrétních měsíců. Tyto možnosti jsou zejména využívané v případě, kdy uživatel nemá přesné požadavky a hledá dovolenou u které mu nezáleží na detailech. V případě konkrétní představě o letence lze vyhledat konkrétní destinace v konkrétním časovém rozmezí. 
+V~rámci současného řešení procesu rezervace letenky na portálu Kiwi.com bude hlavním cílem popis procesu od vybrání konkrétního letu po zaplacení objednávky. Proces hledání letenky není předmětem zmiňovaného vylepšení. Zákazník~může letenku najít přes modul nazývající se Vyhledávání. Uživatel má několik možností, jak vybrat konkrétní letenku. Na hlavní stránce portálu je k~dispozici volba oblíbených destinací, nejbližších termínů v~podobě konkrétních měsíců. Tyto možnosti jsou zejména využívané v~případě, kdy uživatel nemá přesné požadavky a~hledá dovolenou u~které mu nezáleží na detailech. V~případě konkrétní představě o~letence lze vyhledat konkrétní destinace v~konkrétním časovém rozmezí. 
 
-Existuje také několik možností způsobu zadání destinace. Destinace může být z místa A do místa B, nebo lze využít mód Více měst, kde je možnost zvolit, kterými destinacemi má být cesta naplánována. V rámci tohoto módu je nutné zadat i přesné časové rozmezí pro každou destinaci. Pokud tyto termíny uživatel nepotřebuje vyplnit, je vhodné využít mód Nomád, kde ani nezáleží na pořadí navštívených destinací a automaticky se vyhledává kombinace destinací s nejnižší cenovou hladinou. 
+Existuje také několik možností způsobu zadání destinace. Destinace může být z~místa A~do místa B, nebo lze využít mód Více měst, kde je možnost zvolit, kterými destinacemi má být cesta naplánována. V~rámci tohoto módu je nutné zadat i~přesné časové rozmezí pro každou destinaci. Pokud tyto termíny uživatel nepotřebuje vyplnit, je vhodné využít mód Nomád, kde ani nezáleží na pořadí navštívených destinací a~automaticky se vyhledává kombinace destinací s~nejnižší cenovou hladinou. 
 
-Po nalezené letence jednou z výše uvedených možností nastává proces rezervace. Pro rezervaci jsou definovány vstupní podmínky, které zajišťují validaci, prevenci před nečekanými stavy, které mohou nastat a možnost dokončení úspěšné rezervace.
+Po nalezené letence jednou z~výše uvedených možností nastává proces rezervace. Pro rezervaci jsou definovány vstupní podmínky, které zajišťují validaci, prevenci před nečekanými stavy, které mohou nastat a~možnost dokončení úspěšné rezervace.
 
 \podsekce{Vstupní podmínky}
 
-\paragraph{Zvolený itinerář k rezervaci} \mbox{}
+\paragraph{Zvolený itinerář k~rezervaci} \mbox{}
 
-\noindent Pro rezervaci je nutné, aby uživatel vybral konkrétní itinerář. Tento výběr se provede stisknutím tlačítka Rezervovat. Následuje přesměrování na rezervační formulář pro konkrétní let. Z itineráře se určují přesná pravidla, která je nutné dodržet v rámci rezervačního formuláře. Tato pravidla se určují na základě přepravních společností a destinací. Přepravních společností může být v rámci letu několik. Součástí přepravních společností může být i pozemní autobusové nebo vlaková doprava. Na vybrané destinace existují specifické pravidla, jako nutnost vyplnit číslo pasu, nebo také systém uživatele informuje o nutnosti vízového dokladu.
+\noindent Pro rezervaci je nutné, aby uživatel vybral konkrétní itinerář. Tento výběr se provede stisknutím tlačítka Rezervovat. Následuje přesměrování na rezervační formulář pro konkrétní let. Z~itineráře se určují přesná pravidla, která je nutné dodržet v~rámci rezervačního formuláře. Tato pravidla se určují na základě přepravních společností a~destinací. Přepravních společností může být v~rámci letu několik. Součástí přepravních společností může být i~pozemní autobusové nebo vlaková doprava. Na vybrané destinace existují specifické pravidla, jako nutnost vyplnit číslo pasu, nebo také systém uživatele informuje o~nutnosti vízového dokladu.
 
 \paragraph{Dostupnost letenky} \mbox{}
 
-\noindent Jelikož Kiwi.com figuruje v procesu pouze jako prostředník a nevlastní letecké společnosti musí informace o letech sbírat z webů všech leteckých společností. Může nastat situace, že jeden spoj v rámci itineráře již není dostupný, protože ho aerolinka zrušila, nebo se vyprodala volná sedadla. V takovém případě uživatel nemůže dokončit rezervaci. Systém přeruší rezervaci zobrazením pop-up okna, které uživateli nedovolí dokončit rezervaci. Protože toto systémové chování může mít negativní vliv na uživatele, systém se snaží udržet zákazníky zobrazením podobných letů v nejbližším časovém rozmezí zrušené objednávky. Uživatel má přímo v pop-up okně možnost vybrat z alternativ a kliknutím na tlačítko Rezervovat se přesune k rezervaci alternativního letu.
+\noindent Jelikož Kiwi.com figuruje v~procesu pouze jako prostředník~a~nevlastní letecké společnosti musí informace o~letech sbírat z~webů všech leteckých společností. Může nastat situace, že jeden spoj v~rámci itineráře již není dostupný, protože ho aerolinka zrušila, nebo se vyprodala volná sedadla. V~takovém případě uživatel nemůže dokončit rezervaci. Systém přeruší rezervaci zobrazením pop-up okna, které uživateli nedovolí dokončit rezervaci. Protože toto systémové chování může mít negativní vliv na uživatele, systém se snaží udržet zákazníky zobrazením podobných letů v~nejbližším časovém rozmezí zrušené objednávky. Uživatel má přímo v~pop-up okně možnost vybrat z~alternativ a~kliknutím na tlačítko Rezervovat se přesune k~rezervaci alternativního letu.
 
 \paragraph{Dostatečný počet míst} \mbox{}
 
-\noindent Uživatel při objednávání letu vyplňuje údaje o pasažérech. Ve výchozím formuláři je předvyplněna možnost jednoho pasažéra. Uživatel má možnost přidat další pasažéry. Po přidání je požadavek na získání informací o dostupnosti letu pro nový počet pasažérů. Je totiž možné, že uživatel má zájem rezervovat letenku pro více pasažérů, než je počet dostupných míst v přepravním prostředku. Pokud by byl překročen počet dostupných míst přidáním více pasažérů je uživatel opět informován vyskakovacím oknem jako v případě vstupního požadavku na dostupnost letenky. Jsou mu navrhnuty alternativy pro podobné lety, které již obsahují dostatek volných míst pro právě vyplněné pasažéry. Nabídnuté alternativy jsou rovněž relevantní vzhledem k nedávnému itineráři z časového i lokačního hlediska.
+\noindent Uživatel při~objednávání letu vyplňuje údaje o~pasažérech. Ve výchozím formuláři~je předvyplněna možnost jednoho pasažéra. Uživatel má možnost přidat další pasažéry. Po přidání je požadavek na získání informací o~dostupnosti letu pro nový počet pasažérů. Je totiž možné, že uživatel má zájem rezervovat letenku pro více pasažérů, než je počet dostupných míst v~přepravním prostředku. Pokud by byl překročen počet dostupných míst přidáním více pasažérů je uživatel opět informován vyskakovacím oknem jako v~případě vstupního požadavku na dostupnost letenky. Jsou mu navrhnuty alternativy pro podobné lety, které již obsahují dostatek volných míst pro právě vyplněné pasažéry. Nabídnuté alternativy jsou rovněž relevantní vzhledem k~nedávnému itineráři~z~časového i~lokačního hlediska.
 
 \paragraph{Vyplnění povinných údajů} \mbox{}
 
-\noindent Pro vytvoření objednávky je nezbytné, aby uživatel vyplnil všechny povinné části formuláře. Mezi povinné prvky patří informace o pasažérech, včetně data narození, státního občanství a pohlaví. Ke každému pasažéru je nutné zvolit ze seznamu dostupných zavazadel. Pro zjednodušení procesu je již předvyplněn základní typ příručního zavazadla - malá osobní taška. Dále je nutné vybrat odbavované zavazadlo. Nabídka se liší vzhledem v rámci dopravních společností, typu přepravku i jednotlivém itineráři. Předvybrán je nejlevnější možný druh. Dále je povinné vyplnit kontaktní údaje registrátora objednávky pro usnadnění komunikace a zaslání letenek. Některé letecké společnosti mají závislost mezi zavazadly a prioritním nástupem, jako doplňkové služby. Pro určitý typ zavazadla je nutné mít zakoupený i prioritní nástup. Pokud takový itinerář obsahuje leteckou společnost s touto podmínkou je i toto pole povinné. 
+\noindent Pro vytvoření objednávky je nezbytné, aby uživatel vyplnil všechny povinné části formuláře. Mezi povinné prvky patří informace o~pasažérech, včetně data narození, státního občanství a~pohlaví. Ke každému pasažéru je nutné zvolit ze seznamu dostupných zavazadel. Pro zjednodušení procesu je již předvyplněn základní typ příručního zavazadla - malá osobní taška. Dále je nutné vybrat odbavované zavazadlo. Nabídka se liší vzhledem v~rámci dopravních společností, typu přepravku i~jednotlivém itineráři. Předvybrán je nejlevnější možný druh. Dále je povinné vyplnit kontaktní údaje registrátora objednávky pro usnadnění komunikace a~zaslání letenek. Některé letecké společnosti mají závislost mezi zavazadly a~prioritním nástupem, jako doplňkové služby. Pro určitý typ zavazadla je nutné mít zakoupený i~prioritní nástup. Pokud takový itinerář obsahuje leteckou společnost s~touto podmínkou je i~toto pole povinné. 
 
 \paragraph{Zvolení úrovně služeb} \mbox{}
 
-\noindent Uživatel má možnost v současném řešení zvolit míru služeb, které mu portál Kiwi.com poskytuje před nebo v průběhu letu. Na výběr má tři úrovně. První úroveň je v ceně letenky a zahrnuje Kiwi.com garanci. Garance spočívá v ochraně cestujících v případě problémů. Společnost Kiwi.com nabízí v případě zpoždění letů při přestupu náhradní ubytování i navazující letenky, pokud jsou splněny určité podmínky o kterých rozhoduje zákaznická podpora. Dalším předmětem základní úrovně služeb je stanovená cena 30 eur při požadavku na zákaznickou podporu ohledně speciálních požadavků, jako změna letu a podobně. 
+\noindent Uživatel má možnost v~současném řešení zvolit míru služeb, které mu portál Kiwi.com poskytuje před nebo v~průběhu letu. Na výběr má tři~úrovně. První úroveň je v~ceně letenky a~zahrnuje Kiwi.com garanci. Garance spočívá v~ochraně cestujících v~případě problémů. Společnost Kiwi.com nabízí v~případě zpoždění letů při~přestupu náhradní ubytování i~navazující letenky, pokud jsou splněny určité podmínky o~kterých rozhoduje zákaznická podpora. Dalším předmětem základní úrovně služeb je stanovená cena 30 eur při~požadavku na zákaznickou podporu ohledně speciálních požadavků, jako změna letu a~podobně. 
 
 \begin{figure}[H]
     \centering
@@ -35,81 +35,81 @@ Po nalezené letence jednou z výše uvedených možností nastává proces reze
     \label{servicepackages}
 \end{figure}
 
-Střední úroveň služeb obsahuje navíc oproti základnímu balíčku SMS notifikace a levnější požadavky na zákaznickou podporu. Cena požadavku pak stojí deset eur. A celková cena tohoto balíčku je ohodnocena také deset eur.
-Prémiová úroveň služeb stojí zákazníka 20 eur a je v ní obsažena navíc oproti ostatním úrovním vyšší priorita řešení problému v případě nutnosti, zdarma požadavky na zákaznickou podporu a poukaz na příští let v hodnotě dvacet eur.
-Cena zvoleného balíčku se přičte k celkové ceně objednávky. 
+Střední úroveň služeb obsahuje navíc oproti základnímu balíčku SMS notifikace a~levnější požadavky na zákaznickou podporu. Cena požadavku pak stojí deset eur. A~celková cena tohoto balíčku je ohodnocena také deset eur.
+Prémiová úroveň služeb stojí zákazníka 20 eur a~je v~ní obsažena navíc oproti ostatním úrovním vyšší priorita řešení problému v~případě nutnosti, zdarma požadavky na zákaznickou podporu a~poukaz na příští let v~hodnotě dvacet eur.
+Cena zvoleného balíčku se přičte k~celkové ceně objednávky. 
 
-\paragraph{Souhlasení s podmínkami} \mbox{}
+\paragraph{Souhlasení s~podmínkami} \mbox{}
 
-\noindent Před dokončením objednávky je nutné, aby uživatel potvrdil souhlas s obchodními podmínkami a jejich přečtení zároveň s podmínkami o ochraně osobních údajů, které jsou v souladu s GDRP nařízením evropské unie.
+\noindent Před dokončením objednávky je nutné, aby uživatel potvrdil souhlas s~obchodními podmínkami a~jejich přečtení zároveň s~podmínkami o~ochraně osobních údajů, které jsou v~souladu s~GDRP nařízením evropské unie.
 
 \paragraph{Provedení platby} \mbox{}
 
-\noindent Posledním krokem pro dokončení rezervace je zaplacení celkové objednávky. Existuje několik způsobů, jak uhradit celkovou částku. V případě přihlášeného uživatele lze uhradit rezervaci kredity, které má k dispozici na účtu ve shodující se měně s měnou objednávky. Další možností je platba kartou nebo PayPalem.
+\noindent Posledním krokem pro dokončení rezervace je zaplacení celkové objednávky. Existuje několik způsobů, jak uhradit celkovou částku. V~případě přihlášeného uživatele lze uhradit rezervaci kredity, které má k~dispozici na účtu ve shodující se měně s~měnou objednávky. Další možností je platba kartou nebo PayPalem.
 
 \podsekce{Výstupní podmínky}
 
 \paragraph{Uložení provedené rezervace} \mbox{}
 
-\noindent Zaplacená rezervace je k dalšímu zpracování nutná nejdříve uložit do systému. K objednávce se evidují i dodatečné informace. Objednávku je nutné rezervovat u jednotlivých leteckých přepravců a pozemních přepravních společností. Zakoupení letu je provedeno automaticky. Může ovšem nastat selhání při zpracování. V takovém případě je nutné, aby byl let u partnerů zakoupen ručně. Uložené rezervace je nutné uchovávat nejméně 3 měsíce po uskutečnění letu v případě reklamací.
+\noindent Zaplacená rezervace je k~dalšímu zpracování nutná nejdříve uložit do systému. K~objednávce se evidují i~dodatečné informace. Objednávku je nutné rezervovat u~jednotlivých leteckých přepravců a~pozemních přepravních společností. Zakoupení letu je provedeno automaticky. Může ovšem nastat selhání při~zpracování. V~takovém případě je nutné, aby byl let u~partnerů zakoupen ručně. Uložené rezervace je nutné uchovávat nejméně 3 měsíce po uskutečnění letu v~případě reklamací.
 
 \paragraph{Potvrzení rezervace} \mbox{}
 
-\noindent Systém po dokončení rezervace informuje o proběhlé objednávce uživatele prostřednictvím emailu zaslaného na emailovou adresu, který byla vyplněna v rezervaci. Součástí potvrzení jsou i údaje, pomocí kterých je možné spravovat objednávku v administraci.
+\noindent Systém po dokončení rezervace informuje o~proběhlé objednávce uživatele prostřednictvím emailu zaslaného na emailovou adresu, který byla vyplněna v~rezervaci. Součástí potvrzení jsou i~údaje, pomocí kterých je možné spravovat objednávku v~administraci.
 
 \paragraph{Zaslání letenek} \mbox{}
 
-\noindent Dostatečnou dobu před odletem jsou zákazníkovi odeslány palubní lístky v elektronické podobě, kterými se zákazník prokáže před odletem v dané letecké společnosti. 
+\noindent Dostatečnou dobu před odletem jsou zákazníkovi odeslány palubní lístky v~elektronické podobě, kterými se zákazník~prokáže před odletem v~dané letecké společnosti. 
 
 \paragraph{Umožnění změny ve správě objednávek} \mbox{}
 
-\noindent V potvrzovacím emailu byly doručeny informace o možnosti zobrazení a úpravy údajů o letu. Přihlášení do administrace probíhá přes webový portál. Součástí portálu je i možnost dokoupení dalších doplňkových služeb a odkaz na zákaznickou podporu v případě problému. 
+\noindent V~potvrzovacím emailu byly doručeny informace o~možnosti zobrazení a~úpravy údajů o~letu. Přihlášení do administrace probíhá přes webový portál. Součástí portálu je i~možnost dokoupení dalších doplňkových služeb a~odkaz na zákaznickou podporu v~případě problému. 
 
 \paragraph{Zaslání informací před odletem} \mbox{}
 
-\noindent Před odletem systém dodatečně odešle pokyny spojené s cestou. Cílem tohoto emailu je informování uživatele o specifických informací pro konkrétní let. Uživatel nemá možnost na email odpovědět, neboť byl odeslán systémem. V emailu je uveden alternativní způsob komunikace přes zákaznickou podporu.
+\noindent Před odletem systém dodatečně odešle pokyny spojené s~cestou. Cílem tohoto emailu je informování uživatele o~specifických informací pro konkrétní let. Uživatel nemá možnost na email odpovědět, neboť byl odeslán systémem. V~emailu je uveden alternativní způsob komunikace přes zákaznickou podporu.
 
 \podsekce{Vnitřní události procesu}
 
-\paragraph{Změna ceny letenek při objednávce} \mbox{}
+\paragraph{Změna ceny letenek při~objednávce} \mbox{}
 
-\noindent V průběhu rezervace může nastat situace, že se navýší cena letenky. V průběhu objednávky se každých 15 vteřin ověřuje, zda je itinerář dostupný za stejnou cenu, jaká byla uživateli zobrazena při výběru letenky. Při změně ceny systém informuje uživatele vyskakovacím oknem, který zobrazí varování a aktuální cenu. Pro pokračování v objednávkovém procesu je nutné akceptovat cenu novou nebo vybrat z alternativních možností. Alternativní nabídka letů je personalizovaná na základě letu u kterého se změnila cena.
+\noindent V~průběhu rezervace může nastat situace, že se navýší cena letenky. V~průběhu objednávky se každých 15 vteřin ověřuje, zda je itinerář dostupný za stejnou cenu, jaká byla uživateli zobrazena při~výběru letenky. Při~změně ceny systém informuje uživatele vyskakovacím oknem, který zobrazí varování a~aktuální cenu. Pro pokračování v~objednávkovém procesu je nutné akceptovat cenu novou nebo vybrat z~alternativních možností. Alternativní nabídka letů je personalizovaná na základě letu u~kterého se změnila cena.
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-19-24-34.png}{0.9\textwidth}{!}
-    \caption{Signalizace změny ceny letenek při objednávce}
+    \caption{Signalizace změny ceny letenek při~objednávce}
     \label{pricechange}
 \end{figure}
 
-\paragraph{Neaktivita při objednávání} \mbox{}
+\paragraph{Neaktivita při~objednávání} \mbox{}
 
-\noindent V případě dlouhé neaktivity systém přeruší kontrolování aktuálnosti letu a cen z důvodu ušetření nákladů na vytíženost serverů. Tento neaktivní stav nastává, pokud uživatel několik desítek minut navykoná při objednávce libovolnou interakci.
+\noindent V~případě dlouhé neaktivity systém přeruší kontrolování aktuálnosti letu a~cen z~důvodu ušetření nákladů na vytíženost serverů. Tento neaktivní stav nastává, pokud uživatel několik desítek minut navykoná při~objednávce libovolnou interakci.
 
 
-\paragraph{Opuštění formuláře v procesu vyplňování} \mbox{}
+\paragraph{Opuštění formuláře v~procesu vyplňování} \mbox{}
 
-\noindent Pokud uživatel již vyplnil některé z polí formuláře a pokusí se zavřít záložku nebo prohlížeč bude varován, že vyplněné údaje ztratí. Tímto systém předchází možnosti, že uživatel nedopatřením zavře vyplněnou objednávku, která ještě není zpracována.
+\noindent Pokud uživatel již vyplnil některé z~polí formuláře a~pokusí se zavřít záložku nebo prohlížeč bude varován, že vyplněné údaje ztratí. Tímto systém předchází možnosti, že uživatel nedopatřením zavře vyplněnou objednávku, která ještě není zpracována.
 
-\paragraph{Vykoupení letu v průběhu rezervace} \mbox{}
+\paragraph{Vykoupení letu v~průběhu rezervace} \mbox{}
 
-\noindent V systému může nastat situace, kdy se volné místa vyprodají dříve, než uživatel stihne vyplnit rezervační formulář a uskutečnit platbu. Systém zobrazí vyskakovací okno, které je podobné jako při změně ceny letu. Není zde ovšem možnost přijmout cenu. Pouze je umožněna volba z několika přizpůsobených alternativ, nebo ukončení objednávkového procesu.
+\noindent V~systému může nastat situace, kdy se volné místa vyprodají dříve, než uživatel stihne vyplnit rezervační formulář a~uskutečnit platbu. Systém zobrazí vyskakovací okno, které je podobné jako při~změně ceny letu. Není zde ovšem možnost přijmout cenu. Pouze je umožněna volba z~několika přizpůsobených alternativ, nebo ukončení objednávkového procesu.
 
 \podsekce{Vnější události procesu}
 
 \paragraph{Krach letecké společnosti} \mbox{}
 
-\noindent Jako vnější událost procesu lze označit krach letecké společnosti. V případě, že zákazník má již zarezervovaný let s danou společností, spadá tento problém do právnické kategorie vliv třetí moci. Na základě smluvních podmínek je tento požadavek vyřešen v rámci komunikace se zákazníkem pomocí telefonické podpory nebo portálu pro správu rezervací.
+\noindent Jako vnější událost procesu lze označit krach letecké společnosti. V~případě, že zákazník~má již zarezervovaný let s~danou společností, spadá tento problém do právnické kategorie vliv třetí moci. Na základě smluvních podmínek je tento požadavek vyřešen v~rámci komunikace se zákazníkem pomocí telefonické podpory nebo portálu pro správu rezervací.
 
 \paragraph{Zrušení letu} \mbox{}
 
-\noindent Let může být zrušen danou leteckou společností z několika důvodů. Kiwi.com jako zpotředkovatel tento problém řeší individuálně dle přičin zrušení. Uživatel je informován telefonicky, emailem nebo v rámci portálu pro správu provedených rezervací. Náhradní let nebo odškodnění se řídí zakoupeným pojištěním, nebo vybráním úrovně služeb Kiwi.com.
+\noindent Let může být zrušen danou leteckou společností z~několika důvodů. Kiwi.com jako zpotředkovatel tento problém řeší individuálně dle přičin zrušení. Uživatel je informován telefonicky, emailem nebo v~rámci portálu pro správu provedených rezervací. Náhradní let nebo odškodnění se řídí zakoupeným pojištěním, nebo vybráním úrovně služeb Kiwi.com.
 
 \podsekce{Podniková pravidla}
 
 \paragraph{Časové limity rezervace před odletem} \mbox{}
 
-\noindent Časový limit pro nákup letenky je maximálně 3 hodiny před odletem. Toto limitační pravidlo je stanoveno k zabránění problémům při procesu objednávky. Zpracování objednávky je časově náročné a při kratší době není zajištěno, že se provede úspěšně. V případě, že doba do odletu je nižší, než tento limit, zákazník je v procesu objednávky přerušen informační hláškou, že let již není k dispozici a je mu navrženo, aby si vybral podobný ze seznamu alternativních letů. Uživatel je varován o ukončení možnosti rezervace hláškou pod celkovým shrnutím objednávky. 
+\noindent Časový limit pro nákup letenky je maximálně 3 hodiny před odletem. Toto limitační pravidlo je stanoveno k~zabránění problémům při~procesu objednávky. Zpracování objednávky je časově náročné a~při~kratší době není zajištěno, že se provede úspěšně. V~případě, že doba do odletu je nižší, než tento limit, zákazník~je v~procesu objednávky přerušen informační hláškou, že let již není k~dispozici a~je mu navrženo, aby si vybral podobný ze seznamu alternativních letů. Uživatel je varován o~ukončení možnosti rezervace hláškou pod celkovým shrnutím objednávky. 
 
 \begin{figure}[H]
     \centering
@@ -120,14 +120,14 @@ Cena zvoleného balíčku se přičte k celkové ceně objednávky.
 
 \paragraph{Dostupnost letenek dlouhou dobu před odletem} \mbox{}
 
-\noindent Data společnosti Kiwi.com jsou závislá na datech jednotlivých leteckých společností. Každá letecké společnost má svoje definované procesy, pomocí kterých se zpřístupňují letenky v delším časovém období před odletem. Uživatel v rámci vyhledávání nenalezne lety, které ještě letecké společnosti nezveřejnili. Není tedy možné ani zarezervovat tento let prostřednictvím portálů Kiwi.com. Pro jednotlivé letecké společnosti jsou tyto pravidla evidována a na základě nich probíhá získávání informací o itinerářích v dostupný časový okamžik.
+\noindent Data společnosti Kiwi.com jsou závislá na datech jednotlivých leteckých společností. Každá letecké společnost má svoje definované procesy, pomocí kterých se zpřístupňují letenky v~delším časovém období před odletem. Uživatel v~rámci vyhledávání nenalezne lety, které ještě letecké společnosti nezveřejnili. Není tedy možné ani zarezervovat tento let prostřednictvím portálů Kiwi.com. Pro jednotlivé letecké společnosti jsou tyto pravidla evidována a~na základě nich probíhá získávání informací o~itinerářích v~dostupný časový okamžik.
 
 \paragraph{Omezení výběru míst} \mbox{}
 
-\noindent Získávání informací o výběru míst je datově náročná činnost. Probíhá na backendové straně architektury, aby nezatěžovala klientské zařízení. Následně jsou vypočítány a odeslány na frontendovou část dostupné možnosti. Uživatel má na výběr podle základních vlastností spojené s umístěním sedadla. Předvybraná možnost je náhodné sedadlo. Následují příplatkové možnosti u kterých je i uvedena cena navíc přičtená k celkové ceně objednávky.
+\noindent Získávání informací o~výběru míst je datově náročná činnost. Probíhá na backendové straně architektury, aby nezatěžovala klientské zařízení. Následně jsou vypočítány a~odeslány na frontendovou část dostupné možnosti. Uživatel má na výběr podle základních vlastností spojené s~umístěním sedadla. Předvybraná možnost je náhodné sedadlo. Následují příplatkové možnosti u~kterých je i~uvedena cena navíc přičtená k~celkové ceně objednávky.
 \begin{itemize}
-    \item U okna
-    \item U uličky
+    \item U~okna
+    \item U~uličky
     \item Více místa na nohy
 \end{itemize}
 
@@ -138,15 +138,15 @@ Cena zvoleného balíčku se přičte k celkové ceně objednávky.
     \label{seating}
 \end{figure}
 
-Sedadla lze zvolit jednotlivě pro cestu tam i cestu zpět, jelikož na rozdílné lety se může lišit dostupnost volných sedadel.
+Sedadla lze zvolit jednotlivě pro cestu tam i~cestu zpět, jelikož na rozdílné lety se může lišit dostupnost volných sedadel.
 
 \paragraph{Omezení dostupnosti zavazadel} \mbox{}
 
-\noindent Možnosti výběru zavazadel jsou specifické pro jednotlivé lety i letecké společnosti. Každá letecká společnost má svoji strategii na cenotvorbu. Systém musí tuto cenotvorbu a dostupnost respektovat. Uživateli má tedy možnost vybrat jen dostupné zavazadla. Existují dva typy zavazadel. Příruční zavazadla a odbavené zavazadla. Příruční zavazadla jsou specifické tím, že je možné je vzít sebou na palubu. Obvykle mají menší rozměry. Odbavené zavazadla mohou nabývat větších rozměrů a jsou také nabízeny za vyšší cenu. U některých leteckých společností je výběr zavazadel limitován podmínkou mít zakoupen i přednostní nástup. Systém v tomto případě projevení zájmu uživatele automaticky přidá i tuto doplňkovou službu.
+\noindent Možnosti výběru zavazadel jsou specifické pro jednotlivé lety i~letecké společnosti. Každá letecká společnost má svoji strategii na cenotvorbu. Systém musí tuto cenotvorbu a~dostupnost respektovat. Uživateli má tedy možnost vybrat jen dostupné zavazadla. Existují dva typy zavazadel. Příruční zavazadla a~odbavené zavazadla. Příruční zavazadla jsou specifické tím, že je možné je vzít sebou na palubu. Obvykle mají menší rozměry. Odbavené zavazadla mohou nabývat větších rozměrů a~jsou také nabízeny za vyšší cenu. U~některých leteckých společností je výběr zavazadel limitován podmínkou mít zakoupen i~přednostní nástup. Systém v~tomto případě projevení zájmu uživatele automaticky přidá i~tuto doplňkovou službu.
 
 \paragraph{Úrovně nadstandardních služeb} \mbox{}
 
-\noindent Systém nabízí tři úrovně doplňkových služeb. Úrovně se mezi sebou liší cenově a mírou poskytování služeb. Služby jsou uvedeny v tabulce \ref{table:spOldOffers}.
+\noindent Systém nabízí tři~úrovně doplňkových služeb. Úrovně se mezi sebou liší cenově a~mírou poskytování služeb. Služby jsou uvedeny v~tabulce \ref{table:spOldOffers}.
 
 \begin{table}[H]
     \begin{tabular}{|p{3cm}|p{3cm}|l|l|}
@@ -157,11 +157,11 @@ Sedadla lze zvolit jednotlivě pro cestu tam i cestu zpět, jelikož na rozdíln
         \textbf{SMS notifikace}           & Ne                         & Ano                        & Ano                        \\ \hline
         \textbf{Poukázka}                 & 0                          & 0                          & 20 Eur                     \\ \hline
         \end{tabular}
-    \caption{Současný obsah nabídky balíčků a jejich cena}
+    \caption{Současný obsah nabídky balíčků a~jejich cena}
     \label{table:spOldOffers}
 \end{table}
 
-V rámci služeb není předem uveden poplatek za zrušení letu v případě základní úrovně podpory. Na všechny balíčky se v případě problému vztahuje Kiwi záruka. Tato záruka slouží v případě nečekaných problémů, například zpoždění letu, na který navazuje další let. Při řešení těchto problému o právu na finační náhradu, nebo kompenzaci v podobě zajištění ubytování a rezervace nového letu rozhoduje zákaznická podpora. To se může jevit jako netransparentní proces pro zákazníka. 
+V~rámci služeb není předem uveden poplatek za zrušení letu v~případě základní úrovně podpory. Na všechny balíčky se v~případě problému vztahuje Kiwi záruka. Tato záruka slouží v~případě nečekaných problémů, například zpoždění letu, na který navazuje další let. Při~řešení těchto problému o~právu na finační náhradu, nebo kompenzaci v~podobě zajištění ubytování a~rezervace nového letu rozhoduje zákaznická podpora. To se může jevit jako netransparentní proces pro zákazníka. 
 
 \newpage
 \newpage
@@ -176,8 +176,8 @@ V rámci služeb není předem uveden poplatek za zrušení letu v případě z�
 
 \podsekce{Shrnutí}
 
-Analýzou současného procesu provádění objednávky z pohledu zákazníka byla definována skupina problému nacházející se v současném řešení. Zákazník v průběhu objednávky není detailně a pochopitelně informován o zárukách, které mu Kiwi.com poskytuje a není specifikováno krytí nákladů v případě problémů ze strany Kiwi.com. 
+Analýzou současného procesu provádění objednávky z~pohledu zákazníka byla definována skupina problému nacházející se v~současném řešení. Zákazník~v~průběhu objednávky není detailně a~pochopitelně informován o~zárukách, které mu Kiwi.com poskytuje a~není specifikováno krytí nákladů v~případě problémů ze strany Kiwi.com. 
 
-Dále volba doplňkových balíčků splývá s ostatními službami a není dostatečně zdůrazněna důležitost jejich volby. Dalším velmi podstatným problémem je nemožnost zákazníka zvolit požadovanou velikost záruky v případě problémů. Vše je kryto obecnou Kiwi.com Guarantee, která ovšem nemusí vyhovovat zákazníkům, kteří by ocenili nadstandardní záruky a pojištění, nebo naopak zákazníkům, kteří nepotřebují záruku a pojištění za cenu dražší letenky.
+Dále volba doplňkových balíčků splývá s~ostatními službami a~není dostatečně zdůrazněna důležitost jejich volby. Dalším velmi podstatným problémem je nemožnost zákazníka zvolit požadovanou velikost záruky v~případě problémů. Vše je kryto obecnou Kiwi.com Guarantee, která ovšem nemusí vyhovovat zákazníkům, kteří by ocenili nadstandardní záruky a~pojištění, nebo naopak zákazníkům, kteří nepotřebují záruku a~pojištění za cenu dražší letenky.
 
-Je nutné se zaměřit na poskytnutí volby uživateli o jak velkou záruku a jak nadstandardní služby má zájem. Součástí této volby by se zároveň měla zvýšit informovanost uživatele o službých Kiwi.com. Další zaměření by mělo vést k lepší propagaci doplňkových balíčků a zvýšení zisku z jejich prodeje. 
+Je nutné se zaměřit na poskytnutí volby uživateli o~jak velkou záruku a~jak nadstandardní služby má zájem. Součástí této volby by se zároveň měla zvýšit informovanost uživatele o~službých Kiwi.com. Další zaměření by mělo vést k~lepší propagaci doplňkových balíčků a~zvýšení zisku z~jejich prodeje. 

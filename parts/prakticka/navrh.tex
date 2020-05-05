@@ -1,18 +1,18 @@
 \sekce{Detailní návrh řešení požadavků}
 
 \podsekce{Návrh modelu}
-Návrhem modelu jsou ujasněny požadavky z technické perspektivy, které markantně zrychlí a usnadní následnou implementaci. Korektně definované modely zamezí opakovaným změnám implementačních řešení, které většinou nastávají v důsledku nedostatečného uvědomění s ohledem na celkové požadavky. 
+Návrhem modelu jsou ujasněny požadavky z~technické perspektivy, které markantně zrychlí a~usnadní následnou implementaci. Korektně definované modely zamezí opakovaným změnám implementačních řešení, které většinou nastávají v~důsledku nedostatečného uvědomění s~ohledem na celkové požadavky. 
 
-Jedná se tedy o globální pohled na architekturu aplikace, nebo její části. Specifikuje tok dat a jednotlivé vztahy mezi definovanými prvky modelu. Existuje spoustu druhů návrhů, diagramů a možností značení návrhu modelu. Je nutné ale zvolit takové druhy diagramů, které nejlépe zobrazují problematické části a specifické vztahy v rámci modelu. 
+Jedná se tedy o~globální pohled na architekturu aplikace, nebo její části. Specifikuje tok dat a~jednotlivé vztahy mezi definovanými prvky modelu. Existuje spoustu druhů návrhů, diagramů a~možností značení návrhu modelu. Je nutné ale zvolit takové druhy diagramů, které nejlépe zobrazují problematické části a~specifické vztahy v~rámci modelu. 
 
 \podsekce{Nestrukturovaná analýza požadavků}
-Nestrukturovanou analýzou požadavků jsou popsány hlavní požadavky na systém, které jsou rozděleny dle softwarového a hardwarového dopadu a jejich další řešení je součástí strukturované analýzy požadavků. Funkční požadavky definují zmíněné softwarové požadavky a nefunkční požadavky obsahují hardwarové požadavky.
+Nestrukturovanou analýzou požadavků jsou popsány hlavní požadavky na systém, které jsou rozděleny dle softwarového a~hardwarového dopadu a~jejich další řešení je součástí strukturované analýzy požadavků. Funkční požadavky definují zmíněné softwarové požadavky a~nefunkční požadavky obsahují hardwarové požadavky.
 
 \begin{itemize}
     \item Funkční požadavky
     \begin{itemize}
-        \item Informování uživatele o doplňkových službách v rámci letenky
-        \item Přidání uživatelům volbu míry doplňkových služeb a podpory
+        \item Informování uživatele o~doplňkových službách v~rámci letenky
+        \item Přidání uživatelům volbu míry doplňkových služeb a~podpory
         \item Zvýšení prodeje doplňkových služeb
         \item Snížení kontaktování zákaznické podpory 
     \end{itemize}
@@ -21,29 +21,29 @@ Nestrukturovanou analýzou požadavků jsou popsány hlavní požadavky na syst�
         \item Podpora prohlížeče Chrome verze 80, Firefox 72, Safari verze 13.0, Internetu Explorer 11
         \item Odezva všech požadavků maximálně 3 vteřiny po načtení rezervace
         \item Podpora rozlišení šířky od 320px do 4096px
-        \item Minimální hardwarové požadavky jsou 4GB RAM, 2 jádrový procesor s frekvencí 1.8 GHz
+        \item Minimální hardwarové požadavky jsou 4GB RAM, 2 jádrový procesor s~frekvencí 1.8 GHz
         \item Minimální rychlost připojení 4 Mbps
     \end{itemize}
 \end{itemize}
 
 \podsekce{Strukturovaná analýza požadavků -- případy užití}
 
-V rámci use case diagramu lze znázornit chování dostupných akcí, které mezi sebou interagují. Jednotlivé případy užití jsou popsány od příchodu uživatele na portál až po zaplacení rezervace a následné potvrzení rezervace. Dalšími možnostmi se již tento diagram možností nezabývá, protože jsou nad rámec řešené oblasti a nejsou ani předmětem implementace v rámci diplomové práce. Obecně se v diagramu definují aktoři, jejichž cílem je znázorňovat roli, kterou představuje zvolený typ uživatele systému. V tomto případě byli definováni dva typy aktorů:
+V~rámci use case diagramu lze znázornit chování dostupných akcí, které mezi sebou interagují. Jednotlivé případy užití jsou popsány od příchodu uživatele na portál až po zaplacení rezervace a~následné potvrzení rezervace. Dalšími možnostmi se již tento diagram možností nezabývá, protože jsou nad rámec řešené oblasti a~nejsou ani předmětem implementace v~rámci diplomové práce. Obecně se v~diagramu definují aktoři, jejichž cílem je znázorňovat roli, kterou představuje zvolený typ uživatele systému. V~tomto případě byli definováni dva typy aktorů:
 
 \paragraph{Aktor Zákazník} \mbox{}
 
-\noindent Uživatel, který má zájem o zakoupení letu, nebo pouze prohlíží možnosti nákupu
+\noindent Uživatel, který má zájem o~zakoupení letu, nebo pouze prohlíží možnosti nákupu
 
 \paragraph{Aktor Podpora} \mbox{}
 
-\noindent Autentizovaný uživatel, jehož cílem je řešení problému a pomoc zákazníkům. Má vyšší privilegia a zasahuje do procesu rezervace a činností následující po rezervaci.
+\noindent Autentizovaný uživatel, jehož cílem je řešení problému a~pomoc zákazníkům. Má vyšší privilegia a~zasahuje do procesu rezervace a~činností následující po rezervaci.
 
-Existuje mnoho způsobů, jak může aktor Zákazník přistoupit k rezervaci. Základní cesta vede přes plnohodnotné vyhledávání, kde Zákazník zadá počáteční a cílovou destinaci. Tato varianta je popsaná pomocí use case \textbf{Vyhledat konkrétní}destinaci. Volitelně také může zadat preferovaný časový interval. Další z možností je přes \textbf{Zobrazit nejoblíbenější} destinaci, kde se uživateli po příchodu na portál zobrazí výběr nejoblíbenějších destinací. Uživateli je tedy umožněno zvolit jednu z mnoha oblíbených destinací. Dále je také možnost filtrovat lety podle celé řady parametrů. 
-Ve všech případech pak nastává možnost zvolit konkrétní let a ten rezervovat. 
+Existuje mnoho způsobů, jak může aktor Zákazník~přistoupit k~rezervaci. Základní cesta vede přes plnohodnotné vyhledávání, kde Zákazník~zadá počáteční a~cílovou destinaci. Tato varianta je popsaná pomocí use case \textbf{Vyhledat konkrétní}destinaci. Volitelně také může zadat preferovaný časový interval. Další z~možností je přes \textbf{Zobrazit nejoblíbenější} destinaci, kde se uživateli po příchodu na portál zobrazí výběr nejoblíbenějších destinací. Uživateli je tedy umožněno zvolit jednu z~mnoha oblíbených destinací. Dále je také možnost filtrovat lety podle celé řady parametrů. 
+Ve všech případech pak nastává možnost zvolit konkrétní let a~ten rezervovat. 
 
-V případu užití \textbf{Vyplnit údaje o letu} (v obrázku vyznačen tučně) je shrnuta velmi komplexní činnost, pro kterou je vhodnější využít ostatních diagramů pro lepší srozumitelnost. V rámci use case diagramu by bylo nevhodné takto rozsáhlou funkcionalitu popisovat. Po provedení tohoto use casu se uživatel může přesunout k platbě za vyplněnou rezervaci. Po platbě má možnost editovat objednávku. 
+V~případu užití \textbf{Vyplnit údaje o~letu} (v~obrázku vyznačen tučně) je shrnuta velmi komplexní činnost, pro kterou je vhodnější využít ostatních diagramů pro lepší srozumitelnost. V~rámci use case diagramu by bylo nevhodné takto rozsáhlou funkcionalitu popisovat. Po provedení tohoto use casu se uživatel může přesunout k~platbě za vyplněnou rezervaci. Po platbě má možnost editovat objednávku. 
 
-Od zákaznické podpory je pak odeslán zákazníkovi potvrzující email shrnující objednávku. Obsahem je i odkaz do administrace k editaci letu.
+Od zákaznické podpory je pak odeslán zákazníkovi potvrzující email shrnující objednávku. Obsahem je i~odkaz do administrace k~editaci letu.
 
 \begin{figure}[H]
     \centering
@@ -53,43 +53,43 @@ Od zákaznické podpory je pak odeslán zákazníkovi potvrzující email shrnuj
 \end{figure}
 
 \podsekce{Tvorba objednávky}
-Následující diagram aktivit (obrázek č. \ref{activity}) zobrazuje případ použití nazvaný \textbf{Vyplnit údaje o letu} z již popsaného diagramu případu užití. Tento diagram aktivit dokáže přehledněji a podrobněji popsat jednotlivé kroky tohoto složitého procesu. Optimální zachycení aktivit je uskutečněno pomocí definování dvou rolí - zákazník a systém, kde každá role leží ve vlastní oblasti. 
+Následující diagram aktivit (obrázek č. \ref{activity}) zobrazuje případ použití nazvaný \textbf{Vyplnit údaje o~letu} z~již popsaného diagramu případu užití. Tento diagram aktivit dokáže přehledněji a~podrobněji popsat jednotlivé kroky tohoto složitého procesu. Optimální zachycení aktivit je uskutečněno pomocí definování dvou rolí - zákazník~a~systém, kde každá role leží ve vlastní oblasti. 
 
-První akce uvádějící tento diagram je \textbf{Vyplnění informací o pasažérech}. Akce není rozvedená do podrobných detailů, zejména protože se přímo nedotýka oblasti řešení problému. Systém vyplněné údaje validuje. Pokud jsou údaje v pořádku, uživatel je přesunut na další krok, kde začíná volba tarifů a balíčků. Následuje rozhodovací proces o délce letu. V případě letu s dobou odletu do 48mi hodin je uživateli zobrazena informativní hláška a je mu umožněna volba mezi všemi dostupnými balíčky. 
+První akce uvádějící tento diagram je \textbf{Vyplnění informací o~pasažérech}. Akce není rozvedená do podrobných detailů, zejména protože se přímo nedotýka oblasti řešení problému. Systém vyplněné údaje validuje. Pokud jsou údaje v~pořádku, uživatel je přesunut na další krok, kde začíná volba tarifů a~balíčků. Následuje rozhodovací proces o~délce letu. V~případě letu s~dobou odletu do 48mi hodin je uživateli zobrazena informativní hláška a~je mu umožněna volba mezi všemi dostupnými balíčky. 
 
-V opačném případě se vypočítají ceny na základě druhu aerolinky. Více o tomto rozhodovacím procesu je popsáno v BPMN diagramu. Vypočítané tarify jsou nabidnuty uživateli. Tarif, který uživatel je opět zpracován systémem. Systém začne volbu zpracovávat. Při volbě nejlevnějšího tarifu zobrazí varovnou hlášku, kde uživatele vyzve k potvrzení své volby, nebo ke zvolení vyššího tarifu. Vybraný tarif uloží do objednávky a nabídne uživateli volbu mezi balíčky. Tento scénář je z části možné přeskočit volbou nejdražšího tarifu, který má již nejvyšší balíček zahrnutý v sobě a uživatel tedy už má na výběr pouze zvolit sedadla a prioritní nástup. Touto akcí diagram aktivit končí. Následující procesy jsou předmětem diagramu případu užití.
+V~opačném případě se vypočítají ceny na základě druhu aerolinky. Více o~tomto rozhodovacím procesu je popsáno v~BPMN diagramu. Vypočítané tarify jsou nabidnuty uživateli. Tarif, který uživatel je opět zpracován systémem. Systém začne volbu zpracovávat. Při~volbě nejlevnějšího tarifu zobrazí varovnou hlášku, kde uživatele vyzve k~potvrzení své volby, nebo ke zvolení vyššího tarifu. Vybraný tarif uloží do objednávky a~nabídne uživateli volbu mezi balíčky. Tento scénář je z~části možné přeskočit volbou nejdražšího tarifu, který má již nejvyšší balíček zahrnutý v~sobě a~uživatel tedy už má na výběr pouze zvolit sedadla a~prioritní nástup. Touto akcí diagram aktivit končí. Následující procesy jsou předmětem diagramu případu užití.
 
 \clearpage
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-21-28-06.png}{0.9\textwidth}{!}
-    \caption{Diagram aktivit -- vyplnění údajů o letu}
+    \caption{Diagram aktivit -- vyplnění údajů o~letu}
     \label{activity}
 \end{figure}
 
-\podsekce{Proces volby tarifů a balíčků}
-Pomocí procesního diagramu je definována komunikace mezi zákazníkem a systémem. Tento proces začíná přechodem zákazníka z kroku vyplnění pasažérů a končí přechodem na další krok, kde se nachází platba, nebo vybrání dalších služeb, pokud jsou dostupné v závislosti na typ letu.
+\podsekce{Proces volby tarifů a~balíčků}
+Pomocí procesního diagramu je definována komunikace mezi zákazníkem a~systémem. Tento proces začíná přechodem zákazníka z~kroku vyplnění pasažérů a~končí přechodem na další krok, kde se nachází platba, nebo vybrání dalších služeb, pokud jsou dostupné v~závislosti na typ letu.
 
-Systém jako první obdrží informaci, že má začít zpracovávat tarify a následně je zobrazit. Následně se systém rozhoduje, zda vůbec jsou tarify k dispozici. To je v rámci BPMN diagramu zobrazeno bránou Doba odletu, kde v případě, že do odletu zbývá méně než 48 hodin pošle zákazníkovi pouze zprávu s varováním o nemožnosti zrušit, nebo změnit let. V opačném případě systém opět začne rozhodovací proces, zda jde o nízkonákladový let. Nízkonákladový let, znamená, že itinerář obsahuje alespoň jednu aerolinku, kde jsou špatné zkušenosti s poskytování náhrad v případě problémů. Pokud opravdu itinerář obsahuje nízkonákladovou společnost, pak je k tarifům připočítaná speciální sazba navíc, aby byly pokryty případné náklady. Takto vypočtené tarify jsou zobrazeny zákazníkovi, kterému je umožněno jeden z tarifů zvolit. 
-Pokud byl zvolen nejlevnější tarif, tak systém zobrazí varovnou vyskakovací hlášku, zda si je opravdu uživatel jistý s volbou a zda je seznámen s riziky, kterou tato volba obsahuje. Uživatel má v tomto případě dvě možnosti reakce. Opravdu potvrdit volbu nejlevnějšího tarifu, nebo zvolit tarif Standard. 
+Systém jako první obdrží informaci, že má začít zpracovávat tarify a~následně je zobrazit. Následně se systém rozhoduje, zda vůbec jsou tarify k~dispozici. To je v~rámci BPMN diagramu zobrazeno bránou Doba odletu, kde v~případě, že do odletu zbývá méně než 48 hodin pošle zákazníkovi pouze zprávu s~varováním o~nemožnosti zrušit, nebo změnit let. V~opačném případě systém opět začne rozhodovací proces, zda jde o~nízkonákladový let. Nízkonákladový let, znamená, že itinerář obsahuje alespoň jednu aerolinku, kde jsou špatné zkušenosti s~poskytování náhrad v~případě problémů. Pokud opravdu itinerář obsahuje nízkonákladovou společnost, pak je k~tarifům připočítaná speciální sazba navíc, aby byly pokryty případné náklady. Takto vypočtené tarify jsou zobrazeny zákazníkovi, kterému je umožněno jeden z~tarifů zvolit. 
+Pokud byl zvolen nejlevnější tarif, tak systém zobrazí varovnou vyskakovací hlášku, zda si je opravdu uživatel jistý s~volbou a~zda je seznámen s~riziky, kterou tato volba obsahuje. Uživatel má v~tomto případě dvě možnosti reakce. Opravdu potvrdit volbu nejlevnějšího tarifu, nebo zvolit tarif Standard. 
 
-Dalším procesem systému je rozhodnout, které balíčky se mají uživateli dále zobrazit. Jedinou možností, kdy uživatel nevybírá mezi balíčky je situace, kdy vybral nejvyšší možný tarif. Touto činností se uživatel přímo přesunou na další krok a byl mu přiřazen i nejvyšší možný balíček. V případě nejlevnější varianty tarifu se zobrazují na výběr všechny 3 balíčky. Další varianta výpočtu systému je zobrazení pouze dvou balíčků. Tento scénář nastává po volbě Standard tarifu. 
+Dalším procesem systému je rozhodnout, které balíčky se mají uživateli dále zobrazit. Jedinou možností, kdy uživatel nevybírá mezi balíčky je situace, kdy vybral nejvyšší možný tarif. Touto činností se uživatel přímo přesunou na další krok a~byl mu přiřazen i~nejvyšší možný balíček. V~případě nejlevnější varianty tarifu se zobrazují na výběr všechny 3 balíčky. Další varianta výpočtu systému je zobrazení pouze dvou balíčků. Tento scénář nastává po volbě Standard tarifu. 
 
-Po volbě uživateli mezi balíčky je zvolený balíček systémem uložen do košíku (objednávky) a uživatel je přesměrován na další krok. Tato činnost je ukončena jako koncová v rámci BPMN diagramu.
+Po volbě uživateli mezi balíčky je zvolený balíček systémem uložen do košíku (objednávky) a~uživatel je přesměrován na další krok. Tato činnost je ukončena jako koncová v~rámci BPMN diagramu.
 
 \clearpage
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-21-33-22.png}{0.9\textwidth}{!}
-    \caption{BPMN diagram procesu volby tarifů a balíčků}
+    \caption{BPMN diagram procesu volby tarifů a~balíčků}
     \label{BPMNticketfare}
 \end{figure}
 
 \podsekce{Doménový model}
 
-Doménový model je systém abstrakce, která popisuje vybrané aspekty z oblasti informací o vztazích daných domén. Diagram doménového modelu je oproti diagramu tříd zjednodušený tím, že neobsahuje jednotlivé atributy a metody. Tohle zjednodušení je vhodné v rámci zaměření této diplomové práce zejména na frontendovou implementaci. Není tedy nutné definovat jednotlivé metody a atributy, které vhodněji zobrazují jiné specifikace.
+Doménový model je systém abstrakce, která popisuje vybrané aspekty z~oblasti informací o~vztazích daných domén. Diagram doménového modelu je oproti diagramu tříd zjednodušený tím, že neobsahuje jednotlivé atributy a~metody. Tohle zjednodušení je vhodné v~rámci zaměření této diplomové práce zejména na frontendovou implementaci. Není tedy nutné definovat jednotlivé metody a~atributy, které vhodněji zobrazují jiné specifikace.
 
-Konkrétní návrh řešeného problému začínáme od třídy Let. V rámci letu totiž evidujeme objednávku. Objednávka nastává vždy v rámci vybraného letu uživatelem, který následně musí zvolit pasažéry pro danou objednávku. Nyní následuje definování nového řešení problému výběru tarifů. Výběr tarifu je umožněn po vyplnění pasažérů. Nastává ovšem možnost, že výběr tarifu není umožněn v rámci některých specifických typech letu. V tomto případě se výběr tarifu přeskočí a uživatel vybírá přímo mezi Balíčky, které mají různé druhy podpory.
+Konkrétní návrh řešeného problému začínáme od třídy Let. V~rámci letu totiž evidujeme objednávku. Objednávka nastává vždy v~rámci vybraného letu uživatelem, který následně musí zvolit pasažéry pro danou objednávku. Nyní následuje definování nového řešení problému výběru tarifů. Výběr tarifu je umožněn po vyplnění pasažérů. Nastává ovšem možnost, že výběr tarifu není umožněn v~rámci některých specifických typech letu. V~tomto případě se výběr tarifu přeskočí a~uživatel vybírá přímo mezi Balíčky, které mají různé druhy podpory.
 
 Pokud byl umožněn výběr Tarifu na základě daných Služeb, které spadají pod jednotlivé tarify, pak uživatel navíc vybírá ještě jednotlivé balíčky, které se ale odvíjí od jednotlivých stupňů tarifu. 
 
@@ -101,13 +101,13 @@ Pokud byl umožněn výběr Tarifu na základě daných Služeb, které spadají
 \end{figure}
 
 \podsekce{Diagram nasazení}
-Diagram nasazení je ovlivňován nefunkčními požadavky na systém a proto je zde uveden jako návrh řešení nefunkčních požadavků. Je součástí jazyka UML. Zobrazuje umístění funkčních celků v rámci informačního systému. Tyto komponenty zobrazuje jako výpočetní uzly. V rámci firmy je používané znázorněné prostředí. Toto prostředí je dostačující i pro rozšíření funkčnosti, které je obsahem této diplomové práce. Není tedy nutné zavedené prostředí měnit.
+Diagram nasazení je ovlivňován nefunkčními požadavky na systém a~proto je zde uveden jako návrh řešení nefunkčních požadavků. Je součástí jazyka UML. Zobrazuje umístění funkčních celků v~rámci informačního systému. Tyto komponenty zobrazuje jako výpočetní uzly. V~rámci firmy je používané znázorněné prostředí. Toto prostředí je dostačující i~pro rozšíření funkčnosti, které je obsahem této diplomové práce. Není tedy nutné zavedené prostředí měnit.
 
-Proces vývoje je uskutečněn v rámci vývojového prostředí. Interní zařízení je připojováno k aplikačnímu severu vývojového prostředí. Nicméně je umožněno se připojit zároveň k aplikačnímu serveru produkčního prostředí změnou konfigurace. 
+Proces vývoje je uskutečněn v~rámci vývojového prostředí. Interní zařízení je připojováno k~aplikačnímu severu vývojového prostředí. Nicméně je umožněno se připojit zároveň k~aplikačnímu serveru produkčního prostředí změnou konfigurace. 
 
-Aplikační server vývojového i akceptačního prostředí má navázanou komunikaci s databázovým serverem využívající PostgreSQL, na který je v případě zájmu možnost zrcadlit část produkční databáze. 
+Aplikační server vývojového i~akceptačního prostředí má navázanou komunikaci s~databázovým serverem využívající PostgreSQL, na který je v~případě zájmu možnost zrcadlit část produkční databáze. 
 
-Akceptační prostředí je využíváno i QA testery, kteří pomocí stejného principu přistupují na aplikační server akceptačního prostředí, ale velmi často je kontrolována kvalita výstupu i na produkčním prostředí, kam mají přístup i přes interní zařízení. Interních zařízení je několik druhů, aby se docílilo co nejvěrohodnější simulace uživatelského spektra zařízení.
+Akceptační prostředí je využíváno i~QA testery, kteří pomocí stejného principu přistupují na aplikační server akceptačního prostředí, ale velmi často je kontrolována kvalita výstupu i~na produkčním prostředí, kam mají přístup i~přes interní zařízení. Interních zařízení je několik druhů, aby se docílilo co nejvěrohodnější simulace uživatelského spektra zařízení.
 
 \begin{figure}[H]
     \centering
@@ -118,31 +118,31 @@ Akceptační prostředí je využíváno i QA testery, kteří pomocí stejného
 
 \podsekce{Drátěný model}
 
-Pro  vizualizaci řešení z pohledu grafického rozdělení jednotlivých elementů, zasazených do současné webové aplikace, je použita vizualizace pomocí wireframů. Obecně drátěný model zobrazuje obsah a rozložení základních elementů na stránce. Drátěný model také podporuje lepší porozumění funkcí a jejich interakcí v rámci celkového přehledu. Definování drátěného modelu také značně usnadní pozdější designový návrh, kde je na základě wireframu možné se soustředit pouze na problémy spadající do designu. Je mnohem náročnější zabývat se obsahem a rozložení prvků v rámci komplexního designového návrhu, kde je mnoho dalších faktorů.
+Pro  vizualizaci řešení z~pohledu grafického rozdělení jednotlivých elementů, zasazených do současné webové aplikace, je použita vizualizace pomocí wireframů. Obecně drátěný model zobrazuje obsah a~rozložení základních elementů na stránce. Drátěný model také podporuje lepší porozumění funkcí a~jejich interakcí v~rámci celkového přehledu. Definování drátěného modelu také značně usnadní pozdější designový návrh, kde je na základě wireframu možné se soustředit pouze na problémy spadající do designu. Je mnohem náročnější zabývat se obsahem a~rozložení prvků v~rámci komplexního designového návrhu, kde je mnoho dalších faktorů.
 
-Přidávaná funkcionalita je zasazena do procesu rezervace letenky. Umístění nové funkcionality výběru balíčků následuje hned po kroku, kde uživatel zkontroluje itinerář letu, vyplní informace o všech pasažérech a zanechá osobní kontakt. Pak se přesouvá přes tlačítko “Další krok” do scénáře popisující uvedený drátěný model. V závislosti na dobu odletu se rozděluje proces na dvě možnosti. Pokud odlet letu se má uskutečnit do následujících 48 hodin, pak nastává méně komplikovaný scénář. Uživatel má na výběr pouze mezi balíčky. Výběr tarifu je skryt a místo něj se zobrazí varování, že zakoupený let není možné zrušit ani změnit méně než 48 hodin před začátkem cesty.
+Přidávaná funkcionalita je zasazena do procesu rezervace letenky. Umístění nové funkcionality výběru balíčků následuje hned po kroku, kde uživatel zkontroluje itinerář letu, vyplní informace o~všech pasažérech a~zanechá osobní kontakt. Pak se přesouvá přes tlačítko “Další krok” do scénáře popisující uvedený drátěný model. V~závislosti na dobu odletu se rozděluje proces na dvě možnosti. Pokud odlet letu se má uskutečnit do následujících 48 hodin, pak nastává méně komplikovaný scénář. Uživatel má na výběr pouze mezi balíčky. Výběr tarifu je skryt a~místo něj se zobrazí varování, že zakoupený let není možné zrušit ani změnit méně než 48 hodin před začátkem cesty.
 
-V případě, že do odletu zbývá více než 48 hodin, pak nastává scénář zobrazený na druhém drátěném modelu (obrázek č. \ref{wireframe2}), kde uživatel nejdříve vybírá tarif a výběr balíčků je skrytý. Na základě jeho volby, se zobrazí výběr balíčků. Pokud vybral nejlevnější tarif, pak má na výběr mezi všemi dostupnými balíčky. Pokud vybral střední tarif, pak má k dispozici na výběr pouze dva balíčky. V případě volby nejdražšího balíčku je uživatel přesměrován na další krok objednávku, který již je definován v současném řešení. 
+V~případě, že do odletu zbývá více než 48 hodin, pak nastává scénář zobrazený na druhém drátěném modelu (obrázek č. \ref{wireframe2}), kde uživatel nejdříve vybírá tarif a~výběr balíčků je skrytý. Na základě jeho volby, se zobrazí výběr balíčků. Pokud vybral nejlevnější tarif, pak má na výběr mezi všemi dostupnými balíčky. Pokud vybral střední tarif, pak má k~dispozici na výběr pouze dva balíčky. V~případě volby nejdražšího balíčku je uživatel přesměrován na další krok objednávku, který již je definován v~současném řešení. 
 
-V rámci zachování jednoduchosti a přehlednosti se v drátěném modelu nevyskytují existující prvky stránky, které nemají vliv na danou funkčnost. Prezentace drátěného modelu je doplněna o vysvětlující poznámky a šipky, které jsou vyznačeny červeně. 
+V~rámci zachování jednoduchosti a~přehlednosti se v~drátěném modelu nevyskytují existující prvky stránky, které nemají vliv na danou funkčnost. Prezentace drátěného modelu je doplněna o~vysvětlující poznámky a~šipky, které jsou vyznačeny červeně. 
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-21-45-11.png}{0.9\textwidth}{!}
-    \caption{Drátěný model -- znázornění přechodu mezi vybraným tarifem a nabídkou balíčků}
+    \caption{Drátěný model -- znázornění přechodu mezi vybraným tarifem a~nabídkou balíčků}
     \label{wireframe1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \vlozobrbox{2020-04-27-21-45-23.png}{0.9\textwidth}{!}
-    \caption{Drátěný model -- let s odletem do 48 hodin}
+    \caption{Drátěný model -- let s~odletem do 48 hodin}
     \label{wireframe2}
 \end{figure}
 
 \podsekce{Designové řešení}
 
-Návrh designu byl zasazen do stejného stylu, který je již Kiwi.com využíván. Byly použity zejména komponenty z interně vytvořené knihovny Orbit, které lze importovat do designového nástroje Figma. Zároveň jsou částečně implementovány v knihovně React, což usnadní následnou celkovou implementaci řešení.
+Návrh designu byl zasazen do stejného stylu, který je již Kiwi.com využíván. Byly použity zejména komponenty z~interně vytvořené knihovny Orbit, které lze importovat do designového nástroje Figma. Zároveň jsou částečně implementovány v~knihovně React, což usnadní následnou celkovou implementaci řešení.
 
 \begin{figure}[H]
     \centering
@@ -151,7 +151,7 @@ Návrh designu byl zasazen do stejného stylu, který je již Kiwi.com využív�
     \label{design1}
 \end{figure}
 
-Na obrázku č. \ref{design1} je zobrazen vzhled druhého kroku objednávkového formuláře, na kterém si uživatel musí zvolit tarif. Tarif Standard má jako jediný primární barvu tlačítka pro vyvolání dojmu optimální volby. Pod tarify se nachází varování, které informuje o podmínkách nabízených záruk.
+Na obrázku č. \ref{design1} je zobrazen vzhled druhého kroku objednávkového formuláře, na kterém si uživatel musí zvolit tarif. Tarif Standard má jako jediný primární barvu tlačítka pro vyvolání dojmu optimální volby. Pod tarify se nachází varování, které informuje o~podmínkách nabízených záruk.
 
 \begin{figure}[H]
     \centering
@@ -160,7 +160,7 @@ Na obrázku č. \ref{design1} je zobrazen vzhled druhého kroku objednávkového
     \label{design2}
 \end{figure}
 
-Na obrázku č. \ref{design2} je vymodelována situace, kdy uživatel zvolil Standard tarif a nyní se mu nabízí volba mezi balíčky Plus a Premium. Balíček Basic již není k dispozici právě z důvodu předchozí volby tarifu Standard, který již balíček Plus má v sobě zakomponovaný. Nabízení volby balíčku Basic by tedy byla zbytečná. Bylo uvažováno, zda balíček Basic zobrazit v neaktivním stavu, tak aby nebyl možný vybrat, ale byl viditelný. Tato varianta však byla zamítnuta z možného zmatení uživatele.
+Na obrázku č. \ref{design2} je vymodelována situace, kdy uživatel zvolil Standard tarif a~nyní se mu nabízí volba mezi balíčky Plus a~Premium. Balíček Basic již není k~dispozici právě z~důvodu předchozí volby tarifu Standard, který již balíček Plus má v~sobě zakomponovaný. Nabízení volby balíčku Basic by tedy byla zbytečná. Bylo uvažováno, zda balíček Basic zobrazit v~neaktivním stavu, tak aby nebyl možný vybrat, ale byl viditelný. Tato varianta však byla zamítnuta z~možného zmatení uživatele.
 
 \begin{figure}[H]
     \centering
@@ -169,10 +169,10 @@ Na obrázku č. \ref{design2} je vymodelována situace, kdy uživatel zvolil Sta
     \label{design3}
 \end{figure}
 
-Mobilní responzivní verze byla pozměněna tak, aby zobrazila základní názvy tarifů, balíčků a jejich ceny. Detailně se pak uživatel seznámí s obsahem tarifů a balíčků po rozklinutí daného prvku. Rozkliknutím se současně prvek označí jako vybraný a následným stisknutím potvrzovacího tlačítka dá uživatel najevo, že má již vybráno. Systém ho následně přesměruje na další krok objednávky.
+Mobilní responzivní verze byla pozměněna tak, aby zobrazila základní názvy tarifů, balíčků a~jejich ceny. Detailně se pak uživatel seznámí s~obsahem tarifů a~balíčků po rozklinutí daného prvku. Rozkliknutím se současně prvek označí jako vybraný a~následným stisknutím potvrzovacího tlačítka dá uživatel najevo, že má již vybráno. Systém ho následně přesměruje na další krok objednávky.
 
 \podsekce{Shrnutí}
 
-Návrhem řešení bylo do současného procesu zavedena povinná volba mezi tři tarify, kde každý tarif určuje stupeň záruky Kiwi.com. Od vybraného tarifu se následně odvíjí volba balíčků. V návrhu modelu byly popsány technické požadavky na systém. Také byly definování aktoři, kterých se návrh řešení dotýká. Diagramem aktivit použití byl znázorněn nový proces objednávkového procesu z celkového pohledu od vyplnění pasažérů po zaplacení rezervace. Proces volby tarifů a balíčků byl velmi detailně namodelován BPMN diagramem, který zobrazuje všechny varianty, které mohou v systému nastat a všechny akce, které může uživatel vykonat. Zároveň je zobrazeno jak na tyto varianty reaguje systém. 
+Návrhem řešení bylo do současného procesu zavedena povinná volba mezi tři~tarify, kde každý tarif určuje stupeň záruky Kiwi.com. Od vybraného tarifu se následně odvíjí volba balíčků. V~návrhu modelu byly popsány technické požadavky na systém. Také byly definování aktoři, kterých se návrh řešení dotýká. Diagramem aktivit použití byl znázorněn nový proces objednávkového procesu z~celkového pohledu od vyplnění pasažérů po zaplacení rezervace. Proces volby tarifů a~balíčků byl velmi detailně namodelován BPMN diagramem, který zobrazuje všechny varianty, které mohou v~systému nastat a~všechny akce, které může uživatel vykonat. Zároveň je zobrazeno jak na tyto varianty reaguje systém. 
 
-Vizuální řešení zobrazuje nové prvky zasazené do současného rozložení objednávkového formuláře. Nachází se na druhém kroku objednávku, po vyplnění informací o pasažérech. Volba tarifů i balíčků se fyzicky nachází na jednom kroku. Volba balíčků se však zobrazí až po volbě tarifu. Při nabídce balíčků je využita metoda upselling, což znamená, že jsou uživateli nabídnuty i vyšší balíčky, než které jsou již v ceně zvoleného tarifu. Nabídka balíčků se tedy mění v závislosti na předchozí volbě tarifu.
+Vizuální řešení zobrazuje nové prvky zasazené do současného rozložení objednávkového formuláře. Nachází se na druhém kroku objednávku, po vyplnění informací o~pasažérech. Volba tarifů i~balíčků se fyzicky nachází na jednom kroku. Volba balíčků se však zobrazí až po volbě tarifu. Při~nabídce balíčků je využita metoda upselling, což znamená, že jsou uživateli nabídnuty i~vyšší balíčky, než které jsou již v~ceně zvoleného tarifu. Nabídka balíčků se tedy mění v~závislosti na předchozí volbě tarifu.
