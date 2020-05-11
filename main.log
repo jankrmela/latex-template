@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  5 MAY 2020 17:19
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.4.27)  11 MAY 2020 07:57
  system commands enabled.
  file:line:error style messages enabled.
 **/Users/js/code/master-thesis/main.tex
@@ -554,12 +554,12 @@ braces):
 >  {czech/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {czech/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for czech
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-cs.tex
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	hyph-cs.hyp.txt
+(polyglossia)            loader	loadhyph-cs.tex
 (polyglossia)            righthyphenmin	3
-(polyglossia)            patterns	hyph-cs.pat.txt on input line 10
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-cs.pat.txt
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language czech was not yet loaded; created with id 3 on input line 10
  (/usr/local/texlive/2020/texmf-dist/tex/luatex/luavlna/luavlna.sty
 Package: luavlna 2019/10/30 luavlna
@@ -1479,12 +1479,12 @@ Here is how much of LuaTeX's memory you used:
  125171,1373583 words of node,token memory allocated
  1957 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 4 glue, 3 kern, 103 glyph, 184 attribute, 105 glue_spec, 93 attribute_list, 1 write nodes
-   avail lists: 2:1874,3:301,4:267,5:390,6:130,7:5686,8:118,9:820,10:33,11:687
+   avail lists: 2:1874,3:301,4:267,5:390,6:130,7:5686,8:118,9:820,10:33,11:689
  34910 multiletter control sequences out of 65536+600000
  73 fonts using 8036571 bytes
  55i,10n,59p,1517b,2775s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on main.pdf (95 pages, 11602882 bytes).
+Output written on main.pdf (95 pages, 11602955 bytes).
 
 PDF statistics: 489 PDF objects out of 1000 (max. 8388607)
  260 compressed objects within 3 object streams
